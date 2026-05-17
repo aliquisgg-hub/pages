@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+<meta name="viewport" content="width=400">
+<meta name="Author" content="MIURA Kinya">
+<title>Bookmark Form</title>
+<style type="text/css">
+th { text-align: right; vertical-align: top; }
+input[type=text],textarea { width: 320px; }
+input[name=id],input[name=date],input[name=created],input[name=modified]
+        { border: none; }
+textarea { height: 94px; }
+</style>
+</head>
+<body>
+<form name="frmBm" id="frmBm" action="session.html" method="GET">
+<input type="hidden" name="deleted" id="hidDeleted">
+<table>
+<tr id="trId"><th>ID: </td><td colspan="2"><input type="text" name="id" id="txtId" readonly></td></tr>
+<tr><th>Title: </td>
+    <td colspan="2"><input type="text" name="title" id="txtTitle"></td></tr>
+<tr><th>URL: </td>
+    <td colspan="2"><input type="text" name="url" id="txtUrl"></td></tr>
+<tr id="trCreated"><th>Created: </td><td colspan="2"><input type="text" name="created" id="txtCreated" readonly></td></tr>
+<tr id="trModified"><th>Modified: </td><td colspan="2"><input type="text" name="modified" id="txtModified" readonly></td></tr>
+<tr><th>Category:
+	<br><input type="button" name="btnClrCategory" id="btnClrCategory" value="Clear"></td>
+    <td colspan="2"><select name="selCategory" id="selCategory">
+        <option value="">既存カテゴリの選択</option>
+	</select><br>
+	<textarea name="category" id="txtCategory"></textarea></td></tr>
+<tr><th>Comment:
+	<br><input type="button" name="btnClrComment" id="btnClrComment" value="Clear"></td>
+    <td colspan="2"><textarea name="comment" id="txtComment"></textarea></td></tr>
+<tr><td></td>
+    <td><input type="button" name="btnReset" id="btnReset" value="Reset">
+        <input type="button" name="btnDelete" id="btnDelete" value="Delete"></td>
+    <th><input type="submit" value="OK">
+	<input type="button" name="btnCancel" id="btnCancel" value="Cancel">
+</td></tr>
+</table>
+</form>
+
+<script src="Dropbox-sdk.min.js">
+  // from https://cdnjs.com/libraries/dropbox.js/
+  // https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/2.5.13/Dropbox-sdk.min.js
+</script>
+<script src="MyDropbox.js">
+  // MyDropbox extends Dropbox
+</script>
+<script>
+  let clientId = "tty0svk58tx500r";
+  let thisURI = location.href.split('#')[0];
+  let token = localStorage.getItem("BmTree");
+  if (!token) {
+    let mtch = document.location.hash.match(/access_token=([^&]*)/);
+    if (mtch) {
+      localStorage.setItem("BmTree", mtch[1]);
+      document.location.href = thisURI;
+      console.log("Got a new token");
+    } else {
+      document.location.href = `https://www.dropbox.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${thisURI}&response_type=token`;
+    }
+  }
+</script>
+
+<script>
+'use strict'
+
+// イベントリスナの登録
+selCategory.addEventListener("change", addCategory, false);
+btnClrCategory.addEventListener("click", clearCategory, false);
+btnClrComment.addEventListener("click", clearComment, false);
+btnReset.addEventListener("click", resetForm, false);
+btnDelete.addEventListener("click", delRec, false);
+btnCancel.addEventListener("click", closeWin, false);
+frmBm.addEventListener("submit", checkFrm, false);
+
+// パラメタの受け取り
+let src = { id:"", title:"", url:"", category:[], comment:"" };
+location.search.substr(1).split("&").forEach(function (p) {
+  p = p.split("=");
+  src[p[0]] = decodeURIComponent(p[1]);
+});
+
+// hdb ファイルの読み込み
+let dbx = new MyDropbox({ accessToken: token });
+dbx.readFile("bookmark.hdb",
+  function (result) {
+    let cts = mkCtsAndSrc(result);
+    initForm(src);
+    mkSelCategoryOptions(cts);
+  },
+  function (e) {
+    switch (e.status) {
+    case 409:
+    default: 
+      if (confirm("Failed to read the record file: " + e.status
+                  + "\nMay I clear access token?")) {
+        localStorage.removeItem("BmTree");
+      }
+    }
+  });
+
+// 関数群
+function mkCtsAndSrc(txt) {
+  let cts = {};
+  txt
+    .split("\n\n")
+    .filter(function (x) { return x; })
+    .forEach(function (str) {
+      let rec = {}, key;
+
+      str.split("\n").forEach(function (line) {
+        if (line[0] != "\t") {
+          let val = line.match(/^(\w+): (.*)$/);
+          key = val[1]; val = val[2];
+          switch (typeof rec[key]) {
+            case "undefined": rec[key] = val; break;
+            case "object":    rec[key].push(val); break;
+            default:          rec[key] = [rec[key], val];
+          }
+        } else {
+          rec[key] += "\n" + line.substr(1);
+        }
+      });
+
+      // for backward compatibility
+      if (typeof rec.category == "string") rec.category = rec.category.split("\n");
+
+      if (rec.id == src.id || rec.url == src.url) src = rec;
+      rec.category.forEach(function (x) { cts[x.split("/")[0]] = true; });
+    });
+  return cts;
+}
+
+function initForm(src) {
+  if (src.id == "") {
+    trId.style.display =
+    trCreated.style.display =
+    trModified.style.display =
+    btnDelete.style.display = "none";
+  } else {
+    txtId.value = src.id;
+    txtCreated.value = src.created;
+    txtModified.value = src.modified;
+  }
+  resetForm();
+}
+
+function mkSelCategoryOptions(cts){
+  selCategory.addEventListener("change", addCategory, false);
+  Object.keys(cts).sort().forEach(function (ct) {
+    selCategory.appendChild(document.createElement("option"))
+      .appendChild(document.createTextNode(ct));
+  });
+}
+
+function addCategory() {
+  normlizeCategory();
+  txtCategory.value += this.value + "\n";
+  this.selectedIndex = 0;
+}
+
+function clearCategory() { clearText("category"); }
+function clearComment() { clearText("comment"); }
+function clearText(name) { frmBm[name].value = ""; }
+
+function resetForm() {
+  txtTitle.value = src.title;
+  txtUrl.value = src.url;
+  txtCategory.value = src.category.join("\n");
+  normlizeCategory();
+  txtComment.value = src.comment;
+  btnDelete.disabled = false;
+}
+
+function normlizeCategory() {
+  txtCategory.value = (txtCategory.value + "\n").replace(/[\r\n]+/g, "\n").replace(/^\n/, "");
+}
+
+function delRec() {
+  resetForm();
+  if (confirm("このブックマークを削除しますか？")) {
+    hidDeleted.value="yes";
+    frmBm.submit();
+    hidDeleted.value="";
+  }
+}
+
+function closeWin() { window.close(); }
+
+function checkFrm(e) {
+  normlizeCategory();
+  if (txtUrl.value == "") {
+    alert("URL が指定されていません．");
+    e.preventDefault();
+    return false;
+  } else return true;
+}
+
+</script>
+</body>
+</html>

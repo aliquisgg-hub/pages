@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+<meta name="viewport" content="width=400">
+<meta name="Author" content="MIURA Kinya">
+<title>Session Receiver</title>
+</head>
+<body>
+
+<script src="Dropbox-sdk.min.js">
+  // from https://cdnjs.com/libraries/dropbox.js/
+  // https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/2.5.13/Dropbox-sdk.min.js
+</script>
+<script src="MyDropbox.js">
+  // MyDropbox extends Dropbox
+</script>
+<script>
+  let clientId = "tty0svk58tx500r";
+  let thisURI = location.href.split('#')[0];
+  let token = localStorage.getItem("BmTree");
+  if (!token) {
+    let mtch = document.location.hash.match(/access_token=([^&]*)/);
+    if (mtch) {
+      localStorage.setItem("BmTree", mtch[1]);
+      document.location.href = thisURI;
+      console.log("Got a new token");
+    } else {
+      document.location.href = `https://www.dropbox.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${thisURI}&response_type=token`;
+    }
+  }
+</script>
+
+<script>
+/*
+hdb:  string
+db:   [ <bmRec> ...]
+  bmRec:  {
+            id:       Number,
+            title:    String,
+            url:      String,
+            created:  String,
+            modified: String,
+            category: { <category>: <#>, ...}
+            category2: { <category>: <#>, ...}
+            comment:  String,
+          }
+idx:  { <category>: [<id>, ...], ...}
+*/
+
+// hdbファイルの読み込み
+let dbx = new MyDropbox({ accessToken: token });
+dbx.readFile("bookmark.hdb", session, errMsg);
+
+function session(hdb) {
+  let q = getQuery();
+  let db = mkDb(hdb);
+  let idx = mkIdx(db);
+
+  // レコードの削除
+  if (q.deleted || q.id!==0) {
+    // idx の更新(削除)
+    let cto = db[q.id].category;
+    for (let ct in cto) {
+      let n = cto[ct];
+      if (idx[ct][n]!==q.id) errMsg(`delIdx error (${q.id}:${ct}/${n})`);
+      delete idx[ct][n];
+    }
+    delete db[q.id];
+    console.log(`"${q.title}" (${q.id}) removed.`);
+  }
+
+  // レコードの追加
+  if (!q.deleted) {
+    delete q.deleted;
+    if (q.id===0) q.id = db.length;
+    db[q.id] = q;
+    db[q.id].modified = getTimeStamp();
+    // idx の更新
+    let cto = q.category;
+    for (let ct in cto) {
+      let n = cto[ct];
+      if (idx[ct][n]===undefined) idx[ct][n] = q.id;
+      else idx[ct].splice(n, 0, q.id);
+    }
+    console.log(`"${q.title}" (${q.id}) added.`);
+  }
+
+  // db の category の番号の更新 -> category2
+  for (let ct in idx) {
+    let j = 0;
+    for (let i in idx[ct]) {
+      let rec = db[idx[ct][i]];
+      if (!rec["category2"]) rec["category2"] = {};
+      rec["category2"][ct] = j;
+      j++;
+    }
+  }
+
+  // hdb の書き戻し
+  dbx.writeFileWithBom("bookmark.hdb", mkHdb(db), (res)=>{
+    document.writeln("下記データが"+(q.deleted ? "削除されました：" : "登録されました："))
+    document.write(`<pre>${q2hdbRec(q)}</pre>`);
+    document.close();
+  }, errMsg);
+
+  // console.log(q);
+  // console.log(db);
+  // console.log(idx);
+  // console.log(hdb2);
+  // console.log(q2hdbRec(q));
+
+}
+
+function errMsg(e) {
+  let msg = `ERROR: ${typeof e==="string" ? e : `${e.message}(${e.status})`}`;
+  console.error(msg);
+  document.write(msg);
+  document.close();
+  throw new Error(msg);
+}
+
+function getTimeStamp() {
+  let d = new Date();
+  let ts =  [ d.getFullYear(),
+              (d.getMonth()+1).toString().padStart(2, '0'),
+              d.getDate().toString().padStart(2, '0')].join('/')
+            + ' '
+            + [ d.getHours().toString().padStart(2, '0'),
+                d.getMinutes().toString().padStart(2, '0'),
+                d.getSeconds().toString().padStart(2, '0') ].join(':');
+  return ts;
+}
+
+function getQuery() {
+  let q = {};
+  (new URL(window.location.href)).searchParams.forEach((val, key)=>{
+    val = val.trim();
+    val = val.replaceAll("\r\n", "\n").replaceAll("\r", "\n");
+    switch (key) {
+      case "id": q[key] = val-0; break;
+      case "deleted": q[key] = (val!==""); break;
+      case "created": q[key] = (val || getTimeStamp()); break;
+      case "category":
+        if (val==="") val = "(unfiled)";
+        q[key] = mkCtObj(val.split(/\n+/));
+        break;
+      case "selCategory": break;
+      default: q[key] = val;
+    }
+  });
+  return q;
+}
+
+function mkCtObj(ar) {
+  let cto = {};
+  ar.forEach((s)=>{
+    if ((s = s.trim())==="") return;
+    if (s.indexOf("/")<0) s += "/1";
+    let [ct, n] = s.split("/"); n--; 
+    cto[ct] = n;
+  });  
+  return cto;
+}
+
+function mkDb(txt) {
+  let db = [];
+  txt.split("\n\n").filter((x)=>x).forEach((blk)=>{
+    let rec = {};
+    let key; 
+    blk.split("\n").forEach((line)=>{
+      if (line[0] != "\t") {
+        let val = line.match(/^(\w+): (.*)$/);
+        key = val[1]; val = val[2];
+        if (rec[key] == undefined) rec[key] = val; 
+        else if (rec[key].constructor == Array) rec[key].push(val);
+        else rec[key] = [rec[key], val];
+      } else { /* line[0] == "\t" */
+        if (rec[key].constructor == Array) {
+          rec[key][rec[key].length-1] += "\n" + line.substr(1);
+        } else {
+          rec[key] += "\n" + line.substr(1);
+        }
+      }
+    });
+    rec.id-=0;
+    if (rec.category.constructor == String) rec.category = rec.category.split("\n");
+    rec.category = mkCtObj(rec.category);
+    db[rec.id] = rec;
+  });
+  return db;
+}
+
+function mkIdx(db) {
+  let idx = {};
+  db.forEach((r)=>{
+    let cto = r.category;
+    for (let ct in cto) {
+      let n = cto[ct];
+      if (idx[ct]===undefined) idx[ct] = [];
+      if (idx[ct][n]) errMsg(`mkIdx error (${r.id}:${ct}/${n})`);
+      idx[ct][n]=r.id;
+    }
+  });
+  return idx;
+}
+
+function mkHdb(db) {
+  return Object.values(db).map((rec)=>[
+    `id: ${rec.id}`,
+    `title: ${rec.title}`,
+    `url: ${rec.url}`,
+    `created: ${rec.created}`,
+    `modified: ${rec.modified}`,
+    Object.keys(rec.category2).map((ct)=>`category: ${ct}/${rec.category2[ct]+1}`).join("\n"),
+    `comment: ${rec.comment.replaceAll("\n", "\n\t")}`
+  ].join("\n")).join("\n\n");
+}
+
+function q2hdbRec(q) {
+  return [
+    `id: ${q.id}`,
+    `title: ${q.title}`,
+    `url: ${q.url}`,
+    `created: ${q.created}`,
+    `modified: ${q.modified}`,
+    Object.keys(q.category).map((ct)=>`category: ${ct}/${q.category[ct]+1}`).join("\n"),
+    `comment: ${q.comment.replaceAll("\n", "\n\t")}`
+  ].join("\n");
+}
+</script>
+
+<script>
+setTimeout(closer, 6000);
+window.onblur = closer;
+function closer() {
+  try { opener.location.reload(true); } catch (e) {}
+  close();
+}
+</script>
+</body>
+</html>
