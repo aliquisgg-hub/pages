@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<!-- HTML 4.01 Transitional，EUC-JP テンプレート -->
+<html>
+<head>
+<title>Software Stock</title>
+<meta http-equiv="Content-Type" content="text/html;charset=EUC-JP">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="Author" content="MIURA Kinya">
+<style type="text/css">
+<!--
+li {margin-bottom: 1em;}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+onload = function (e) {
+  with (document) {
+  	/* make index */
+	var h2s = getElementsByTagName('h2'),
+		ul  = getElementById('contents').appendChild(createElement('ul')), a;
+	for (var i=0; i<h2s.length; i++) {
+	  if (h2s[i].id) {
+		ul.appendChild(createElement('li'))
+		  .appendChild((a=createElement('a'), a.href='#'+h2s[i].id, a))
+		  .appendChild(createTextNode(h2s[i].firstChild.data));
+	  }
+	}
+  }
+  //alert(JSON.stringify(document.getElementById("akList").children))
+};
+//-->
+</script>
+
+</head>
+<body>
+<h1>ソフトウェア倉庫</h1>
+<p>手すさびに作ったプログラムを含め，いろいろ置いておく．
+言語や環境もさまざまで，新旧もさまざま．
+面倒なので，原則的に説明なし．無保証なので，利用する際は own risk で．</p>
+<div id="contents"></div>
+<hr>
+
+<h2 id="javascript">JavaScript いろいろ</h2>
+<p>ブラウザによって動いたり動かなかったりするのでご了承のほどを．
+（主に Firefox で作成しているため，IEでは動かないことが多いかも．）</p>
+<ul>
+<li><a href="turtle/index.html">タートルグラフィクス</a><br>
+HTML5 の CANVAS を使用して，オブジェクト指向風に書いてみた．
+プログラムの本体は <a href="turtle/turtle.js">turtle.js</a>．
+サンプルを読み込むのに，<a href="turtle/http_request.js">http_request.js</a> も使用．
+</li>
+<li>擬似対話プログラム（Eliza風のもの）- <a href="Eliza/eliza.html">その1</a>，<a href="Eliza/eliza2.html">その2</a><br>
+「猪股 俊光，益崎 真治： Schemeによる記号処理入門，森北出版 (1994)」の「第9章 コンピューターとの対話」を参考に，
+Sc289(2) の授業用に作成．</li>
+<li>英語(の部分系?)のトップダウンパーザ
+（<a href="javascript/tdp_sample.html">HTML版のサンプル</a>，<a href="javascript/tdp_sample.svg">SVG版のサンプル</a>）<br>
+なんちゃって英語パーザ（再帰的下向き構文解析）．Sc289(2) の授業用に作成．
+いい加減な文法と語彙は本体のファイル <a href="javascript/tdp.js">tdp.js</a> を参照のこと．<br>
+木構造の表示は，HTML版は <a href="javascript/print_tree.js">print_tree.js</a>，SVG版は
+<a href="javascript/draw_tree.js">draw_tree.js</a> を参照のこと．
+<p>[xml を使って xhtml に SVG を埋め込んだ版も作ってみた: <a href="javascript/tdp_sample.xhtml">tdp_sample.xhtml</a>]</p></li>
+<li>ハノイの塔（<a href="hanoi/hanoi4.html">n=4</a>，<a href="hanoi/hanoi_3.html">n=3</a>）<br>
+模擬授業用に作成．</li>
+<li><a href="pitcher/pitcher.html">水差しの問題</a><br>
+状態空間法のデモンストレーション．オープンキャンパス用に作成．
+（<a href="ai08.html">参考</a>）</li>
+<li><a href="050705/nqueen.html">n クイーン問題</a><br>
+実行ボタンで実行．部分的に書き直すことも可能．リセットボタンで書き直しを元に戻せる．
+KCH対象特別授業用に作成．（<a href="050705/index.html">参考</a>）</li>
+<li><a href="javascript/sudoku6.html">数独用ツール</a><br>
+ブラウザ判別用ライブラリ <a href="javascript/user_agent.js">user_agent.js</a> と
+CSSサポートライブラリ <a href="javascript/jcss.js">jcss.js</a> を使用．</li>
+<li><a href="solitaire/solitaire.html">ソリティア</a><br>
+いわゆる peg solitaire のプログラム. 手順を記録して undo/redo が可能．
+<a href="solitaire/cookie_db.js">cookie_db.js</a>
+により，クッキーを用いて，手順に名前をつけて保存できる．
+手順を JavaScript の配列リテラルのテキストデータとして読み書きする機能もあり．
+クッキーで手順を保存する機能を抜いて，<a href="solitaire/solitaire_com.html">IEでも動くバージョン</a>も作ってみた．</li>
+<li><a href="javascript/calc4.html">電卓</a><br>
+ブックマークレット版もあり．
+<a href="data:text/html;charset=UTF-8;base64,PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEvL0VOIj4NCjx0aXRsZT5DYWxjdWxhdG9yIFZlci40PC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04Ij4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCEtLQ0KaW5wdXQuYnRuCXsgZm9udC1zaXplOjEyMCU7IHdpZHRoOjQ4cHg7IGhlaWdodDo0OHB4OyB9DQppbnB1dC5yZWcJeyBmb250LXNpemU6MTIwJTsgYm9yZGVyLXN0eWxlOm5vbmU7IHdpZHRoOjE3MHB4OyB0ZXh0LWFsaWduOnJpZ2h0OyB9DQppbnB1dC5vcAl7IGZvbnQtc2l6ZToxMjAlOyBib3JkZXItc3R5bGU6bm9uZTsgd2lkdGg6MjRweDsgIHRleHQtYWxpZ246Y2VudGVyOyB9DQovLy0tPjwvc3R5bGU+DQo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+PCEtLQ0KZnVuY3Rpb24gZW50ZXIoYykgew0KICB3aXRoIChkb2N1bWVudC5mKSB7DQogICAgaWYgKE9QWC52YWx1ZSE9IiIpIHsNCiAgICAgIGlmIChPUFgudmFsdWUhPSI9Iikgew0KICAgICAgICBZLnZhbHVlID0gWC52YWx1ZTsgT1BZLnZhbHVlID0gT1BYLnZhbHVlOw0KICAgICAgfQ0KICAgICAgWC52YWx1ZSA9ICIgMCI7IE9QWC52YWx1ZSA9ICIiOw0KICAgIH0NCiAgICBpZiAoYz09Ii4iICYmIFgudmFsdWUuaW5kZXhPZigiLiIpPj0wKSByZXR1cm47DQogICAgaWYgKFgudmFsdWU9PSIgMCIgJiYgYyE9Ii4iKSBYLnZhbHVlID0gIiAiICsgYzsNCiAgICBlbHNlIGlmIChYLnZhbHVlPT0iLTAiICYmIGMhPSIuIikgWC52YWx1ZSA9ICItIiArIGM7DQogICAgZWxzZSBpZiAoWC52YWx1ZS5sZW5ndGg8MTYpIFgudmFsdWUgKz0gYzsNCiAgfQ0KfQ0KZnVuY3Rpb24gc2lnbigpIHsNCiAgdmFyIFggPSBkb2N1bWVudC5mLlg7DQogIFgudmFsdWUgPSAoWC52YWx1ZS5jaGFyQXQoMCk9PSItIiA/ICIgIiA6ICItIikgKyBYLnZhbHVlLnN1YnN0cigxKTsNCn0NCmZ1bmN0aW9uIG9wKHgpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIHN3aXRjaCAoT1BZLnZhbHVlKSB7DQogICAgY2FzZSAiKyI6IFgudmFsdWUgPSBOdW1iZXIoWS52YWx1ZSkgKyBOdW1iZXIoWC52YWx1ZSk7IGJyZWFrOw0KICAgIGNhc2UgIi0iOiBYLnZhbHVlID0gTnVtYmVyKFkudmFsdWUpIC0gTnVtYmVyKFgudmFsdWUpOyBicmVhazsNCiAgICBjYXNlICIqIjogWC52YWx1ZSA9IE51bWJlcihZLnZhbHVlKSAqIE51bWJlcihYLnZhbHVlKTsgYnJlYWs7DQogICAgY2FzZSAiLyI6IFgudmFsdWUgPSBOdW1iZXIoWS52YWx1ZSkgLyBOdW1iZXIoWC52YWx1ZSk7DQogICAgfQ0KICAgIGlmIChYLnZhbHVlLmNoYXJBdCgwKSE9Ii0iICYmIFgudmFsdWUuY2hhckF0KDApIT0iICIpIFgudmFsdWUgPSAiICIgKyBYLnZhbHVlOw0KICAgIFkudmFsdWUgPSBPUFkudmFsdWUgPSAiIjsNCiAgICBPUFgudmFsdWUgPSB4Ow0KICB9DQp9DQpmdW5jdGlvbiBicygpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIGlmIChPUFgudmFsdWU9PSI9IikgeyBjZSgpOyByZXR1cm47IH0NCiAgICBpZiAoWC52YWx1ZT09IiAwIikgcmV0dXJuOw0KICAgIGlmIChYLnZhbHVlPT0iLTAiKSBYLnZhbHVlID0gIiAwIjsNCiAgICBlbHNlIGlmIChYLnZhbHVlLmxlbmd0aD09MikgWC52YWx1ZSA9IFgudmFsdWUuY2hhckF0KDApICsgIjAiOw0KICAgIGVsc2UgWC52YWx1ZSA9IFgudmFsdWUuc2xpY2UoMCwtMSk7DQogICAgLy9pZiAoWC52YWx1ZS5zbGljZSgtMSk9PSIuIikgWC52YWx1ZSA9IFgudmFsdWUuc2xpY2UoMCwtMSk7DQogIH0NCn0NCmZ1bmN0aW9uIGNlKCkgew0KICB2YXIgWCA9IGRvY3VtZW50LmYuWDsNCiAgWC52YWx1ZSA9ICIgMCI7DQogIGRvY3VtZW50LmYuT1BYLnZhbHVlID0gIiI7DQp9DQpmdW5jdGlvbiBjbHIoKSB7DQogIHdpdGggKGRvY3VtZW50LmYpIHsNCiAgICBYLnZhbHVlID0gIiAwIjsNCiAgICBZLnZhbHVlID0gT1BZLnZhbHVlID0gT1BYLnZhbHVlID0gIiI7DQogIH0NCn0NCndpbmRvdy5vbmxvYWQgPSBmdW5jdGlvbiAoKSB7DQogIHdpdGggKGRvY3VtZW50LmYpIHsNCiAgICBYLm9ua2V5cHJlc3MgPSBmdW5jdGlvbiAoZSkgew0KICAgICAgdmFyIGMgPSBlID8gZS53aGljaCA6IGV2ZW50LmtleUNvZGU7DQogICAgICBpZiAoYz09MCkgeyBjbHIoKTsgcmV0dXJuOyB9DQogICAgICBjID0gU3RyaW5nLmZyb21DaGFyQ29kZShjKTsNCiAgICAgIGlmIChjPj0iMCIgJiYgYzw9IjkiKSB7IGVudGVyKGMpOyByZXR1cm47IH0NCiAgICAgIHN3aXRjaCAoYykgew0KICAgICAgY2FzZSAiLiI6IGVudGVyKGMpOyBicmVhazsNCiAgICAgIGNhc2UgInMiOiBzaWduKCk7IGJyZWFrOw0KICAgICAgY2FzZSAiKyI6IGNhc2UgIi0iOiBjYXNlICIqIjogY2FzZSAiLyI6IGNhc2UgIj0iOiBvcChjKTsgYnJlYWs7DQogICAgICBjYXNlICJcciI6IG9wKCI9Iik7IGJyZWFrOw0KICAgICAgY2FzZSAiYiI6IGNhc2UgIlxiIjogYnMoKTsgYnJlYWs7DQogICAgICBjYXNlICJlIjogY2UoKTsgYnJlYWs7DQogICAgICBjYXNlICJjIjogY2xyKCk7IGJyZWFrOw0KICAgICAgfQ0KICAgIH07DQogICAgZm9yICh2YXIgaT0wOyBpPGVsZW1lbnRzLmxlbmd0aDsgaSsrKSB7DQogICAgICBpZiAoZWxlbWVudHNbaV0ubmFtZSE9IlgiKSBlbGVtZW50c1tpXS5vbmZvY3VzID0gZnVuY3Rpb24gKCkgeyBYLmZvY3VzKCk7IH07DQogICAgfQ0KICAgIFguZm9jdXMoKTsNCiAgfQ0KICB3aW5kb3cub25mb2N1cyA9IGZ1bmN0aW9uICgpIHsNCiAgICBkb2N1bWVudC5mLlguZm9jdXMoKTsNCiAgfTsNCn07DQovLy0tPjwvc2NyaXB0Pg0KPGZvcm0gbmFtZT0iZiIgYWN0aW9uPSIiPg0KPHRhYmxlPg0KPHRyPjx0ZCBjb2xzcGFuPSI0IiBhbGlnbj0icmlnaHQiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkIGdyYXk7Ij4NCjxpbnB1dCB0eXBlPSJ0ZXh0IiBjbGFzcz0icmVnIiByZWFkb25seSBuYW1lPSJZIiB2YWx1ZT0iIj4NCjxpbnB1dCB0eXBlPSJ0ZXh0IiBjbGFzcz0ib3AiIHJlYWRvbmx5IG5hbWU9Ik9QWSIgdmFsdWU9IiI+PGJyPg0KPGlucHV0IHR5cGU9InRleHQiIGNsYXNzPSJyZWciIHJlYWRvbmx5IG5hbWU9IlgiIHZhbHVlPSIgMCI+DQo8aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9Im9wIiByZWFkb25seSBuYW1lPSJPUFgiIHZhbHVlPSIiPjwvdGQ+PC90cj4NCjx0cj48dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IkJTIiB0aXRsZT0iQiBvciBCYWNrU3BhY2UiIG9uY2xpY2s9ImJzKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iQ0UiIHRpdGxlPSJFIiBvbmNsaWNrPSJjZSgpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IkMiIHRpdGxlPSJDIG9yIERlbGV0ZSIgb25jbGljaz0iY2xyKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iLyIgdGl0bGU9Ii8iIG9uY2xpY2s9Im9wKCcvJyk7Ij48L3RkPjwvdHI+DQo8dHI+PHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI3IiB0aXRsZT0iNyIgb25jbGljaz0iZW50ZXIoJzcnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI4IiB0aXRsZT0iOCIgb25jbGljaz0iZW50ZXIoJzgnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI5IiB0aXRsZT0iOSIgb25jbGljaz0iZW50ZXIoJzknKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIqIiB0aXRsZT0iKiIgb25jbGljaz0ib3AoJyonKTsiPjwvdGQ+PC90cj4NCjx0cj48dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjQiIHRpdGxlPSI0IiBvbmNsaWNrPSJlbnRlcignNCcpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjUiIHRpdGxlPSI1IiBvbmNsaWNrPSJlbnRlcignNScpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjYiIHRpdGxlPSI2IiBvbmNsaWNrPSJlbnRlcignNicpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9Ii0iIHRpdGxlPSItIiBvbmNsaWNrPSJvcCgnLScpOyI+PC90ZD48L3RyPg0KPHRyPjx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMSIgdGl0bGU9IjEiIG9uY2xpY2s9ImVudGVyKCcxJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMiIgdGl0bGU9IjIiIG9uY2xpY2s9ImVudGVyKCcyJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMyIgdGl0bGU9IjMiIG9uY2xpY2s9ImVudGVyKCczJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iKyIgdGl0bGU9IisiIG9uY2xpY2s9Im9wKCcrJyk7Ij48L3RkPjwvdHI+DQo8dHI+PHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIwIiB0aXRsZT0iMCIgb25jbGljaz0iZW50ZXIoJzAnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIrLy0iIHRpdGxlPSJTIiBvbmNsaWNrPSJzaWduKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iJm1pZGRvdDsiIHRpdGxlPSIuIiBvbmNsaWNrPSJlbnRlcignLicpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9Ij0iIHRpdGxlPSI9IG9yIEVudGVyIiBvbmNsaWNrPSJvcCgnPScpOyI+PC90ZD48L3RyPg0KPC90YWJsZT4NCjwvZm9ybT4NCg=="
+>同一ウィンドウ版</a>（サイドバーなどに最適）と
+<a href="javascript:with(window.open('','_calc','width=226,height=330,left=0,top=0'))%7Bdocument.write('%3C!DOCTYPE%20html%20PUBLIC%20%22-//W3C//DTD%20HTML%204.01//EN%22%3E%5Cn%3Ctitle%3ECalculator%20Ver.4%3C/title%3E%5Cn%3Cmeta%20http-equiv=%22Content-Type%22%20content=%22text/html;%20charset=UTF-8%22%3E%5Cn%3Cstyle%20type=%22text/css%22%3E%3C!--%5Cninput.btn%20%7B%20font-size:large;%20width:48px;%20height:48px;%20%7D%5Cninput.reg%20%7B%20font-size:large;%20border-style:none;%20width:170px;%20text-align:right;%20%7D%5Cninput.op%20%7B%20font-size:large;%20border-style:none;%20width:24px;%20%20text-align:center;%20%7D%5Cn//--%3E%3C/style%3E%5Cn%3Cscript%20type=%22text/javascript%22%3E%3C!--%5Cnfunction%20enter(c)%20%7B%5Cnwith%20(document.f)%20%7B%5Cnif%20(OPX.value!=%22%22)%20%7B%5Cnif%20(OPX.value!=%22=%22)%20%7B%5CnY.value%20=%20X.value;%20OPY.value%20=%20OPX.value;%5Cn%7D%5CnX.value%20=%20%22%200%22;%20OPX.value%20=%20%22%22;%5Cn%7D%5Cnif%20(c==%22.%22%20&&%20X.value.indexOf(%22.%22)%3E=0)%20return;%5Cnif%20(X.value==%22%200%22%20&&%20c!=%22.%22)%20X.value%20=%20%22%20%22%20+%20c;%5Cnelse%20if%20(X.value==%22-0%22%20&&%20c!=%22.%22)%20X.value%20=%20%22-%22%20+%20c;%5Cnelse%20if%20(X.value.length%3C16)%20X.value%20+=%20c;%5Cn%7D%5Cn%7D%5Cnfunction%20sign()%20%7B%5Cnvar%20X%20=%20document.f.X;%5CnX.value%20=%20(X.value.charAt(0)==%22-%22%20?%20%22%20%22%20:%20%22-%22)%20+%20X.value.substr(1);%5Cn%7D%5Cnfunction%20op(x)%20%7B%5Cnwith%20(document.f)%20%7B%5Cnswitch%20(OPY.value)%20%7B%5Cncase%20%22+%22:%20X.value%20=%20Number(Y.value)%20+%20Number(X.value);%20break;%5Cncase%20%22-%22:%20X.value%20=%20Number(Y.value)%20-%20Number(X.value);%20break;%5Cncase%20%22*%22:%20X.value%20=%20Number(Y.value)%20*%20Number(X.value);%20break;%5Cncase%20%22/%22:%20X.value%20=%20Number(Y.value)%20/%20Number(X.value);%5Cn%7D%5Cnif%20(X.value.charAt(0)!=%22-%22%20&&%20X.value.charAt(0)!=%22%20%22)%20X.value%20=%20%22%20%22%20+%20X.value;%5CnY.value%20=%20OPY.value%20=%20%22%22;%5CnOPX.value%20=%20x;%5Cn%7D%5Cn%7D%5Cnfunction%20bs()%20%7B%5Cnwith%20(document.f)%20%7B%5Cnif%20(OPX.value==%22=%22)%20%7B%20ce();%20return;%20%7D%5Cnif%20(X.value==%22%200%22)%20return;%5Cnif%20(X.value==%22-0%22)%20X.value%20=%20%22%200%22;%5Cnelse%20if%20(X.value.length==2)%20X.value%20=%20X.value.charAt(0)%20+%20%220%22;%5Cnelse%20X.value%20=%20X.value.slice(0,-1);%5Cn//if%20(X.value.slice(-1)==%22.%22)%20X.value%20=%20X.value.slice(0,-1);%5Cn%7D%5Cn%7D%5Cnfunction%20ce()%20%7B%5Cnvar%20X%20=%20document.f.X;%5CnX.value%20=%20%22%200%22;%5Cndocument.f.OPX.value%20=%20%22%22;%5Cn%7D%5Cnfunction%20clr()%20%7B%5Cnwith%20(document.f)%20%7B%5CnX.value%20=%20%22%200%22;%5CnY.value%20=%20OPY.value%20=%20OPX.value%20=%20%22%22;%5Cn%7D%5Cn%7D%5Cnwindow.onload%20=%20function%20()%20%7B%5Cnwith%20(document.f)%20%7B%5CnX.onkeypress%20=%20function%20(e)%20%7B%5Cnvar%20c%20=%20e%20?%20e.which%20:%20event.keyCode;%5Cnif%20(c==0)%20%7B%20clr();%20return;%20%7D%5Cnc%20=%20String.fromCharCode(c);%5Cnif%20(c%3E=%220%22%20&&%20c%3C=%229%22)%20%7B%20enter(c);%20return;%20%7D%5Cnswitch%20(c)%20%7B%5Cncase%20%22.%22:%20enter(c);%20break;%5Cncase%20%22s%22:%20sign();%20break;%5Cncase%20%22+%22:%20case%20%22-%22:%20case%20%22*%22:%20case%20%22/%22:%20case%20%22=%22:%20op(c);%20break;%5Cncase%20%22%5C%5Cr%22:%20op(%22=%22);%20break;%5Cncase%20%22b%22:%20case%20%22%5C%5Cb%22:%20bs();%20break;%5Cncase%20%22e%22:%20ce();%20break;%5Cncase%20%22c%22:%20clr();%20break;%5Cn%7D%5Cn%7D;%5Cnfor%20(var%20i=0;%20i%3Celements.length;%20i++)%20%7B%5Cnif%20(elements%5Bi%5D.name!=%22X%22)%20elements%5Bi%5D.onfocus%20=%20function%20()%20%7B%20X.focus();%20%7D;%5Cn%7D%5CnX.focus();%5Cn%7D%5Cnwindow.onfocus%20=%20function%20()%20%7B%5Cndocument.f.X.focus();%5Cn%7D;%5Cn%7D;%5Cn//--%3E%3C/script%3E%5Cn%3Cform%20name=%22f%22%20action=%22%22%3E%5Cn%3Ctable%3E%5Cn%3Ctr%3E%3Ctd%20colspan=%224%22%20align=%22right%22%20style=%22border:1px%20solid%20gray;%22%3E%5Cn%3Cinput%20type=%22text%22%20class=%22reg%22%20readonly%20name=%22Y%22%20value=%22%22%3E%5Cn%3Cinput%20type=%22text%22%20class=%22op%22%20readonly%20name=%22OPY%22%20value=%22%22%3E%3Cbr%3E%5Cn%3Cinput%20type=%22text%22%20class=%22reg%22%20readonly%20name=%22X%22%20value=%22%200%22%3E%5Cn%3Cinput%20type=%22text%22%20class=%22op%22%20readonly%20name=%22OPX%22%20value=%22%22%3E%3C/td%3E%3C/tr%3E%5Cn%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22BS%22%20title=%22B%20or%20BackSpace%22%20onclick=%22bs();%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22CE%22%20title=%22E%22%20onclick=%22ce();%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22C%22%20title=%22C%20or%20Delete%22%20onclick=%22clr();%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22/%22%20title=%22/%22%20onclick=%22op(%5C'/%5C');%22%3E%3C/td%3E%3C/tr%3E%5Cn%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%227%22%20title=%227%22%20onclick=%22enter(%5C'7%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%228%22%20title=%228%22%20onclick=%22enter(%5C'8%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%229%22%20title=%229%22%20onclick=%22enter(%5C'9%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22*%22%20title=%22*%22%20onclick=%22op(%5C'*%5C');%22%3E%3C/td%3E%3C/tr%3E%5Cn%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%224%22%20title=%224%22%20onclick=%22enter(%5C'4%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%225%22%20title=%225%22%20onclick=%22enter(%5C'5%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%226%22%20title=%226%22%20onclick=%22enter(%5C'6%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22-%22%20title=%22-%22%20onclick=%22op(%5C'-%5C');%22%3E%3C/td%3E%3C/tr%3E%5Cn%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%221%22%20title=%221%22%20onclick=%22enter(%5C'1%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%222%22%20title=%222%22%20onclick=%22enter(%5C'2%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%223%22%20title=%223%22%20onclick=%22enter(%5C'3%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22+%22%20title=%22+%22%20onclick=%22op(%5C'+%5C');%22%3E%3C/td%3E%3C/tr%3E%5Cn%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%220%22%20title=%220%22%20onclick=%22enter(%5C'0%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22+/-%22%20title=%22S%22%20onclick=%22sign();%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22&#183;%22%20title=%22.%22%20onclick=%22enter(%5C'.%5C');%22%3E%3C/td%3E%5Cn%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22=%22%20title=%22=%20or%20Enter%22%20onclick=%22op(%5C'=%5C');%22%3E%3C/td%3E%3C/tr%3E%5Cn%3C/table%3E%5Cn%3C/form%3E%5Cn');document.close();%7Dvoid%200"
+>新規ウィンドウ版</a>．
+（リンクをブックマークに登録すれば使える）<br>
+<a href="javascript/calc5.html">関数電卓</a>も作ってみた．
+（ブックマークレット，
+<a href="data:text/html;charset=UTF-8;base64,PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEvL0VOIj4NCjx0aXRsZT5DYWxjdWxhdG9yIFZlci41PC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04Ij4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCEtLQ0KLmJ0bgl7IGZvbnQtc2l6ZToxMjAlOyB3aWR0aDo0OHB4OyBoZWlnaHQ6NDhweDsgfQ0KLnNidG4JeyBmb250LXNpemU6MTEwJTsgd2lkdGg6NDhweDsgaGVpZ2h0OjMycHg7IH0NCi5yZWcJeyBmb250LXNpemU6MTIwJTsgYm9yZGVyLXN0eWxlOm5vbmU7IHdpZHRoOjE3MHB4OyB0ZXh0LWFsaWduOnJpZ2h0OyB9DQoub3AJeyBmb250LXNpemU6MTIwJTsgYm9yZGVyLXN0eWxlOm5vbmU7IHdpZHRoOjI0cHg7ICB0ZXh0LWFsaWduOmNlbnRlcjsgfQ0KLy8tLT48L3N0eWxlPg0KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPjwhLS0NCmZ1bmN0aW9uIGVudGVyKGMpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIGlmIChPUFgudmFsdWUhPSIiKSB7DQogICAgICBpZiAoT1BYLnZhbHVlIT0iPSIpIHsNCiAgICAgICAgWS52YWx1ZSA9IFgudmFsdWU7IE9QWS52YWx1ZSA9IE9QWC52YWx1ZTsNCiAgICAgIH0NCiAgICAgIFgudmFsdWUgPSAiIDAiOyBPUFgudmFsdWUgPSAiIjsNCiAgICB9DQogICAgaWYgKGM9PSIuIiAmJiBYLnZhbHVlLmluZGV4T2YoIi4iKT49MCkgcmV0dXJuOw0KICAgIGlmIChYLnZhbHVlPT0iIDAiICYmIGMhPSIuIikgWC52YWx1ZSA9ICIgIiArIGM7DQogICAgZWxzZSBpZiAoWC52YWx1ZT09Ii0wIiAmJiBjIT0iLiIpIFgudmFsdWUgPSAiLSIgKyBjOw0KCWVsc2UgaWYgKGMuY29uc3RydWN0b3I9PU51bWJlcikgWC52YWx1ZSA9IGM7DQogICAgZWxzZSBpZiAoWC52YWx1ZS5sZW5ndGg8MTYpIFgudmFsdWUgKz0gYzsNCiAgfQ0KfQ0KZnVuY3Rpb24gc2lnbigpIHsNCiAgdmFyIFggPSBkb2N1bWVudC5mLlg7DQogIFgudmFsdWUgPSAoWC52YWx1ZS5jaGFyQXQoMCk9PSItIiA/ICIgIiA6ICItIikgKyBYLnZhbHVlLnN1YnN0cigxKTsNCn0NCmZ1bmN0aW9uIG9wKHgpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIHN3aXRjaCAoT1BZLnZhbHVlKSB7DQogICAgY2FzZSAiKyI6IFgudmFsdWUgPSBOdW1iZXIoWS52YWx1ZSkgKyBOdW1iZXIoWC52YWx1ZSk7IGJyZWFrOw0KICAgIGNhc2UgIi0iOiBYLnZhbHVlID0gTnVtYmVyKFkudmFsdWUpIC0gTnVtYmVyKFgudmFsdWUpOyBicmVhazsNCiAgICBjYXNlICIqIjogWC52YWx1ZSA9IE51bWJlcihZLnZhbHVlKSAqIE51bWJlcihYLnZhbHVlKTsgYnJlYWs7DQogICAgY2FzZSAiLyI6IFgudmFsdWUgPSBOdW1iZXIoWS52YWx1ZSkgLyBOdW1iZXIoWC52YWx1ZSk7DQogICAgfQ0KICAgIGlmIChYLnZhbHVlLmNoYXJBdCgwKSE9Ii0iICYmIFgudmFsdWUuY2hhckF0KDApIT0iICIpIFgudmFsdWUgPSAiICIgKyBYLnZhbHVlOw0KICAgIFkudmFsdWUgPSBPUFkudmFsdWUgPSAiIjsNCiAgICBPUFgudmFsdWUgPSB4Ow0KICB9DQp9DQpmdW5jdGlvbiBicygpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIGlmIChPUFgudmFsdWU9PSI9IikgeyBjZSgpOyByZXR1cm47IH0NCiAgICBpZiAoWC52YWx1ZT09IiAwIikgcmV0dXJuOw0KICAgIGlmIChYLnZhbHVlPT0iLTAiKSBYLnZhbHVlID0gIiAwIjsNCiAgICBlbHNlIGlmIChYLnZhbHVlLmxlbmd0aD09MikgWC52YWx1ZSA9IFgudmFsdWUuY2hhckF0KDApICsgIjAiOw0KICAgIGVsc2UgWC52YWx1ZSA9IFgudmFsdWUuc2xpY2UoMCwtMSk7DQogICAgLy9pZiAoWC52YWx1ZS5zbGljZSgtMSk9PSIuIikgWC52YWx1ZSA9IFgudmFsdWUuc2xpY2UoMCwtMSk7DQogIH0NCn0NCmZ1bmN0aW9uIGNlKCkgew0KICB2YXIgWCA9IGRvY3VtZW50LmYuWDsNCiAgWC52YWx1ZSA9ICIgMCI7DQogIGRvY3VtZW50LmYuT1BYLnZhbHVlID0gIiI7DQp9DQpmdW5jdGlvbiBjbHIoKSB7DQogIHdpdGggKGRvY3VtZW50LmYpIHsNCiAgICBYLnZhbHVlID0gIiAwIjsNCiAgICBZLnZhbHVlID0gT1BZLnZhbHVlID0gT1BYLnZhbHVlID0gIiI7DQogIH0NCn0NCmZ1bmN0aW9uIGFwbHkoZikgew0KICB3aXRoIChkb2N1bWVudC5mKSB7DQogIAlYLnZhbHVlID0gTnVtYmVyKGYoWC52YWx1ZSkpOw0KICAJT1BYLnZhbHVlID0gIiI7DQogIH0NCn0NCmZ1bmN0aW9uIHJvdW5kKGYpIHsNCiAgd2l0aChkb2N1bWVudC5mKXsNCiAgCXZhciBuID0gTnVtYmVyKGRwLm9wdGlvbnNbZHAuc2VsZWN0ZWRJbmRleF0udmFsdWUpOw0KICAJWC52YWx1ZSA9IE51bWJlcihmKFgudmFsdWUqbikvbik7DQogIAlPUFgudmFsdWUgPSAiIjsNCiAgfQ0KfQ0Kd2luZG93Lm9ubG9hZCA9IGZ1bmN0aW9uICgpIHsNCiAgd2l0aCAoZG9jdW1lbnQuZikgew0KICAgIFgub25rZXlwcmVzcyA9IGZ1bmN0aW9uIChlKSB7DQogICAgICB2YXIgYyA9IGUgPyBlLndoaWNoIDogZXZlbnQua2V5Q29kZTsNCiAgICAgIGlmIChjPT0wKSB7IGNscigpOyByZXR1cm47IH0NCiAgICAgIGMgPSBTdHJpbmcuZnJvbUNoYXJDb2RlKGMpOw0KICAgICAgaWYgKGM+PSIwIiAmJiBjPD0iOSIpIHsgZW50ZXIoYyk7IHJldHVybjsgfQ0KICAgICAgc3dpdGNoIChjKSB7DQogICAgICBjYXNlICIuIjogZW50ZXIoYyk7IGJyZWFrOw0KICAgICAgY2FzZSAicyI6IHNpZ24oKTsgYnJlYWs7DQogICAgICBjYXNlICIrIjogY2FzZSAiLSI6IGNhc2UgIioiOiBjYXNlICIvIjogY2FzZSAiPSI6IG9wKGMpOyBicmVhazsNCiAgICAgIGNhc2UgIlxyIjogb3AoIj0iKTsgYnJlYWs7DQogICAgICBjYXNlICJiIjogY2FzZSAiXGIiOiBicygpOyBicmVhazsNCiAgICAgIGNhc2UgImUiOiBjZSgpOyBicmVhazsNCiAgICAgIGNhc2UgImMiOiBjbHIoKTsgYnJlYWs7DQogICAgICB9DQogICAgfTsNCiAgICBmb3IgKHZhciBpPTA7IGk8ZWxlbWVudHMubGVuZ3RoOyBpKyspIHsNCiAgICAgIGlmIChlbGVtZW50c1tpXS5uYW1lIT0iWCIgJiYgZWxlbWVudHNbaV0ubmFtZSE9ImRwIikNCgkgICAgZWxlbWVudHNbaV0ub25mb2N1cyA9IGZ1bmN0aW9uICgpIHsgWC5mb2N1cygpOyB9Ow0KICAgIH0NCiAgICBYLmZvY3VzKCk7DQogIH0NCiAgd2luZG93Lm9uZm9jdXMgPSBmdW5jdGlvbiAoKSB7DQogICAgZG9jdW1lbnQuZi5YLmZvY3VzKCk7DQogIH07DQp9OwovLy0tPjwvc2NyaXB0Pg0KPGZvcm0gbmFtZT0iZiIgYWN0aW9uPSIiPg0KPHRhYmxlPg0KPHRyPjx0ZCBjb2xzcGFuPSI0IiBhbGlnbj0icmlnaHQiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkIGdyYXk7Ij4NCjxpbnB1dCB0eXBlPSJ0ZXh0IiBjbGFzcz0icmVnIiByZWFkb25seSBuYW1lPSJZIiB2YWx1ZT0iIj4NCjxpbnB1dCB0eXBlPSJ0ZXh0IiBjbGFzcz0ib3AiIHJlYWRvbmx5IG5hbWU9Ik9QWSIgdmFsdWU9IiI+PGJyPg0KPGlucHV0IHR5cGU9InRleHQiIGNsYXNzPSJyZWciIHJlYWRvbmx5IG5hbWU9IlgiIHZhbHVlPSIgMCI+DQo8aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9Im9wIiByZWFkb25seSBuYW1lPSJPUFgiIHZhbHVlPSIiPjwvdGQ+PC90cj4NCjx0cj48dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IkJTIiB0aXRsZT0iQiBvciBCYWNrU3BhY2UiIG9uY2xpY2s9ImJzKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iQ0UiIHRpdGxlPSJFIiBvbmNsaWNrPSJjZSgpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IkMiIHRpdGxlPSJDIG9yIERlbGV0ZSIgb25jbGljaz0iY2xyKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iLyIgdGl0bGU9Ii8iIG9uY2xpY2s9Im9wKCcvJyk7Ij48L3RkPjwvdHI+DQo8dHI+PHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI3IiB0aXRsZT0iNyIgb25jbGljaz0iZW50ZXIoJzcnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI4IiB0aXRsZT0iOCIgb25jbGljaz0iZW50ZXIoJzgnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSI5IiB0aXRsZT0iOSIgb25jbGljaz0iZW50ZXIoJzknKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIqIiB0aXRsZT0iKiIgb25jbGljaz0ib3AoJyonKTsiPjwvdGQ+PC90cj4NCjx0cj48dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjQiIHRpdGxlPSI0IiBvbmNsaWNrPSJlbnRlcignNCcpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjUiIHRpdGxlPSI1IiBvbmNsaWNrPSJlbnRlcignNScpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9IjYiIHRpdGxlPSI2IiBvbmNsaWNrPSJlbnRlcignNicpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9Ii0iIHRpdGxlPSItIiBvbmNsaWNrPSJvcCgnLScpOyI+PC90ZD48L3RyPg0KPHRyPjx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMSIgdGl0bGU9IjEiIG9uY2xpY2s9ImVudGVyKCcxJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMiIgdGl0bGU9IjIiIG9uY2xpY2s9ImVudGVyKCcyJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iMyIgdGl0bGU9IjMiIG9uY2xpY2s9ImVudGVyKCczJyk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iKyIgdGl0bGU9IisiIG9uY2xpY2s9Im9wKCcrJyk7Ij48L3RkPjwvdHI+DQo8dHI+PHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIwIiB0aXRsZT0iMCIgb25jbGljaz0iZW50ZXIoJzAnKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJidG4iIHZhbHVlPSIrLy0iIHRpdGxlPSJTIiBvbmNsaWNrPSJzaWduKCk7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0iYnRuIiB2YWx1ZT0iJm1pZGRvdDsiIHRpdGxlPSIuIiBvbmNsaWNrPSJlbnRlcignLicpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9ImJ0biIgdmFsdWU9Ij0iIHRpdGxlPSI9IG9yIEVudGVyIiBvbmNsaWNrPSJvcCgnPScpOyI+PC90ZD48L3RyPg0KPC90YWJsZT4NCjxocj4NCjx0YWJsZT4NCjx0cj48dGQ+PHNlbGVjdCBuYW1lPSJkcCIgY2xhc3M9InNidG4iIHN0eWxlPSJ0ZXh0LWFsaWduOnJpZ2h0OyI+DQoJPG9wdGlvbiB2YWx1ZT0iMTAwMDAwIj41PC9vcHRpb24+DQoJPG9wdGlvbiB2YWx1ZT0iMTAwMDAiPjQ8L29wdGlvbj4NCgk8b3B0aW9uIHZhbHVlPSIxMDAwIj4zPC9vcHRpb24+DQoJPG9wdGlvbiB2YWx1ZT0iMTAwIj4yPC9vcHRpb24+DQoJPG9wdGlvbiB2YWx1ZT0iMTAiPjE8L29wdGlvbj4NCgk8b3B0aW9uIHZhbHVlPSIxIiBzZWxlY3RlZD4wPC9vcHRpb24+DQoJPG9wdGlvbiB2YWx1ZT0iMC4xIj4tMTwvb3B0aW9uPg0KCTxvcHRpb24gdmFsdWU9IjAuMDEiPi0yPC9vcHRpb24+DQoJPG9wdGlvbiB2YWx1ZT0iMC4wMDEiPi0zPC9vcHRpb24+DQoJPC9zZWxlY3Q+PC90ZD4NCgk8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSI1LzQiIHRpdGxlPSIiIG9uY2xpY2s9InJvdW5kKE1hdGgucm91bmQpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSJmbG9vciIgdGl0bGU9IiIgb25jbGljaz0icm91bmQoTWF0aC5mbG9vcik7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0ic2J0biIgdmFsdWU9ImNlaWwiIHRpdGxlPSIiIG9uY2xpY2s9InJvdW5kKE1hdGguY2VpbCk7Ij48L3RkPjwvdHI+DQo8dHI+PHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJzYnRuIiB2YWx1ZT0iJnJhZGljOyIgdGl0bGU9IiIgb25jbGljaz0iYXBseShNYXRoLnNxcnQpOyI+PC90ZD4NCgk8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSJzaW4iIHRpdGxlPSIiIG9uY2xpY2s9ImFwbHkoTWF0aC5zaW4pOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSJjb3MiIHRpdGxlPSIiIG9uY2xpY2s9ImFwbHkoTWF0aC5jb3MpOyI+PC90ZD4NCiAgICA8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSJ0YW4iIHRpdGxlPSIiIG9uY2xpY2s9ImFwbHkoTWF0aC50YW4pOyI+PC90ZD48L3RyPg0KPHRyPjx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0ic2J0biIgdmFsdWU9IiZwaTsiIHRpdGxlPSIiIG9uY2xpY2s9ImVudGVyKE1hdGguUEkpOyI+PC90ZD4NCgk8dGQ+PGlucHV0IHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHZhbHVlPSJhc2luIiB0aXRsZT0iIiBvbmNsaWNrPSJhcGx5KE1hdGguYXNpbik7Ij48L3RkPg0KICAgIDx0ZD48aW5wdXQgdHlwZT0iYnV0dG9uIiBjbGFzcz0ic2J0biIgdmFsdWU9ImFjb3MiIHRpdGxlPSIiIG9uY2xpY2s9ImFwbHkoTWF0aC5hY29zKTsiPjwvdGQ+DQogICAgPHRkPjxpbnB1dCB0eXBlPSJidXR0b24iIGNsYXNzPSJzYnRuIiB2YWx1ZT0iYXRhbiIgdGl0bGU9IiIgb25jbGljaz0iYXBseShNYXRoLmF0YW4pOyI+PC90ZD48L3RyPg0KPHRyPjx0ZD48YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3M9InNidG4iIHRpdGxlPSIiIG9uY2xpY2s9ImVudGVyKE1hdGguRSk7Ij48aT5lPC9pPjwvYnV0dG9uPjwvdGQ+DQogICAgPHRkPjxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0ic2J0biIgdGl0bGU9IiIgb25jbGljaz0iYXBseShNYXRoLmV4cCk7Ij48aT5lPHN1cD54PC9zdXA+PC9pPjwvYnV0dG9uPjwvdGQ+DQoJPHRkPjxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0ic2J0biIgdGl0bGU9IiIgb25jbGljaz0iYXBseShNYXRoLmxvZyk7Ij48aT5sb2c8c3ViPmU8L3N1Yj54PC9pPjwvYnV0dG9uPjwvdGQ+DQogICAgPHRkPjwvdGQ+PC90cj4NCjwvdGFibGU+DQo8L2Zvcm0+DQo="
+>同一ウィンドウ版</a>
+<a href="javascript:with(window.open('','_calc','width=226,height=500,left=0,top=0'))%7Bdocument.write('%3C!DOCTYPE%20html%20PUBLIC%20%22-//W3C//DTD%20HTML%204.01//EN%22%3E%3Ctitle%3ECalculator%20Ver.5%3C/title%3E%3Cmeta%20http-equiv=%22Content-Type%22%20content=%22text/html;%20charset=UTF-8%22%3E%3Cstyle%20type=%22text/css%22%3E%3C!--%20.btn%20%7B%20font-size:120%25;%20width:48px;%20height:48px;%20%7D%20.sbtn%20%7B%20font-size:110%25;%20width:48px;%20height:32px;%20%7D%20.reg%20%7B%20font-size:120%25;%20border-style:none;%20width:170px;%20text-align:right;%20%7D%20.op%20%7B%20font-size:120%25;%20border-style:none;%20width:24px;%20text-align:center;%20%7D%20--%3E%3C/style%3E%5Cn%3Cscript%20type=%22text/javascript%22%3E%3C!--%5Cnfunction%20enter(c)%20%7B%5Cnwith%20(document.f)%20%7B%5Cnif%20(OPX.value!=%22%22)%20%7B%5Cnif%20(OPX.value!=%22=%22)%20%7B%5CnY.value%20=%20X.value;%20OPY.value%20=%20OPX.value;%5Cn%7D%5CnX.value%20=%20%22%200%22;%20OPX.value%20=%20%22%22;%5Cn%7D%5Cnif%20(c==%22.%22%20&&%20X.value.indexOf(%22.%22)%3E=0)%20return;%5Cnif%20(X.value==%22%200%22%20&&%20c!=%22.%22)%20X.value%20=%20%22%20%22%20+%20c;%5Cnelse%20if%20(X.value==%22-0%22%20&&%20c!=%22.%22)%20X.value%20=%20%22-%22%20+%20c;%5Cnelse%20if%20(c.constructor==Number)%20%7B%5CnX.value%20=%20String(c);%5Cnif%20(X.value.charAt(0)!=%22-%22%20&&%20X.value.charAt(0)!=%22%20%22)%20X.value%20=%20%22%20%22%20+%20X.value;%5Cn%7D%5Cnelse%20if%20(X.value.length%3C16)%20X.value%20+=%20c;%5Cn%7D%5Cn%7D%5Cnfunction%20sign()%20%7B%5Cnvar%20X%20=%20document.f.X;%5CnX.value%20=%20(X.value.charAt(0)==%22-%22%20?%20%22%20%22%20:%20%22-%22)%20+%20X.value.substr(1);%5Cn%7D%5Cnfunction%20op(x)%20%7B%5Cnwith%20(document.f)%20%7B%5Cnswitch%20(OPY.value)%20%7B%5Cncase%20%22+%22:%20X.value%20=%20Number(Y.value)%20+%20Number(X.value);%20break;%5Cncase%20%22-%22:%20X.value%20=%20Number(Y.value)%20-%20Number(X.value);%20break;%5Cncase%20%22*%22:%20X.value%20=%20Number(Y.value)%20*%20Number(X.value);%20break;%5Cncase%20%22/%22:%20X.value%20=%20Number(Y.value)%20/%20Number(X.value);%5Cn%7D%5Cnif%20(X.value.charAt(0)!=%22-%22%20&&%20X.value.charAt(0)!=%22%20%22)%20X.value%20=%20%22%20%22%20+%20X.value;%5CnY.value%20=%20OPY.value%20=%20%22%22;%5CnOPX.value%20=%20x;%5Cn%7D%5Cn%7D%5Cnfunction%20bs()%20%7B%5Cnwith%20(document.f)%20%7B%5Cnif%20(OPX.value==%22=%22)%20%7B%20ce();%20return;%20%7D%5Cnif%20(X.value==%22%200%22)%20return;%5Cnif%20(X.value==%22-0%22)%20X.value%20=%20%22%200%22;%5Cnelse%20if%20(X.value.length==2)%20X.value%20=%20X.value.charAt(0)%20+%20%220%22;%5Cnelse%20X.value%20=%20X.value.slice(0,-1);%5Cn//if%20(X.value.slice(-1)==%22.%22)%20X.value%20=%20X.value.slice(0,-1);%5Cn%7D%5Cn%7D%5Cnfunction%20ce()%20%7B%5Cnvar%20X%20=%20document.f.X;%5CnX.value%20=%20%22%200%22;%5Cndocument.f.OPX.value%20=%20%22%22;%5Cn%7D%5Cnfunction%20clr()%20%7B%5Cnwith%20(document.f)%20%7B%5CnX.value%20=%20%22%200%22;%5CnY.value%20=%20OPY.value%20=%20OPX.value%20=%20%22%22;%5Cn%7D%5Cn%7D%5Cnfunction%20aply(f)%20%7B%5Cnwith%20(document.f)%20%7B%5CnX.value%20=%20Number(f(X.value));%5Cnif%20(X.value.charAt(0)!=%22-%22%20&&%20X.value.charAt(0)!=%22%20%22)%20X.value%20=%20%22%20%22%20+%20X.value;%5CnOPX.value%20=%20%22%22;%5Cn%7D%5Cn%7D%5Cnfunction%20round(f)%20%7B%5Cnwith(document.f)%7B%5Cnvar%20n%20=%20Number(dp.options%5Bdp.selectedIndex%5D.value);%5CnX.value%20=%20Number(f(X.value*n)/n);%5Cnif%20(X.value.charAt(0)!=%22-%22%20&&%20X.value.charAt(0)!=%22%20%22)%20X.value%20=%20%22%20%22%20+%20X.value;%5CnOPX.value%20=%20%22%22;%5Cn%7D%5Cn%7D%5Cnwindow.onload%20=%20function%20()%20%7B%5Cnwith%20(document.f)%20%7B%5CnX.onkeypress%20=%20function%20(e)%20%7B%5Cnvar%20c%20=%20e%20?%20e.which%20:%20event.keyCode;%5Cnif%20(c==0)%20%7B%20clr();%20return;%20%7D%5Cnc%20=%20String.fromCharCode(c);%5Cnif%20(c%3E=%220%22%20&&%20c%3C=%229%22)%20%7B%20enter(c);%20return;%20%7D%5Cnswitch%20(c)%20%7B%5Cncase%20%22.%22:%20enter(c);%20break;%5Cncase%20%22s%22:%20sign();%20break;%5Cncase%20%22+%22:%20case%20%22-%22:%20case%20%22*%22:%20case%20%22/%22:%20case%20%22=%22:%20op(c);%20break;%5Cncase%20%22%5C%5Cr%22:%20op(%22=%22);%20break;%5Cncase%20%22b%22:%20case%20%22%5C%5Cb%22:%20bs();%20break;%5Cncase%20%22e%22:%20ce();%20break;%5Cncase%20%22c%22:%20clr();%20break;%5Cn%7D%5Cn%7D;%5Cnfor%20(var%20i=0;%20i%3Celements.length;%20i++)%20%7B%5Cnif%20(elements%5Bi%5D.name!=%22X%22%20&&%20elements%5Bi%5D.name!=%22dp%22)%5Cnelements%5Bi%5D.onfocus%20=%20function%20()%20%7B%20X.focus();%20%7D;%5Cn%7D%5CnX.focus();%5Cn%7D%5Cnwindow.onfocus%20=%20function%20()%20%7B%5Cndocument.f.X.focus();%5Cn%7D;%5Cn%7D;%5Cn//--%3E%3C/script%3E%5Cn%3Cform%20name=%22f%22%20action=%22%22%3E%3Ctable%3E%3Ctr%3E%3Ctd%20colspan=%224%22%20align=%22right%22%20style=%22border:1px%20solid%20gray;%22%3E%3Cinput%20type=%22text%22%20class=%22reg%22%20readonly%20name=%22Y%22%20value=%22%22%3E%3Cinput%20type=%22text%22%20class=%22op%22%20readonly%20name=%22OPY%22%20value=%22%22%3E%3Cbr%3E%3Cinput%20type=%22text%22%20class=%22reg%22%20readonly%20name=%22X%22%20value=%22%200%22%3E%3Cinput%20type=%22text%22%20class=%22op%22%20readonly%20name=%22OPX%22%20value=%22%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22BS%22%20title=%22B%20or%20BackSpace%22%20onclick=%22bs();%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22CE%22%20title=%22E%22%20onclick=%22ce();%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22C%22%20title=%22C%20or%20Delete%22%20onclick=%22clr();%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22/%22%20title=%22/%22%20onclick=%22op(%5C'/%5C');%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%227%22%20title=%227%22%20onclick=%22enter(%5C'7%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%228%22%20title=%228%22%20onclick=%22enter(%5C'8%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%229%22%20title=%229%22%20onclick=%22enter(%5C'9%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22*%22%20title=%22*%22%20onclick=%22op(%5C'*%5C');%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%224%22%20title=%224%22%20onclick=%22enter(%5C'4%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%225%22%20title=%225%22%20onclick=%22enter(%5C'5%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%226%22%20title=%226%22%20onclick=%22enter(%5C'6%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22-%22%20title=%22-%22%20onclick=%22op(%5C'-%5C');%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%221%22%20title=%221%22%20onclick=%22enter(%5C'1%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%222%22%20title=%222%22%20onclick=%22enter(%5C'2%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%223%22%20title=%223%22%20onclick=%22enter(%5C'3%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22+%22%20title=%22+%22%20onclick=%22op(%5C'+%5C');%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%220%22%20title=%220%22%20onclick=%22enter(%5C'0%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22+/-%22%20title=%22S%22%20onclick=%22sign();%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22&middot;%22%20title=%22.%22%20onclick=%22enter(%5C'.%5C');%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22btn%22%20value=%22=%22%20title=%22=%20or%20Enter%22%20onclick=%22op(%5C'=%5C');%22%3E%3C/td%3E%3C/tr%3E%3C/table%3E%3Chr%3E%3Ctable%3E%3Ctr%3E%3Ctd%3E%3Cselect%20name=%22dp%22%20class=%22sbtn%22%20style=%22text-align:right;%22%3E%3Coption%20value=%22100000%22%3E5%3C/option%3E%3Coption%20value=%2210000%22%3E4%3C/option%3E%3Coption%20value=%221000%22%3E3%3C/option%3E%3Coption%20value=%22100%22%3E2%3C/option%3E%3Coption%20value=%2210%22%3E1%3C/option%3E%3Coption%20value=%221%22%20selected%3E0%3C/option%3E%3Coption%20value=%220.1%22%3E-1%3C/option%3E%3Coption%20value=%220.01%22%3E-2%3C/option%3E%3Coption%20value=%220.001%22%3E-3%3C/option%3E%3C/select%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%225/4%22%20title=%22%22%20onclick=%22round(Math.round);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22floor%22%20title=%22%22%20onclick=%22round(Math.floor);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22ceil%22%20title=%22%22%20onclick=%22round(Math.ceil);%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22&radic;%22%20title=%22%22%20onclick=%22aply(Math.sqrt);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22sin%22%20title=%22%22%20onclick=%22aply(Math.sin);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22cos%22%20title=%22%22%20onclick=%22aply(Math.cos);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22tan%22%20title=%22%22%20onclick=%22aply(Math.tan);%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22&pi;%22%20title=%22%22%20onclick=%22enter(Math.PI);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22asin%22%20title=%22%22%20onclick=%22aply(Math.asin);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22acos%22%20title=%22%22%20onclick=%22aply(Math.acos);%22%3E%3C/td%3E%3Ctd%3E%3Cinput%20type=%22button%22%20class=%22sbtn%22%20value=%22atan%22%20title=%22%22%20onclick=%22aply(Math.atan);%22%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%3E%3Cbutton%20type=%22button%22%20class=%22sbtn%22%20title=%22%22%20onclick=%22enter(Math.E);%22%3E%3Ci%3Ee%3C/i%3E%3C/button%3E%3C/td%3E%3Ctd%3E%3Cbutton%20type=%22button%22%20class=%22sbtn%22%20title=%22%22%20onclick=%22aply(Math.exp);%22%3E%3Ci%3Ee%3Csup%3Ex%3C/sup%3E%3C/i%3E%3C/button%3E%3C/td%3E%3Ctd%3E%3Cbutton%20type=%22button%22%20class=%22sbtn%22%20title=%22%22%20onclick=%22aply(Math.log);%22%3E%3Ci%3Elog%3Csub%3Ee%3C/sub%3Ex%3C/i%3E%3C/button%3E%3C/td%3E%3Ctd%3E%3C/td%3E%3C/tr%3E%3C/table%3E%3C/form%3E');document.close();%7Dvoid%200"
+>新規ウィンドウ版</a>
+）</li>
+<li><a href="javascript/jseval.html">JavaScript簡易実行環境</a><br>
+JavaScript のコードを実行．値も見られるし，document.write() 等の実行による出力も見られる．
+情報科学応用演習I の授業用に作成．
+（残念ながら，最近のブラウザではセキュリティの関係でうまく動かないかも．）</li>
+</ul>
+<p>以下はライブラリ．</p>
+<ul>	
+<li>関数トレース用ライブラリ <a href="javascript/tracer.js">tracer.js</a><br>
+JavaScript の関数の実行をトレースするためのライブラリ．
+トレース情報は別のウィンドウに表示される．折りたたみも可．
+<a href="javascript/tracer_sample.html">サンプル</a>も参照のこと．
+情報科学応用演習I の授業用に作成．</li>
+<li>クッキーデータベース(?)ライブラリ <a href="javascript/cookie_db.js">cookie_db.js</a><br>
+クッキーを使って，テキストやオブジェクトを保存するライブラリ．
+使い方は<a href="javascript/cookie_db_sample.html">サンプル</a>を参照のこと．</li>
+<li>スタイルシート拡張用ライブラリ <a href="javascript/css_ext.js">css_ext.js</a><br>
+ブラウザの種類ごとにスタイルシートを変えるライブラリ．
+詳細は<a href="javascript/css_ext_sample.html">サンプル</a>を参照のこと．
+ブラウザ判別用ライブラリ <a href="javascript/user_agent.js">user_agent.js</a>，
+onload イベントのハンドラを追加するためのライブラリ
+<a href="javascript/onload_hook.js">onload_hook.js</a>
+（<a href="javascript/onload_hook_sample.html">そのサンプル</a>）も使用．</li>
+<li>多重イメージ用ライブラリ <a href="layerdimgs/layeredimgs.js">layeredimgs.js</a><br>
+複数の画像を重ね合わせるためのライブラリ．<a href="layerdimgs/index.html">サンプル</a>も参照のこと．
+一部の画像をプログラムで置き換えるなどすれば，簡単なアニメーションにも応用可能．
+（上の「水差しの問題」の3ページ目の状態遷移図でも類似のことをしている）<br>
+onload イベントのハンドラを追加するためのライブラリ
+<a href="javascript/onload_hook.js">onload_hook.js</a>
+（<a href="javascript/onload_hook_sample.html">そのサンプル</a>）も使用．</li>
+</ul>
+<hr>
+
+<h2 id="compiler">明石高専のコンパイラの授業用に作成したもの</h2>
+<ul id="akList">
+<li><a href="LR/LR.swf">LR構文解析解説用Flash</a><br>
+LR構文解析の解説用に作ったFlash．関連資料が <a href="LR/LR.pdf">LR.pdf</a> にあり．</li>
+<li><a href="q64/index.html">コンパイラ(その1)</a><br>
+C言語風の簡単な言語をIA-32のアセンブリ言語（インテル形式）に変換するもの．
+（IA-64版のlinuxで動作．IA-32版は<a href="q/index.html">こちら</a>（メンテナンス終了））</li>
+<li><a href="P/index.html">コンパイラ(その2)</a><br>
+C言語風の簡単な言語をCASLIIのアセンブリ言語に変換するもの．
+（IA-32版のlinuxで動作．メンテナンス終了）</li>
+<li>字句解析解説用Flash<br>
+<a href="compiler/re2fa2.swf">正規表現→有限オートマトン</a>，
+<a href="compiler/lexer5.swf">字句解析プログラム</a>，
+<a href="compiler/ttable3.swf">状態遷移表の圧縮</a>，
+<a href="compiler/framemov.swf">スタック上の関数フレームの例</a>
+</li>
+<!--<% ns_adp_puts "-\-\x3e"
+set month [clock format [clock seconds] -format %m]
+if {$month < 4 || 7 < $month} {
+	ns_adp_include akashi.html
+}
+ns_adp_puts -nonewline "\x3c!-\-" %>-->
+</ul>
+<h2 id="ai">明石高専の人工知能の授業用に作成したもの</h2>
+<ul>
+<li>木とグラフの評価値を用いない探索 ― <a href="AI_Akashi/dfs_bfs.pdf">手続き(pdf)</a>
+  <ul>
+  <li>木探索<br>
+    解説図(swf)： <a href="AI_Akashi/d1st2.swf">縦型</a>・<a href="AI_Akashi/b1st2.swf">横型</a><br>
+    アニメーション(swf)： <a href="AI_Akashi/tdfs.swf">縦型</a>・<a href="AI_Akashi/tbfs.swf">横型</a>
+  </li>
+  <li>グラフ探索<br>
+    アニメーション(swf)： <a href="AI_Akashi/gdfs.swf">縦型</a>・<a href="AI_Akashi/gbfs.swf">横型</a>
+  </li>
+  </ul>
+</li>
+<li>グラフの評価値（評価コスト）を用いた探索 ― <a href="AI_Akashi/bestfs.pdf">手続き(pdf)</a>
+  <ul>
+  <li>一般の最小コストパス探索<br>
+    <a href="AI_Akashi/bestfs.swf">アニメーション(swf)</a>
+  </li>
+  <li>分枝限定探索<br>
+    <a href="AI_Akashi/bb.swf">アニメーション(swf)</a>
+  </li>
+  <li>ヒューリスティック探索<br>
+    <a href="AI_Akashi/heus.swf">アニメーション(swf)</a>
+  </li>
+  </ul>
+</li>
+<li>four queen 問題の形式化 ― <a href="AI_Akashi/4Qt.pdf">木構造バージョン</a>・<a href="AI_Akashi/ex01.pdf">有向グラフバージョン（演習課題）</a></li>
+<li><a href="AI_Akashi/hanoi/hanoi_3.html">ハノイの塔（n=3）</a></li>
+<li><a href="AI_Akashi/181120.swf">山崩しゲームスライド（2018/11/20）</a><br>
+スペースバーで進行，[↑][↓]キーで前後のスライド，[→][←]キーでスライド内での進む/戻る，メニューキーでメニューの表示．
+</li>
+<li><a href="AI_Akashi/prod/prod.html">簡単なプロダクションシステムのサンプル</a><br>
+<a href="AI_Akashi/prod/prod2f.html">前向き推論（積み木の世界）の実行ページ</a>．</li>
+<li><a href="AI_Akashi/Perceptron.pdf">パーセプトロンの解説スライド(pdf)</a>
+（<a href="AI_Akashi/DLP.xlsm">2層パーセプトロンの例(xlsm)</a>）</li>
+</ul>
+<hr>
+<h2 id="visualbasic">Visual Basic で作成したもの</h2>
+<p>VB6?のランタイムがないと動かないかもしれない．</p>
+<ul>
+<li><a href="Mem3/index.html">記憶に関する実験のプログラム</a><br>
+オープンキャンパス用に作成．</li>
+<li><a href="VB/MRot.zip">心的回転の実験プログラム</a><br>
+ソースを紛失．パッケージのみ</li>
+<!--
+<li>ファイル名を一括して付け替えるプログラム<br>
+Coming soon!</li>
+-->
+</ul>
+<hr>
+
+<!--
+<h2 id="perl">Perl で書いたもの</h2>
+<p>Coming soon!</p>
+<hr>
+
+<h2 id="tcl">Tcl で書いたもの</h2>
+<p>Coming soon!</p>
+-->
+
+</body>
+</html>
