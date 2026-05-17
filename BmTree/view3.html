@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Bookmark Tree</title>
+<style>
+/* body { font-size: 75%; } */
+div.parent { margin-left:1em; }
+div.item { margin-left:0.5em; }
+a { text-decoration: none; color: black; }
+a.num { color: red; }
+a.link { color: blue; }
+div.links { text-align: right; }
+</style>
+</head>
+<body>
+<div id="divHeader">
+  <input type="checkbox" id="chkRE">RE
+  <input id="txtSearch" size="10"><button id="btnClear">×</button><button id="btnSearch">検索</button>
+</div>
+<div id="divMain"></div>
+<div id="divFooter"></div>
+
+<!-- Scripts -->
+<script src="Dropbox-sdk.min.js">
+  // from https://cdnjs.com/libraries/dropbox.js/
+  // https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/2.5.13/Dropbox-sdk.min.js
+</script>
+<script src="MyDropbox.js">
+  // MyDropbox extends Dropbox
+</script>
+<script>
+  let clientId = "tty0svk58tx500r";
+  let thisURI = location.href.split('#')[0];
+  let auth = `https://www.dropbox.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${thisURI}&response_type=token`;
+  let token = localStorage.getItem("BmTree");
+  if (!token) {
+    let mtch = document.location.hash.match(/access_token=([^&]*)/);
+    if (mtch) {
+      localStorage.setItem("BmTree", token=mtch[1]);
+      console.log("Got a new token");
+    } else {
+      document.location.href = auth;
+    }
+  }
+</script>
+<script src="jml2dom.js"></script>
+<script src="Outline.js"></script>
+
+<script>
+'use strict';
+let chkRE = document.querySelector("#chkRE");
+let txtSearch = document.querySelector("#txtSearch");
+let btnClear = document.querySelector("#btnClear");
+let btnSearch = document.querySelector("#btnSearch");
+let divMain = document.querySelector("#divMain");
+let divFooter = document.querySelector("#divFooter");
+
+// create footer
+let dialogOpts = "menubar=no,width=500,height=450";
+let query = "?url=${encodeURIComponent(location)}"
+  +"&title=${encodeURIComponent(document.title)}"
+  +"&comment=${encodeURIComponent((x=document.getElementsByName('description')[0]) ? x.content : '')}";
+let form  = location.href.replace(/\/[^/]*$/, "")+"/form.html";
+let bmNew = `javascript:open('${form}', 'BmAdd', '${dialogOpts}').focus();history.go(0);`;
+let bmAdd = `javascript:open(\`${form+query}\`, 'BmAdd', '${dialogOpts}').focus();history.go(0);`;
+divFooter.appendChild(jml2dom(
+  ["div", {class:"links"},
+    "【", ["a", {href:bmNew}, "新規"], "】【", ["a", {href:bmAdd}, "BmAdd"], "】"
+  ]
+));
+
+let db;
+let dbx = new MyDropbox({ accessToken: token });
+dbx.readFile("bookmark.hdb",
+  function (result) {
+    db = mkDb(result);
+    buildMain(db);
+  },
+  function (e) {
+    switch (e.status) {
+    case 409:
+    default: 
+      localStorage.removeItem("BmTree");
+      document.location.href = auth;
+    }
+  });
+
+// functions
+function mkDb(txt) {
+  return txt.split("\n\n").filter((x)=>x).map(function (blk) {
+    let rec = {};
+    let key; 
+    blk.split("\n").forEach(function (line) {
+      if (line[0] != "\t") {
+        let val = line.match(/^(\w+): (.*)$/);
+        key = val[1]; val = val[2];
+        if (rec[key] == undefined) rec[key] = val; 
+        else if (rec[key].constructor == Array) rec[key].push(val);
+        else rec[key] = [rec[key], val];
+      } else { /* line[0] == "\t" */
+        if (rec[key].constructor == Array) {
+          rec[key][rec[key].length-1] += "\n" + line.substr(1);
+        } else {
+          rec[key] += "\n" + line.substr(1);
+        }
+      }
+    });
+    rec.id-=0;
+    if (rec.category.constructor == String) rec.category = rec.category.split("\n");
+    return rec;
+  });
+}
+
+function buildMain(db) {
+  divMain.innerHTML = "";
+  divMain.appendChild(mkDom(mkTree(db)));
+  Outline.treeInit();
+}
+
+function mkTree(db) {
+  let tr = {};
+  db.forEach(function (rec) {
+    rec["category"].forEach(function (x) {
+      let seq = x.split(/[./]/);
+      let n = seq.pop();
+      let p = tr;
+      for (let i=0; i<seq.length; i++) {
+        p["$"+seq[i]] = p["$"+seq[i]] || { "$": [] };
+        p = p["$"+seq[i]];
+      }
+      p["$"][n] = rec;
+    });
+  });
+  return tr;
+}
+
+function mkDom(tr) {
+  return jml2dom(
+    ["div",
+      ... Object.keys(tr).sort().map(function (ky) {
+        return mkJml(ky.substr(1), tr[ky]);
+      })
+    ]
+  );
+}
+
+function mkJml(nm, nd) {
+  return ["div", {class:"parent"},
+    ["a", {class:"category", href:"#"}, nm],
+    ["div", {class:"child"},
+      ... nd.$.map((v,i)=>
+        v &&
+          ["div", {class:"item", title:v.comment},
+            ["a", {class:"num", href:"#", value:v.id, onclick:openForm}, `[${i}]`],
+            ["a", {class:"link", href:v.url, target:"_blank"}, v.title]
+          ]
+      ).filter((i)=>i),
+      ... Object.keys(nd).sort().map((ky)=>
+        ky!="$" &&
+          mkJml(ky.substr(1), nd[ky])
+      ).slice(1)
+    ]
+  ];
+}
+
+function openForm(ev) {
+  let id = ev.target.attributes.value.value;
+  open(`form.html?id=${id}`, "Bm", dialogOpts).focus();
+}
+
+// Search
+btnSearch.onclick = function (ev) {
+  let sub;
+  if (chkRE.checked) {
+    let target = new RegExp(txtSearch.value, 'i');
+    sub = db.filter((rec)=>rec.title.match(target)||rec.url.match(target)||rec.comment.match(target));
+  } else {
+    let target = txtSearch.value.toLowerCase()
+    sub = db.filter((rec)=>rec.title.toLowerCase().indexOf(target)>=0||rec.url.toLowerCase().indexOf(target)>=0||rec.comment.toLowerCase().indexOf(target)>=0);
+  }
+  buildMain(sub);
+};
+
+btnClear.onclick = function (ev) {
+  txtSearch.value = "";
+  buildMain(db);
+};
+
+</script>
+</body>
+</html>
