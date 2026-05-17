@@ -1,2 +1,2 @@
 # Webページのテスト
-[ホーム](https://aliquisgg-hub.github.io/pages/)
+[ルート](https://aliquisgg-hub.github.io/pages/Readme.md)
