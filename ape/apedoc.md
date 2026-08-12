@@ -1,6 +1,6 @@
 ---
 title: "Ape: A Production System"
-last_modified: 2026-08-12 13:43:39 +09:00
+last_modified: 2026-08-12 13:48:01 +09:00
 
 html:
   embed_local_images: false
@@ -24,6 +24,7 @@ pre.code {
     border-radius: 3px;
 }
 </style>
+
 ## プロダクション・システムの例
 
 <img src="ape.png" alt="初期状態" style="float:right;" />お腹が空いた猿の行動シミュレーション？！
