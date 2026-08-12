@@ -1,6 +1,6 @@
 ---
 title: "Ape: A Production System"
-last_modified: 2023-12-06 15:16:23 +09:00
+last_modified: 2026-08-12 13:43:39 +09:00
 
 html:
   embed_local_images: false
@@ -14,6 +14,7 @@ puppeteer:
 export_on_save:
   html: true
 ---
+<base target="_blank">
 <style>
 pre.code {
     padding: 8px 4px 6px 12px;
@@ -106,7 +107,7 @@ pre.code {
 
 - 動作例： （WM の状態と適用されるルールを交互に示す）
 
-  （https://wwws.kobe-c.ac.jp/~miura/stock/ape/ape.html で実行できるので試してみよう．  
+  （[https://aliquisgg-hub.github.io/pages/ape/ape.html](ape.html) で実行できるので試してみよう．  
   　[パターン照合] と [競合解消・右辺実行] を交互にクリックすると実行できる．）
 
   <pre class="code">
@@ -172,7 +173,7 @@ pre.code {
 
 ### 試してみよう
 
-- https://wwws.kobe-c.ac.jp/~miura/stock/ape/ape.html では，プロダクションメモリもワーキングメモリも書き換えて実行することができる．
+- [https://aliquisgg-hub.github.io/pages/ape/ape.html](ape.html) では，プロダクションメモリもワーキングメモリも書き換えて実行することができる．
   - [Edit]：書き換えが可能な状態にする．（この状態では，実行はできない）
   - [Save]：書き換えを確定して実行可能な状態にする．
   - [Cancel]：書き換えを無効にし，書き換え前の状態に戻して，実行可能な状態にする．
