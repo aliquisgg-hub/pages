@@ -1,0 +1,41 @@
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+// @font-face {
+//   font-family: "UD Digi Kyokasho NK-R";
+//   src: url("C:/Windows/Fonts/UDDigiKyokashoN-R.ttc");
+// }
+ 
+.markdown-preview.markdown-preview {
+  // modify your style here
+  // eg: background-color: blue;
+
+  // font-family: "UD Digi Kyokasho NK-R" sans-serif;
+
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // pre,
+  // code {
+  //     font-family: "UD Digi Kyokasho NK-R" sans-serif;
+  // }
+
+  .center { text-align:center; }
+  .right { text-align:right; }
+  h6 { text-align:center; font:inherit; }
+  em { font-style:normal; text-decoration:underline; }
+  .cjk_fallback {
+    font-family:sans-serif;
+    font-size:82.6%;
+  }
+  ins { color: rgb(224,0,0); }
+  del { color: silver; }
+  @media print {
+    div.tochead,
+    div.tochead + ul,
+    div.lastModified { display:none; }
+  }
+}
