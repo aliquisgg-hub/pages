@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!-- 
+    ルール形式： (<score>: )?<name>[<args,,,>]: <condition...> → <action...>.
+        内部形式(pM)：
+            score
+            name
+            args
+            condition
+            action
+ -->
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ape & Banana</title>
+    <style>
+        h2 {
+            font-size: large;
+            margin-bottom: 0em;
+        }
+        button.edit {
+            width: 60px;
+            height: 24px;
+        }
+        button.exec {
+            width: 160px;
+            height: 24px;
+        }
+        span.normal {
+            font-size: medium;
+            font-weight: normal;
+        }
+        div.base {
+            position: relative;
+            margin-bottom: 1em;
+        }
+        textarea.edit {
+            position: absolute;
+            z-index: -1;
+        }
+        pre.code {
+            background-color: #ffffee;
+        }
+        pre.code, textarea.edit {
+            display: block;
+            border: solid black 1px;
+            margin: 0em;
+            padding: 0.2em 0.2em;
+            resize: none;
+            white-space: pre-wrap ;
+            overflow: auto;
+            font-size: 10pt;
+        }
+        pre#PM, pre#CS,
+        textarea#PMedit {
+            width: 780px;
+        }
+        pre#PM,
+        textarea#PMedit {
+            height: 300px;
+        }
+        pre#CS {
+            height: 120px;
+        }
+        pre#WM,
+        textarea#WMedit {
+            width: 420px;
+            height: 120px;
+        }
+        span.comment    { color: rgb(0, 192, 0); }
+        del { color: rgb(153,153,153); }
+        .red { color: rgb(192,0,0); }
+        #stop   { color: rgb(255,0,0); }
+
+        div.parallel        { white-space: nowrap; }
+        div.parallel>div    { display: inline-block; }
+        table.pic {
+            /*float: right;*/
+            border-spacing: 0;
+            margin: 0.5em 0em 0em 0.5em;
+        }
+        table.pic td {
+            padding: 0;
+            line-height: 0.5em;
+        }
+        table.pic img {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>プロダクションメモリ
+    <button id="PMe" class="edit">Edit</button>
+    <button id="PMs" class="edit">Save</button>
+    <button id="PMc" class="edit">Cancel</button>
+    <button id="PMr" class="edit">Reset</button>
+</h2>
+<div class="base">
+<textarea id="PMedit" class="edit"></textarea>
+<pre class="code" id="PM">
+; 停止のためのルール（以下 ；から行末まではコメントを表す）
+停止[]: (満腹) → (満腹) (stop).
+
+; 「h に持っている剥いたバナナを食べる」h は左右どちらかの手を表す．
+バナナを食う[h]: (空腹) (持つ h (剥いた バナナ)) → (満腹) (持つ h (皮 バナナ)).
+
+; 「h1 に持っているバナナを h2 で剥く」h1, h2 は，いずれも左右どちらかの手を表す．
+バナナを剥く[h1, h2]: (持つ h1 バナナ) (持つ h2 nil) → (持つ h1 (剥いた バナナ)) (持つ h2 nil).
+
+; 「h に持っている棒で，天井にある x を落とす」h は左右どちらかの手，x は物を表す．
+落とす[h, x]: (天井 x) (持つ h 棒) → (床上 x) (持つ h 棒).
+
+; 「h に持っている x を手放す」h は左右どちらかの手，x は物を表す．
+手放す[h, x]: (持つ h x) → (床上 x) (持つ h nil).
+
+; 「h で x を拾う」h は左右どちらかの手，x は物を表す．
+拾う[h, x]: (床上 x) (持つ h nil) → (持つ h x).
+</pre>
+</div>
+
+<div class="parallel">
+
+    <div>
+<h2>ワーキングメモリ
+    <button id="WMe" class="edit">Edit</button>
+    <button id="WMs" class="edit">Save</button>
+    <button id="WMc" class="edit">Cancel</button>
+    <button id="WMr" class="edit">Reset</button>
+</h2>
+<div class="base">
+<textarea id="WMedit" class="edit"></textarea>
+<pre class="code" id="WM">
+(空腹)
+(持つ 右手 nil)
+(持つ 左手 nil)
+(床上 石)
+(床上 棒)
+(天井 バナナ)</pre>
+</div>
+</div>
+
+<div>
+<table class="pic">
+    <tr>
+        <td rowspan="2" colspan="2"><img id="p1" src="ape1.png" alt="1"></td>
+        <td rowspan="3"><img id="p2" src="ape2c.png" alt="2"></td>
+        <td colspan="3"><img id="p3" src="ape3e.png" alt="3"></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><img id="p4" src="ape4e.png" alt="4"></td>
+        <td><img id="p5" src="ape5r.png" alt="5"></td>
+        <td rowspan="2"><img id="p6" src="ape6e.png" alt="6"></td>
+    </tr>
+    <tr>
+        <td><img id="p7" src="ape7f.png" alt="7"></td>
+        <td><img id="p8" src="ape8f.png" alt="8"></td>
+        <td><img id="p9" src="ape9.png" alt="7"></td>
+    </tr>
+</table>
+</div>
+
+</div>
+<div><button id="step1" class="exec">パターン照合</button>↓　↑<button id="step2" class="exec">競合解消・右辺実行</button> <strong id="stop"></strong></div>
+<div>
+    戦略：
+    <select id="tactO">
+        <option value="ord">Orderd</option>
+        <option value="rnd">Random</option>
+    </select>
+    <select id="tactL">
+        <option value="lru">LRU</option>
+        <option value="rnd">Random</option>
+    </select>
+</div><h2>競合集合<span class="normal">（優先順）</span>/ 実行されたルール</h2>
+<pre class="code" id="CS">
+</pre>
+
+<script>
+    // 初期設定
+    {
+        let s = '\\s*';
+        let ja = '\\p{sc=Han}\\p{sc=Hira}\\p{sc=Kana}';
+        let id = `[${ja}\\w\\d]+`;
+        let pri = `${s}\\d+`;
+        let args = `(?:${s}${id}(?:${s},${s}${id})*)?`;
+        let lst = `${s}\\((?:${s}(?:${id}|[()]))*\\)`;
+        var reRule = new RegExp(`(?:(${pri})${s}:)?${s}(${id})${s}\\[${s}(${args})${s}\\]${s}:(${lst})${s}→(${lst})$`, 'u');
+    }
+
+    const PM = document.getElementById("PM");
+    const PMedit = document.getElementById("PMedit");
+    const WM = document.getElementById("WM");
+    const WMedit = document.getElementById("WMedit");
+    const CS = document.getElementById("CS");
+
+    const selTactO = document.getElementById("tactO");
+    const selTactL = document.getElementById("tactL");
+    const btnPMe = document.getElementById("PMe");
+    const btnPMs = document.getElementById("PMs");
+    const btnPMc = document.getElementById("PMc");
+    const btnPMr = document.getElementById("PMr");
+    const btnWMe = document.getElementById("WMe");
+    const btnWMs = document.getElementById("WMs");
+    const btnWMc = document.getElementById("WMc");
+    const btnWMr = document.getElementById("WMr");
+    const btnStep1 = document.getElementById("step1");
+    const btnStep2 = document.getElementById("step2");
+
+    const initPM = PM.innerText;
+    const initWM = WM.innerText;
+    let mode = 1    // 0001: パターン照合前, 0010: 右辺実行前, 0011: 停止
+                    // 1***: PM編集中, *1**: WM編集中
+    let pM, wM;
+
+    btnPMe.addEventListener("click", function (e) {
+        mode|=0b1000;
+        enableBtns();
+        PMedit.value = PM.innerText;
+        PMedit.style.zIndex = 1;
+    });
+
+    function pmSave(e) {
+        pM = pmReader(PMedit.value);
+        PM.innerText = PMedit.value;
+        markRules("PM");
+        PMedit.style.zIndex = -1;
+        mode&=0b0111;
+        enableBtns();
+    }
+
+    btnPMs.addEventListener("click", pmSave);
+
+    PMedit.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.keyCode===83) {
+            pmSave();
+            e.preventDefault();
+        }
+    });
+
+     btnPMc.addEventListener("click", function (e) {
+        mode&=0b0111;
+        enableBtns();
+        PMedit.style.zIndex = -1;
+    });
+
+    btnPMr.addEventListener("click", function (e) {
+        if (!confirm("起動時の設定に戻しますか？")) return;
+        pM = pmReader(PM.innerText = initPM);
+        markRules("PM");
+    });
+
+    btnWMe.addEventListener("click", function (e) {
+        mode = mode&0b1000|0b0101;
+        enableBtns();
+        WM.innerText = WMedit.value = wM.map(listFormatter).join("\n");
+        WMedit.style.zIndex = 1;
+        CS.innerHTML = "";
+    });
+
+    function wmSave(e) {
+        wM = wmReader(WMedit.value);
+        WM.innerText = WMedit.value;
+        drawPic();
+        WMedit.style.zIndex = -1;
+        mode&=0b1011;
+        enableBtns();
+    }
+
+    btnWMs.addEventListener("click", wmSave);
+
+    WMedit.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.keyCode===83) {
+            wmSave();
+            e.preventDefault();
+        }
+    });
+
+    btnWMc.addEventListener("click", function (e) {
+        mode&=0b1011;
+        enableBtns();
+        WMedit.style.zIndex = -1;
+    });
+
+    btnWMr.addEventListener("click", function (e) {
+        if (!confirm("起動時の初期状態に戻しますか？")) return;
+        mode = mode&0b1000|0b0001;
+        wM = wmReader(WM.innerText = initWM);
+        CS.innerHTML = "";
+        enableBtns();
+        drawPic();
+    });
+
+    btnStep1.addEventListener("click", function (e) {
+        showWm();
+        patternMatching(pM, wM);
+        if (cS.length===0) mode = 3;
+        else {
+            showCs();
+            mode = 2;
+        }
+        enableBtns();
+    });
+
+    btnStep2.addEventListener("click", function (e) {
+        cS = [cS[0]]; showCs(); // 競合解消
+        doAction(cS[0]);        // 右辺実行
+        btnStep2.disabled = true;
+        if (termFind(wM,["stop"])/*wM.find((t)=>listFormatter(t)==='(stop)')*/) {
+            mode = 3;
+        } else {
+            mode = 1;
+        }
+        enableBtns();
+    });
+
+    compile();
+    enableBtns();
+    markRules("PM");
+
+    // プロダクションルールのカラーリング
+    function markRules(id) {
+        let elem = document.getElementById(id);
+        elem.innerHTML = elem.innerText.replace(/;.*/g, '<span class="comment">$&</span>');
+    }
+
+    // 補助関数群
+    function enableBtns() {
+        btnStep1.disabled = (mode!==1);
+        btnStep2.disabled = (mode!==2);
+        btnPMe.disabled = btnPMr.disabled = ((mode&0b1000)!==0);
+        btnPMs.disabled = btnPMc.disabled = ((mode&0b1000)===0);
+        btnWMe.disabled = btnWMr.disabled = ((mode&0b0100)!==0);
+        btnWMs.disabled = btnWMc.disabled = ((mode&0b0100)===0);
+        document.getElementById("stop").innerText = mode==3 ? "停止．" : "";
+    }
+
+    function assign(t, a) {
+        if (t instanceof Array) return t.map((s)=>assign(s, a));
+        else if (a.has(t)) return a.get(t);
+        else return t;
+    }
+
+    function termMatching(t, s, a) {
+        s = assign(s, a);
+        if ((s!=="nil" && s[0] === '$') && t !== "nil") return new Map(a).set(s, t);
+        if (t instanceof Array !== s instanceof Array) return null;
+        if (t instanceof Array) {
+            if (t.length !== s.length) return null;
+            for (let i=0; i<t.length; i++) {
+                a = termMatching(t[i], s[i], a);
+                if (a === null) return null;
+            }
+            return a;
+        }
+        return t === s ? a : null;
+    }
+
+    function ruleFormatter(r, a) {
+        let s = Math.round(r.score) ? `${Math.round(r.score)}: ` : '';
+        s += `${r.name}[${assign(r.args, a).join(", ")}]: `;
+        s += assign(r.condition, a).map(listFormatter).join(' ') + " → ";
+        s += assign(r.action, a).map(listFormatter).join(' ') + "."
+        return s;
+    }
+
+    function listFormatter(l) {
+        if (l instanceof Array) return '('+l.map(listFormatter).join(' ')+')'
+        else if (l===null) return "nil";
+        return l.toString();
+    }
+
+    function randomize(arr) {
+        let arr2 = [];
+        while (arr.length>0) {
+            let i = Math.floor(Math.random()*arr.length);
+            arr2.push(arr.splice(i, 1)[0]);
+        }
+        return arr2;
+    }
+
+    function scoreOrder(s, t) {
+        if (s.length===0) 
+            if (t.length===0) return 0;
+            else return 1;
+        else if (t.length===0) return -1;
+        else if (s[0]===t[0]) {
+            return selTactL.value==='lru' ? scoreOrder(s.slice(1), t.slice(1)) : 0;
+        }
+        else return s[0]-t[0];
+    }
+
+    // 読み込み，内部表現への変換
+
+    function compile() {
+        pM = pmReader(PM.innerText);
+        wM = wmReader(WM.innerText);
+    }
+
+    function pmReader(txt) {
+        let src = txt.replace(/;.*[\r\n]+/g,"").replace(/[\r\n]+/g,"");
+        let dst = src.split(".").filter((x)=>!x.match(/^\s*$/)).map(ruleReader);
+        dst.forEach((x,i)=>{x.score-=i/100;})
+        return dst;
+    }
+
+    function ruleReader(rule) {
+        let [dum,scr,nam,args,cond,act]
+            = rule.match(reRule).map((x)=>x?x.trim():"");
+        args = args.length===0 ? [] : args.split(/,\s*/);
+        let ass = new Map(args.map((x,i)=>[x, "$"+(i+1)]));
+        cond = assign(listReader(cond), ass); act = assign(listReader(act), ass);
+        return { score:scr-0, name:nam, args:Array.from(ass.values()), condition:cond, action:act, src:dum };
+    }
+
+    function wmReader(txt) {
+        let src = txt.replace(/;.*[\r\n]+/g,"").replace(/[\r\n]+/g,"");
+        let wm = listReader(src.trim());
+        return wm;
+    }
+
+    function listReader(str) {
+        let lst = [];
+        let stk = [lst];
+        while (str.length) {
+            let mat = str.match(/^\s*(\(|\)|[^()\s]+)/);
+            switch (mat[1]) {
+            case "(":
+                stk.unshift([]);
+                stk[1].push(stk[0]);
+                break; 
+            case ")":
+                stk.shift();
+                break;
+            default: stk[0].push(mat[1]);
+            }
+            str = str.slice(mat[0].length);
+        }
+        return lst;
+    }
+
+    // 表示
+    function showCs() {
+        CS.innerHTML = cS.map((rs, i)=>ruleFormatter(...rs)).join("\n");
+        markRules("CS");
+    }
+
+    function showWm() {
+        WM.innerText = wM.map(listFormatter).join("\n");
+    }
+
+    // パターン照合
+    let cS; // list of [rule, assignment]
+
+    function patternMatching(pm, wm) {
+        cS = [];
+        for (let r of pm) {
+            cS = cS.concat(condMatching(r.condition, wm, new Map(), 
+                                        [selTactO.value==='ord' ? -r.score : Math.round(-r.score)]
+                                        ).map((a)=>[r, a]));
+        }
+        cS = randomize(cS);
+        cS.sort((x, y)=>scoreOrder(x[1].score, y[1].score));
+    }
+
+    function condMatching(c, wm, a, s) {
+        let asss = []   // list of assignments
+        if (c.length === 0) {
+            a.score = s;
+            return [a];
+        }
+        for (let i=0; i<wm.length; i++) {
+            let b = termMatching(wm[i], c[0], a);
+            if (b !== null) asss.push(...condMatching(c.slice(1), [...wm.slice(0, i), ...wm.slice(i+1)], b, [...s, i+1]));
+        }
+        return asss;
+    }
+
+    // 右辺実行
+    function doAction(rs) {
+        let nullMap = new Map();
+        let wmSrc = WM.innerText;
+        let csSrc = CS.innerText;
+        let rmv = assign(rs[0].condition, rs[1]);
+        let add = assign(rs[0].action, rs[1]);
+        // let keep = rmv.filter((t)=>add.some((s)=>termMatching(t,s,nullMap)));
+        // rmv = rmv.filter((t)=>!keep.some((s)=>termMatching(t,s,nullMap)));
+        // add = add.filter((t)=>!keep.some((s)=>termMatching(t,s,nullMap)));
+        for (t of rmv) {
+            wmSrc = wmSrc.replace(listFormatter(t), '<del>$&</del>')
+            // csSrc = csSrc.replace(listFormatter(t), '<del>$&</del>')
+            wM = wM.filter((s)=>listFormatter(s)!==listFormatter(t));
+        }
+        wmSrc += add.map((s)=>`\n<span class="red">${listFormatter(s)}</span>`).join("");
+        // add.forEach((s)=>{
+        //     csSrc = csSrc.replace(listFormatter(s), '<span class="red">$&</span>');
+        // });
+        wM.push(...add);
+        WM.innerHTML = wmSrc;
+        CS.innerHTML = csSrc.replace(/:([^:→]*)→([^.]*)./u, ':<del>$1</del>→<span class="red">$2</span>.');
+        drawPic();
+    }
+
+    // 描画
+    let nullMap = new Map();
+
+    function drawPic() {
+        document.getElementById("p2").src
+            = (termFind(wM, ["天井", "バナナ"])) ? "ape2c.png"
+            : (termFind(wM, ["床上", "バナナ"])) ? "ape2f.png"
+            : (termFind(wM, ["床上", ["剥いた", "バナナ"]])) ? "ape2pb.png"
+            : (termFind(wM, ["床上", ["皮", "バナナ"]])) ? "ape2p.png"
+            : "ape2e.png"; 
+        document.getElementById("p3").src
+            = (termFind(wM, ["持つ", "右手", "棒"])) ? "ape3r.png"
+            : (termFind(wM, ["持つ", "左手", "棒"])) ? "ape3l.png"
+            : "ape3e.png"; 
+        document.getElementById("p4").src
+            = (termFind(wM, ["持つ", "右手", "石"])) ? "ape4s.png"
+            : (termFind(wM, ["持つ", "右手", "棒"])) ? "ape4w.png"
+            : (termFind(wM, ["持つ", "右手", "バナナ"])) ? "ape4b.png"
+            : (termFind(wM, ["持つ", "右手", ["剥いた", "バナナ"]])) ? "ape4pb.png"
+            : (termFind(wM, ["持つ", "右手", ["皮", "バナナ"]])) ? "ape4p.png"
+            : "ape4e.png";
+        document.getElementById("p5").src
+            = (termFind(wM, ["天井", "バナナ"]) && termFind(wM, ["持つ", "$0", "棒"])) ? "ape5ru.png"
+            : (termFind(wM, ["持つ", "左手", "バナナ"])
+                || termFind(wM, ["持つ", "左手", ["剥いた", "バナナ"]])) ? "ape5l.png"
+            : (termFind(wM, ["満腹"]) && termFind(wM, ["持つ", "左手", ["皮", "バナナ"]])) ? "ape5ls.png"
+            : termFind(wM, ["満腹"]) ? "ape5rs.png"
+            : "ape5r.png";
+        document.getElementById("p6").src
+            = (termFind(wM, ["持つ", "左手", "石"])) ? "ape6s.png"
+            : (termFind(wM, ["持つ", "左手", "棒"])) ? "ape6w.png"
+            : (termFind(wM, ["持つ", "左手", "バナナ"])) ? "ape6b.png"
+            : (termFind(wM, ["持つ", "左手", ["剥いた", "バナナ"]])) ? "ape6pb.png"
+            : (termFind(wM, ["持つ", "左手", ["皮", "バナナ"]])) ? "ape6p.png"
+            : "ape6e.png";
+        document.getElementById("p7").src = (termFind(wM, ["床上", "棒"])) ? "ape7f.png" : "ape7e.png";
+        document.getElementById("p8").src = (termFind(wM, ["床上", "石"])) ? "ape8f.png" : "ape8e.png";
+    }
+
+    function termFind(wM, t) {
+        for (let t0 of wM) {
+            if (termMatching(t0, t, nullMap) !== null) return true;
+        }
+        return false;
+    }
+
+</script>
+</body>
+</html>
