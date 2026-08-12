@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.marp": "markdown"
+    },
+    "lpubsppop01.autoTimeStamp.modifiedTimeStart": "[lL]ast[ -_][mM]odified *: ",
+    "lpubsppop01.autoTimeStamp.momentFormat": "YYYY-MM-DD HH:mm:ss Z",
+    "markdown-preview-enhanced.breakOnSingleNewLine": false,
+    "markdown.marp.html": "all",
+    "markdown.marp.breaks": "inherit",
+    "markdown.marp.exportType": "html",
+    "markdown-preview-enhanced.enableEmojiSyntax": false,
+    "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true
+}
