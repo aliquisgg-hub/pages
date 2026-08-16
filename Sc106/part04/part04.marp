@@ -1,0 +1,131 @@
+---
+title: Sc106(1) part 4
+last_modified: 2024-05-17 15:18:18
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# 写像（関数） (2)
+<!-- 
+4. 写像（関数） (1) ― 写像の基礎，単射・全射・全単射，矢線図，グラフ
+5. 写像（関数） (2) ― 合成写像，逆写像，種々の写像（関数）
+ -->
+___
+## 写像の合成
+$f:D→R,\ g:D^\prime→R^\prime\ \ (但し\ R=D^\prime)$ に対して，  
+*$f\,と\,g\,の$* **合成写像 $g\!\circ\! f$** $:D→R^\prime$ は以下のように定められる．
+
+&emsp;　　$\forall x\in D,\ \ g\!\circ\!f(x)=g(f(x))\ (\in R^\prime)$
+
+すなわち，
+
+&emsp;　　$g\!\circ\!f\ :\ x\mapsto g(f(x))$
+___
+## 写像の合成
+![bg h:600](comp.svg)
+___
+## 合成写像の例 (p.9)
+- $f(x)=2x+1,\ g(x)=x^2$ $(f,g:\boldsymbol R→\boldsymbol R)$ のとき，
+
+  $g\!∘\!f(x)=g(f(x))=g(2x+1)=(2x+1)^2$  
+  $f\!∘\!g(x)=f(g(x))=f(x^2)=2x^2+1$
+
+- $f(x)=xの母,\ g(x)=xの父$ のとき，
+  $$
+  g\!∘\!f(x)=g(f(x))=g(xの母)=\!「xの母」\!の父=xの母方の祖父\\  
+  f\!∘\!g(x)=f(g(x))=f(xの父)=\!「xの父」\!の母=xの父方の祖母
+  $$
+___
+## 恒等写像との合成
+$D$上の恒等写像を $\boldsymbol 1_D$，$R$上の恒等写像を $\boldsymbol 1_R$ と表すものとする  
+任意の写像 $f:D\rightarrow R$ と $\boldsymbol 1_D,\boldsymbol 1_R$ について，以下の性質が成り立つ
+$$
+f\circ\boldsymbol 1_D=\boldsymbol 1_R\circ f = f
+$$
+$D=R$ なら，$\boldsymbol 1_D=\boldsymbol 1_R=\boldsymbol 1$ として，
+$$
+f\circ\boldsymbol 1=\boldsymbol 1\circ f = f
+$$
+となる (写像の合成を写像同士の演算と考えると，$\boldsymbol 1$ は単位元となる)
+___
+## 〔補足〕単位元，逆元
+- 集合 $A$ で閉じている任意の演算 $\star$ と $A$ 
+  の任意の要素 $x$ について
+  $$
+  x\star u=u\star x=x
+  $$
+
+  となるような $u$ を演算 $\star$ の単位元という
+- また，
+  $$
+  x\star v=v\star x=u\quad(u: 単位元)
+  $$
+  となるような $v$ を $x$ の逆元という  
+  （足し算の $0,\ -x$，掛け算の $1,\ \displaystyle\frac1x$ を考えてみよう）
+<!--
+このあたり（演算）は，3週間ほど先にもう少し詳しくやります．
+-->
+___
+## 逆写像
+- 写像 $f:D→R$ に対して
+  $$
+  f(x)=y\quadならばその時に限り\quad g(y)=x
+  $$
+
+  となるような写像 $g:R→D$ が存在するとき，$f$
+  は**可逆**であるといい，$g$ を *$f\,の$* **逆写像** という
+- $f$ の逆写像は **$f^{-1}$** と表す
+- *$f$ が可逆である (逆写像が存在する) ことと，$f$
+  が1対1上への写像 (全単射) であることは同値である*
+___
+<!-- _class: split -->
+## 逆写像の例
+- (p.9)  
+  $f:\boldsymbol R→\boldsymbol R,$  
+  $f(x)=2x+1$ <!--  -->のとき  
+  $\displaystyle f^{-1}(y)=\frac{y-1}2$  
+  $$
+  \left(\begin{array}{l}
+  2x+1=y\ とすると\\
+  x=\displaystyle\frac{y-1}2
+  \end{array}\right)
+  $$
+
+###### ![w:600](inv.svg)
+___
+## 逆写像の性質
+任意の写像 $f:D\rightarrow R$ について，以下の性質が成り立つ  
+なお，$\boldsymbol 1_D,\boldsymbol 1_R$ は各々
+$D,R$ 上の恒等写像を表すものとする
+$$
+f^{-1}\circ f=\boldsymbol 1_D,\quad f\circ f^{-1}=\boldsymbol1_R
+$$
+$D=R$ なら，$\boldsymbol 1_D=\boldsymbol 1_R=\boldsymbol 1$ として，
+$$
+f^{-1}\circ f=f\circ f^{-1}=\boldsymbol 1
+$$
+となる (写像の合成演算と考えると，$f^{-1}$ は $f$ の逆元となる)
+___
+## さまざまな関数 (p.36, lec.6)
+実数関数として代表的なものを以下に挙げる
+- 多項式関数：
+  $f(x)=a_nx^n+\cdots+a_2x^2+a_1x+a_0$
+- 指数関数：
+  $f(x)=a^x$　($a$ を底と呼ぶ)
+- 対数関数：
+  $f(x)=log_ax$　($a$ を底と呼ぶ)  
+  ※ 指数関数の逆関数．底 $a$ の省略時の底は $e≒2.71828$ 
+- 三角関数：
+  $f(x)=\sin x$，$f(x)=\cos x$，$f(x)=\tan x$ など  
+  ※ $x$ (角度) の単位はラジアンを用いることが多い
+
+※ 詳細は Sc104(2)解析学基礎 で！

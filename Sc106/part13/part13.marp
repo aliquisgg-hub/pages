@@ -1,0 +1,465 @@
+---
+title: Sc106(1) part 13
+last_modified: 2026-07-15 12:54:38 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# 確率統計 (2)
+<!-- 
+13. 確率統計 (1) ― 尺度水準，基本統計量
+14. 確率統計 (2) ― 正規化，度数分布，共分散，相関係数，場合の数
+   -  標準得点，偏差値を含む
+15. 確率統計 (3) ― 標本空間，事象，確率
+   -  条件付確率を含む
+   -  確率変数，確率分布，期待値を含む
+-->
+___
+<!-- _class: split -->
+## (前回のおさらい) 統計データの種類
+-  **質的データ** (定性的尺度)
+   -  名義尺度
+   -  順序尺度
+-  **量的データ** (定量的尺度)
+   -  間隔尺度
+   -  比例尺度
+<div>
+
+-  (量的データの別の分類)
+   -  連続データ  
+   -  離散データ
+
+   <!-- ※ 質的データも離散データとみなせなくもないが，ここでは含めないこととする -->
+</div>
+
+___
+<!-- _class: split -->
+## (前回のおさらい) 1変数データの基本統計量
+-  *代表値*  
+   -  **平均値**
+   -  **中央値** (メジアン)
+   -  **最頻値** (モード)
+<!-- 代表値は「ほぼ真ん中の値」を用いることが多い -->
+<div>
+
+-  *散らばりの指標*
+   -  **分散**・**標準偏差**
+      -  不偏分散・不偏標準偏差
+   -  *四分位数*，*四分位偏差*
+
+   ※ 上記の散らばりの指標は，  
+   　 すべて量的データに用いられる
+<!-- 質的データに対しては「エントロピー」がある -->
+</div>
+
+___
+## 標準得点・偏差値
+-  各 $x_i$ に対し，$z_i = \displaystyle\frac{x_i-\overline x}s$ で与えられる値を**標準得点** (Z得点)  
+   という
+   -  一次変換によって，*平均 0，標準偏差 1* になるように*正規化*したデータ
+-  各 $x_i$ に対し，$t_i = 10×\displaystyle\frac{x_i-\overline x}s+50$ で与えられる値を**偏差値**  
+   (T得点) という
+   -  一次変換によって，*平均 50，標準偏差 10* になるように*正規化*  
+      したデータ
+___
+## 1変数データの分布 ― 度数分布表
+<div style="font-size:95%">
+
+-  質的データ，離散的データの場合，各値ごとの**度数**を数えて並べる
+   -  名義尺度の場合，度数の多い順に並べかえることが多い
+   -  順序尺度の場合，その順序に従って並べる
+-  連続的データの場合，有限個の区間 (通常は等間隔) に区切って度数を数え，値の昇順
+   (または降順) に並べる
+-  各度数の総度数に対する割合を**相対度数**という
+
+※ 基本統計量では捉えきれない*分布の特徴をとらえられる*  
+※ 横幅で区間の長さ，*面積で度数を表す長方形*を (くっつけて)  
+　 横に並べたグラフを*ヒストグラム*という
+<!-- 
+長方形の幅が一定の場合，長方形の高さが度数に比例する
+→ 棒グラフに類似
+ -->
+</div>
+
+___
+## ヒストグラムの例
+<div style="font-size:85%;">
+
+|値         | 1| 2| 3| 4| 5| 6|&ensp;7|&ensp;8|&ensp;9|10|11|12|13|14|
+|:----------|-:|-:|-:|-:|-:|-:|-:|-:|-:|-:|-:|-:|-:|-:|
+|度数       | 1| 1| 3| 2| 1| 1| 0| 0| 0| 0| 0| 0| 0| 1|
+|相対度数 (%)|10|10|30|20|10|10| 0| 0| 0| 0| 0| 0| 0|10|
+
+&emsp;　　　　　　　　　⇩　質的データ，離散的データの場合は等間隔とする
+</div>
+
+###### ![w:800](hist1.svg)
+___
+〔区間の幅が不均等なヒストグラムの例 ([総務省統計局](https://www.stat.go.jp/naruhodo/4_graph/shokyu/histogram.html)から引用)〕
+
+###### ![https://www.stat.go.jp/naruhodo/img/picture/4_8_10.png](4_8_10.png)
+
+___
+## 2変数の関係を表す指標 — 共分散
+対になった$n$組のデータ $(x_1, y_1) \cdots (x_n, y_n)$ について，$x_1\cdots x_n$ と
+$y_1\cdots y_n$ の各々の平均値を $\overline x, \overline y$ とする
+- **共分散** $(s_{xy})$： $x_i,\,y_i$ の偏差の積の平均値
+   $$
+   \begin{split}
+    s_{xy}&=\frac1{\ n\ }\sum_{i=1}^n(x_i-\overline x)(y_i-\overline y)\\
+          &=\left(\frac1{\ n\ }\sum_{i=1}^n x_i\cdot y_i\right) - \overline x\cdot\overline y
+   \end{split}
+   $$
+
+<!-- 
+s_{xy} と s_x，s_y は次元(単位)が異なるので要注意
+-->
+___
+## 2変数の関係を表す指標 — 相関係数
+<div style="font-size:95%">
+
+-  **相関係数** $(r)$： 共分散 $(s_{xy})$ を，$x_1\cdots x_n$ と $y_1\cdots y_n$ の各々の  
+   $\hspace{6em}\underline{標準偏差}の積\ s_x\cdot s_y$ で割ったもの
+   <div style="font-size:90%;">
+
+   $$
+   \begin{split}
+    r&=\frac{s_{xy}}{s_x\cdot s_y}
+      =\frac{1}{s_x\cdot s_y}\cdot\frac1{\ n\ }\sum_{i=1}^n(x_i-\overline x)(y_i-\overline y)\\
+     &=\frac1{\ n\ }\sum_{i=1}^n\frac{(x_i-\overline x)}{s_x}\cdot\frac{(y_i-\overline y)}{s_y}
+   \end{split}
+   $$
+   </div>
+
+※ 各 $x_i,\,y_i$ を*標準得点 (Z得点) に正規化したものの共分散*  
+　 (*正規化した共分散*) と考えられる $(\textcolor{forestgreen}{\underline{-1\leqq r \leqq 1}})$
+<!-- 
+相関係数は無次元になる(単位なし)
+-->
+</div>
+
+___
+## 共分散・相関係数の意味
+<div style="font-size:95%">
+
+-  $(x_i-\overline x)(y_i-\overline y)>0\ 
+      ⇔(x_i\gtrless\overline x\ ∧\ y_i\gtrless\overline y)\; (復号同順)$  
+   $(x_i-\overline x)(y_i-\overline y)<0\ 
+      ⇔(x_i\gtrless\overline x\ ∧\ y_i\lessgtr\overline y)\; (復号同順)$  
+   であることより，
+   -  *$\underline{s_{xy}>0\,(r>0)}$* の場合，2変数の*一方の値が大きい時には  
+      他方も大きい*という関係がある　→　**正の相関**があるという
+   -  *$\underline{s_{xy}<0\,(r<0)}$* の場合，2変数の*一方の値が大きい時には  
+      他方は小さい*という関係がある　→　**負の相関**があるという
+   -  *$\underline{s_{xy}≒0\,(r≒0)}$* の場合，2変数の間に上記のような関係がない  
+      →　**無相関**であるという
+
+<!-- 因果を表すわけではない！ → 偽相関 -->
+</div>
+
+___
+## 数え上げ (場合の数)
+-  場合の数を数え上げることは，確率の計算に必要  
+   　例： さいころの目が偶数である場合の数  
+   　　　 コインを4回投げて，表が2回だけ出る場合の数  
+   　　　 など
+-  場合の数を数えるときは，数えるべきものを*全て1回ずつ*，*正確に数える*ことが重要
+   -  *未カウント (数え漏らし)* をしないように注意
+   -  *ダブルカウント (重複して数えること)* にも注意
+      <!-- 重複していることが分かっていれば，その分を差し引くなど -->
+      <!-- 重複回数が分かっていれば，その回数で割るなど -->
+___
+## 基本的な数え上げ <span style="font-size:95%;">&mdash; 順列</span>
+-  **順列**　$_n{\mathrm P}_r\ :$  
+   　$異なるn個からr個を順に取り出すときの場合の数$ (*順序あり*)
+   $$
+   \begin{split}
+   _n\mathrm P_r &= \overbrace{n×(n-1)×\cdots×(n-r+1)}^{r個} \\[-2ex]
+   &=\frac{n×(n-1)×\cdots×(n-r+1)×\overbrace{(n-r)×\cdots×1}^{(n-r)!}}{(n-r)×\cdots×1}\\
+   &= {\color{forestgreen}\frac{n!}{(n-r)!}}
+   \end{split}
+   $$
+   <!-- テキスト p.90 は間違い! -->
+___
+## 基本的な数え上げ <span style="font-size:95%;">— 組み合わせ・重複順列</span>
+-  **組み合わせ**　$_n\mathrm C_{\,r}\ :$  
+   　$異なるn個から1度にr個を取り出すときの場合の数$ (*順序なし*)
+   $$ _n\mathrm C_{\,r} = \frac{_n\mathrm P_r}{_r\mathrm P_r} = \frac{_n\mathrm P_r}{r!} = {\color{forestgreen}\frac{n!}{r!(n-r)!}}$$
+   <!-- rPr = r!/0! = r! (0!=1) -->
+-  *重複順列*　$_n\mathrm Π_{\,r}\ :$  
+   　$異なるn個から1個取り出して戻す操作をr回行った時の場合の数$  
+   　(*順序あり*，*重複あり*)
+   $$ _n\mathrm Π_{\,r} = {\color{forestgreen}n^r}$$
+___
+## 基本的な数え上げ <span style="font-size:95%;">— 重複組み合わせ</span>
+<div style="font-size:95%;">
+
+-  *重複組み合わせ*　$_n\mathrm H_r\ :$  
+   　$n種類の物から重複を許して1度にr個を選ぶ時の場合の数$  
+   　(*順序なし*，*重複あり*)
+   $$ _n\mathrm H_{\,r} =\ {\color{forestgreen}_{n+r-1}\mathrm C_{\,r}}$$
+   <div style="font-size:95%">
+
+   -  例えば $…$ 3種類の物(A,B,C)から5個選ぶとする (n=3, r=5)  
+      → ABCの順に並べて仕切りを入れる： 例えば AA|BB|C  
+      → ABCを○で置き換える： ○○|○○|○  
+      → 場合の数は，この ○ と | の 7 (= r+(n-1)) 個の記号の並べ方の数  
+      　 $=$ この 7 (= n+r-1) 個の記号の並びのうち，○ になるべき位置を  
+      　 　  5 (=r) か所決める (選ぶ) 場合の数 $=\ _{n+r-1}\mathrm C_{\,r}$
+   </div>
+</div>
+
+___
+## 二項係数
+<div style="font-size:95%">
+
+-  $(1+x)^n$を展開した時の $x^r$の係数を**二項係数**といい, *$\begin{pmatrix}n\\r\end{pmatrix}$* と表す
+-  $\begin{pmatrix}n\\r\end{pmatrix}=\ _n\mathrm C_{\,r} = \displaystyle\frac{n!}{r!(n-r)!}$ である
+-  以下の漸化式が成り立つ
+   $$
+   \begin{array}{l}
+   \begin{pmatrix}n\\0\end{pmatrix}=\begin{pmatrix}n\\n\end{pmatrix}=1　(n≧0)\\[2ex]
+   \begin{pmatrix}n\\r\end{pmatrix}
+   =\begin{pmatrix}n-1\\r-1\end{pmatrix}+\begin{pmatrix}n-1\\r\end{pmatrix}　(0<r<n)
+   \end{array}
+   $$
+</div>
+
+___
+## 二項定理
+<div style="font-size:95%">
+
+-  二項係数の定義から  
+   $$(1+w)^n=\begin{pmatrix}n\\0\end{pmatrix}+\begin{pmatrix}n\\1\end{pmatrix}w+
+   \cdots+\begin{pmatrix}n\\n\end{pmatrix}w^n
+   =\displaystyle\sum_{k=0}^n\begin{pmatrix}n\\k\end{pmatrix}w^k$$  
+   であることより，  
+   $$(x+y)^n=\begin{pmatrix}n\\0\end{pmatrix}x^n+
+   \begin{pmatrix}n\\1\end{pmatrix}x^{n-1}y+
+   \cdots+\begin{pmatrix}n\\n\end{pmatrix}y^n
+   =\displaystyle\sum_{k=0}^n\begin{pmatrix}n\\k\end{pmatrix}x^{n-k}y^k$$
+   <!-- w に y/x を代入して両辺に x^n を掛けると示せる -->
+-  特に，$x=y=1$ のとき，<span style="font-size:95%;">$\begin{pmatrix}n\\0\end{pmatrix}+\cdots+
+   \begin{pmatrix}n\\n\end{pmatrix}=\displaystyle\sum_{k=0}^n\begin{pmatrix}n\\k\end{pmatrix}=2^n$</span>
+</div>
+
+<!-- テキスト p.90，kの下限が誤り！ -->
+<!--
+___
+## 標本空間・事象
+-  **標本空間** $\mathnormal{\Omega}$： 起こりうる全ての「単一の出来事」(*標本*，*点*) の集合  
+   　　　　　　&ensp;(ここでは有限集合としておく)
+   <!-- 単一の出来事： それ以上分けられない出来事 - ->
+-  **事象** $A$： 標本空間 $\mathnormal{Ω}$ の部分集合 (「単一の出来事」の集合)  
+   　　　　&ensp;直観的には，$A$ 中の「単一の出来事」のいずれかが  
+   　　　　&ensp;起こるという事象を表す  
+   　　　　&ensp;(全事象の集合： $\mathnormal Ω$ のべき集合 $\mathscr P(\mathnormal Ω)$)  
+
+   <b>例：</b> さいころを1回振ったときの目の標本空間 ＝ $\{1,2,3,4,5,6\}$  
+   　　 さいころを1回振ったときの目が偶数という事象 ＝ $\{2,4,6\}$
+___
+## 余事象・排反事象・和事象・積事象
+-  事象 $A$ に対して，$\overline A$ を $A$の*余事象*という  
+   (事象 $A$ が起こらないという事象)
+-  事象$A$と事象$B$が同時に起こらないとき，$A$と$B$は互いに*排反*である，
+   または*排反事象*であるという (余事象は排反事象でもある)
+-  事象 $A∪B$ を $A,B$ の**和事象**という  
+   (事象 $A,B$ のいずれか (または両方) が起こるという事象)
+-  事象 $A∩B$ を $A,B$ の**積事象**という  
+   (事象 $A,B$ の両方が起こるという事象)
+___
+## 確率
+-  標本空間 $\mathnormal{Ω}$ 上の確率 $P$ は，$\mathnormal{Ω}$ の任意の事象 (部分集合)
+   に $[0,1]$ の値を対応付ける関数 $(P:\mathscr P(\mathnormal Ω)→[0,1])$
+   で，以下の条件を満たすものである
+   1. 任意の事象 $A$ に対して *$0≦P(A)≦1$*
+   1. *$P(\mathnormal Ω)=1$*
+   1. $A,B$ が互いに素 $(A∩B=\phi)$ ならば，  
+      *$P(A∪B)=P(A)+P(B)$*
+___
+## 確率の性質
+-  $P(\overline A)\!+\!P(A)\!=\!P(\overline A\!∪\!A)\!=\!P(\mathnormal Ω)\!=\!1$
+   より *$P(\overline A)\!=\!1-P(A)$* 
+-  $\phi=\overline{\mathnormal Ω}$ より *$P(\phi)=0$*
+-  $\mathnormal Ω$ の任意の標本 $ω$に対して $P(\{ω\})$ が定まれば，$\mathnormal Ω$
+   の全ての事象の確率が定まる (その事象の標本の確率をすべて足せばよい)
+   <!-- {ω} は根元事象 - ->
+   -  一般的に，$\mathnormal Ω$ の標本の確率はすべて等しいと考える場合が多い
+
+      -  例えばさいころを1回振ったときの，各々の出目の確率は全て
+         $\frac16$ とするなど
+
+      → 確率を $\frac{(事象に含まれる標本(場合)の数)}{(全ての標本(場合)の数)}$
+         として計算できる
+___
+## 確率の計算の例
+-  さいころを2回投げた時の出目の標本空間：  
+   $\mathnormalΩ=\{(x,y) | x,y\in\{1,2,3,4,5,6\}\}$，　$\#(\mathnormalΩ)=6^2=36$
+-  さいころを2回投げた時の出目の和が$7$である事象：  
+   $A=\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}$，　$\#(A)=6$
+-  $\mathnormalΩ$ の各標本の確率が等しいとすると，その確率は
+   $\displaystyle\frac1{\#(\mathnormalΩ)}$
+-  ゆえに，  
+   $$P(A)=\frac1{\#(\mathnormalΩ)}×\#(A)
+   =\frac{(事象Aに含まれる標本(場合)の数)}{(全ての標本(場合)の数)}=\frac16$$
+___
+## 条件付き確率
+-  事象$B$ が起こった場合に限定した時の事象$A$の確率を  
+   **条件付き確率**といい，$P(A|B)$ と表す
+   $$
+   \begin{split}
+   {\color{forestgreen}P(A|B)}
+   &{\color{forestgreen}=\frac{事象A∩Bが起こる場合の数}{事象Bが起こる場合の数}}
+    =\frac{\frac{事象A∩Bが起こる場合の数}{全ての場合の数}}
+         {\frac{事象Bが起こる場合の数}{全ての場合の数}}\\[2ex]
+   &{\color{forestgreen}=\frac{P(A∩B)}{P(B)}}
+   \end{split}
+   $$
+-  上式の変形より，以下が成り立つ
+   $${\color{forestgreen}P(A∩B)=P(A|B)\cdot P(B)=P(A)\cdot P(B|A)}$$
+___
+## 独立事象
+-  2つの事象 $A,B$ について *$P(A∩B)=P(A)\cdot P(B)$* (積の法則) が成り立つとき，$A$と$B$は互いに**独立**であるという<!-- ，または**独立事象**であるという - ->
+-  前スライドの式より，*$\underline{AとBが互いに独立}$* であるとは，  
+   *$\underline{P(A)=P(A|B)\ \ かつ\ \ P(B)=P(B|A)}$*，すなわち
+   -  事象 $B$ の生起の有無にかかわらず，事象 $A$ の生起確率は不変
+   -  事象 $A$ の生起の有無にかかわらず，事象 $B$ の生起確率は不変
+
+   ということを意味する
+___
+## 確率変数
+-  **確率変数** $X$： 標本空間 $\mathnormalΩ$ から
+   $\boldsymbol R\,(または\,\boldsymbol Z, \boldsymbol N\,など)$
+   への写像
+   -  例1： $\mathnormal Ω=\{ω|ω\,は日本人\}$，$X(ω)=(ω\,の血液型)$
+   -  例2： $\mathnormal Ω=\{ω|ω\,は日本人\}$，$X(ω)=(ω\,の身長)$
+-  $X$ の像 $X(\mathnormalΩ)$ が離散的な値 (整数値など) を取るとき，$X$
+   は*離散型確率変数*といい，連続的な値 (実数値) を取るとき，$X$ は*連続型確率変数*という
+   -  上の例1は，$X(\mathnormal Ω)=\{\mathsf{A,B,O,AB}\}$ なので，離散型確率変数
+   -  上の例2は，$X(\mathnormal Ω)\subset\boldsymbol R$ なので，連続型確率変数
+___
+## 確率分布
+-  確率変数がどんな確率でどんな値をとるかを**確率分布**という
+-  離散的確率変数 $X$ に対して，$X(ω)=a\ (a\in X(\mathnormal Ω))$ となる  
+   確率を *$\underline{P(X=a)}$* と表し，$各\,a\in X(\mathnormal Ω)$ に対する $P(X=a)$ を表したものを
+   *(離散型) 確率分布*といい，以下のように表せる
+   $$
+   P(X=a) = \sum_{ω_i\in\{ω\in\mathnormal Ω|X(ω)=a\}}P(\{ω_i\})
+   $$
+   $P(\{ω_i\})$ がすべて $\frac1{\#(\mathnormalΩ)}$ と仮定すると，
+   $$
+   P(X=a) = \frac{\#(\{ω\in\mathnormal Ω|X(ω)=a\})}{\#(\mathnormalΩ)}
+   $$
+___
+### 例
+-  $\mathnormal Ω=\{ω|ω\,は日本人\}$，$X(ω)=(ω\,の血液型)$ とする
+-  $\mathnormal Ω$ から無作為に1人選び出す確率が等確率
+   $(\frac1{\#(\mathnormalΩ)}=\frac1{(日本人の人数)})$ と仮定すると，
+   $$
+   \begin{split}
+   P(X=\mathsf A)&=\sum_{ω_i\in\{ω\in\mathnormal Ω|X(ω)=\mathsf A\}}P(\{ω_i\})
+   　=\sum_{ω_i\in\{ω\in\mathnormal Ω|X(ω)=\mathsf A\}}\frac1{\#(\mathnormalΩ)}\\[4ex]
+   &=\frac{\#(\{ω\in\mathnormal Ω|X(ω)=\mathsf A\})}{\#(\mathnormalΩ)}
+   =\frac{(\mathsf A型の人数)}{(日本人の人数)}
+   \end{split}
+   $$
+___
+## 確率質量関数
+-  離散型確率変数 $X$ の像 $X(\mathnormal Ω)$ の各値 $a$ に対して，$P(X=a)$ を対応付ける関数
+   $f_X$ を*確率質量関数*とよぶ $(f_X(a)=P(X=a))$
+   -  *確率質量関数は離散型確率変数の確率分布を表す*とみなせる  
+      例： $\mathnormal Ω=\{ω|ωはさいころの独立試行\}，X(ω)=(ω の目)$  
+###### ![h:280](diceroll.svg)
+___
+## (連続型確率変数の )確率分布・確率密度関数
+-  $X(\mathnormalΩ)=\boldsymbol R$ であるような連続型確率変数 $X$ において，  
+   任意の $a,b\in\boldsymbol R$ に対して $P(a≦X≦b)=P(X\in[a,b])$ を  
+   定めることができれば，$X$ の確率分布を定めたことになる．
+-  そのような確率分布を定める，
+   $$
+   P(a≦X≦b)=\int_a^bf_X(x)dx
+   $$
+   となるような関数が存在するとき，その関数 $f_X$ を*確率密度関数*と呼ぶ
+___
+<!-- _class: split - ->
+### 例
+<div>
+
+-  平均 $0$，標準偏差 $1$ の*正規分布*  
+   (後述) に従う確率変数$X$の確率  
+   分布は，右図のようなグラフの  
+   確率密度関数で表される
+-  区間 $(a,b)$ の値をとる確率  
+   $P(a<X<b)$ は，斜線部の  
+   面積 (積分値) で表される
+
+   ※ グラフと横軸の間の面積  
+   　 (全区間の積分値) は $1$ になる
+</div><div><br><br>
+
+   ###### ![](phi.svg)
+</div>
+
+___
+## 確率質量関数・確率密度関数の性質
+-  離散型確率変数 $X$ の確率質量関数 $f_X$ について，以下が成り立つ
+   $$
+   \sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}f_X(a)
+   =\sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}P(X=a)=P(\mathnormalΩ)=1
+   $$
+-  $X(\mathnormalΩ)=\boldsymbol R$ であるような連続型確率変数 $X$ の確率密度関数
+   $f_X$ について，以下が成り立つ
+   $$
+   \int_{-\infin}^\infin f_X(x)dx=P(\mathnormalΩ)=1
+   $$
+___
+## (離散型確率分布の) 平均 (期待値)，分散
+-  値が数値であるような離散的確率変数$X$の**平均** (**期待値**) *$E[X]$* は,
+   $$E[X]=\sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}a\,f_X(a)
+   =\sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}a\,P(X=a)$$
+-  同様に，値が数値であるような離散的確率変数 $X$ の**分散** *$V[X]$* は,
+   $$
+   　　\begin{split}
+   V[X]&=E[(X-E[X])^2]=\sum_{a\in X(\mathnormalΩ)}\hspace{-0.3em}(a-E[X])^2P(X=a)\\
+       &=E[X^2]-(E[X])^2
+       =\sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}a^2P(X=a)-(E[X])^2
+   \end{split}　　
+   $$
+___
+## (連続型確率分布の) 平均 (期待値)，分散
+-  値が実数であるような連続的確率変数$X$の**平均** (**期待値**) *$E[X]$* と  
+   **分散** *$V[X]$* は以下の通り
+   $$
+   \begin{split}
+   E[X]&=\int_{-\infin}^\infin x\,f_X(x) dx\\
+   V[X]&=\int_{-\infin}^\infin (x-E[X])^2f_X(x) dx\\
+       &=\int_{-\infin}^\infin x^2f_X(x) dx -(E[X])^2
+   \end{split}
+   $$
+___
+## 確率変数を変換したときの平均 (期待値)，分散
+-  $E[pX+qY+r]=p\,E[x]+q\,E[y]+r$
+-  $E[g(x)]=\displaystyle\sum_{a\in X(\mathnormalΩ)}\hspace{-0.5em}g(a)P(X=a)$
+-  $V[pX+q]=p^2\,V[X]$
+___
+## 正規分布
+-  身長や体重や測定誤差など，自然界のさまざまなデータの多くは，
+   その分布がおおよそ*正規分布*と呼ばれる分布になるといわれている
+-  平均 $μ$，分散 $σ^2$ の正規分布の確率変数 $X$ の確率密度関数 $f_X$ は
+   $$
+   f_X(x)=\frac{1}{\sqrt[]{2\pi\sigma^2}}e^{-\frac{(x-μ)^2}{2\sigma^2}}
+   $$
+   で表される．
+- [スライド20](#20)に類似した，左右対称の釣り鐘型の分布となる
+-  統計的な推定では，種々の分布を正規分布と仮定することが多い
+-  他にもさまざまな確率分布がある
+-->

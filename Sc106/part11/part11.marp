@@ -1,0 +1,396 @@
+---
+title: Sc106(1) part 11
+last_modified: 2025-06-30 14:42:35 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# 行列と行列式 (2)
+$$
+\begin{pmatrix}
+今週は便宜上，ベクトルを矢印つき\ \vec x\ \\
+ではなく，太字\ \boldsymbol x\ で表すことにします
+\end{pmatrix}
+$$
+<!-- 
+11. 行列と行列式 (1) ― 行ベクトル，列ベクトル，行列の演算
+12. 行列と行列式 (2) ― 逆行列，行列式
+   - 固有値，固有ベクトルも？
+-->
+___
+## 行列の積の性質
+
+- $A,B,C$ を任意の行列，$k$ を任意のスカラーとすると，  
+  以下が成り立つ  
+  &emsp;
+
+  1. $(AB)C=A(BC)$ 　 (結合律) 
+  2. $A(B+C)=AB+AC$　 (左分配律) 
+  3. $(B+C)A=BA+CA$　 (右分配律) 
+  4. $k(AB)=(kA)B=A(kB)$
+
+※ *$\underline{交換律\ (AB=BA)\ は，一般には成り立たない}$*
+___
+## 転置行列
+- $m\times n$ 行列 $A$ の*行と列を入れ替えた* $n\times m$ 行列 
+  (*$\underline{i,j‐成分が\,}$ $\underline{A\,の\,j,i‐成分と等しい}$* $n\times m$ 行列) は
+$A$ の**転置行列**といい，  
+  *$\underline{^t\!A}$* または *$\underline{A^\mathsf T}$* のように書く
+
+  $A=\begin{pmatrix}a_{11}&\cdots&a_{1n}\\\vdots&\ddots&\vdots\\a_{m1}&\cdots&a_{mn}\end{pmatrix}$
+  ならば，
+  $^t\!A=\begin{pmatrix}a_{11}&\cdots&a_{m1}\\\vdots&\ddots&\vdots\\a_{1n}&\cdots&a_{mn}\end{pmatrix}$
+
+  $(A=[a_{ij}]$ ならば，$^t\!A=[a_{ji}])$
+___
+## 転置行列の性質
+- $A,B$ を任意の行列，$k$ を任意のスカラーとすると，  
+  以下が成り立つ  
+  &emsp;
+
+  1. $^t(A+B)={^t\!A}+{^t\!B}$
+  2. $^t(kA)=k\,{^t\!A}$
+  3. $^t(AB)={^t\!B}\,{^t\!A}$　　　※ $A,B$ が入れ替わることに注意
+  4. $^t(^t\!A)=A$
+___
+## 正方行列
+
+- 行数と列数の等しい行列を**正方行列**という．正方行列 ($n\times n行列$) の行数
+  ($=列数=n$) をその正方行列の*次数* (または位数) といい，次数 $n$ 
+  の正方行列を *$\underline{n次の正方行列}$* という
+
+- ($n$次の) 正方行列の $i,i$-成分 $(i=1\sim n)$ を *(主)対角成分*という
+- 対角成分が $1$ で，それ以外の成分が $0$ であるような行列は *$\underline{(n次の)}$*
+**単位行列**と呼ばれ，*$I$* で表す
+- 単位行列の転置行列は単位行列 $(^t\!I=I)$ であり，単位行列$I$ は  
+  行列積における単位元である $(∀A，AI=IA=A)$
+___
+## 1次変換 (1)
+
+- $n$次の正方行列 $A$ と $n$次元列ベクトル $\boldsymbol u$ を掛け合わせた
+  $A\boldsymbol u$ は，また $n$次元列ベクトルになる．したがって，$n$次の正方行列は，  
+  $n$次元(列)ベクトルを変換するものとみなすことができる．
+  $$
+  A\boldsymbol u
+  =\begin{pmatrix}
+    a_{11}&\cdots&a_{1n}\\
+    \vdots&\ddots&\vdots\\
+    a_{n1}&\cdots&a_{nn}
+  \end{pmatrix}\begin{pmatrix}u_1\\\vdots\\u_n\end{pmatrix}
+  =\begin{pmatrix}
+    a_{11}u_1+\cdots+a_{1n}u_n\\
+    \vdots\\
+    a_{n1}u_1+\cdots+a_{nn}u_n
+  \end{pmatrix}\\[1ex]
+  $$
+- この $A\boldsymbol u$ の各成分は，$\boldsymbol u$ の各成分の1次式になるので，このような変換を**1次変換**と呼ぶ
+___
+## 1次変換 (2)
+$$
+A=\begin{pmatrix}
+  a & b \\
+  c & d \\
+  \end{pmatrix}に対して,\ 
+\boldsymbol e_x = \begin{pmatrix}1\\0\end{pmatrix},\ 
+\boldsymbol e_y = \begin{pmatrix}0\\1\end{pmatrix},\ 
+\boldsymbol a = \begin{pmatrix}a\\c\end{pmatrix},\ 
+\boldsymbol b = \begin{pmatrix}b\\d\end{pmatrix}
+$$
+とすると，$A=\begin{pmatrix}\boldsymbol a&\hspace{-0.5em}\boldsymbol b\end{pmatrix}$
+と表せ，$A\boldsymbol e_x = \boldsymbol a,\ A\boldsymbol e_y = \boldsymbol b$ となる  
+したがって，任意のベクトル $\boldsymbol u = \begin{pmatrix}u\\v\end{pmatrix}$ は
+$A$ によって  
+$\boldsymbol u'=A\boldsymbol u=A(u\boldsymbol e_x+v\boldsymbol e_y)
+=u\boldsymbol a+v\boldsymbol b$ に変換される
+$$
+\left(\boldsymbol u'は，\boldsymbol a,\boldsymbol b\,を基底とする座標系では
+\begin{pmatrix}u\\v\end{pmatrix},\,元の座標系では
+\begin{pmatrix}ua+vb\\uc+vd\end{pmatrix}\ となる\right)
+$$
+___
+## 1次変換の例
+$$
+A=\begin{pmatrix}
+  3 & 1 \\
+  1 & 2 \\
+  \end{pmatrix}とすると,\ 
+\boldsymbol e_x = \begin{pmatrix}1\\0\end{pmatrix},\ 
+\boldsymbol e_y = \begin{pmatrix}0\\1\end{pmatrix},\ 
+\boldsymbol a = \begin{pmatrix}3\\1\end{pmatrix},\ 
+\boldsymbol b = \begin{pmatrix}1\\2\end{pmatrix},
+$$
+となり，$A\boldsymbol e_x = \boldsymbol a,\ A\boldsymbol e_y = \boldsymbol b$
+より，例えば
+$\boldsymbol u=\begin{pmatrix}2\\2\end{pmatrix}$は $A$
+によって $\boldsymbol u'=A\boldsymbol u = A(2\boldsymbol e_x+2\boldsymbol e_y)
+= 2A\boldsymbol e_x+2A\boldsymbol e_y = 2\boldsymbol a+2\boldsymbol b$ に  
+変換される (次スライドの図を参照)
+$$
+\left(\boldsymbol u'は，\boldsymbol a,\boldsymbol b\,を基底とする座標系では
+\begin{pmatrix}2\\2\end{pmatrix},\,元の座標系では
+\begin{pmatrix}8\\6\end{pmatrix}\ となる\right)
+$$
+___
+## 1次変換の例 (つづき)
+<br>
+
+###### ![w:1152](linear.svg)
+
+___
+## 正則・逆行列
+
+- 正方行列 $A$ に対して $AB=BA=I$ となる正方行列 $B$ が存在するとき，$A$
+  は**正則**であるという
+  - このときの $B$ は，$A$ の**逆行列**といい，*$A^{-1}$* と表現する．
+- 一般に，$AB=I$ と $BA=I$ は同値であることが知られているので，$AB=I$ と $BA=I$ の
+いずれかが成り立てば $AB=BA=I$ は成り立ち，$A$ は正則で $B=A^{-1}$ ということになる．
+
+<!-- 
+AB=I ⇒ A≠0 ∧ B≠0
+AB=I ⇒ AB-I=0 ⇒ (AB-I)A=0 ⇒ ABA-IA=0 ⇒ ABA-A=0
+⇒ ABA-AI=0 ⇒ A(BA-I)=0 ⇒ BA-I=0 ⇒ BA=I
+ -->
+<!-- 
+___
+## 正方行列のべき
+
+- 正方行列 $A$ を $n$回掛け合わせたものを $A^n$ と表す
+  $$
+  A^n=\left\{\begin{array}{ll}
+  I        & (n=0)\\
+  A^{n-1}A & (n>0)
+  \end{array}\right.
+  $$
+- $A$ が正則であるとき，以下が成り立つ
+  $$
+  A^nA^{-1} = A^{-1}A^n = A^{n-1}\\[2ex]
+  \left(\begin{array}{cl}
+  ∵&A^nA^{-1}=(A^{n-1}A)A^{-1}=A^{n-1}(AA^{-1})=A^{n-1}I=A^{n-1}\\
+    &A^{-1}A^n=A^{-1}(AA^{n-1})=(A^{-1}A)A^{n-1}=IA^{n-1}=A^{n-1}
+  \end{array}\right)
+  $$
+ -->
+<!-- 
+___
+$x$ の $n$次多項式 $\displaystyle P(x)=a_0+a_1x+\cdots+a_nx^n=\sum_{i=0}^na_ix^i$ に対して，$x$ を正方行列 $X$ に置き換えて，「正方行列の多項式」のようなもの $\displaystyle P(X)=a_0I+a_1X+\cdots+a_nX^n=\sum_{i=0}^na_iX^i$ を考えることができる．$P(x)=0$ を満たす $x$ を方程式 $P(x)=0$ の解と呼ぶように，$P(X)=0$ ($0$ は零行列) を満たす行列 $X$ を $P(X)$ の*零点*または*根*と呼ぶ．
+ -->
+___
+## 行列式
+- 2次の正方行列 $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ に対し，*$ad-bc$* で計算される値を
+  $A$ の**行列式**といい，*$\det(A),\ |A|,\ 
+  \det\!\!\begin{pmatrix}a&b\\c&d\end{pmatrix},\ \begin{vmatrix}a&b\\c&d\end{vmatrix}$*  
+  のように表す
+- 3次の正方行列 $A=\begin{pmatrix}a&b&c\\d&e&f\\g&h&i\end{pmatrix}$ に対しても，
+  行列式は計算でき，*$aei+bfg+cdh-ceg-bdi-afh$* で与えられる
+___
+<!-- _class: split -->
+### (2次，3次の行列式の計算法)
+
+
+###### ![h:500](det.svg)
+
+- 4次以上の $n$次の任意の  
+  正方行列の行列式も計算  
+  できるが，授業では省略  
+  する 
+___
+## 行列式の性質
+$A,B$ を任意の $n$次正方行列，$k$ を任意のスカラーとするとき，  
+行列式に関して，以下の性質が成り立つ．
+
+- $|AB|=|A|\,|B|\hspace{4em}$
+- $|kA|=k^n|A|$
+- $|^t\!A|=|A|$
+- $|I|=1$
+- 任意の正方行列 $A$ について, $A$ が正則であることと $|A|≠0$ は同値
+
+<!-- 
+- 上(下)三角行列の行列式は対角成分の積
+-->
+___
+## 行列式と逆行列
+
+- $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ を任意の正則な $2$次正方行列とするとき，  
+  $$
+  A^{-1}=\frac1{|A|}\begin{pmatrix*}[r]d&-b\\-c&a\end{pmatrix*}
+  $$
+  
+- したがって，
+  $$
+  |A^{-1}|=\begin{vmatrix}\frac{d}{|A|}&\frac{-b}{|A|}\\
+  \frac{-c}{|A|}&\frac{a}{|A|}\end{vmatrix}
+  =\frac{ad\ \,}{|A|^2}-\frac{bc\ \,}{|A|^2}=\frac{|A|\ \,}{|A|^2}
+  =\frac{1}{|A|}=|A|^{-1}
+  $$
+
+___
+## 連立方程式と行列 (1)
+連立方程式は，行列の積を用いて表すことができる．例えば，
+$$
+\left\{\begin{split}
+a_1x+b_1y&=c_1\\
+a_2x+b_2y&=c_2\\
+\end{split}\right.
+$$
+は，行列を用いて以下のように表せる
+$$
+\begin{pmatrix}a_1&b_1\\a_2&b_2\end{pmatrix}
+\begin{pmatrix}x\\y\end{pmatrix}
+=\begin{pmatrix}c_1\\c_2\end{pmatrix}
+\quad\Rightarrow\quad A\boldsymbol x=\boldsymbol c
+$$
+___
+## 逆行列と連立方程式
+連立方程式を，以下のように表した場合，
+$$
+\begin{pmatrix}a_1&b_1\\a_2&b_2\end{pmatrix}
+\begin{pmatrix}x\\y\end{pmatrix}
+=\begin{pmatrix}c_1\\c_2\end{pmatrix}
+\quad\Rightarrow\quad A\boldsymbol x=\boldsymbol c
+$$
+$A$ が正則行列であれば，両辺に $A^{-1}$ を左から掛ければ解ける
+$$
+\begin{split}
+(左辺)&=A^{-1}(A\boldsymbol x)=(A^{-1}A)\boldsymbol x=I\boldsymbol x=\boldsymbol x\\
+(右辺)&= A^{-1}\boldsymbol c\\
+∴\ \boldsymbol x &= A^{-1}\boldsymbol c
+\end{split}
+$$
+___
+## 逆行列と連立方程式 (例)
+$$
+\left\{\begin{split}
+x-y&=1\\
+x-2y&=-1\\
+\end{split}\right.
+\quad\Rightarrow\quad
+\begin{pmatrix}1&-1\\1&-2\end{pmatrix}
+\begin{pmatrix}x\\y\end{pmatrix}
+=\begin{pmatrix*}[r]1\\-1\end{pmatrix*}\\[1ex]
+$$
+$$
+\begin{split}
+\begin{pmatrix}x\\y\end{pmatrix}
+&=\begin{pmatrix}1&-1\\1&-2\end{pmatrix}^{-1}
+\begin{pmatrix*}[r]1\\-1\end{pmatrix*}
+=\frac{1}{(1\cdot-2)-(-1\cdot1)}\begin{pmatrix}-2&1\\-1&1\end{pmatrix}
+\begin{pmatrix*}[r]1\\-1\end{pmatrix*}\\[3ex]
+&=\begin{pmatrix}2&-1\\1&-1\end{pmatrix}
+\begin{pmatrix*}[r]1\\-1\end{pmatrix*}
+=\begin{pmatrix}3\\2\end{pmatrix}
+
+\end{split}
+$$
+
+
+<!-- 
+___
+## 連立方程式と行列 (2)
+また，以下のような形の連立方程式も行列の積を用いて表せる
+$$
+\begin{split}&
+\left\{\begin{split}
+a_1x+b_1y+c_1&=0\\
+a_2x+b_2y+c_2&=0
+\end{split}\right.\\[3ex]
+\Rightarrow\quad&
+\begin{pmatrix}a_1&b_1&c_1\\a_2&b_2&c_2\end{pmatrix}
+\begin{pmatrix}x\\y\\[1ex]1\end{pmatrix}
+=\begin{pmatrix}0\\0\end{pmatrix}
+\quad\Rightarrow\quad
+A^\prime\boldsymbol x^\prime=\boldsymbol 0
+\end{split}
+$$
+ -->
+___
+## 1次関数の組と行列 (1)
+また，多変数の1次関数の組も，ベクトルと行列を用いて1次関数ぽい形に表せる．
+$$
+\begin{split}&
+\left\{\begin{split}
+y_1=a_{11}x_1+a_{12}x_2+b_1\\
+y_2=a_{21}x_1+a_{22}x_2+b_2\\
+\end{split}\right.\\[4ex]
+\Rightarrow\quad&
+\begin{pmatrix}y_1\\y_2\end{pmatrix}
+=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}
+\begin{pmatrix}x_1\\x_2\end{pmatrix}
++\begin{pmatrix}b_1\\b_2\end{pmatrix}
+\quad\Rightarrow\quad
+\boldsymbol y=A\boldsymbol x+\boldsymbol b
+\end{split}
+$$
+あるいは ……
+___
+## 1次関数の組と行列 (2)
+$$
+\begin{split}&
+\left\{\begin{split}
+y_1=a_{10}+a_{11}x_1+a_{12}x_2\\
+y_2=a_{20}+a_{21}x_1+a_{22}x_2\\
+\end{split}\right.\quad(定数項を前に置いた形)\\[3ex]
+
+\Rightarrow\quad&
+\left(\!\!\begin{array}{c}1\\[0.3ex]\hline\\[-2.6ex]y_1\\y_2\end{array}\!\!\right)
+=\left(\!\!\begin{array}{c|cc}
+    1&0&0\\[0.3ex]\hline\\[-2.6ex]
+    a_{10}&a_{11}&a_{12}\\
+    a_{20}&a_{21}&a_{22}\end{array}
+\!\!\right)
+\left(\!\!\begin{array}{c}1\\[0.3ex]\hline\\[-2.6ex]x_1\\x_2\end{array}\!\!\right)\\[4ex]
+
+\Rightarrow\quad&
+\left(\!\!\begin{array}{c}y_0\\[0.3ex]\hline\\[-2.6ex]y_1\\y_2\end{array}\!\!\right)
+=\left(\!\!\begin{array}{c|cc}
+    a_{00}&a_{01}&a_{02}\\[0.3ex]\hline\\[-2.6ex]
+    a_{10}&a_{11}&a_{12}\\
+    a_{20}&a_{21}&a_{22}\end{array}
+\!\!\right)
+\left(\!\!\begin{array}{c}x_0\\[0.3ex]\hline\\[-2.6ex]x_1\\x_2\end{array}\!\!\right)
+\quad\left(\begin{array}{ll}ただし\!\!&y_0=a_{00}=x_0=1,\\&a_{01}=a_{02}=0\end{array}\right)\quad\\[4ex]
+
+\Rightarrow\quad&
+\boldsymbol y^\prime=A^\prime\boldsymbol x^\prime
+\end{split}
+$$
+<!-- 
+___
+## 1次関数の組と行列 (2)
+$$
+\begin{split}&
+\left\{\begin{split}
+y_1=a_{11}x_1+a_{12}x_2+b_1\\
+y_2=a_{21}x_1+a_{22}x_2+b_2\\
+\end{split}\right.\\[4ex]
+
+\Rightarrow\quad&
+\left(\!\!\begin{array}{c}y_1\\y_2\\[0.3ex]\hline\\[-2.6ex]1\end{array}\!\!\right)
+=\left(\!\!\begin{array}{cc|c}
+    a_{11}&a_{12}&b_1\\
+    a_{21}&a_{22}&b_2\\[0.3ex]\hline\\[-2.6ex]
+    0&0&1\end{array}
+\!\!\right)
+\left(\!\!\begin{array}{c}x_1\\x_2\\[0.3ex]\hline\\[-2.6ex]1\end{array}\!\!\right)
+\quad\Rightarrow\quad
+\boldsymbol y^\prime=A^\prime\boldsymbol x^\prime
+\end{split}
+$$
+ -->
+<!-- 
+___
+$$
+\left(\begin{array}{rrr}\rule[-2ex]{0em}{5ex}\boldsymbol y\\\hline 1\end{array}\right)
+=\left(\begin{array}{c|c}A&\rule[-2ex]{0em}{5ex}\boldsymbol b\\\hline\quad\boldsymbol 0\quad&1\end{array}\right)
+\left(\begin{array}{rrr}\rule[-2ex]{0em}{5ex}\boldsymbol x\\\hline 1\end{array}\right)
+=\left(\begin{array}{c}\rule[-2ex]{-0.5em}{5ex}A\boldsymbol x+\boldsymbol b\rule{-0.5em}{0ex}\\\hline 1\end{array}\right)\\
+$$
+ -->

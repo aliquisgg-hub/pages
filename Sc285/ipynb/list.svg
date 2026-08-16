@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="252"
+   height="108"
+   viewBox="0 0 66.674997 28.575001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="list.svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="DotS"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-83"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-79" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-87"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1062-2" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="147.12765"
+     inkscape:cy="78.020382"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:snap-center="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-8"
+     inkscape:window-y="35"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid833"
+       empspacing="6"
+       spacingx="0.79374999"
+       spacingy="0.79374999" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round"
+       id="rect71"
+       width="66.674995"
+       height="28.574999"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="6.9225745"
+       y="9.5249996"
+       id="text837"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="6.9225745"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">1,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="15.432648"
+       y="9.5249996"
+       id="text841"><tspan
+         sodipodi:role="line"
+         id="tspan839"
+         x="15.432648"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">4,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="25.11681"
+       y="9.5249996"
+       id="text845"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="25.11681"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">2,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="34.608738"
+       y="9.5249996"
+       id="text849"><tspan
+         sodipodi:role="line"
+         id="tspan847"
+         x="34.608738"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">8,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="44.237091"
+       y="9.5249996"
+       id="text853"><tspan
+         sodipodi:role="line"
+         id="tspan851"
+         x="44.237091"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">5,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="53.631866"
+       y="9.5249996"
+       id="text857"><tspan
+         sodipodi:role="line"
+         id="tspan855"
+         x="53.631866"
+         y="9.5249996"
+         style="font-size:8.46667px;text-align:start;text-anchor:start;stroke-width:0.264583">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="52.387501"
+       y="26.19375"
+       id="text879"><tspan
+         sodipodi:role="line"
+         id="tspan877"
+         x="52.387501"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="42.862499"
+       y="26.19375"
+       id="text879-8"><tspan
+         sodipodi:role="line"
+         id="tspan877-5"
+         x="42.862499"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="33.337498"
+       y="26.19375"
+       id="text879-2"><tspan
+         sodipodi:role="line"
+         id="tspan877-7"
+         x="33.337498"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="23.8125"
+       y="26.19375"
+       id="text879-82"><tspan
+         sodipodi:role="line"
+         id="tspan877-3"
+         x="23.8125"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="14.287499"
+       y="26.19375"
+       id="text879-84"><tspan
+         sodipodi:role="line"
+         id="tspan877-56"
+         x="14.287499"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="4.7624998"
+       y="26.19375"
+       id="text879-5"><tspan
+         sodipodi:role="line"
+         id="tspan877-34"
+         x="4.7624998"
+         y="26.19375"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">-6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="4.7624998"
+       y="21.43125"
+       id="text933"><tspan
+         sodipodi:role="line"
+         id="tspan931"
+         x="4.7624998"
+         y="21.43125"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="14.287502"
+       y="21.43125"
+       id="text933-8"><tspan
+         sodipodi:role="line"
+         id="tspan931-9"
+         x="14.287502"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="23.812502"
+       y="21.43125"
+       id="text933-81"><tspan
+         sodipodi:role="line"
+         id="tspan931-5"
+         x="23.812502"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="33.337502"
+       y="21.43125"
+       id="text933-88"><tspan
+         sodipodi:role="line"
+         id="tspan931-7"
+         x="33.337502"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="42.862503"
+       y="21.43125"
+       id="text933-2"><tspan
+         sodipodi:role="line"
+         id="tspan931-4"
+         x="42.862503"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="52.387501"
+       y="21.43125"
+       id="text933-0"><tspan
+         sodipodi:role="line"
+         id="tspan931-8"
+         x="52.387501"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';letter-spacing:0px;stroke-width:0.264583"
+       x="61.912502"
+       y="21.43125"
+       id="text933-27"><tspan
+         sodipodi:role="line"
+         id="tspan931-1"
+         x="61.912502"
+         y="21.43125"
+         style="font-size:4.9389px;text-align:center;text-anchor:middle;stroke-width:0.264583">6</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS)"
+       d="m 4.7624999,11.90625 v 4.7625"
+       id="path993" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-8)"
+       d="m 14.2875,11.90625 v 4.7625"
+       id="path993-2" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-6)"
+       d="m 23.8125,11.90625 v 4.7625"
+       id="path993-4" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-3)"
+       d="m 33.3375,11.90625 v 4.7625"
+       id="path993-8" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-83)"
+       d="m 42.8625,11.90625 v 4.7625"
+       id="path993-0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-5)"
+       d="m 52.3875,11.90625 v 4.7625"
+       id="path993-6" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotS-87)"
+       d="m 61.9125,11.90625 v 4.7625"
+       id="path993-3" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="2.3812501"
+       y="8.7312498"
+       id="text837-2"><tspan
+         sodipodi:role="line"
+         id="tspan835-8"
+         x="2.3812501"
+         y="8.7312498"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583">[</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:'UD Digi Kyokasho NK-R';-inkscape-font-specification:'UD Digi Kyokasho NK-R';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="64.293747"
+       y="8.7312498"
+       id="text837-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan835-8-7"
+         x="64.293747"
+         y="8.7312498"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583">]</tspan></text>
+  </g>
+</svg>

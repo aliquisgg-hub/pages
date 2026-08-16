@@ -1,0 +1,18 @@
+---
+title: Sc188(2) Part 1; Appendix
+last_modified: 2023-09-25 13:07:04 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+#backgroundImage: url('hero-background.jpg')
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+## 〔補足〕記号接地問題
+-  知識の記述に現れる記号 (「モノ」や「コト」を表す指標) 
+   を，現実世界における「モノ」や「コト」と結びつけることが，これまでの AI には困難であるという問題．
+
+-  例えば AI が「リンゴは赤い」という知識を持っていたとしても，「リンゴ」を現実世界の (物理的実体を持った) リンゴと結びつけたり，「赤い」を現実世界の赤い色と結びつけるのが困難であるという問題．

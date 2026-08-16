@@ -1,0 +1,361 @@
+---
+title: Sc106(1) part 9
+last_modified: 2026-06-20 17:42:38 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# ベクトル
+
+<div style="margin-top:2ex; font-size:85%;">
+
+$$
+\left(\begin{array}{l}
+この授業では，実数の複数個の組をベクトルと呼ぶが，\\
+高校数学では「大きさと向きを持つもの」と習ったかもしれない．\\
+本来のベクトルはそれらを含んだもっと一般的な概念である．\\
+興味のある人は末尾の「線形空間」のスライドを参照．
+\end{array}\right)
+$$
+</div>
+
+<!-- 
+10. ベクトル ― ベクトルの基礎，ベクトルの演算
+   - 向き・長さを持つ平面ベクトル，位置ベクトル，n個の実数の組としてのn次元ベクトル
+   - ベクトルの和・差・スカラー倍・内積
+   - 線形空間も？
+ -->
+___
+## ベクトル
+- $n$個の実数の組を (*$\underline{次数nの}(\underline{n次元の})，\underline{実数成分の}$*)
+  **ベクトル**と呼ぶ ベクトルは *$\vec{a}$* あるいは
+  *$\boldsymbol a$* のように表す
+  $$
+  \vec{a}=(a_1, a_2, \cdots ,a_n)
+  $$
+
+- ベクトルに対して，*(単独の)実数*を**スカラー**と呼ぶ
+- ベクトルに含まれる実数を*成分*といい，ベクトルに含まれる成分の数を*次数*あるいは*次元数*という
+- ベクトルの成分は，横に並べることも縦に並べることもある
+  それらを区別するときは，それぞれ*行ベクトル*，*列ベクトル*と呼ぶ
+___
+## 零ベクトル，ベクトルの相等性
+- 零ベクトル
+
+  全ての成分が $0$ のベクトルを*零ベクトル*と呼び，*${\vec 0}$* と表す
+
+- ベクトルの相等性
+
+  2つのベクトル $\vec{\vphantom{b}a},\vec b$ の次数が等しく，対応する成分がすべて等しいとき，$\vec{\vphantom{b}a}$ と $\vec b$ は*等しい*という
+  $$
+  \underline{\color{forestgreen}\vec{\vphantom{b}a}=\vec b}
+  　　⇔　　
+  \underline{\color{forestgreen}a_1=b_1 ∧ a_2=b_2 ∧ \cdots ∧a_n=b_n}
+  $$
+___
+## ベクトルの和
+- 同じ次数の**ベクトルの和**は，*各成分の和のベクトル*となる
+  $$
+  \begin{array}{rcl}
+  \underline{\color{forestgreen}\vec{\vphantom{b}a}+\vec b}
+    &=& (a_1, \cdots ,a_n)+(b_1, \cdots ,b_n)\\
+    &=& \underline{\color{forestgreen}(a_1+b_1, \cdots ,a_n+b_n)}
+  \end{array}
+  $$
+
+- 零ベクトル $\vec 0$ は，ベクトルの和における単位元となる
+  $$
+  任意の\, \vec{\vphantom{0}a}\, に対して，\underline{\color{forestgreen}\vec{\vphantom{0}a}+\vec 0=\vec 0+\vec{\vphantom{0}a}=\vec{\vphantom{0}a}}
+  $$
+___
+## ベクトルのスカラー積
+- スカラー $k$ とベクトル $\vec{a}$ について，$\vec{a}$ の各成分に $k$
+  を掛けたベクトルを**スカラー積**と呼び，*$\underline{k\cdot\vec{a}}$* または
+  *$\underline{k\vec{a}}$* と書く
+  $$
+  \underline{\color{forestgreen}k\vec{a}}
+  =
+  k(a_1, \cdots ,a_n)=\underline{\color{forestgreen}(ka_1, \cdots ,ka_n)}
+  $$
+  また，$-\vec{a}=-1\vec{a}$ とし，ベクトルの*差*を $\vec{\vphantom{b}a}-\vec b=\vec{\vphantom{b}a}+(-\vec b)$ と定める ．
+  明らかに，以下が成り立つ
+  $$
+  \begin{array}{rcl}
+  \underline{\color{forestgreen}\vec{\vphantom{b}a}-\vec b}
+    &=& \vec{\vphantom{b}a}+(-\vec b)\ =\ \vec{\vphantom{b}a}+(-1\vec b)\\
+    &=& (a_1, \cdots ,a_n)+(-b_1, \cdots ,-b_n)\\
+    &=& \underline{\color{forestgreen}(a_1-b_1, \cdots ,a_n-b_n)}
+  \end{array}
+  $$
+___
+## ベクトルの内積
+- 同じ次数のベクトル同士の演算である**内積**は，各成分の積の総和 (*実数*) を値とする
+- ベクトル $\vec{\vphantom{b}a},\,\vec b$ の内積は，
+  $\underline{\color{forestgreen}\langle\vec{\vphantom{b}a},\vec b\rangle}$ または
+  $\underline{\color{forestgreen}\vec{\vphantom{b}a}\cdot\vec b}$ と書く
+  $$
+  \underline{\color{forestgreen}⟨\vec{\vphantom{b}a},\vec b⟩}
+  = \underline{\color{forestgreen}a_1b_1+ \cdots +a_nb_n}\quad
+  \left(=\sum_{k=1}^na_kb_k\right)
+  $$
+- $⟨\vec{\vphantom{b}a},\vec b⟩=0$ のとき，$\vec{\vphantom{b}a}$ と $\vec b$
+  は**直交する**という
+___
+## ベクトルのノルム (長さ，大きさ)
+- ベクトル $\vec{a}$ の**ノルム** (**長さ**, **大きさ**) $\|\vec{a}\|$ は, 以下のように定められる
+  $$
+  \underline{\color{forestgreen}∥\vec{a}∥}
+  =\sqrt{⟨\vec{a},\vec{a}⟩}
+  =\underline{\color{forestgreen}\sqrt{{a_1}^2+ \cdots +{a_n}^2}}
+  \quad\left(=\sqrt{\sum_{k=1}^n{a_k}^2}\right)
+  $$
+  ※ テキストでは $|\vec{a}|$ と表記されている  
+  ※ $∥\vec{0}∥=0$ であり，ノルムが $0$ のベクトルは $\vec{0}$ だけである  
+  <!-- 
+  この定義は L2ノルム (ユークリッドノルム) のもの．
+  他に L1ノルム (マンハッタンノルム)，最大値ノルム (無限大ノルム) 等もあり．
+   -->
+  <!-- ※ $∥\vec{a}∥=0$ となるのは，$\vec{\vphantom0a}=\vec 0$ のときに限る -->
+___
+## ベクトルの演算に関する性質 (1)
+$\vec{\vphantom{b}a},\vec b,\vec{\vphantom{b}c}$ をベクトルとすると，ベクトルの和に関して以下が成り立つ
+
+- $(\vec{\vphantom{b}a}+\vec b)+\vec{\vphantom{b}c}=\vec{\vphantom{b}a}+(\vec b+\vec{\vphantom{b}c})　　(結合律)$
+- $\vec{\vphantom{b}a}+\vec b=\vec b+\vec{\vphantom{b}a}　　　　　　　　(交換律)$
+- $\vec{\vphantom{0}a}+\vec0=\vec0+\vec{\vphantom{0}a}=\vec{\vphantom{0}a}　　　　　\ \ (単位元)$
+- $\vec{\vphantom{0}a}+(-\vec{\vphantom{0}a})=(-\vec{\vphantom{0}a})+\vec{\vphantom{0}a}=\vec0　\ \ \,(逆元)$
+
+※ 可換群になるということ
+___
+## ベクトルの演算に関する性質 (2)
+$\vec{\vphantom{b}a},\vec b$ をベクトル，$k,k'$ をスカラーとすると，スカラー積に関して以下が成り立つ
+
+- $k(\vec{\vphantom{b}a}+\vec b) = k\vec{\vphantom{b}a}+k\vec b　　　　　(分配律)$
+- $(k+k')\vec{\vphantom{b}a} = k\vec{\vphantom{b}a}+k'\vec{\vphantom{b}a}　　　　\,(分配律)$
+- $k(k'\vec{\vphantom{b}a}) = (kk')\vec{\vphantom{b}a}$
+- $1\,\vec{\vphantom{b}a} = \vec{\vphantom{b}a}$
+
+___
+## ベクトルの演算に関する性質 (3)
+$\vec{\vphantom{b}a},\vec b,\vec c$ をベクトル，$k$ をスカラーとすると，内積に関して以下が成り立つ
+
+- $⟨\vec{\vphantom{b}a},\vec b⟩ = ⟨\vec b,\vec{\vphantom{b}a}⟩　　　　　　　　　\,(交換律)$
+- $⟨\vec{\vphantom{b}a},\ \vec b\!+\!\vec{\vphantom{b}c}⟩ = ⟨\vec{\vphantom{b}a},\vec b⟩+⟨\vec{\vphantom{b}a},\vec{\vphantom{b}c}⟩　　　(左分配律)$
+- $⟨\vec{\vphantom{b}a}\!+\!\vec b,\ \vec{\vphantom{b}c}⟩ = ⟨\vec{\vphantom{b}a},\vec{\vphantom{b}c}⟩+⟨\vec b,\vec{\vphantom{b}c}⟩　　　\,(右分配律)$
+- $k⟨\vec{\vphantom{b}a},\vec b⟩=⟨k\vec{\vphantom{b}a},\vec b⟩=⟨\vec{\vphantom{b}a},k\vec b⟩$
+
+___
+## 例
+以下に次数4のベクトルとそれらを用いた各種計算の例を示す
+$$
+\left\{\begin{array}{rcl}
+\vec{a}&=&(0,1,-1,2)\\
+\vec b&=&(1,-2,-1,0)
+\end{array}\right.
+$$
+$$
+\begin{array}{rcl}
+\vec{\vphantom{b}a}+\vec b&=&(0+1,1+(-2),-1+(-1),2+0)\ =\ (1,-1,-2,2)\\
+2\vec{a}&=&(2\cdot0,\ 2\cdot1,\ 2\cdot(-1),\ 2\cdot2)\ =\ (0,2,-2,4)\\
+2\vec{\vphantom{b}a}-\vec b&=&(2\cdot0-1,\ 2\cdot1+2,\ 2\cdot(-1)+1,\ 2\cdot2-0)
+  =(-1,4,-1,4)\\
+⟨\vec{\vphantom{b}a},\vec b⟩&=&0\cdot1+1\cdot(-2)+(-1)\cdot(-1)+2\cdot0=-1\\
+∥\vec{a}∥&=&\sqrt{0^2+1^2+(-1)^2+2^2}=\sqrt6
+\end{array}
+$$
+___
+## 平面ベクトル
+- 二次元平面上で「*大きさ*と*向き*を持つもの」もベクトルである  
+  (*平面ベクトル*と呼ばれる)
+- 二次元平面上の2点 $A,B$ があるとき，$A,B$ 間の距離を「大きさ」，  
+  $A$ から $B$ へ向かう方向を「向き」と考えると，ベクトルが定まる  
+  これを $\overrightarrow{AB}$ とあらわす
+- 平面ベクトルは「位置」が規定されないので，「大きさと向き」が  
+  同じなら，すべて*相等*なベクトルとみなされる
+
+<!--
+- *零ベクトル*は大きさが 0 のベクトル $(例えば\,\overrightarrow{AA})$ である  
+  (零ベクトルに向きはない)
+ -->
+___
+## 平面ベクトルのノルム (長さ，大きさ)・内積
+<div style="font-size:88%;">
+
+- *ノルム* (長さ，大きさ)
+  $$
+  ∥\overrightarrow{AB}∥ = |AB|\\[0.3ex]
+  $$
+  ※ ノルムが $0$ のベクトルは *$\underline{零ベクトル\ (\vec{0})}$* である
+- *内積*
+  $$
+  \langle\overrightarrow{AB},\overrightarrow{CD}\rangle
+  = |AB||CD|\cos\theta\\[1ex]
+  (ただし，\theta は \overrightarrow{AB} と \overrightarrow{CD} のなす角)
+  $$
+※ $|AB|$,$|CD|$が零でなく，$⟨\overrightarrow{AB},\overrightarrow{CD}⟩=0$ なら
+$\displaystyle\theta=\frac\pi2$ (直角)
+</div>
+
+___
+## 平面ベクトルのスカラー積・和・差
+<div style="font-size:90%;">
+
+- 平面ベクトル $\overrightarrow{a}$ 実数 $k$ に対して，*スカラー積* $k\overrightarrow{a}$ は：
+  - $k$ が非負のとき，$k\overrightarrow{a}$ は $\overrightarrow{a}$ と同じ向きで大きさ (ノルム) が  
+  $k∥\overrightarrow{a}∥$ の 平面ベクトル
+  - $k$ が非負のとき，$k\overrightarrow{a}$ は $\overrightarrow{a}$ の逆の向きで大きさ (ノルム) が  
+  $k∥\overrightarrow{a}∥$ の 平面ベクトル
+
+- <img src="vec00.svg" style="float:right;margin-right:2em;zoom:200%;">$-1\overrightarrow{a}$ は $-\overrightarrow{a}$ と表記してもよい
+- 和：$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$　(右図)
+- 積：$\overrightarrow{a}-\overrightarrow{b}=\overrightarrow{a}+\left(-\overrightarrow{b}\right)$
+<!-- 𝒂+𝒃 は，𝒂の終点に𝒃の始点を重ねた時の，𝒂の始点から𝒃の終点に向かうベクトル -->
+</div>
+
+___
+## 平面ベクトルの例
+<br>
+
+###### ![w:1100](vec01.svg)
+___
+## 平面ベクトルと2次元実数ベクトルの関係 (1)
+- 平面ベクトルの「平面」上に，長さ $1$ で互いに直交するベクトル
+  *$\overrightarrow{e_x}, \overrightarrow{e_y}$* を定めると，任意の平面ベクトル
+  $\vec a$ は，実数係数 $x,y$ を  
+  用いて *$\vec a=x\overrightarrow{e_x}+y\overrightarrow{e_y}$* の形に一意に表せる
+  - この $\overrightarrow{e_x}, \overrightarrow{e_y}$ は，*正規直交基底*と呼ばれる
+- この $x,y$ の組 *$(x,y)$* を2次元実数ベクトルとみなすと，
+  平面ベクトルと2次元実数ベクトルを1対1に対応付けることができる
+  - このように対応付けると，平面ベクトルの起点を座標系の原点に置いた場合の終点の座標値と，対応する2次元実数ベクトルの成分が一致する (→ 次スライドの図)
+___
+## 平面ベクトルと2次元実数ベクトルの関係 (2)
+- 平面ベクトルと2次元実数ベクトルの各々の
+和，差，スカラー積，ノルム (長さ) も同じように対応する (同型であるという)
+
+###### ![h:400](vec02.svg)
+___
+## 平面ベクトルと2次元実数ベクトルの関係 (3)
+<div style="font-size:95%;">
+
+- $\overrightarrow{e_x}$ と $\overrightarrow{e_y}$ は互いに直交しているので，
+  $⟨\overrightarrow{e_x},\overrightarrow{e_y}⟩=0$
+- $\overrightarrow{e_x}$ と $\overrightarrow{e_y}$ はいずれも長さ $1$ 
+  なので，$⟨\overrightarrow{e_x},\overrightarrow{e_x}⟩=⟨\overrightarrow{e_y},\overrightarrow{e_y}⟩$  
+  $=1\cdot1\cdot\cos0=1$
+- ゆえに，
+  $\vec a =a_x\overrightarrow{e_x}+a_y\overrightarrow{e_y}\ (↔(a_x,a_y))$，
+  $\vec b =b_x\overrightarrow{e_x}+b_y\overrightarrow{e_y}$  
+  $(↔(b_x,b_y))$ とすると，  
+  $$\langle\vec{\vphantom ba}, \vec b\rangle
+  = a_xb_x⟨\overrightarrow{e_x},\overrightarrow{e_x}⟩+(a_xb_y+a_yb_x)⟨\overrightarrow{e_x},\overrightarrow{e_y}⟩+a_yb_y⟨\overrightarrow{e_y},\overrightarrow{e_y}⟩\\
+  =a_xb_x+a_yb_y\hspace{14.3em}\\[1ex]
+  $$
+  となり，平面ベクトルと2次元実数ベクトルの内積も矛盾なく対応する
+</div>
+
+___
+## 平面ベクトルと2次元実数ベクトルの関係 (3)
+
+###### ![w:1000](vec03.svg)
+___
+## ベクトルを用いた直線の表現
+- 点$(x_0,y_0)$を通り，ベクトル$(a,b)$に平行な直線の方程式：  
+  直線上の点を$(x,y)$とすると，$(x,y)-(x_0,y_0)$は$(a,b)$のスカラー倍となるので，$(x,y)-(x_0,y_0)=t(a,b)$より
+  $$\underline{\color{forestgreen}x-x_0=at，y-y_0=bt}　(連立方程式)$$
+- 点$(x_0,y_0)$を通り，ベクトル$(a,b)$に垂直な直線の方程式：  
+  直線上の点を$(x,y)$とすると，$(x,y)-(x_0,y_0)$と$(a,b)$の内積が$0$となるので，
+  $$
+  \langle(a,b), (x-x_0,y-y_0)\rangle=\color{forestgreen}\underline{a(x-x_0)+b(y-y_0)=0}
+  $$
+<!-- t は媒介変数とも呼ばれる -->
+<!-- 平行： t を消去して b(x-x_0)=a(y-y_0) (=abt) も可？ -->
+___
+### 〔補足〕総和記号（$\Sigma$）
+変数 $k$ を含む式（あるいは数列の第$k$項）$\alpha_k$ について，$\alpha_1,\alpha_2,\cdots,\alpha_n$ の総和を，総和記号 $\Sigma$（ギリシャ文字シグマの大文字）を用いて以下のように表す．
+<div style="font-size:80%;">
+
+$$
+\sum_{k=1}^n\alpha_k = \alpha_1+\alpha_2+\cdots+\alpha_n
+$$
+</div>
+
+※ 変数 $k$ は，他の名前でもよいし，1以外から初めてもよい
+<div style="font-size:80%;">
+
+$$
+\sum_{i=3}^8\alpha_i = \alpha_3+\alpha_4+\alpha_5+\alpha_6+\alpha_7+\alpha_8
+$$
+</div>
+
+___
+### 〔補足〕総和記号を用いた例 (1)
+- 次数 $n$ のベクトル $\vec{\vphantom{b}a}, \vec b$ の内積
+  $$⟨\vec{\vphantom{b}a},\vec b⟩=\sum_{i=1}^na_ib_i$$
+- 次数 $n$ のベクトル $\vec{\vphantom{b}a}$ のノルム
+  $$\|\vec{a}\|=\sqrt{\sum_{i=1}^n{a_i}^2}$$
+<!-- 
+- $m\times n$ 行列 $[a_{ij}]$ のすべての成分の総和
+
+  $$
+  \sum_{i=1}^m(\sum_{j=1}^n a_{ij})\quad \text{($\sum_{j=1}^n a_{ij}$ は第$i$行の成分の総和)}
+  $$
+ -->
+___
+### 〔補足〕総和記号を用いた例 (2)
+- $n$変数 $(x_1,\cdots,x_n)$ の1次式の一般形  
+  ($a_k$ は $x_k$の係数，$b$は定数項)
+  $$
+  a_1x_1+\cdots+a_nx_n+b\ =\ \sum_{k=1}^n a_kx_k+b
+  $$
+  
+- $n$次式の一般形 ($a_k$ は $x^k$ の係数，ただし $x^1 = x,\ x^0=1$)
+  $$
+  a_nx^n+\cdots+a_2x^2+a_1x+a_0 = \sum_{k=0}^n a_kx^k
+  $$
+___
+<!-- _class: split -->
+### 〔おまけ〕 総和記号に類似した表現
+<div style="width:570px;font-size:85%;">
+
+- 相乗記号 $\Pi$  
+  (ギリシャ文字パイの大文字)  
+  $$\displaystyle\prod_{k=1}^n \alpha_k = \alpha_1\alpha_2\cdots\alpha_n$$
+- 集合演算 ($\cup,\cap$)  
+  $$\displaystyle\bigcup_{k=1}^n A_k = A_1\cup A_2\cup\cdots\cup A_n\\[1ex]
+  \bigcap_{k=1}^n A_k = A_1\cap A_2\cap\cdots\cap A_n$$
+</div><div style="width:570px;font-size:85%;">
+
+- 論理演算 ($\land,\lor$)  
+  $$\displaystyle\bigwedge_{k=1}^n P_k = P_1\land P_2\land\cdots\land P_n\\[1ex]
+  \bigvee_{k=1}^n P_k = P_1\lor P_2\lor\cdots\lor P_n$$
+- 最大値 (max) ，最小値 (min) 
+  $$\underset{k=1}{\overset{n}{max}}\{x_k\} = (x_1,\cdots,x_n の最大値)\\[1ex]
+  \underset{k=1}{\overset{n}{min}}\{x_k\} = (x_1,\cdots,x_n の最小値)$$
+___
+### 〔参考〕線形空間
+- 可換群 $(V,+)$ と体 $F$ (係数体) について，[スライド9](#9) のような条件  
+  を満たすスカラー積 $\circ\ (F×V→V)$ が存在するとき，  
+  $(V,\,+,\,∘)$ を*線形空間*という
+  - 線形空間 $V$ の要素を*ベクトル*と呼ぶ
+  - 係数体 $F$ の要素を*スカラー*と呼ぶ
+
+  ※ ノルムや内積は，必ずしも定義されていなくてもよい  
+  ※ [スライド2](#2)で定義したベクトルは，$V=\boldsymbol R^n,\ F=\boldsymbol R$ の  
+  　 線形空間の要素である
+___
+### 〔参考〕線形空間の例
+- 実数係数の1変数多項式の集合 $V$ も，通常の加算に対しては可換群であり，また，実数をスカラーとして通常の乗算をスカラー積とすれば，線形空間とみなせる
+  - この場合，$V$ の要素はベクトルとみなせる
+- 高校数学で習う(?)「大きさと向きを持つもの」も，いわゆる「合成」(平行四辺形を使うやつ) を
+  $+$ とみなし，実数をスカラーとすれば，やはり線形空間とみなせる．
+  - 「大きさと向き」はあっても「位置」はないので，座標系の原点に始点を置いたときの終点の座標
+    (いわゆる位置ベクトル) で表すと，[スライド2](#2)で定義したベクトルと1対1に対応する

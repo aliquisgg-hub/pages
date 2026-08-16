@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="378"
+   height="252"
+   viewBox="0 0 100.0125 66.675"
+   version="1.1"
+   id="svg1642"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="graph01.svg">
+  <defs
+     id="defs1636" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="524.34996"
+     inkscape:cy="201.29484"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-center="true"
+     inkscape:snap-nodes="true"
+     inkscape:window-width="1639"
+     inkscape:window-height="967"
+     inkscape:window-x="104"
+     inkscape:window-y="43"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2205"
+       spacingx="0.79375"
+       spacingy="0.79375"
+       empspacing="6" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata1639">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="レイヤー 2">
+    <g
+       id="g2221">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="m 10.460938,11.160156 0.96289,1.539063 H 9.5253906 m 0,3.175781 h 3.8828124 l 22.820313,36.511719 -1.955078,3.128906 m 2.691406,1.681641 1.134765,-1.816407 1.134766,1.816407 m 2.691406,-1.681641 -1.955078,-3.126953 21.941406,-35.105469 21.990235,35.185547 -1.904297,3.046875 m 2.691406,1.681641 1.083985,-1.736328 0.986328,1.578124 m 2.693359,-1.683593 -1.806641,-2.890625 2.003907,-3.205078 M 86.958984,47.578125 85.775391,49.470703 64.777344,15.875 h 1.898437 m 0,-3.175781 h -1.898437 l 0.863281,-1.38086 M 62.947266,9.6367188 61.912109,11.292969 60.777344,9.4765625 m -2.691406,1.6835935 0.960937,1.539063 H 15.166016 L 13.152344,9.4765625 M 17.150391,15.875 H 59.048828 L 38.099609,49.394531 Z"
+         id="path2122"
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="14.581022"
+       y="7.8052096"
+       id="text2225"><tspan
+         sodipodi:role="line"
+         x="14.581022"
+         y="7.8052096"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2227">A地点</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="38.033855"
+       y="64.955208"
+       id="text2225-5"><tspan
+         sodipodi:role="line"
+         x="38.033855"
+         y="64.955208"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2227-3">B地点</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="62.022053"
+       y="7.8052096"
+       id="text2225-4"><tspan
+         sodipodi:role="line"
+         x="62.022053"
+         y="7.8052096"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2227-4">C地点</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="85.658852"
+       y="64.955208"
+       id="text2225-9"><tspan
+         sodipodi:role="line"
+         x="85.658852"
+         y="64.955208"
+         style="font-size:8.46667px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2227-40">D地点</tspan></text>
+  </g>
+</svg>

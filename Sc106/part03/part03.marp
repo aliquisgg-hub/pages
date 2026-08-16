@@ -1,0 +1,169 @@
+---
+title: Sc106(1) part 3
+last_modified: 2024-05-13 14:15:22 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+
+---
+<link href="../mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# 写像（関数） (1)
+<!-- 
+4. 写像（関数） (1) ― 写像の基礎，単射・全射・全単射，矢線図，グラフ
+5. 写像（関数） (2) ― 合成写像，逆写像，種々の写像（関数）
+ -->
+---
+## 写像 (関数)
+集合 $D$ の要素の各々に対して，集合 $R$
+の要素を一つずつ対応づけるものを *$D\ から\ R\ への$* **写像** (または **関数**) という
+- $D\,から\,R\,への写像\,f$ は **$f:D→R$** のように表し，
+  $D$ を**定義域**，$R$を**値域**と呼ぶ
+- 写像 $f$ によって，$D$ の要素 $x$ に対応づけられる $R$ の要素を
+  *$x\ に対する\ (f の)$* **値**といい，**$f(x)$** で表す
+  - $x\ に対する\ f\ の値が\ y$ であるとき，**$y=f(x)$** や 
+    **$f:x \mapsto y$** のように表す
+___
+## 写像 (関数) (つづき)
+- 写像 $f$ の値全体の集合 $\{f(x)\ |\ x\in D\}$ を $f$ の**像**といい，**$f(D)$** または **$Im(f)$** と表す
+
+###### ![h:360](function01.svg)
+___
+## 写像 (とそうでないもの) の例
+- $f(x)=2x+1\quad(f: \boldsymbol Z→\boldsymbol Z)$  
+  ※ *$f: x\;\mapsto\;2x+1$*　や　*$y=2x+1$*　のように表すこともある
+  <!-- - $f(x)=2x+1\quad(f: \boldsymbol R→\boldsymbol R)$   -->
+- $f(x)=x^2\quad(f: \boldsymbol R→\boldsymbol R)$
+  <!-- - $f(x)=x^2\quad(f: \boldsymbol R→[0,∞))$   -->
+- $f(x)=\sqrt x\quad(f: \boldsymbol R→\boldsymbol R)$　
+　　※ これは写像ではない！ 
+- $f(x)=\sqrt x\quad(f: [0,∞)→\boldsymbol R)$
+　※ これは写像になる 
+  <!-- - $f(x)=\sqrt x\quad(f: [0,1]→[0,1])$   -->
+- $f(x)=x\,の母親\quad(f: H→H，H=\{x\,|\,x\,は人類\})$
+- $f(x)=x\,の子\quad(f: H→H)$　　※ これは写像ではない！
+- $f(x)=x\quad(f: D→D)$
+　　　　 ※ **$(D上の)$ 恒等写像** という
+___
+<!-- _class: split -->
+## 1対1写像 (単射)
+- 写像 $f:D→R$ と 定義域の任意の要素  
+  $x, x^\prime (∈D)$ について，  
+  - *$f(x)=f(x^\prime)\ ならば\ x=x^\prime$*  
+  - *$x≠x^\prime\ ならば\ f(x)≠f(x^\prime)$*  
+  - *$「x≠x^\prime\ かつ\ f(x)=f(x^\prime)」$*  
+    *$となることはない$*
+
+  のいずれか (全て同値) が成り立つとき，  
+  $f$ は **1対1写像** (または **単射**) であるという
+
+![w:400](inj.svg)
+___
+<!-- _class: split -->
+## 上への写像 (全射)
+- 写像 $f:D→R$ について，*$f(D)=R$*  
+  が成り立つとき，すなわち，  
+
+  *$値域の任意の要素\ y\,(∈R)\ について$*  
+  *$y=f(x)\ となる定義域の要素$*  
+  *$x\,(∈D)\ が必ず存在する$*  
+
+  とき，  
+  $f$ は **上への写像** (または **全射**)であるという
+
+![w:400](surj.svg)
+___
+<!-- _class: split -->
+## 1対1上への写像 (全単射)
+- 写像 $f:D→R$ が *1対1写像 (単射)*   
+  であり，かつ *上への写像 (全射)* でも  
+  あるとき，$f$ は **1対1上への写像**   
+  (または **全単射**)であるという
+- 集合 $D,R$ が有限で，  
+  全単射 $f:D→R$ が存在するなら，  
+  $\#(D)=\#(R)$ である
+
+###### ![w:400](bij.svg)
+___
+## 写像の例 (単射はどれか，全射はどれか)
+- $f(x)=2x+1\quad(f: \boldsymbol Z→\boldsymbol Z)$  
+- $f(x)=2x+1\quad(f: \boldsymbol R→\boldsymbol R)$  
+- $f(x)=x^2\quad(f: \boldsymbol R→\boldsymbol R)$
+- $f(x)=x^2\quad(f: \boldsymbol R→[0,∞))$  
+- $f(x)=\sqrt x\quad(f: [0,∞)→\boldsymbol R)$
+- $f(x)=\sqrt x\quad(f: [0,1]→[0,1])$  
+- $f(x)=x\quad(f: D→D)$
+  　　　　　　　　　　※正解は後で
+___
+<!-- _class: split -->
+## 写像の表現 — 矢線図
+- 写像 $f:D→R$ について，  
+  $D$ の要素と $R$ の要素それぞれ  
+  異なる閉曲線の中に書き並べ，  
+  $y=f(x)\ (または\ f:x \mapsto y)$  
+  となる $x\,(∈D)$ から $y\,(∈R)$ へ  
+  矢印を描いて表したものを  
+  *矢線図*という
+
+###### ![w:500](yasen.svg)
+___
+## 写像の表現 — グラフ
+- 写像 $f:D→R$ は，$D,R$ の直積 $D\times R$ の以下のような  
+  部分集合で表すことができる．**$写像\,f\,の\,(広義の)\,$グラフ** という
+  ###### $\{(x,f(x))\,|\,x∈D\}\ (⊂D\times R)$
+- 写像 $f$ のグラフにおいては，$D$ の任意の要素
+  $x$ に対して，$x$ を  
+  左側の成分として持つ要素 (順序対) は唯一である
+- $D=R=\boldsymbol R$ の場合，$D\times R=\boldsymbol R^2$を座標平面とみなすと，写像  
+  $f$ のグラフは，座標平面上の図形 (**狭義のグラフ**) として表される
+  <!-- $\{(x,f(x))\,|\,x∈\boldsymbol R\}\ (⊂\boldsymbol R^2)$ -->
+
+  (注：定義域が$\boldsymbol R$の部分集合でも「部分的な」写像として表現可能)
+___
+<!-- _class: split -->
+## 写像の表現の例
+<div style="grid-area: slideheading; margin-top:4ex;">
+※以下の2つの表現は等価である．
+</div>
+
+###### <br><br>![w:500](yasen.svg)
+
+<div style="margin-top:8ex;">
+
+$f:\ \{(a,r),(b,p),(c,q),(d,r)\}$
+</div>
+
+___
+## 写像の例 (単射はどれか，全射はどれか)
+- $f(x)=2x+1\quad(f: \boldsymbol Z→\boldsymbol Z)$  
+- $f(x)=2x+1\quad(f: \boldsymbol R→\boldsymbol R)$  
+- $f(x)=x^2\quad(f: \boldsymbol R→\boldsymbol R)$
+- $f(x)=x^2\quad(f: \boldsymbol R→[0,∞))$  
+- $f(x)=\sqrt x\quad(f: [0,∞)→\boldsymbol R)$
+- $f(x)=\sqrt x\quad(f: [0,1]→[0,1])$  
+- $f(x)=x\quad(f: D→D)$
+___
+## 写像の例 (解答編)
+- $f(x)=2x+1\quad(f: \boldsymbol Z→\boldsymbol Z)$
+  &emsp; &emsp;*単射だが全射ではない*
+- $f(x)=2x+1\quad(f: \boldsymbol R→\boldsymbol R)$
+  &emsp; &emsp;*単射かつ全射 (全単射)*
+- $f(x)=x^2\quad(f: \boldsymbol R→\boldsymbol R)$
+  &emsp; &emsp;　　 *単射でも全射でもない*
+- $f(x)=x^2\quad(f: \boldsymbol R→[0,∞))$
+  &emsp; &emsp;*全射だが単射ではない*
+- $f(x)=\sqrt x\quad(f: [0,∞)→\boldsymbol R)$
+  &emsp; &ensp;*単射だが全射ではない*
+- $f(x)=\sqrt x\quad(f: [0,1]→[0,1])$
+  &emsp;*単射かつ全射 (全単射)*
+- $f(x)=x\quad(f: D→D)$
+  &emsp; &ensp;　　　 *単射かつ全射 (全単射)*
+
+
+

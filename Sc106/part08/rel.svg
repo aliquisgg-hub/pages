@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="504"
+   height="108"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="rel.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM"
+       style="overflow:visible">
+      <path
+         id="path3904"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="scale(0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-24"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3785-2"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-24-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3785-2-9"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend-24-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path3785-2-0"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.1562"
+     inkscape:cx="448.6743"
+     inkscape:cy="52.123485"
+     inkscape:document-units="px"
+     inkscape:current-layer="g1861"
+     showgrid="true"
+     inkscape:showpageshadow="false"
+     borderlayer="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:document-rotation="0"
+     inkscape:snap-center="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2982"
+       empspacing="6"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingy="3"
+       spacingx="3"
+       originx="0"
+       originy="0"
+       units="px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(30.094763,-953.68416)">
+    <g
+       id="g1834"
+       transform="translate(-9.5175583,0.93245102)">
+      <text
+         id="text4906-2-6-8-3-8-9"
+         y="1029.476"
+         x="24.16773"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           y="1029.476"
+           x="24.16773"
+           id="tspan4908-7-0-4-8-6-4"
+           sodipodi:role="line">𝑥</tspan></text>
+      <path
+         sodipodi:type="arc"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:none;marker-end:url(#TriangleOutM)"
+         id="path6001-2-8"
+         sodipodi:cx="914.31738"
+         sodipodi:cy="-422.24072"
+         sodipodi:rx="16.199999"
+         sodipodi:ry="16.199999"
+         transform="matrix(0.44097658,0.89751861,0.89751861,-0.44097658,0,0)"
+         sodipodi:start="0"
+         sodipodi:end="5.2097317"
+         sodipodi:arc-type="arc"
+         sodipodi:open="true"
+         d="m 930.51738,-422.24072 a 16.199999,16.199999 0 0 1 -11.90451,15.62014 16.199999,16.199999 0 0 1 -18.21755,-7.33667 16.199999,16.199999 0 0 1 2.24359,-19.51082 16.199999,16.199999 0 0 1 19.40736,-3.01008" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         x="24.167738"
+         y="975.47662"
+         id="text4906-2-6-8-3-8-9-8"><tspan
+           sodipodi:role="line"
+           id="tspan4908-7-0-4-8-6-4-2"
+           x="24.16774"
+           y="975.47662"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2">全ての𝑥で</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         x="24.422794"
+         y="1057.7517"
+         id="text5561"><tspan
+           sodipodi:role="line"
+           id="tspan5563"
+           x="24.422794"
+           y="1057.7517"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">（反射律）</tspan></text>
+    </g>
+    <g
+       id="g1848"
+       transform="translate(-40.270147,1.0824754)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         x="186.20523"
+         y="975.32672"
+         id="text4906-2-6-8-3-8-9-8-4"><tspan
+           sodipodi:role="line"
+           x="186.20523"
+           y="975.32672"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:100%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           id="tspan3371">𝑥, 𝑦間に関係</tspan><tspan
+           sodipodi:role="line"
+           x="186.20523"
+           y="995.51556"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:100%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           id="tspan4628">があるなら</tspan></text>
+      <g
+         id="g2094"
+         transform="translate(-0.72368569)">
+        <g
+           transform="matrix(1.2,0,0,-1.2,-51.405172,2240.6364)"
+           id="g1123">
+          <path
+             sodipodi:nodetypes="cc"
+             inkscape:connector-curvature="0"
+             id="path3379"
+             d="m 171.0003,1018.3623 c 17.5423,7.6978 35.52628,7.9672 54,0"
+             style="fill:none;stroke:#000000;stroke-width:0.833333px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24)" />
+          <path
+             sodipodi:nodetypes="cc"
+             inkscape:connector-curvature="0"
+             id="path3379-2"
+             d="m 225.0003,1014.3618 c -17.5423,-7.6977 -35.52628,-7.9671 -54,0"
+             style="fill:none;stroke:#000000;stroke-width:0.833333px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24)" />
+        </g>
+        <text
+           id="text4906-2-6-8-3-8-9-3"
+           y="1024.6017"
+           x="142.93672"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+             y="1024.6017"
+             x="142.93672"
+             id="tspan4908-7-0-4-8-6-4-1"
+             sodipodi:role="line">𝑥</tspan></text>
+        <text
+           id="text4906-2-6-8-3-8-9-3-2"
+           y="1024.6017"
+           x="229.93674"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+             y="1024.6017"
+             x="229.93674"
+             id="tspan4908-7-0-4-8-6-4-1-3"
+             sodipodi:role="line">𝑦</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         x="185.8933"
+         y="1057.6017"
+         id="text5561-8"><tspan
+           sodipodi:role="line"
+           id="tspan5563-6"
+           x="185.8933"
+           y="1057.6017"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">（対称律）</tspan></text>
+    </g>
+    <g
+       id="g1861"
+       transform="translate(71.526797,1.0824754)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24-8)"
+         d="m 315.72321,1016.651 64.8,-48.59988"
+         id="path5218"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text4906-2-6-8-3-8-9-3-7"
+         y="1029.3262"
+         x="304.92322"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           y="1029.3262"
+           x="304.92322"
+           id="tspan4908-7-0-4-8-6-4-1-4"
+           sodipodi:role="line">𝑥</tspan></text>
+      <text
+         id="text4906-2-6-8-3-8-9-3-7-2"
+         y="1029.3262"
+         x="369.72321"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           y="1029.3262"
+           x="369.72321"
+           id="tspan4908-7-0-4-8-6-4-1-4-7"
+           sodipodi:role="line">𝑦</tspan></text>
+      <text
+         id="text4906-2-6-8-3-8-9-3-7-7"
+         y="964.52606"
+         x="391.32321"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           y="964.52606"
+           x="391.32321"
+           id="tspan4908-7-0-4-8-6-4-1-4-9"
+           sodipodi:role="line">𝑧</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24-8)"
+         d="m 315.72321,1024.751 h 43.2"
+         id="path4748"
+         inkscape:connector-curvature="0" />
+      <circle
+         style="fill:none;stroke:#ff00ff;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path1"
+         cx="336.37845"
+         cy="1024.7413"
+         r="4.5" />
+      <circle
+         style="fill:none;stroke:#ff00ff;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path1-4"
+         cx="380.12354"
+         cy="993.48645"
+         r="4.5" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24-8)"
+         d="m 373.32321,1013.951 14.40007,-43.20018"
+         id="path4982"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         x="348.37845"
+         y="1057.6017"
+         id="text5561-5"><tspan
+           sodipodi:role="line"
+           id="tspan5563-0"
+           x="348.37845"
+           y="1057.6017"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">（推移律）</tspan></text>
+      <g
+         id="g2"
+         transform="translate(22.944431,14.577954)">
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;opacity:1;vector-effect:none;fill:none;stroke:#ff00ff;stroke-linecap:round;stroke-opacity:1;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+           d="m 324.95462,981.37121 6.19922,8.5 m 2.42382,-1.76953 -6.19922,-8.5"
+           id="path5218-4"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:none;stroke:#ff00ff;stroke-width:0.999999;stroke-linecap:round;stroke-opacity:1;enable-background:accumulate;stop-color:#000000"
+           d="m 324.62893,985.18818 0.38332,-6.00001"
+           id="path2" />
+        <path
+           style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:none;stroke:#ff00ff;stroke-width:0.999999;stroke-linecap:round;stroke-opacity:1;enable-background:accumulate;stop-color:#000000"
+           d="m 325.01225,979.18817 6.00001,0.38333"
+           id="path2-1" />
+      </g>
+      <path
+         style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 340.0399,1022.1253 c 8.01746,-15.6659 20.15818,-24.34017 36.42217,-26.02281"
+         id="path3"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g1848-9"
+       transform="translate(98.231602,1.0824754)">
+      <text
+         id="text4906-2-6-8-3-8-9-8-4-2"
+         y="975.32672"
+         x="187.21492"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+         xml:space="preserve"><tspan
+           id="tspan4628-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:100%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2"
+           y="975.32672"
+           x="187.21492"
+           sodipodi:role="line">𝑥≠𝑦なら</tspan></text>
+      <text
+         id="text5561-8-9"
+         y="1057.6017"
+         x="185.8933"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           y="1057.6017"
+           x="185.8933"
+           id="tspan5563-6-1"
+           sodipodi:role="line">（反対称律）</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:18.6667px;line-height:1;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';text-align:center;letter-spacing:0px;text-anchor:middle"
+         x="185.52872"
+         y="1033.6017"
+         id="text2110"><tspan
+           sodipodi:role="line"
+           id="tspan2108"
+           x="185.52872"
+           y="1033.6017">ではない</tspan></text>
+      <g
+         transform="translate(-0.69838139,-22.726505)"
+         id="g2094-8">
+        <g
+           id="g1123-6"
+           transform="matrix(1.2,0,0,-1.2,-51.405172,2240.6364)">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.833333px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24-2)"
+             d="m 171.0003,1018.3623 c 17.5423,7.6978 35.52628,7.9672 54,0"
+             id="path3379-3"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.833333px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-24-2)"
+             d="m 225.0003,1014.3618 c -17.5423,-7.6977 -35.52628,-7.9671 -54,0"
+             id="path3379-2-1"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+           x="142.93672"
+           y="1024.6017"
+           id="text4906-2-6-8-3-8-9-3-8"><tspan
+             sodipodi:role="line"
+             id="tspan4908-7-0-4-8-6-4-1-6"
+             x="142.93672"
+             y="1024.6017"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2">𝑥</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.2"
+           x="229.93674"
+           y="1024.6017"
+           id="text4906-2-6-8-3-8-9-3-2-8"><tspan
+             sodipodi:role="line"
+             id="tspan4908-7-0-4-8-6-4-1-3-4"
+             x="229.93674"
+             y="1024.6017"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.2">𝑦</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

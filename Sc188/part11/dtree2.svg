@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="828"
+   height="360"
+   viewBox="0 0 219.075 95.250008"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="dtree2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker1297"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1295" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path965"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Mend-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path965-1" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1297-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1295-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1297-6-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1295-2-0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1297-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1295-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="35"
+     inkscape:window-x="-8"
+     inkscape:window-height="974"
+     inkscape:window-width="1920"
+     inkscape:snap-text-baseline="true"
+     fit-margin-bottom="2"
+     fit-margin-right="2"
+     fit-margin-left="2"
+     fit-margin-top="2"
+     lock-margins="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="373"
+     inkscape:cy="160"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     width="1152px"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-center="false"
+     inkscape:snap-grids="true"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       empspacing="6"
+       spacingx="0.79375003"
+       spacingy="0.79375003"
+       originx="0"
+       originy="0"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="レイヤー 3"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend);stop-color:#000000;stop-opacity:1"
+       d="M 104.775,9.5250001 64.293752,33.337501"
+       id="path954" />
+    <path
+       id="path954-4"
+       d="M 104.775,9.5250003 145.25626,33.337501"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend-7);stop-color:#000000;stop-opacity:1" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1297);stop-color:#000000;stop-opacity:1"
+       d="m 47.625001,42.862501 -20.6375,26.193751"
+       id="path1293" />
+    <path
+       id="path1293-7"
+       d="m 47.625002,42.862502 20.6375,26.193752"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1297-6);stop-color:#000000;stop-opacity:1" />
+    <path
+       id="path1293-8"
+       d="M 161.92501,42.862499 139.7,69.056253"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1297-4);stop-color:#000000;stop-opacity:1" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1297-6-8);stop-color:#000000;stop-opacity:1"
+       d="m 161.92501,42.862502 19.05,23.8125"
+       id="path1293-7-2" />
+    <g
+       id="g1618"
+       transform="translate(2.3812568)">
+      <path
+         id="path1612"
+         d="m 185.7375,76.200002 -23.8125,14.2875"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1614"
+         d="M 156.36876,93.821251 161.925,90.487504"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.529166, 1.05833;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,373.85626,7.4666668e-7)"
+       id="g1618-7">
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="m 185.7375,76.200002 -23.8125,14.2875"
+         id="path1612-0" />
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.529166, 1.05833;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="M 156.36876,93.821251 161.925,90.487504"
+         id="path1614-4" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="レイヤー 2"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:0.991;fill:#fbece2;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect874"
+       width="57.150002"
+       height="17.4625"
+       x="76.200005"
+       y="0.79375052" />
+    <rect
+       y="34.131252"
+       x="19.050001"
+       height="17.4625"
+       width="57.150002"
+       id="rect874-0"
+       style="opacity:0.991;fill:#e6843e;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <rect
+       y="34.131252"
+       x="133.35001"
+       height="17.4625"
+       width="57.150002"
+       id="rect874-9"
+       style="opacity:0.991;fill:#d0b6f6;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <rect
+       y="67.46875"
+       x="159.54376"
+       height="17.4625"
+       width="57.150002"
+       id="rect874-5"
+       style="opacity:0.991;fill:#73eda6;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <rect
+       style="opacity:0.991;fill:#985ee3;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect903"
+       width="41.275002"
+       height="12.700001"
+       x="112.7125"
+       y="69.850006" />
+    <rect
+       y="69.850006"
+       x="54.768753"
+       height="12.700001"
+       width="38.100002"
+       id="rect903-7"
+       style="opacity:0.991;fill:#e58139;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <rect
+       y="69.850006"
+       x="0.79374892"
+       height="12.700001"
+       width="41.275005"
+       id="rect903-0"
+       style="opacity:0.991;fill:#985ee3;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="0"
+       y="0"
+       id="text1673"><tspan
+         sodipodi:role="line"
+         id="tspan1671"
+         x="0"
+         y="0"
+         style="stroke-width:0.264583" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="レイヤー 4">
+    <text
+       id="text1669"
+       y="15.875001"
+       x="90.487503"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="15.875001"
+         x="90.487503"
+         id="tspan1667"
+         sodipodi:role="line">yes</tspan></text>
+    <text
+       id="text1669-0"
+       y="15.875001"
+       x="119.06251"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="15.875001"
+         x="119.06251"
+         id="tspan1667-5"
+         sodipodi:role="line">no</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="173.83125"
+       y="82.550003"
+       id="text1669-7"><tspan
+         sodipodi:role="line"
+         id="tspan1667-3"
+         x="173.83125"
+         y="82.550003"
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">yes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="202.40625"
+       y="82.550003"
+       id="text1669-0-6"><tspan
+         sodipodi:role="line"
+         id="tspan1667-5-4"
+         x="202.40625"
+         y="82.550003"
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">no</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="154.78125"
+       y="49.212502"
+       id="text1669-3"><tspan
+         sodipodi:role="line"
+         id="tspan1667-52"
+         x="154.78125"
+         y="49.212502"
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">yes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="169.06876"
+       y="49.212502"
+       id="text1669-0-4"><tspan
+         sodipodi:role="line"
+         id="tspan1667-5-2"
+         x="169.06876"
+         y="49.212502"
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">no</tspan></text>
+    <text
+       id="text1669-3-4"
+       y="49.212502"
+       x="40.481247"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="49.212502"
+         x="40.481247"
+         id="tspan1667-52-7"
+         sodipodi:role="line">yes</tspan></text>
+    <text
+       id="text1669-0-4-6"
+       y="49.212502"
+       x="54.768753"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="49.212502"
+         x="54.768753"
+         id="tspan1667-5-2-5"
+         sodipodi:role="line">no</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="21.290691"
+       y="77.837112"
+       id="text1764"><tspan
+         sodipodi:role="line"
+         id="tspan1762"
+         x="21.290691"
+         y="77.837112"
+         style="font-size:4.23333px;stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">ジェンツーペンギン</tspan></text>
+    <text
+       id="text1764-4"
+       y="77.837112"
+       x="133.20944"
+       style="font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333px;stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="77.837112"
+         x="133.20944"
+         id="tspan1762-3"
+         sodipodi:role="line">ジェンツーペンギン</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="73.752609"
+       y="77.82058"
+       id="text1764-4-6"><tspan
+         sodipodi:role="line"
+         id="tspan1762-3-0"
+         x="73.752609"
+         y="77.82058"
+         style="font-size:4.23333px;stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">アデリーペンギン</tspan></text>
+    <text
+       id="text1804"
+       y="7.1437502"
+       x="104.775"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583"
+         y="7.1437502"
+         x="104.775"
+         id="tspan1802"
+         sodipodi:role="line">くちばしの長さ <tspan
+   id="tspan1806"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math Bold';stroke-width:0.264583">≦</tspan> 42.35mm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="47.625"
+       y="40.481251"
+       id="text1804-4"><tspan
+         sodipodi:role="line"
+         id="tspan1802-2"
+         x="47.625"
+         y="40.481251"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583;">くちばしの深さ <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583;"
+   id="tspan1806-1">≦</tspan> 15.1mm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583"
+       x="188.11876"
+       y="73.818756"
+       id="text1804-0"><tspan
+         sodipodi:role="line"
+         id="tspan1802-8"
+         x="188.11876"
+         y="73.818756"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583">くちばしの長さ ≦ 44.25mm</tspan></text>
+    <text
+       id="text1804-4-5"
+       y="40.481251"
+       x="161.925"
+       style="font-size:4.23333px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583;"
+         y="40.481251"
+         x="161.925"
+         id="tspan1802-2-5"
+         sodipodi:role="line">くちばしの深さ <tspan
+   id="tspan1806-1-8"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';stroke-width:0.264583;">≦</tspan> 16.35mm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="102.39375"
+       y="92.868752"
+       id="text1894"><tspan
+         sodipodi:role="line"
+         id="tspan1892"
+         x="102.39375"
+         y="92.868752"
+         style="fill:#0000ff;fill-opacity:1;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;">末端ノード</tspan></text>
+    <text
+       id="text1894-1"
+       y="23.8125"
+       x="204.78751"
+       style="font-size:4.9389px;line-height:1;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="fill:#0000ff;fill-opacity:1;stroke-width:0.264583;-inkscape-font-specification:'Yu Gothic Bold';font-family:'Yu Gothic';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+         y="23.8125"
+         x="204.78751"
+         id="tspan1892-9"
+         sodipodi:role="line">分岐ノード</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 134.9375,9.5250002 191.82292,20.637501"
+       id="path1914"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path1914-0"
+       d="M 77.787503,37.306251 191.55834,22.225001"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path1914-1"
+       d="m 163.51251,33.337501 28.575,-9.525"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 202.40626,66.675002 -7.9375,-41.539584"
+       id="path1914-1-5" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1914-9"
+       d="m 38.629168,83.343753 50.800002,7.9375"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 74.612503,83.343753 15.08125,6.35"
+       id="path1914-9-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1914-9-5-2"
+       d="m 133.35,83.343753 -18.25625,7.14375"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833, 2.11667000000000005;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+  </g>
+</svg>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="sAI.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 100.0125 66.675006"
+   height="252"
+   width="378">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleInS"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInS">
+      <path
+         transform="scale(-0.2)"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1085" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleOutS"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutS">
+      <path
+         transform="scale(0.2)"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1094" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1094-9"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInS-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1085-3"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-1"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path1094-0"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleOutS-0-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutS">
+      <path
+         transform="scale(0.2)"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1094-9-8" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-others="true"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-center="true"
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="in"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="82.076953"
+     inkscape:cx="110.75351"
+     inkscape:zoom="0.9983453"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="false"
+     inkscape:window-width="1662"
+     inkscape:window-height="904"
+     inkscape:window-x="172"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       spacingy="0.79375003"
+       spacingx="0.79375003"
+       empspacing="6"
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <text
+       id="text837"
+       y="19.050001"
+       x="38.100002"
+       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="19.050001"
+         x="38.100002"
+         id="tspan835"
+         sodipodi:role="line" /></text>
+    <g
+       id="g2261">
+      <path
+         id="rect1807"
+         style="fill:none;stroke:#c0c0c0;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 21.431227,2.3812501 h 66.675002 c 4.490128,0 9.524993,5.034872 9.524993,9.5250009 V 64.293753 H 11.906228 l -1e-6,-23.812501 H 2.3812256 L 11.906227,21.431251 v -9.525 c 0,-4.4901289 5.034872,-9.5250009 9.525,-9.5250009 z"
+         sodipodi:nodetypes="ssscccccss" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path944-3"
+         d="m 2.3812256,16.668751 11.1125024,1e-6"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS-1);stop-color:#000000;stop-opacity:1" />
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS-0-6);stop-color:#000000;stop-opacity:1"
+         d="m 16.668727,50.006252 -11.1125034,10e-7"
+         id="path944-2-5"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS);stop-color:#000000;stop-opacity:1"
+         d="m 35.718727,16.668751 11.112503,1e-6"
+         id="path944"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path944-2"
+         d="m 50.006228,50.006252 -11.112502,10e-7"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS-0);stop-color:#000000;stop-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         id="path944-7"
+         d="m 83.343729,23.018753 10e-7,-6.350002 h -14.2875"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#TriangleInS);stop-color:#000000;stop-opacity:1" />
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.38125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#TriangleInS-4);stop-color:#000000;stop-opacity:1"
+         d="m 72.231228,50.006251 11.112502,1e-6 v -9.525"
+         id="path944-7-5"
+         sodipodi:nodetypes="ccc" />
+      <g
+         id="g937"
+         transform="translate(2.3812262,-11.906251)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           id="rect881-4"
+           width="19.050001"
+           height="14.2875"
+           x="47.625004"
+           y="21.431252"
+           ry="2.3812578"
+           rx="2.3812578" />
+        <text
+           id="text851"
+           y="30.559374"
+           x="57.07283"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="30.559374"
+             x="57.07283"
+             id="tspan849"
+             sodipodi:role="line">認識</tspan></text>
+      </g>
+      <g
+         id="g942"
+         transform="translate(-2.3812711,4.7624991)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           id="rect881-2"
+           width="19.050001"
+           height="14.2875"
+           x="76.199997"
+           y="21.431252"
+           ry="2.3812578"
+           rx="2.3812578" />
+        <text
+           id="text855"
+           y="30.603472"
+           x="85.747055"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="30.603472"
+             x="85.747055"
+             id="tspan853"
+             sodipodi:role="line">理解</tspan></text>
+      </g>
+      <g
+         id="g908"
+         transform="translate(11.906225,26.193751)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           id="rect881-64"
+           width="19.050001"
+           height="14.2875"
+           x="38.100002"
+           y="16.668751"
+           ry="2.3812578"
+           rx="2.3812578" />
+        <text
+           id="text859"
+           y="22.779524"
+           x="47.636024"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="22.779524"
+             x="47.636024"
+             id="tspan857"
+             sodipodi:role="line">推論</tspan><tspan
+             id="tspan861"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="28.986202"
+             x="47.636024"
+             sodipodi:role="line">（思考）</tspan></text>
+      </g>
+      <g
+         id="g920"
+         transform="translate(-40.481275,-2.3812504)">
+        <rect
+           rx="2.3812578"
+           ry="2.3812578"
+           y="45.243752"
+           x="57.150002"
+           height="14.2875"
+           width="19.050001"
+           id="rect881"
+           style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round" />
+        <text
+           id="text871"
+           y="51.345707"
+           x="66.686028"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.264583"
+             y="51.345707"
+             x="66.686028"
+             id="tspan869"
+             sodipodi:role="line">結果</tspan><tspan
+             id="tspan873"
+             style="stroke-width:0.264583"
+             y="57.552387"
+             x="66.686028"
+             sodipodi:role="line">出力</tspan></text>
+      </g>
+      <g
+         id="g914"
+         transform="translate(-59.531278,-2.3812504)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           id="rect881-6"
+           width="19.050001"
+           height="14.2875"
+           x="76.200005"
+           y="11.906251"
+           ry="2.3812578"
+           rx="2.3812578" />
+        <text
+           id="text877"
+           y="18.019228"
+           x="85.736031"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.264583"
+             y="18.019228"
+             x="85.736031"
+             id="tspan875"
+             sodipodi:role="line">入力</tspan><tspan
+             id="tspan879"
+             style="stroke-width:0.264583"
+             y="24.225906"
+             x="85.736031"
+             sodipodi:role="line">情報</tspan></text>
+      </g>
+      <rect
+         style="fill:none;stroke:#ff8f8f;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2156"
+         width="52.387501"
+         height="52.387501"
+         x="42.862476"
+         y="7.1437502"
+         rx="4.7625003"
+         ry="4.7625003" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="phi.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 133.35 80.962507"
+   height="306"
+   width="504">
+  <defs
+     id="defs2">
+    <pattern
+       patternTransform="matrix(0.36550375,-0.18289717,1.0710222,2.1403426,7.1437885,-2.968881e-8)"
+       id="pattern2912"
+       xlink:href="#Strips1_3"
+       inkscape:collect="always" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="4"
+       height="1"
+       patternTransform="translate(0,0) scale(10,10)"
+       id="Strips1_3"
+       inkscape:stockid="Stripes 1:3"
+       inkscape:isstock="true">
+      <rect
+         style="fill:black;stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect1938" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-grids="true"
+     inkscape:object-paths="true"
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer2"
+     inkscape:document-units="px"
+     inkscape:cy="217.91468"
+     inkscape:cx="235.91656"
+     inkscape:zoom="1.1110033"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1662"
+     inkscape:window-height="904"
+     inkscape:window-x="97"
+     inkscape:window-y="58"
+     inkscape:window-maximized="0"
+     inkscape:snap-center="false">
+    <inkscape:grid
+       spacingy="0.79375003"
+       spacingx="0.79375003"
+       empspacing="6"
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <g
+       transform="matrix(1.0261283,0,0,0.97500043,5.6731818,1.0219251)"
+       id="g1453"
+       style="display:inline;stroke-width:0.999762">
+      <path
+         style="stroke-width:0.26452;stroke-miterlimit:10;stroke-dasharray:none"
+         d="M 10.715626,3.8364856 V 67.33646 M 29.280557,3.8364856 V 67.33646 M 47.845487,3.8364856 V 67.33646 M 84.975349,3.8364856 V 67.33646 M 103.54028,3.8364856 V 67.33646 M 122.10521,3.8364856 V 67.33646"
+         stroke="#d9d9d9"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         id="path1204"
+         inkscape:label="path1204"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         style="display:inline;stroke-width:0.26452"
+         d="m 66.410418,67.33646 2.8e-5,-63.5000015"
+         stroke="#bfbfbf"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path1208" />
+    </g>
+    <g
+       transform="translate(7.1437885)"
+       style="display:inline"
+       id="g895">
+      <path
+         style="stroke:#d9d9d9;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.5250004,4.7624995 H 123.825"
+         id="path887" />
+      <path
+         style="stroke:#d9d9d9;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.5250004,17.145005 H 123.825"
+         id="path885" />
+      <path
+         style="stroke:#d9d9d9;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.5250004,29.527485 H 123.825"
+         id="path883" />
+      <path
+         style="stroke:#d9d9d9;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.5250004,41.909991 H 123.825"
+         id="path881" />
+      <path
+         style="stroke:#d9d9d9;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 9.5250004,54.292497 H 123.825"
+         id="path1200" />
+      <path
+         style="display:inline;stroke-width:0.264583"
+         d="M 9.5250004,66.675003 H 123.825"
+         stroke="#bfbfbf"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         fill="none"
+         fill-rule="evenodd"
+         id="path1216" />
+    </g>
+    <path
+       style="display:inline"
+       id="path1224"
+       fill="none"
+       stroke-miterlimit="10"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.529167"
+       stroke="#4472c4"
+       d="m 16.804536,66.030081 c 1.267074,-0.143432 2.533877,-0.241975 3.800951,-0.430551 1.267074,-0.188575 2.533876,-0.402173 3.80095,-0.700385 1.267074,-0.298212 2.533876,-0.638215 3.800951,-1.088887 1.267073,-0.45093 2.533876,-0.965835 3.800949,-1.616691 1.267075,-0.650856 2.533877,-1.392773 3.800951,-2.288442 1.267074,-0.895409 2.533876,-1.911807 3.80095,-3.084534 1.267074,-1.172725 2.533876,-2.493269 3.800951,-3.95105 1.267073,-1.458041 2.533876,-3.080923 3.80095,-4.796157 1.267074,-1.714977 2.533877,-3.594281 3.80095,-5.494221 1.267075,-1.900199 2.533877,-3.938411 3.800951,-5.905682 1.267073,-1.96727 2.533876,-4.017865 3.80095,-5.897684 1.267074,-1.879561 2.533876,-3.761445 3.80095,-5.379941 1.267074,-1.618755 2.533877,-3.140256 3.80095,-4.331298 1.267075,-1.190887 2.533878,-2.182571 3.800951,-2.814336 1.267074,-0.631792 2.533876,-0.976258 3.800951,-0.976258 1.267073,0 2.533876,0.344466 3.80095,0.976258 1.267074,0.631765 2.533876,1.623449 3.80095,2.814336 1.267074,1.191042 2.533877,2.712543 3.80095,4.331298 1.267075,1.618496 2.533876,3.50038 3.800951,5.379941 1.267073,1.879819 2.533876,3.930414 3.800951,5.897684 1.267073,1.967271 2.533876,4.005483 3.800949,5.905682 1.267075,1.89994 2.533877,3.779244 3.800947,5.494221 1.26708,1.715234 2.53388,3.338116 3.80096,4.796157 1.26707,1.457781 2.53387,2.778325 3.80095,3.95105 1.26707,1.172727 2.53388,2.189125 3.80095,3.084534 1.26707,0.895669 2.53387,1.637586 3.80094,2.288442 1.26708,0.650856 2.53388,1.165761 3.80096,1.616691 1.26707,0.450672 2.53388,0.790675 3.80095,1.088887 1.26707,0.298212 2.53387,0.51181 3.80094,0.700385 1.26708,0.188576 2.53388,0.287119 3.80096,0.430551" />
+    <g
+       transform="translate(6.0854551,1.3229291)"
+       style="display:inline"
+       id="g903">
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="68.08577"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1228">0</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="55.703262"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1232">0.1</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="43.320755"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1236">0.2</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="30.93825"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1240">0.3</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="18.555771"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1244">0.4</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
+         y="6.2249413"
+         x="7.0812411"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1248">0.5</text>
+    </g>
+    <g
+       transform="translate(7.1437885,2.381287)"
+       style="display:inline"
+       id="g1436">
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="9.5250006"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1252">−3</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="28.575001"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1256">−2</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="47.625004"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1260">−1</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="66.675003"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1264">0</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="85.725006"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1268">1</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="104.775"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1272">2</text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="73.025002"
+         x="123.825"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1276">3</text>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="レイヤー 2"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <path
+       d="m 64.293792,23.096783 c -0.0019,0.002 -0.0034,0.0042 -0.0052,0.0062 L 53.687204,38.439516 c -0.8913,1.400635 -1.782877,2.80302 -2.674256,4.1398 -1.267073,1.899939 -2.533729,3.779261 -3.800803,5.494238 -0.653148,0.884169 -1.306489,1.742128 -1.95957,2.567286 l -0.0088,0.01292 v 16.021244 h 19.050001 z"
+       style="display:inline;opacity:0.6;mix-blend-mode:normal;fill:url(#pattern2912);fill-opacity:1;stroke:none;stroke-width:0.264583"
+       id="path1224-2" />
+    <g
+       transform="translate(7.1437891,2.6458343)"
+       id="g2996">
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke-width:0.264583"
+         y="77.522919"
+         x="38.100002"
+         fill="#595959"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         font-weight="400"
+         font-size="4.23333px"
+         id="text1264-1">𝑎</text>
+      <text
+         id="text1264-1-3"
+         font-size="4.23333px"
+         font-weight="400"
+         font-family="'MS PGothic', 'MS PGothic_MSFontService', sans-serif"
+         fill="#595959"
+         x="57.150002"
+         y="77.522919"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;display:inline;stroke-width:0.264583">𝑏</text>
+    </g>
+    <path
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.264582px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 45.243789,66.675009 v 7.143748"
+       id="path2966" />
+    <path
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 64.293791,66.675005 v 7.143749"
+       id="path2968" />
+  </g>
+</svg>

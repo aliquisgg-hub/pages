@@ -1,0 +1,9 @@
+i = 1
+while i <= 10:
+    fact = 1
+    j = 1
+    while j <= i:
+        fact = fact * j
+        j = j + 1
+    print(str(i)+"! =", fact)
+    i = i + 1

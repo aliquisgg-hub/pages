@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="overfitting2.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 171.45 80.962507"
+   height="306"
+   width="648">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="164.65612"
+     inkscape:cx="675.04377"
+     inkscape:zoom="2.8303444"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="748"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       spacingy="0.79375003"
+       spacingx="0.79375003"
+       empspacing="6"
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <text
+       id="text837"
+       y="19.050001"
+       x="38.100002"
+       style="font-size:4.9389px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="19.050001"
+         x="38.100002"
+         id="tspan835"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="33.461514"
+       y="7.094141"
+       id="text851"><tspan
+         sodipodi:role="line"
+         id="tspan849"
+         x="33.461514"
+         y="7.094141"
+         style="stroke-width:0.264583">母集団</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="13.576433"
+       y="59.48991"
+       id="text860"><tspan
+         sodipodi:role="line"
+         id="tspan858"
+         x="13.576433"
+         y="59.48991"
+         style="stroke-width:0.264583">学習</tspan></text>
+    <g
+       id="g1563"
+       transform="translate(-19.05,-11.957147)">
+      <text
+         id="text944"
+         y="46.831894"
+         x="71.782013"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan946"
+           style="stroke-width:0.264583"
+           y="46.831894"
+           x="71.782013"
+           sodipodi:role="line">新規データ</tspan></text>
+      <ellipse
+         ry="4.7370515"
+         rx="11.906249"
+         cy="45.269199"
+         cx="71.4375"
+         id="path1533"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <g
+       id="g2029"
+       transform="translate(-0.79374822,-2.3812487)">
+      <text
+         id="text856"
+         y="37.297981"
+         x="17.013258"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="37.297981"
+           x="17.013258"
+           id="tspan854"
+           sodipodi:role="line">訓練データ</tspan></text>
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="path1533-6"
+         cx="16.668749"
+         cy="35.71875"
+         rx="11.906251"
+         ry="4.7625022" />
+    </g>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1533-6-0"
+       cx="19.049994"
+       cy="16.668747"
+       rx="11.90625"
+       ry="4.7625012" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1533-6-7"
+       cx="47.624992"
+       cy="16.668747"
+       rx="11.906252"
+       ry="4.7625012" />
+    <ellipse
+       ry="11.906251"
+       rx="30.956253"
+       cy="14.287501"
+       cx="33.337498"
+       id="path1815"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g2037"
+       transform="translate(-2.3812507,-2.3812477)">
+      <text
+         id="text864"
+         y="59.266674"
+         x="7.1437478"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="59.266674"
+           x="7.1437478"
+           id="tspan862"
+           sodipodi:role="line">学</tspan><tspan
+           id="tspan889"
+           style="stroke-width:0.264583"
+           y="63.804993"
+           x="7.1437478"
+           sodipodi:role="line">習</tspan><tspan
+           id="tspan891"
+           style="stroke-width:0.264583"
+           y="68.343315"
+           x="7.1437478"
+           sodipodi:role="line">前</tspan><tspan
+           id="tspan893"
+           style="stroke-width:0.264583"
+           y="72.576645"
+           x="7.1437478"
+           sodipodi:role="line">AI</tspan></text>
+      <rect
+         y="54.768757"
+         x="4.7624979"
+         height="19.050001"
+         width="4.7625003"
+         id="rect1570"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <g
+       id="g1599"
+       transform="translate(-23.812502,-19.049992)">
+      <text
+         id="text869"
+         y="75.935417"
+         x="47.625"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="75.935417"
+           x="47.625"
+           id="tspan867"
+           sodipodi:role="line">学</tspan><tspan
+           id="tspan895"
+           style="stroke-width:0.264583"
+           y="80.47374"
+           x="47.625"
+           sodipodi:role="line">習</tspan><tspan
+           id="tspan897"
+           style="stroke-width:0.264583"
+           y="85.012054"
+           x="47.625"
+           sodipodi:role="line">済</tspan><tspan
+           id="tspan899"
+           style="stroke-width:0.264583"
+           y="89.245384"
+           x="47.625"
+           sodipodi:role="line">AI</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="rect1570-4"
+         width="4.7625003"
+         height="19.050001"
+         x="45.243752"
+         y="71.4375" />
+    </g>
+    <g
+       id="g1607"
+       transform="translate(-23.812503,-21.431247)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="57.150002"
+         y="61.647919"
+         id="text869-9"><tspan
+           sodipodi:role="line"
+           id="tspan867-7"
+           x="57.150002"
+           y="61.647919"
+           style="stroke-width:0.264583">学</tspan><tspan
+           sodipodi:role="line"
+           x="57.150002"
+           y="66.186241"
+           style="stroke-width:0.264583"
+           id="tspan895-3">習</tspan><tspan
+           sodipodi:role="line"
+           x="57.150002"
+           y="70.724556"
+           style="stroke-width:0.264583"
+           id="tspan897-1">済</tspan><tspan
+           sodipodi:role="line"
+           x="57.150002"
+           y="74.957886"
+           style="stroke-width:0.264583"
+           id="tspan899-1">AI</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="rect1570-8"
+         width="4.7625003"
+         height="19.050001"
+         x="54.768753"
+         y="57.149998" />
+    </g>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 7.9374998,61.647918 3e-7,0.529167 11.3770839,1e-6 -1e-6,0.79375 1.322918,-1.058334 -1.322917,-1.058333 v 0.79375 z"
+       id="path1611"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       id="path1632"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 17.831171,45.668836 c -0.744285,-0.744286 -1.16242,-1.753753 -1.16242,-2.806334 v -3.968751 h 3.175 l -2e-6,3.968751 c -10e-7,0.210518 0.08363,0.412411 0.232483,0.561268 0.148857,0.148857 0.35075,0.232484 0.561268,0.232483 l 6.35,6e-6 v -1.5875 l 3.174999,3.175 -3.174999,3.175 v -1.5875 l -6.349998,-4e-6 c -1.052578,2e-6 -2.062046,-0.418133 -2.806331,-1.162419 z"
+       sodipodi:nodetypes="sccccscccccccs" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-2"
+       d="m 15.081251,38.893751 h -3.175 v 13.493752 h -1.5875 l 3.175,3.174999 3.175,-3.174999 h -1.5875 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       sodipodi:nodetypes="sccccscccccccs"
+       d="M 51.96242,45.668843 C 51.218135,44.924557 50.8,43.91509 50.8,42.862509 v -3.968751 h 3.175 l -2e-6,3.968751 c -10e-7,0.210518 0.08363,0.412411 0.232483,0.561268 0.148857,0.148857 0.35075,0.232484 0.561268,0.232483 l 7.937504,-7e-6 v -1.5875 l 3.174999,3.175 -3.174999,3.175 v -1.5875 l -7.937502,9e-6 c -1.052578,2e-6 -2.062046,-0.418133 -2.806331,-1.162419 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path1632-2" />
+    <g
+       id="g2045"
+       transform="translate(-4.7624905,-2.3812477)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="73.818741"
+         y="42.862507"
+         id="text869-7"><tspan
+           sodipodi:role="line"
+           id="tspan867-8"
+           x="73.818741"
+           y="42.862507"
+           style="stroke-width:0.264583">学</tspan><tspan
+           sodipodi:role="line"
+           x="73.818741"
+           y="47.400826"
+           style="stroke-width:0.264583"
+           id="tspan895-1">習</tspan><tspan
+           sodipodi:role="line"
+           x="73.818741"
+           y="51.939144"
+           style="stroke-width:0.264583"
+           id="tspan897-4">済</tspan><tspan
+           sodipodi:role="line"
+           x="73.818741"
+           y="56.172474"
+           style="stroke-width:0.264583"
+           id="tspan899-9">AI</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="rect1570-8-0"
+         width="4.7625003"
+         height="19.050001"
+         x="71.437492"
+         y="38.100002" />
+    </g>
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-4"
+       d="m 36.512499,43.656258 v 3.175 l 3.175002,1e-6 v 1.5875 l 3.174999,-3.175 -3.174999,-3.175 v 1.5875 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="131.76251"
+       y="47.50098"
+       id="text1705"><tspan
+         sodipodi:role="line"
+         id="tspan1703"
+         x="131.76251"
+         y="47.50098"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';fill:#ff0000;fill-opacity:1;stroke-width:0.264583;">◎</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:0.264583;"
+       x="46.037502"
+       y="47.50098"
+       id="text1709"><tspan
+         sodipodi:role="line"
+         id="tspan1707"
+         x="46.037502"
+         y="47.50098"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;fill-opacity:1;stroke-width:0.264583;">○</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="167.49367"
+       y="46.942875"
+       id="text1713"><tspan
+         sodipodi:role="line"
+         id="tspan1711"
+         x="167.49367"
+         y="46.942875"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';fill:#ff0000;fill-opacity:1;stroke-width:0.264583;">△</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 72.231261,43.656258 v 3.175 l 3.175006,1e-6 v 1.5875 l 3.175,-3.175 -3.175,-3.175 v 1.5875 z"
+       id="path1611-4-2"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       id="text1709-3"
+       y="47.50098"
+       x="81.756256"
+       style="font-size:6.35px;line-height:1;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:0.264583;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic Bold';fill:#ff0000;fill-opacity:1;stroke-width:0.264583;"
+         y="47.50098"
+         x="81.756256"
+         id="tspan1707-9"
+         sodipodi:role="line">○</tspan></text>
+    <path
+       id="path1632-4"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 33.337499,55.562508 -3.175,3.175 h 1.5875 v 0.79375 c 0,0.210518 -0.08369,0.412348 -0.232545,0.561205 -0.148857,0.148855 -0.350687,0.232545 -0.561205,0.232545 h -3.96875 v 3.175 h 3.96875 l 35.718753,-5e-6 c 1.052581,0 2.06226,-0.417917 2.806546,-1.162203 0.744286,-0.744284 1.162204,-1.753968 1.162204,-2.806547 v -0.79375 h 1.5875 l -3.175,-3.175 -3.175,3.175 h 1.5875 v 0.79375 c 0,0.210518 -0.08369,0.412348 -0.232545,0.561205 -0.148855,0.148855 -0.350687,0.232545 -0.561205,0.232545 l -31.831135,5e-6 c 0.05298,-0.259432 0.08113,-0.525002 0.08113,-0.79375 v -0.79375 h 1.5875 z"
+       sodipodi:nodetypes="cccssscccssscccccssscsccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 19.592889,22.615771 -3.105619,-0.66012 -0.49509,2.329215 -1.552809,-0.33006 2.445499,3.765737 3.765738,-2.445498 -1.552809,-0.33006 z"
+       id="path1611-2-4"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-2-4-4"
+       d="m 50.981456,21.955651 -3.105619,0.66012 0.49509,2.329215 -1.552809,0.330059 3.765738,2.445498 2.445499,-3.765737 -1.552809,0.33006 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <text
+       id="text851-9"
+       y="7.0941458"
+       x="119.18652"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="7.0941458"
+         x="119.18652"
+         id="tspan849-9"
+         sodipodi:role="line">母集団</tspan></text>
+    <text
+       id="text860-7"
+       y="59.489922"
+       x="99.30143"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="59.489922"
+         x="99.30143"
+         id="tspan858-3"
+         sodipodi:role="line">学習</tspan></text>
+    <g
+       transform="translate(66.675003,-11.957143)"
+       id="g1563-1">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="71.782013"
+         y="46.831894"
+         id="text944-4"><tspan
+           sodipodi:role="line"
+           x="71.782013"
+           y="46.831894"
+           style="stroke-width:0.264583"
+           id="tspan946-6">新規データ</tspan></text>
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="path1533-65"
+         cx="71.4375"
+         cy="45.269199"
+         rx="11.906249"
+         ry="4.7370515" />
+    </g>
+    <g
+       id="g2029-0"
+       transform="translate(84.931254,-2.3812487)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="17.013258"
+         y="37.297981"
+         id="text856-8"><tspan
+           sodipodi:role="line"
+           id="tspan854-1"
+           x="17.013258"
+           y="37.297981"
+           style="stroke-width:0.264583">訓練データ</tspan></text>
+      <ellipse
+         ry="4.7625022"
+         rx="11.906251"
+         cy="35.71875"
+         cx="16.668749"
+         id="path1533-6-9"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <ellipse
+       ry="4.7625012"
+       rx="11.906251"
+       cy="16.668753"
+       cx="104.77498"
+       id="path1533-6-0-2"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none" />
+    <ellipse
+       ry="4.7625012"
+       rx="11.906252"
+       cy="16.668753"
+       cx="133.34999"
+       id="path1533-6-7-9"
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1815-5"
+       cx="119.0625"
+       cy="14.287505"
+       rx="30.956253"
+       ry="11.906251" />
+    <g
+       id="g2037-1"
+       transform="translate(83.343752,-2.3812477)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="7.1437478"
+         y="59.266674"
+         id="text864-9"><tspan
+           sodipodi:role="line"
+           id="tspan862-3"
+           x="7.1437478"
+           y="59.266674"
+           style="stroke-width:0.264583">学</tspan><tspan
+           sodipodi:role="line"
+           x="7.1437478"
+           y="63.804993"
+           style="stroke-width:0.264583"
+           id="tspan889-9">習</tspan><tspan
+           sodipodi:role="line"
+           x="7.1437478"
+           y="68.343315"
+           style="stroke-width:0.264583"
+           id="tspan891-8">前</tspan><tspan
+           sodipodi:role="line"
+           x="7.1437478"
+           y="72.576645"
+           style="stroke-width:0.264583"
+           id="tspan893-1">AI</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square"
+         id="rect1570-9"
+         width="4.7625003"
+         height="19.050001"
+         x="4.7624979"
+         y="54.768757" />
+    </g>
+    <g
+       transform="translate(61.912501,-19.049987)"
+       id="g1599-2">
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="47.625"
+         y="75.935417"
+         id="text869-8"><tspan
+           sodipodi:role="line"
+           id="tspan867-5"
+           x="47.625"
+           y="75.935417"
+           style="stroke-width:0.264583">学</tspan><tspan
+           sodipodi:role="line"
+           x="47.625"
+           y="80.47374"
+           style="stroke-width:0.264583"
+           id="tspan895-4">習</tspan><tspan
+           sodipodi:role="line"
+           x="47.625"
+           y="85.012054"
+           style="stroke-width:0.264583"
+           id="tspan897-3">済</tspan><tspan
+           sodipodi:role="line"
+           x="47.625"
+           y="89.245384"
+           style="stroke-width:0.264583"
+           id="tspan899-5">AI</tspan></text>
+      <rect
+         y="71.4375"
+         x="45.243752"
+         height="19.050001"
+         width="4.7625003"
+         id="rect1570-4-7"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <g
+       transform="translate(61.9125,-21.431245)"
+       id="g1607-4">
+      <text
+         id="text869-9-2"
+         y="61.647919"
+         x="57.150002"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="61.647919"
+           x="57.150002"
+           id="tspan867-7-4"
+           sodipodi:role="line">学</tspan><tspan
+           id="tspan895-3-3"
+           style="stroke-width:0.264583"
+           y="66.186241"
+           x="57.150002"
+           sodipodi:role="line">習</tspan><tspan
+           id="tspan897-1-8"
+           style="stroke-width:0.264583"
+           y="70.724556"
+           x="57.150002"
+           sodipodi:role="line">済</tspan><tspan
+           id="tspan899-1-5"
+           style="stroke-width:0.264583"
+           y="74.957886"
+           x="57.150002"
+           sodipodi:role="line">AI</tspan></text>
+      <rect
+         y="57.149998"
+         x="54.768753"
+         height="19.050001"
+         width="4.7625003"
+         id="rect1570-8-9"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-0"
+       d="m 93.662502,61.118752 2e-6,1.5875 h 9.524996 v 1.5875 l 3.175,-2.381236 -3.175,-2.381264 v 1.5875 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       sodipodi:nodetypes="sccccscccccccs"
+       d="m 103.55617,45.668836 c -0.74428,-0.744286 -1.16242,-1.753753 -1.16242,-2.806332 v -3.968753 h 3.175 v 3.968753 c 0,0.210516 0.0836,0.412409 0.23248,0.561266 0.14886,0.148857 0.35075,0.232484 0.56127,0.232484 l 6.35,8e-6 v -1.587497 l 3.175,3.174998 -3.175,3.175 v -1.5875 l -6.35,-6e-6 c -1.05257,0 -2.06204,-0.418134 -2.80633,-1.162421 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path1632-3" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 100.80625,38.893762 h -3.174997 l 4e-6,13.493742 h -1.587501 l 3.174998,3.174998 3.174996,-3.174998 h -1.5875 z"
+       id="path1611-2-1"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       id="path1632-2-6"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 137.68743,45.668847 C 136.94314,44.924561 136.525,43.915094 136.525,42.862515 v -3.968753 h 3.175 v 3.968753 c 0,0.210516 0.0836,0.412409 0.23249,0.561266 0.14885,0.148857 0.35075,0.232484 0.56126,0.232484 l 7.93751,-8e-6 v -1.5875 l 3.175,3.175 -3.175,3.175 v -1.5875 l -7.93751,1.1e-5 c -1.05257,0 -2.06204,-0.418134 -2.80632,-1.162421 z"
+       sodipodi:nodetypes="sccccscccccccs" />
+    <g
+       transform="translate(80.962512,-2.3812477)"
+       id="g2045-3">
+      <text
+         id="text869-7-6"
+         y="42.862507"
+         x="73.818741"
+         style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="42.862507"
+           x="73.818741"
+           id="tspan867-8-9"
+           sodipodi:role="line">学</tspan><tspan
+           id="tspan895-1-9"
+           style="stroke-width:0.264583"
+           y="47.400826"
+           x="73.818741"
+           sodipodi:role="line">習</tspan><tspan
+           id="tspan897-4-6"
+           style="stroke-width:0.264583"
+           y="51.939144"
+           x="73.818741"
+           sodipodi:role="line">済</tspan><tspan
+           id="tspan899-9-9"
+           style="stroke-width:0.264583"
+           y="56.172474"
+           x="73.818741"
+           sodipodi:role="line">AI</tspan></text>
+      <rect
+         y="38.100002"
+         x="71.437492"
+         height="19.050001"
+         width="4.7625003"
+         id="rect1570-8-0-8"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:square" />
+    </g>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 122.2375,43.656262 v 3.175001 h 3.175 v 1.5875 l 3.175,-3.175 -3.175,-3.174998 v 1.587497 z"
+       id="path1611-4-6"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-4-2-5"
+       d="m 157.95627,43.656262 v 3.175001 h 3.175 v 1.5875 l 3.175,-3.175 -3.175,-3.174998 v 1.587497 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       sodipodi:nodetypes="cccssscccssscccccssscsccc"
+       d="m 119.0625,55.562513 -3.175,3.175 h 1.5875 v 0.79375 c 0,0.210519 -0.0837,0.412348 -0.23254,0.561205 -0.14886,0.148855 -0.35069,0.232545 -0.56121,0.232545 h -3.96875 v 3.175 h 3.96875 l 35.71876,-5e-6 c 1.05258,0 2.06226,-0.417917 2.80654,-1.162203 0.74429,-0.744284 1.16221,-1.753968 1.16221,-2.806547 v -0.79375 h 1.5875 l -3.175,-3.175 -3.175,3.175 h 1.5875 v 0.79375 c 0,0.210518 -0.0837,0.412348 -0.23255,0.561205 -0.14885,0.148855 -0.35069,0.232545 -0.5612,0.232545 l -31.83114,5e-6 c 0.053,-0.259432 0.0811,-0.525002 0.0811,-0.79375 v -0.79375 h 1.5875 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path1632-4-2" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path1611-2-4-8"
+       d="m 105.3179,22.615776 -3.10562,-0.66012 -0.49509,2.329215 -1.55282,-0.33006 2.44551,3.765737 3.76574,-2.445498 -1.55281,-0.33006 z"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 136.70646,21.955656 -3.10562,0.66012 0.49509,2.329215 -1.55281,0.330059 3.76574,2.445498 2.4455,-3.765737 -1.55281,0.33006 z"
+       id="path1611-2-4-4-7"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="35.71875"
+       y="80.385109"
+       id="text2259"><tspan
+         sodipodi:role="line"
+         id="tspan2257"
+         x="35.71875"
+         y="80.385109"
+         style="font-size:4.93889px;stroke-width:0.264583">汎化がうまくいった場合</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="121.5788"
+       y="80.385109"
+       id="text2263"><tspan
+         sodipodi:role="line"
+         id="tspan2261"
+         x="121.5788"
+         y="80.385109"
+         style="font-size:4.93889px;stroke-width:0.264583">過学習</tspan></text>
+  </g>
+</svg>

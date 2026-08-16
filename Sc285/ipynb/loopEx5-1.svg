@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="ex5-2.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 126.20625 123.825"
+   height="468"
+   width="477">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1251-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1249-9"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Send-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path917-4" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1365-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1363-4" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-6-2"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path917-2-7"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1467-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1465-0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-center="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1057"
+     inkscape:window-width="1857"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="255.74066"
+     inkscape:cx="313.66704"
+     inkscape:zoom="1.4142136"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:snap-page="false"
+     inkscape:snap-to-guides="true"
+     inkscape:object-paths="false">
+    <inkscape:grid
+       spacingy="0.79375"
+       spacingx="0.79375"
+       empspacing="6"
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <rect
+       y="0"
+       x="0"
+       height="123.825"
+       width="128.58749"
+       id="rect920"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round" />
+    <g
+       transform="translate(4.7624996,11.90625)"
+       id="g1558-8">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1251-7)"
+         d="m 57.15,30.95625 v 47.625 H 30.956251 l -1e-6,-61.9125 h 25.4"
+         id="path1247-4"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-8)"
+         d="M 57.15,-2.3812499 V 20.6375"
+         id="path882-65"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1365-2)"
+         d="m 83.34375,45.24375 v 38.1 H 57.150001 v 3.96875"
+         id="path1337-4"
+         sodipodi:nodetypes="cccc" />
+      <g
+         id="g876-3"
+         transform="translate(-3.4323479,36.245638)">
+        <rect
+           style="opacity:0.994;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect16-8-1"
+           width="42.862499"
+           height="9.5250025"
+           x="39.151096"
+           y="51.860611" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+           x="60.576836"
+           y="58.199585"
+           id="text36-3-8"><tspan
+             id="tspan196-7"
+             sodipodi:role="line"
+             x="60.576836"
+             y="58.199585"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583">sumを表示する</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path882-6-5"
+         d="M 57.15,97.63125 V 101.6"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-6-2)" />
+      <g
+         style="stroke-width:0.978945"
+         transform="matrix(1.0434782,0,0,1,-2.4847746,21.43125)"
+         id="g1239-3-7">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.518025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 38.893745,23.8125 57.149994,16.66875 75.406245,23.8125 57.149994,30.95625 Z"
+           id="path880-0-0" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.259012"
+           x="57.161018"
+           y="25.940189"
+           id="text36-8-9"><tspan
+             sodipodi:role="line"
+             id="tspan34-8-1"
+             x="57.161018"
+             y="25.940189"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.259012">入力が0</tspan></text>
+      </g>
+      <text
+         id="text1500-1-8"
+         y="43.575626"
+         x="74.083336"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="43.575626"
+           x="74.083336"
+           id="tspan1498-8-8"
+           sodipodi:role="line">はい</tspan></text>
+      <text
+         id="text1504-1-2"
+         y="55.562496"
+         x="44.185417"
+         style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.264583"
+           y="55.562496"
+           x="44.185417"
+           id="tspan1502-8-8"
+           sodipodi:role="line">いいえ</tspan></text>
+      <g
+         id="g1299-8"
+         transform="translate(3.8146973e-7,4.7624998)">
+        <rect
+           y="-2.3812525"
+           x="35.718746"
+           height="9.5250025"
+           width="42.862503"
+           id="rect16-8-6-6-7"
+           style="opacity:0.994;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           id="text36-3-6-9-4"
+           y="4.034894"
+           x="57.184452"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="4.034894"
+             x="57.184452"
+             sodipodi:role="line"
+             id="tspan196-6-3-9">sumを0にする</tspan></text>
+      </g>
+      <g
+         id="g950-0"
+         transform="translate(7.6293946e-7,-45.243745)">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1259-0"
+           width="28.574999"
+           height="7.1437497"
+           x="42.862499"
+           y="35.718746"
+           ry="3.5718749"
+           rx="3.5718749" />
+        <text
+           id="text36-3-6-9-0-7"
+           y="41.319092"
+           x="57.039757"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="41.319092"
+             x="57.039757"
+             sodipodi:role="line"
+             id="tspan196-6-3-1-1">開始</tspan></text>
+      </g>
+      <g
+         id="g1023-9"
+         transform="translate(78.581252,9.525003)">
+        <rect
+           style="opacity:0.994;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect16-8-6-4-8-1"
+           width="42.862499"
+           height="14.287504"
+           x="-42.862499"
+           y="50.006248" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+           x="-21.321007"
+           y="56.163948"
+           id="text36-3-6-7-8-9"><tspan
+             sodipodi:role="line"
+             x="-21.321007"
+             y="56.163948"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             id="tspan1001-3">入力した数値を</tspan><tspan
+             id="tspan993"
+             sodipodi:role="line"
+             x="-21.321007"
+             y="62.370628"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583">sumに足す</tspan></text>
+      </g>
+      <g
+         id="g950-7-3"
+         transform="translate(1.3814697e-6,66.675004)">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1259-2-8"
+           width="28.574999"
+           height="7.1437497"
+           x="42.862499"
+           y="35.718746"
+           ry="3.5718749"
+           rx="3.5718749" />
+        <text
+           id="text36-3-6-9-0-6-4"
+           y="41.319092"
+           x="57.039757"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+             y="41.319092"
+             x="57.039757"
+             sodipodi:role="line"
+             id="tspan196-6-3-1-6-2">終了</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1467-1)"
+         d="m 76.199998,45.24375 6.350001,-9e-6"
+         id="path1439-6"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g876-6-0"
+         transform="translate(-3.4323456,-30.429361)">
+        <rect
+           style="opacity:0.994;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect16-8-4-1"
+           width="42.862503"
+           height="9.5250025"
+           x="39.151093"
+           y="51.860611" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
+           x="60.576836"
+           y="58.199585"
+           id="text36-3-0-8"><tspan
+             id="tspan196-0-2"
+             sodipodi:role="line"
+             x="60.576836"
+             y="58.199585"
+             style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583">数値を入力</tspan></text>
+      </g>
+    </g>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 33.3375,26.19375 c -4.7625,0 0,33.3375 -4.7625,33.3375 4.7625,0 0,33.337502 4.7625,33.337501"
+       id="path1102"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="1.6371201"
+       y="58.874393"
+       id="text36-3-6-7-8-9-7"><tspan
+         id="tspan993-1"
+         sodipodi:role="line"
+         x="1.6371201"
+         y="58.874393"
+         style="font-size:4.23333px;text-align:start;text-anchor:start;stroke-width:0.264583">①無限ループ</tspan><tspan
+         id="tspan1171"
+         sodipodi:role="line"
+         x="1.6371201"
+         y="63.529404"
+         style="font-size:4.23333px;text-align:start;text-anchor:start;stroke-width:0.264583">　にする</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;text-anchor:start;stroke-width:0.264583"
+       x="92.134819"
+       y="53.908852"
+       id="text36-3-6-7-8-9-7-0-5"><tspan
+         id="tspan1171-7-2"
+         sodipodi:role="line"
+         x="92.134819"
+         y="53.908852"
+         style="font-size:4.23333px;text-align:start;text-anchor:start;stroke-width:0.264583">②break で脱出</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1452-6"
+       d="m 88.10625,56.35625 3.175,-3.175"
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

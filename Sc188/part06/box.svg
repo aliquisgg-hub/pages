@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="box.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg1642"
+   version="1.1"
+   viewBox="0 0 100.0125 102.39375"
+   height="387"
+   width="378">
+  <defs
+     id="defs1636" />
+  <sodipodi:namedview
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="false"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1057"
+     inkscape:window-width="1857"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g1608"
+     inkscape:document-units="px"
+     inkscape:cy="258.45518"
+     inkscape:cx="137.06798"
+     inkscape:zoom="2.8284271"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       empspacing="6"
+       spacingy="0.79375"
+       spacingx="0.79375"
+       id="grid2205"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata1639">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <g
+       id="g1608"
+       transform="matrix(0,0.26458333,-0.26458333,0,1103.1803,-503.63429)">
+      <rect
+         transform="rotate(-90)"
+         y="2110.5"
+         x="-4097.5"
+         height="108"
+         width="71.999985"
+         id="rect1522"
+         style="fill:#ed7d31;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path1524"
+         d="m 2110.5,4070.5 h 108"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <g
+         transform="matrix(0.62498733,0,0,0.62498733,810.9644,1538.8637)"
+         style="stroke:#bd6427;stroke-width:4.8001;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="g1532">
+        <path
+           sodipodi:nodetypes="cc"
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:4.8001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+           d="M 2151.3001,4036.3005 2180.1007,4007.5"
+           id="path1526" />
+        <path
+           sodipodi:nodetypes="cc"
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:4.8001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+           d="M 2180.1007,4036.3005 2151.3001,4007.5"
+           id="path1528" />
+      </g>
+      <g
+         transform="translate(8.3716536e-6,54.000019)"
+         id="g1540">
+        <path
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+           d="m 2164.5,3971.5 v -72"
+           id="path1534" />
+        <path
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+           d="m 2137.5,3899.5 h 54"
+           id="path1536" />
+      </g>
+      <g
+         transform="matrix(1,0,0,-1,8.3716536e-6,8051)"
+         style="display:inline"
+         id="g1540-3">
+        <path
+           sodipodi:nodetypes="cc"
+           id="path1534-2"
+           d="m 2164.5,3953.5 v -54"
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+        <path
+           id="path1536-4"
+           d="m 2137.5,3899.5 h 54"
+           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      </g>
+      <circle
+         r="6"
+         transform="rotate(-90)"
+         cy="2164.5"
+         cx="-3908.5"
+         id="path1563"
+         style="fill:#ed7d31;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         transform="rotate(-90)"
+         style="display:inline;fill:#ed7d31;fill-opacity:1;stroke:#bd6427;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1563-0"
+         cx="-3878.5002"
+         cy="2164.5"
+         r="6" />
+    </g>
+    <g
+       transform="translate(2.3812502,2.3813349)"
+       id="g1697">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="64.293747"
+         y="47.625"
+         id="text2071-1"><tspan
+           sodipodi:role="line"
+           id="tspan2069-06"
+           x="64.293747"
+           y="47.625"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">外れ値</tspan></text>
+      <text
+         id="text2071-0-07"
+         y="40.481167"
+         x="38.099998"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           y="40.481167"
+           x="38.099998"
+           id="tspan2069-0-2"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">最大値 (外れ値を除く)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="30.956249"
+         y="33.337414"
+         id="text2071-0-8-9"><tspan
+           sodipodi:role="line"
+           id="tspan2069-0-1-4"
+           x="30.956249"
+           y="33.337414"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">第3四分位数</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="26.193752"
+         y="26.19375"
+         id="text2071-0-5-3"><tspan
+           sodipodi:role="line"
+           id="tspan2069-0-8-0"
+           x="26.193752"
+           y="26.19375"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">平均値</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="19.049999"
+         y="19.049915"
+         id="text2071-0-9-0"><tspan
+           sodipodi:role="line"
+           id="tspan2069-0-3-9"
+           x="19.049999"
+           y="19.049915"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">中央値</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="11.1125"
+         y="11.906165"
+         id="text2071-0-0-2"><tspan
+           sodipodi:role="line"
+           id="tspan2069-0-9-9"
+           x="11.1125"
+           y="11.906165"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">第1四分位数</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#595959;fill-opacity:0.964706;stroke-width:0.264583"
+         x="0"
+         y="4.7624998"
+         id="text2071-0-6-4"><tspan
+           sodipodi:role="line"
+           id="tspan2069-0-91-8"
+           x="0"
+           y="4.7624998"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">最小値 (外れ値を除く)</tspan></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1612"
+         sodipodi:type="arc"
+         sodipodi:cx="70.643745"
+         sodipodi:cy="63.5"
+         sodipodi:rx="3.9687517"
+         sodipodi:ry="3.9687517"
+         sodipodi:start="3.1415927"
+         sodipodi:end="0"
+         sodipodi:arc-type="arc"
+         d="M 66.674994,63.5 A 3.9687517,3.9687517 0 0 1 70.643745,59.531248 3.9687517,3.9687517 0 0 1 74.612497,63.5"
+         sodipodi:open="true" />
+      <path
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         d="M 70.643749,59.53125 V 48.418751"
+         id="path1628" />
+      <path
+         id="path1628-4"
+         d="M 54.76875,57.943751 V 42.8625"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1628-1"
+         d="M 35.71875,50.799997 V 34.924999"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1628-14"
+         d="M 28.575,64.29375 V 27.781252"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1628-7"
+         d="M 23.8125,50.800002 V 20.637501"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1628-5"
+         d="M 16.66875,50.800004 V 13.493751"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         id="path1628-3"
+         d="M 2.38125,57.943744 V 6.3499994"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 16.66875,82.549914 v 3.175 h 19.049999 v -3.175"
+         id="path868" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 2.3812497,75.406164 v 17.4625 H 54.768749 v -17.4625"
+         id="path870" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.264583"
+         x="26.19375"
+         y="90.751999"
+         id="text874"><tspan
+           sodipodi:role="line"
+           id="tspan872"
+           x="26.19375"
+           y="90.751999"
+           style="font-size:5.64444px;text-align:center;text-anchor:middle;fill:#595959;fill-opacity:0.96;stroke-width:0.264583">四分位範囲</tspan></text>
+      <text
+         id="text874-6"
+         y="97.895744"
+         x="26.19375"
+         style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="font-size:5.64444px;text-align:center;text-anchor:middle;fill:#595959;fill-opacity:0.96;stroke-width:0.264583"
+           y="97.895744"
+           x="26.19375"
+           id="tspan872-0"
+           sodipodi:role="line">範囲</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="576"
+   height="576"
+   viewBox="0 0 152.4 152.40001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="hist.svg">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         x="1728"
+         y="325"
+         width="288"
+         height="288"
+         id="rect849" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         x="1754"
+         y="338"
+         width="251"
+         height="232"
+         id="rect852" />
+    </clipPath>
+    <clipPath
+       id="clip0-3">
+      <rect
+         x="1368"
+         y="25"
+         width="288"
+         height="288"
+         id="rect1005" />
+    </clipPath>
+    <clipPath
+       id="clip1-8">
+      <rect
+         x="1413"
+         y="38"
+         width="236"
+         height="211"
+         id="rect1008" />
+    </clipPath>
+    <clipPath
+       id="clip0-1">
+      <rect
+         x="1368"
+         y="325"
+         width="288"
+         height="288"
+         id="rect1161" />
+    </clipPath>
+    <clipPath
+       id="clip1-6">
+      <rect
+         x="1414"
+         y="338"
+         width="235"
+         height="189"
+         id="rect1164" />
+    </clipPath>
+    <clipPath
+       id="clip0-16">
+      <rect
+         x="1728"
+         y="25"
+         width="288"
+         height="288"
+         id="rect320" />
+    </clipPath>
+    <clipPath
+       id="clip1-1">
+      <rect
+         x="1748"
+         y="38"
+         width="261"
+         height="187"
+         id="rect323" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="43"
+     inkscape:window-x="172"
+     inkscape:window-height="958"
+     inkscape:window-width="1904"
+     inkscape:snap-text-baseline="true"
+     fit-margin-bottom="2"
+     fit-margin-right="2"
+     fit-margin-left="2"
+     fit-margin-top="2"
+     lock-margins="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="290.51264"
+     inkscape:cy="357.58058"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     width="1152px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       empspacing="6"
+       spacingx="0.79375003"
+       spacingy="0.79375003" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="38.100002"
+       y="19.050001"
+       id="text837"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="38.100002"
+         y="19.050001"
+         style="stroke-width:0.264583" /></text>
+    <g
+       clip-path="url(#clip0)"
+       transform="matrix(0.26458334,0,0,0.26458334,-457.3323,-86.121877)"
+       id="g923">
+      <rect
+         x="1728.5"
+         y="325.5"
+         width="288"
+         height="288"
+         fill="#ffffff"
+         id="rect857" />
+      <rect
+         x="1728.5"
+         y="325.5"
+         width="288"
+         height="288"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="rect859" />
+      <g
+         clip-path="url(#clip1)"
+         id="g887">
+        <path
+           d="m 1756.5,542.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path861" />
+        <path
+           d="m 1756.5,516.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path863" />
+        <path
+           d="m 1756.5,491.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path865" />
+        <path
+           d="m 1756.5,466.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path867" />
+        <path
+           d="m 1756.5,440.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path869" />
+        <path
+           d="m 1756.5,415.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path871" />
+        <path
+           d="m 1756.5,390.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path873" />
+        <path
+           d="m 1756.5,364.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path875" />
+        <path
+           d="m 1756.5,339.5 h 246"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path877" />
+        <rect
+           x="1756"
+           y="441"
+           width="61"
+           height="126"
+           fill="#5b9bd5"
+           id="rect879" />
+        <rect
+           x="1818"
+           y="353"
+           width="60"
+           height="214"
+           fill="#5b9bd5"
+           id="rect881" />
+        <rect
+           x="1879"
+           y="441"
+           width="61"
+           height="126"
+           fill="#5b9bd5"
+           id="rect883" />
+        <rect
+           x="1941"
+           y="530"
+           width="61"
+           height="37"
+           fill="#5b9bd5"
+           id="rect885" />
+      </g>
+      <path
+         d="m 1756.5,567.5 h 246"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path889" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(1752.7,591.005)"
+         x="0.59765601"
+         y="11.9949"
+         id="text897">[5000, 12500]<tspan
+   font-size="12px"
+   x="59.159801"
+   y="-3.00507"
+   id="tspan891">(12500, 20000]</tspan><tspan
+   font-size="12px"
+   x="120.793"
+   y="11.9949"
+   id="tspan893">(20000, 27500]</tspan><tspan
+   font-size="12px"
+   x="182.42599"
+   y="-3.00507"
+   id="tspan895">(27500, 35000]</tspan></text>
+      <path
+         d="m 1756.5,567.5 v -228"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path899" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(1741.34,560.173)"
+         x="0.45898399"
+         y="11.8273"
+         id="text919">0<tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-14.1727"
+   id="tspan901">2</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-39.172699"
+   id="tspan903">4</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-64.172699"
+   id="tspan905">6</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-90.172699"
+   id="tspan907">8</tspan><tspan
+   font-size="12px"
+   x="-5.7249799"
+   y="-115.173"
+   id="tspan909">10</tspan><tspan
+   font-size="12px"
+   x="-5.7249799"
+   y="-140.173"
+   id="tspan911">12</tspan><tspan
+   font-size="12px"
+   x="-5.7249799"
+   y="-166.173"
+   id="tspan913">14</tspan><tspan
+   font-size="12px"
+   x="-5.7249799"
+   y="-191.173"
+   id="tspan915">16</tspan><tspan
+   font-size="12px"
+   x="-5.7249799"
+   y="-216.173"
+   id="tspan917">18</tspan></text>
+      <path
+         d="m 1728,325 h 288 v 288 h -288 z"
+         fill="#000000"
+         fill-rule="evenodd"
+         fill-opacity="0"
+         id="path921" />
+    </g>
+    <g
+       clip-path="url(#clip0-3)"
+       transform="matrix(0.26458334,0,0,0.26458334,-362.0823,69.453128)"
+       id="g1079">
+      <rect
+         x="1368.5"
+         y="25.5"
+         width="288"
+         height="288"
+         fill="#ffffff"
+         id="rect1013" />
+      <rect
+         x="1368.5"
+         y="25.5"
+         width="288"
+         height="288"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="rect1015" />
+      <g
+         clip-path="url(#clip1-8)"
+         id="g1043">
+        <path
+           d="m 1414.5,221.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1017" />
+        <path
+           d="m 1414.5,195.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1019" />
+        <path
+           d="m 1414.5,169.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1021" />
+        <path
+           d="m 1414.5,143.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1023" />
+        <path
+           d="m 1414.5,117.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1025" />
+        <path
+           d="m 1414.5,91.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1027" />
+        <path
+           d="m 1414.5,65.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1029" />
+        <path
+           d="m 1414.5,39.5 h 233"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1031" />
+        <rect
+           x="1415"
+           y="118"
+           width="46"
+           height="129"
+           fill="#5b9bd5"
+           id="rect1033" />
+        <rect
+           x="1462"
+           y="79"
+           width="45"
+           height="168"
+           fill="#5b9bd5"
+           id="rect1035" />
+        <rect
+           x="1508"
+           y="66"
+           width="46"
+           height="181"
+           fill="#5b9bd5"
+           id="rect1037" />
+        <rect
+           x="1555"
+           y="222"
+           width="45"
+           height="25"
+           fill="#5b9bd5"
+           id="rect1039" />
+        <rect
+           x="1601"
+           y="235"
+           width="46"
+           height="12"
+           fill="#5b9bd5"
+           id="rect1041" />
+      </g>
+      <path
+         d="m 1414.5,247.5 h 233"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path1045" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="rotate(-30.000012,1228.4614,-2420.5538)"
+         x="-5.2831998"
+         y="10.3461"
+         id="text1055">[5000, 12300]<tspan
+   font-size="12px"
+   x="28.903999"
+   y="33.606701"
+   id="tspan1047">(12300, 19600]</tspan><tspan
+   font-size="12px"
+   x="69.210297"
+   y="56.877602"
+   id="tspan1049">(19600, 26900]</tspan><tspan
+   font-size="12px"
+   x="109.517"
+   y="80.148499"
+   id="tspan1051">(26900, 34200]</tspan><tspan
+   font-size="12px"
+   x="149.823"
+   y="103.419"
+   id="tspan1053">(34200, 41500]</tspan></text>
+      <path
+         d="M 1414.5,247.5 V 39.5"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path1057" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(1399.81,239.658)"
+         x="0.45898399"
+         y="11.3423"
+         id="text1075">0<tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-14.6577"
+   id="tspan1059">2</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-40.6577"
+   id="tspan1061">4</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-66.6577"
+   id="tspan1063">6</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-91.6577"
+   id="tspan1065">8</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-117.658"
+   id="tspan1067">10</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-143.658"
+   id="tspan1069">12</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-169.658"
+   id="tspan1071">14</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-195.658"
+   id="tspan1073">16</tspan></text>
+      <path
+         d="m 1368,25 h 288 v 288 h -288 z"
+         fill="#000000"
+         fill-rule="evenodd"
+         fill-opacity="0"
+         id="path1077" />
+    </g>
+    <g
+       clip-path="url(#clip0-1)"
+       transform="matrix(0.26458334,0,0,0.26458334,-285.8823,-86.121877)"
+       id="g1231">
+      <rect
+         x="1368.5"
+         y="325.5"
+         width="288"
+         height="288"
+         fill="#ffffff"
+         id="rect1169" />
+      <rect
+         x="1368.5"
+         y="325.5"
+         width="288"
+         height="288"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="rect1171" />
+      <g
+         clip-path="url(#clip1-6)"
+         id="g1197">
+        <path
+           d="m 1415.5,494.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1173" />
+        <path
+           d="m 1415.5,463.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1175" />
+        <path
+           d="m 1415.5,432.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1177" />
+        <path
+           d="m 1415.5,401.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1179" />
+        <path
+           d="m 1415.5,370.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1181" />
+        <path
+           d="m 1415.5,339.5 h 232"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path1183" />
+        <rect
+           x="1416"
+           y="417"
+           width="38"
+           height="108"
+           fill="#5b9bd5"
+           id="rect1185" />
+        <rect
+           x="1455"
+           y="356"
+           width="37"
+           height="169"
+           fill="#5b9bd5"
+           id="rect1187" />
+        <rect
+           x="1493"
+           y="386"
+           width="38"
+           height="139"
+           fill="#5b9bd5"
+           id="rect1189" />
+        <rect
+           x="1532"
+           y="371"
+           width="37"
+           height="154"
+           fill="#5b9bd5"
+           id="rect1191" />
+        <rect
+           x="1570"
+           y="510"
+           width="38"
+           height="15"
+           fill="#5b9bd5"
+           id="rect1193" />
+        <rect
+           x="1609"
+           y="495"
+           width="38"
+           height="30"
+           fill="#5b9bd5"
+           id="rect1195" />
+      </g>
+      <path
+         d="m 1415.5,525.5 h 232"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path1199" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="rotate(-59.999988,1210.8117,-910.94845)"
+         x="-9.7484198"
+         y="6.3183699"
+         id="text1211">[5000, 10000]<tspan
+   font-size="12px"
+   x="3.4435699"
+   y="39.7356"
+   id="tspan1201">(10000, 15000]</tspan><tspan
+   font-size="12px"
+   x="22.7472"
+   y="73.170403"
+   id="tspan1203">(15000, 20000]</tspan><tspan
+   font-size="12px"
+   x="42.050701"
+   y="106.605"
+   id="tspan1205">(20000, 25000]</tspan><tspan
+   font-size="12px"
+   x="61.3545"
+   y="140.03999"
+   id="tspan1207">(25000, 30000]</tspan><tspan
+   font-size="12px"
+   x="80.657997"
+   y="173.47501"
+   id="tspan1209">(30000, 35000]</tspan></text>
+      <path
+         d="m 1415.5,525.5 v -186"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path1213" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(1400.87,517.773)"
+         x="0.45898399"
+         y="11.2267"
+         id="text1227">0<tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-19.7733"
+   id="tspan1215">2</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-49.7733"
+   id="tspan1217">4</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-80.7733"
+   id="tspan1219">6</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-111.773"
+   id="tspan1221">8</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-142.77299"
+   id="tspan1223">10</tspan><tspan
+   font-size="12px"
+   x="-5.7248502"
+   y="-173.77299"
+   id="tspan1225">12</tspan></text>
+      <path
+         d="m 1368,325 h 288 v 288 h -288 z"
+         fill="#000000"
+         fill-rule="evenodd"
+         fill-opacity="0"
+         id="path1229" />
+    </g>
+    <g
+       clip-path="url(#clip0-16)"
+       transform="matrix(0.26458334,0,0,0.26458334,-381.1323,69.453128)"
+       id="g444">
+      <rect
+         x="1728.5"
+         y="25.5"
+         width="288"
+         height="288"
+         fill="#ffffff"
+         id="rect328" />
+      <rect
+         x="1728.5"
+         y="25.5"
+         width="288"
+         height="288"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="rect330" />
+      <g
+         clip-path="url(#clip1-1)"
+         id="g378">
+        <path
+           d="m 1749.5,199.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path332" />
+        <path
+           d="m 1749.5,176.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path334" />
+        <path
+           d="m 1749.5,153.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path336" />
+        <path
+           d="m 1749.5,131.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path338" />
+        <path
+           d="m 1749.5,108.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path340" />
+        <path
+           d="m 1749.5,85.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path342" />
+        <path
+           d="m 1749.5,62.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path344" />
+        <path
+           d="m 1749.5,39.5 h 258"
+           stroke="#d9d9d9"
+           stroke-miterlimit="2"
+           fill="none"
+           id="path346" />
+        <rect
+           x="1750"
+           y="154"
+           width="12"
+           height="68"
+           fill="#5b9bd5"
+           id="rect348" />
+        <rect
+           x="1763"
+           y="177"
+           width="12"
+           height="45"
+           fill="#5b9bd5"
+           id="rect350" />
+        <rect
+           x="1789"
+           y="177"
+           width="11"
+           height="45"
+           fill="#5b9bd5"
+           id="rect352" />
+        <rect
+           x="1801"
+           y="154"
+           width="12"
+           height="68"
+           fill="#5b9bd5"
+           id="rect354" />
+        <rect
+           x="1814"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect356" />
+        <rect
+           x="1827"
+           y="63"
+           width="12"
+           height="159"
+           fill="#5b9bd5"
+           id="rect358" />
+        <rect
+           x="1840"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect360" />
+        <rect
+           x="1853"
+           y="132"
+           width="12"
+           height="90"
+           fill="#5b9bd5"
+           id="rect362" />
+        <rect
+           x="1866"
+           y="132"
+           width="12"
+           height="90"
+           fill="#5b9bd5"
+           id="rect364" />
+        <rect
+           x="1879"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect366" />
+        <rect
+           x="1892"
+           y="154"
+           width="11"
+           height="68"
+           fill="#5b9bd5"
+           id="rect368" />
+        <rect
+           x="1917"
+           y="86"
+           width="12"
+           height="136"
+           fill="#5b9bd5"
+           id="rect370" />
+        <rect
+           x="1956"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect372" />
+        <rect
+           x="1969"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect374" />
+        <rect
+           x="1994"
+           y="200"
+           width="12"
+           height="22"
+           fill="#5b9bd5"
+           id="rect376" />
+      </g>
+      <path
+         d="m 1749.5,222.5 h 258"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path380" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="rotate(-90,1021.288,-727.73196)"
+         x="-11.6016"
+         y="0.63867098"
+         id="text420">[5000, 6500]<tspan
+   font-size="12px"
+   x="-11.5602"
+   y="13.5249"
+   id="tspan382">(6500, 8000]</tspan><tspan
+   font-size="12px"
+   x="-11.5603"
+   y="26.3909"
+   id="tspan384">(8000, 9500]</tspan><tspan
+   font-size="12px"
+   x="-17.702999"
+   y="39.215599"
+   id="tspan386">(9500, 11000]</tspan><tspan
+   font-size="12px"
+   x="-23.8459"
+   y="52.040401"
+   id="tspan388">(11000, 12500]</tspan><tspan
+   font-size="12px"
+   x="-23.8459"
+   y="64.906403"
+   id="tspan390">(12500, 14000]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="77.772301"
+   id="tspan392">(14000, 15500]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="90.6381"
+   id="tspan394">(15500, 17000]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="103.504"
+   id="tspan396">(17000, 18500]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="116.37"
+   id="tspan398">(18500, 20000]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="129.23599"
+   id="tspan400">(20000, 21500]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="142.101"
+   id="tspan402">(21500, 23000]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="154.967"
+   id="tspan404">(23000, 24500]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="167.83299"
+   id="tspan406">(24500, 26000]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="180.69901"
+   id="tspan408">(26000, 27500]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="193.565"
+   id="tspan410">(27500, 29000]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="206.431"
+   id="tspan412">(29000, 30500]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="219.297"
+   id="tspan414">(30500, 32000]</tspan><tspan
+   font-size="12px"
+   x="-23.846001"
+   y="232.162"
+   id="tspan416">(32000, 33500]</tspan><tspan
+   font-size="12px"
+   x="-23.8458"
+   y="245.028"
+   id="tspan418">(33500, 35000]</tspan></text>
+      <path
+         d="M 1749.5,222.5 V 39.5"
+         stroke="#d9d9d9"
+         stroke-miterlimit="2"
+         fill="none"
+         id="path422" />
+      <text
+         fill="#595959"
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(1735.2,215.178)"
+         x="0.45898399"
+         y="11.8216"
+         id="text440">0<tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-11.1784"
+   id="tspan424">1</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-34.178398"
+   id="tspan426">2</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-57.178398"
+   id="tspan428">3</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-80.178398"
+   id="tspan430">4</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-103.178"
+   id="tspan432">5</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-125.178"
+   id="tspan434">6</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-148.17799"
+   id="tspan436">7</tspan><tspan
+   font-size="12px"
+   x="0.45898399"
+   y="-171.17799"
+   id="tspan438">8</tspan></text>
+      <path
+         d="m 1728,25 h 288 v 288 h -288 z"
+         fill="#000000"
+         fill-rule="evenodd"
+         fill-opacity="0"
+         id="path442" />
+    </g>
+  </g>
+</svg>

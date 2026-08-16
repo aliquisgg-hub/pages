@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="pke.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 142.875 133.35001"
+   height="504"
+   width="540">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker2091"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path2089"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path935"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path935-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path935-1" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path935-8" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="260.56574"
+     inkscape:cx="248.25954"
+     inkscape:zoom="2.8284271"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="false"
+     inkscape:window-width="1662"
+     inkscape:window-height="904"
+     inkscape:window-x="179"
+     inkscape:window-y="137"
+     inkscape:window-maximized="0"
+     inkscape:snap-center="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-smooth-nodes="false">
+    <inkscape:grid
+       spacingy="0.79375003"
+       spacingx="0.79375003"
+       empspacing="6"
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <text
+       id="text837"
+       y="19.050001"
+       x="38.100002"
+       style="font-size:4.9389px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="19.050001"
+         x="38.100002"
+         id="tspan835"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+       x="1.570959"
+       y="55.34753"
+       id="text904"><tspan
+         sodipodi:role="line"
+         id="tspan902"
+         x="1.570959"
+         y="55.34753"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583">暗号化</tspan></text>
+    <g
+       id="g1542"
+       transform="translate(9.5250001,14.287501)">
+      <g
+         transform="translate(-19.05,-33.3375)"
+         id="g895">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="38.042122"
+           y="45.872135"
+           id="text851"><tspan
+             sodipodi:role="line"
+             id="tspan849"
+             x="38.042122"
+             y="45.872135"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">平文</tspan></text>
+        <rect
+           y="35.71875"
+           x="21.43125"
+           height="14.2875"
+           width="33.337502"
+           id="rect875-2"
+           style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path906"
+         d="m 19.050001,16.668752 v 40.48125"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend);stop-color:#000000;stop-opacity:1" />
+    </g>
+    <g
+       id="g895-6"
+       transform="translate(76.200002,-19.050002)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="38.042122"
+         y="45.872135"
+         id="text851-2"><tspan
+           sodipodi:role="line"
+           id="tspan849-6"
+           x="38.042122"
+           y="45.872135"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">平文</tspan></text>
+      <rect
+         y="35.71875"
+         x="21.43125"
+         height="14.2875"
+         width="33.337502"
+         id="rect875-2-5"
+         style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       id="text904-7"
+       y="55.937328"
+       x="116.10249"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+         y="55.937328"
+         x="116.10249"
+         id="tspan902-2"
+         sodipodi:role="line">復号</tspan></text>
+    <g
+       id="g1592"
+       transform="translate(28.575005,23.812501)">
+      <g
+         id="g900-8"
+         transform="translate(47.625,-11.906251)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="38.061417"
+           y="72.016281"
+           id="text851-5-8"><tspan
+             sodipodi:role="line"
+             id="tspan849-0-0"
+             x="38.061417"
+             y="72.016281"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">暗号文</tspan></text>
+        <rect
+           y="61.912502"
+           x="21.431252"
+           height="14.2875"
+           width="33.337502"
+           id="rect875-5"
+           style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <path
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend-3);stop-color:#000000;stop-opacity:1"
+         d="M 85.724999,50.00625 V 9.5249997"
+         id="path906-1"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g1567"
+       transform="translate(9.5250001,23.812499)">
+      <g
+         transform="translate(-19.050001,-11.90625)"
+         id="g900">
+        <text
+           id="text851-5"
+           y="72.016281"
+           x="38.061417"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+             y="72.016281"
+             x="38.061417"
+             id="tspan849-0"
+             sodipodi:role="line">暗号文</tspan></text>
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect875"
+           width="33.337502"
+           height="14.2875"
+           x="21.431252"
+           y="61.912502" />
+      </g>
+      <path
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend-6);stop-color:#000000;stop-opacity:1"
+         d="m 35.718753,57.150003 h 50.00625"
+         id="path906-9"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="71.520187"
+       y="89.594536"
+       id="text904-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan902-2-8"
+         x="71.520187"
+         y="89.594536"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583">送信</tspan></text>
+    <g
+       transform="translate(51.316762,16.845205)"
+       id="g1896-7">
+      <text
+         id="text904-79-8"
+         y="31.650784"
+         x="47.49271"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           y="31.650784"
+           x="47.49271"
+           id="tspan902-1-8"
+           sodipodi:role="line">秘密鍵</tspan></text>
+      <path
+         id="path1812-4-9"
+         style="font-variation-settings:normal;vector-effect:none;fill:#a06060;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         d="m 46.674059,33.894318 c -0.856601,0.869329 -0.834677,2.3925 0.06865,3.7199 l -5.109494,5.109491 0.841896,0.841899 0.841899,-0.841899 1.262852,1.262846 0.631424,-0.63142 -0.631427,-0.631426 0.631424,-0.631431 1.262852,1.262857 0.631425,-0.63143 -1.894278,-1.894277 2.373872,-2.373869 c 1.332825,0.90533 2.863773,0.924719 3.729899,0.0587 1.046178,-1.04618 0.973952,-2.814599 -0.420951,-4.2095 -1.394902,-1.3949 -3.163316,-1.46713 -4.209495,-0.42095 -0.0035,0.003 -0.007,0.007 -0.01055,0.0105 z m 1.062921,1.041822 c 0.523089,-0.52309 1.512533,-0.381741 2.209987,0.315719 0.697455,0.697451 0.838803,1.68689 0.315714,2.209981 -0.523088,0.523089 -1.512532,0.38174 -2.209986,-0.31571 -0.697455,-0.69746 -0.838803,-1.6869 -0.315715,-2.20999 z"
+         sodipodi:nodetypes="scccccccccccccsccssssss" />
+    </g>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00a1d6;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1948"
+       width="45.243755"
+       height="23.8125"
+       x="65.484375"
+       y="40.481251"
+       rx="1.5875001"
+       ry="1.5875001" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path906-9-4"
+       d="M 69.056251,57.150002 H 47.625002"
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.793747;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker2091);stop-color:#000000;stop-opacity:1" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.793751;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.793751, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend-9);stop-color:#000000;stop-opacity:1"
+       d="M 71.437503,92.075003 V 103.98125"
+       id="path906-4"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="text904-7-3-5"
+       y="112.82826"
+       x="6.9453115"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+         y="112.82826"
+         x="6.9453115"
+         sodipodi:role="line"
+         id="tspan2648">第三者は，公開鍵を持っていても，</tspan><tspan
+         id="tspan1107"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+         y="122.13829"
+         x="6.9453115"
+         sodipodi:role="line">秘密鍵がなければ</tspan><tspan
+         id="tspan1115"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
+         y="131.44832"
+         x="6.9453115"
+         sodipodi:role="line">・途中で盗聴しても解読できない</tspan></text>
+    <g
+       transform="translate(29.798695,16.845205)"
+       id="g1896-8">
+      <text
+         id="text904-79-89"
+         y="31.650784"
+         x="47.49271"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           y="31.650784"
+           x="47.49271"
+           id="tspan902-1-5"
+           sodipodi:role="line">公開鍵</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccccccccccccsccsssss"
+         d="m 46.674027,33.894325 c -0.856599,0.86933 -0.834678,2.3925 0.06865,3.7199 l -5.109493,5.10949 0.841896,0.8419 0.841899,-0.8419 1.894275,1.89427 0.631424,-0.63142 -1.26285,-1.26285 0.631424,-0.63143 0.631425,0.63143 0.631425,-0.63143 -1.262851,-1.26285 2.373871,-2.37387 c 1.332826,0.90533 2.863774,0.92472 3.7299,0.0587 1.046178,-1.04618 0.973952,-2.8146 -0.420951,-4.2095 -1.394902,-1.3949 -3.163317,-1.46713 -4.209495,-0.42095 -0.0035,0.003 -0.007,0.007 -0.01055,0.0105 z m 1.062923,1.04182 c 0.523088,-0.52309 1.512532,-0.38174 2.209986,0.31572 0.697455,0.69745 0.838803,1.68689 0.315714,2.20998 -0.523088,0.52309 -1.512532,0.38174 -2.209986,-0.31571 -0.697455,-0.69746 -0.838803,-1.6869 -0.315714,-2.20999 z"
+         style="font-variation-settings:normal;vector-effect:none;fill:#6060a1;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="path1812-3" />
+    </g>
+    <g
+       id="g1896-8-9"
+       transform="translate(-7.1106773,16.845208)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="47.49271"
+         y="31.650784"
+         id="text904-79-89-4"><tspan
+           sodipodi:role="line"
+           id="tspan902-1-5-6"
+           x="47.49271"
+           y="31.650784"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583">公開鍵</tspan></text>
+      <path
+         id="path1812-3-3"
+         style="font-variation-settings:normal;vector-effect:none;fill:#6060a0;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         d="m 46.674027,33.894325 c -0.856599,0.86933 -0.834678,2.3925 0.06865,3.7199 l -5.109493,5.10949 0.841896,0.8419 0.841899,-0.8419 1.894275,1.89427 0.631424,-0.63142 -1.26285,-1.26285 0.631424,-0.63143 0.631425,0.63143 0.631425,-0.63143 -1.262851,-1.26285 2.373871,-2.37387 c 1.332826,0.90533 2.863774,0.92472 3.7299,0.0587 1.046178,-1.04618 0.973952,-2.8146 -0.420951,-4.2095 -1.394902,-1.3949 -3.163317,-1.46713 -4.209495,-0.42095 -0.0035,0.003 -0.007,0.007 -0.01055,0.0105 z m 1.062923,1.04182 c 0.523088,-0.52309 1.512532,-0.38174 2.209986,0.31572 0.697455,0.69745 0.838803,1.68689 0.315714,2.20998 -0.523088,0.52309 -1.512532,0.38174 -2.209986,-0.31571 -0.697455,-0.69746 -0.838803,-1.6869 -0.315714,-2.20999 z"
+         sodipodi:nodetypes="ccccccccccccccsccsssss" />
+    </g>
+    <text
+       id="text904-79-89-4-3"
+       y="65.574295"
+       x="55.564053"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="65.574295"
+         x="55.564053"
+         id="tspan902-1-5-6-1"
+         sodipodi:role="line">(公開)</tspan></text>
+    <text
+       id="text1119"
+       y="59.361755"
+       x="87.3125"
+       style="font-size:7.05556px;line-height:1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:7.05556px;stroke-width:0.264583"
+         y="59.361755"
+         x="87.3125"
+         id="tspan1117"
+         sodipodi:role="line">≠</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="28.702883"
+       y="7.8382826"
+       id="text904-8"><tspan
+         sodipodi:role="line"
+         id="tspan902-4"
+         x="28.702883"
+         y="7.8382826"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583">送信者</tspan></text>
+    <text
+       id="text904-8-6"
+       y="7.7886729"
+       x="114.22945"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         y="7.7886729"
+         x="114.22945"
+         id="tspan902-4-6"
+         sodipodi:role="line">受信者</tspan></text>
+  </g>
+</svg>
