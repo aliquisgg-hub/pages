@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="MIURA Kinya">
+    <meta name="viewport" content="width=240">
+    <title>KC-NET Index Table</title>
+
+<script src="cid.js"></script>
+
+<script>
+    let wmf_url = navigator.userAgent.match(/iPhone|Android.+Mobile/)
+        ? "https://wmf.kobe-c.ac.jp/am_bin/slogin"
+        : "https://wmf.kobe-c.ac.jp/";
+    let wms_url = navigator.userAgent.match(/iPhone|Android.+Mobile/)
+        ? "https://wms.kobe-c.ac.jp/am_bin/slogin"
+        : "https://wms.kobe-c.ac.jp/";
+</script>
+
+<style>
+th {text-align:left;padding-right:0.5em;}
+hr {margin:0px;}
+body {
+    background-image: url("kcnet_bg.png");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:100% 100%;
+}
+</style>
+</head>
+
+<body>
+<table style="width:100%;">
+    <tr><td
+    ><input type="button" value="Teams" style="width:25%;"
+        onclick="window.open('https://teams.microsoft.com/v2/', 'Teams');"
+    ><input type="button" value="UniPa" style="width:25%;"
+        onclick="window.open('https://kclip.kobe-c.ac.jp/up/faces/login/Com00501A.jsp','Com00501A');"
+    ><input type="button" value="Wms" style="width:25%;"
+        onclick="window.open(wms_url, 'WMS');"
+    ><input type="button" value="Wmf" style="width:25%;"
+        onclick="window.open(wmf_url, 'WMF');"
+    ></td></tr>
+<tr><td
+    ><input type="button" value="Mdl.D.B." style="width:34%;"
+        onclick="window.open('https://moodle.kobe-c.ac.jp/moodle/my/','_blank');"
+    ><input type="button" value="Proself" style="width:33%;"
+        onclick="window.open('https://kcps.kobe-c.ac.jp/proself/login/login.go?AD=init', 'Proself');"
+    ><input type="button" value="OneDrive" style="width:33%;"
+        onclick="window.open('https://kobec-my.sharepoint.com/my', 'OneDrive');"
+    ></td></tr></table>
+<script>
+function putRows3(x) {
+  for (var i in x) {//console.log(x[i]);
+    if (x[i]=='-') { document.writeln('<tr><td colspan="2"><hr><\/td><\/tr>'); continue; }
+    var nm = x[i].split('-')[1]||x[i];
+    document.writeln('<tr>',
+        '<td><a href="https://moodle.kobe-c.ac.jp/moodle/course/view.php?id=',courses[x[i]][3],'" onclick="return m(this);">',
+        nm,'<\/a><\/td>',
+        '<td align="right">',
+        ' <a href="https://moodle.kobe-c.ac.jp/moodle/mod/forum/index.php?id=',courses[x[i]][3],'" onclick="return m(this);">frm<\/a>',
+        ' <a href="https://moodle.kobe-c.ac.jp/moodle/mod/assignment/index.php?id=',courses[x[i]][3],'" onclick="return m(this);">ass<\/a>',
+        ' <a href="https://moodle.kobe-c.ac.jp/moodle/mod/quiz/index.php?id=',courses[x[i]][3],'" onclick="return m(this);">qz<\/a>',
+        ' <a href="https://moodle.kobe-c.ac.jp/moodle/question/edit.php?courseid=',courses[x[i]][3],'" onclick="return m(this);">qbnk<\/a>',
+        '<\/td><\/tr>');
+  }
+}
+
+function m(a) { window.open(a.href, "_blank" /*'Moodle'*/); return false; }
+document.writeln('<table style="width:100%;">');
+
+/*
+document.writeln(
+    '<tr><td><a href="https://moodle3.kobe-c.ac.jp/moodle/course/view.php?id=1355" onclick="return m(this);">P-Care</a></td><td align="right"> <a href="https://moodle3.kobe-c.ac.jp/moodle/mod/forum/index.php?id=1355" onclick="return m(this);">forum</a> <a href="https://moodle3.kobe-c.ac.jp/moodle/mod/assignment/index.php?id=1355" onclick="return m(this);">ass</a></td></tr>'
+);
+*/
+
+putRows3([
+    '26a-Sc106b', '26a-Sc285', '26a-Sc588', '-',
+    '25a-Sc106b', '25a-Sc285', '25a-Sc588', '-',
+    '25a-Sc387',  "25b-Sc288" ]);
+
+// putRows3([
+//     '25b-BS101', '25-ES492l', 
+//     '25b-Sc188b', '25b-Sc188c', 'Sc188km',/*  '25b-Sc288', */ 
+//      '25-H591', '-',
+//     '24a-Sc106b', '24a-Sc387', /* '24a-Sc588', */ /* '24a-Ps392e', */ 
+//     /* '24a-Sc184e' */, /* '24a-Sc184f', */ /* '24a-Sc184a', */ /* 'Sc184hd', */ '24a-Sc285',
+//     /* '24-H591', */ /* '24a-Ps100', */ '-',
+//     '24b-BS101', /* '25a-Ps392', */ '24-ES492k', 
+//     '24b-Sc188b'/* , '24b-Sc188c', '24b-Sc288' */]);
+
+// putRows3([
+//     '25a-Sc106b', '25a-Sc387', '25a-Ps392', '25-ES492l', 
+//     '25a-Sc184e', '25a-Sc184f', '25a-Sc184a', 'Sc184meta', '25a-Sc285', /* 'Sc000', */
+//     '25a-Sc588', '25-H591', '-',
+//     // '24b-BS101', '24b-Ps392e', '24-ES492k', 
+//     // '24b-Sc188b', /* '24b-Sc188c', */ 'Sc188meta', '24b-Sc288', '-',
+//     '24a-Sc106b', '24a-Sc387', '24b-Ps392e', '24-ES492k', 
+//     '24a-Sc184e', /* '24a-Sc184f', */ '24a-Sc184a', '24a-Sc285',
+//     '24a-Sc588', '24-H591']);
+
+// putRows3([
+//     '24b-BS101', '24b-Ps392e', '24-ES492k', 
+//     '24b-Sc188b', '24b-Sc188c', 'Sc188km', '24b-Sc288', 
+//     '24-H591', '-',
+//     '24a-Sc106b', '24a-Sc387', /* '24a-Sc588', */ '24a-Ps392e', 
+//     '24a-Sc184e', /* '24a-Sc184f', */ /* '24a-Sc184a', */ 'Sc184hd', '24a-Sc285',
+//     /* '24-H591', */ /* '24a-Ps100', */ '-',
+//     '23b-BS101', '23b-Ps392d', '23b-Ps492e', 
+//     '23b-Sc188b', /* '23b-Sc188c', */ '23b-Sc288']);
+
+// putRows3([
+//     '24a-Sc106b', '24a-Sc387', '24a-Sc588', '24a-Ps392e', '24-ES492k', 
+//     '24a-Sc184e', '24a-Sc184f', /* '24a-Sc184a', */ 'Sc184hd', '24a-Sc285', 'Sc000',
+//     '24-H591', /* '24a-Ps100', */ '-',
+//     '23b-BS101', '23b-Ps392d', '23b-Ps492e', 
+//     '23b-Sc188b', /* '23b-Sc188c', */ 'Sc188km', '23b-Sc288', '-',
+//     '23a-Sc106b', '23a-Sc387', /* '23a-Sc588', */ '23a-Ps392d', '23a-Ps492e', 
+//     '23a-Sc184e', /* '23a-Sc184f', */ '23a-Sc184a', '23a-Sc285',
+//     '23-H591'/* , '23a-Ps100' */]);
+
+// putRows3([
+//     '23b-BS101', '23b-Ps392d', '23b-Ps492e', 
+//     '23b-Sc188b', '23b-Sc188c', 'Sc188km', '23b-Sc288', 'Sc000', '23-H591', '-',
+//     '23a-Sc106b', '23a-Sc387', /* '23a-Sc588', */ '23a-Ps392d', '23a-Ps492e', 
+//     '23a-Sc184e', '23a-Sc184f', '23a-Sc184a', 'Sc184hd', '23a-Sc285', '-',
+//     '22b-BS101', /* '22b-Sc188c', */ '22b-Ps392e', '22b-Ps492e', '22b-Sc188b']);
+
+// putRows3([
+//     '23a-Sc106b', '23a-Sc387', /* '23a-Sc588', */ '23a-Ps392d', '23a-Ps492e', 
+//     '23a-Sc184e', '23a-Sc184f', '23a-Sc184a', 'Sc184hd', '23a-Sc285', 'Sc000',
+//     '23-H591', '23a-Ps100', '-',
+//     '22b-BS101', '22b-Sc188b', /* '22b-Sc188c', */ '22b-Ps392e', '22b-Ps492e', '-',
+//     '22a-Sc106b', '22a-Sc387', '22a-Sc588', '22a-Ps392e', '22a-Ps492e', 
+//     '22a-Sc184e', /* '22a-Sc184f', */ '22a-Sc184a', '22a-Sc285',
+//     '22-H591', '22a-Ps100']);
+
+// putRows3([	'22b-BS101', '22b-Ps392e', '22b-Ps492e', 
+// 			'22b-Sc188b', '22b-Sc188c', 'Sc188km', '22b-Sc289', 'Sc000', '-',
+// 			'22a-Sc387', '22a-Sc588', '22a-Ps392e', '22a-Ps492e', 
+// 			/*'22a-Sc184e', '22a-Sc184f', '22a-Sc184a', 'Sc184hd',*/ '22a-Sc285',
+// 			/*'22a-Ps100',*/ '-',
+// 			'21b-BS101', '21b-Ps392e', '21b-Ps492e', '21b-Sc289']);
+
+// putRows3([/*'22a-Ps100a_Ps100b_Ps100c_Ps100d',*/
+// 	  /*'22a-Sc106b',*/ '22a-Sc387', '22a-Sc588', '22a-Ps392e', '22a-Ps492e', 
+// 	  '22a-Sc184e', '22a-Sc184f', '22a-Sc184a', 'Sc184hd', '22a-Sc285', 'Sc000',
+// 	  '22a-Ps100', '-',
+// 	  '21b-BS101', '21b-Sc185e', '21b-Sc185f', '21b-Sc185a', 'Sc185hd', '21b-Sc289',
+// 	  '21b-Ps392e', '21b-Ps492e', '-',
+// 	  '21a-Sc184e', '21a-Sc184f', '21a-Sc184a', 'Sc184hd', '21a-Sc285',
+// 	  '21a-Sc106b', '21a-Sc387', '21a-Ps392e', '21a-Ps492e']);
+
+// putRows3(['21b-BS101', '21b-Sc185e', '21b-Sc185f', '21b-Sc185a', 'Sc185hd', '21b-Sc289', 'Sc000', 
+// 	  '21b-ID110d1', '21b-ID110d2', '21b-ID110d3', '21b-Ps392e', '21b-Ps492e', '-',
+// 	  '21a-Sc184e', '21a-Sc184f', '21a-Sc184a', 'Sc184hd', '21a-Sc285', 
+// 	  '21a-Sc106b', '21a-Sc387', '21a-Ps392e', '21a-Ps492e', '-',
+// 	  '20b-BS101', '20b-Sc185e', '20b-Sc185f', '20b-Sc185a', 'Sc185hd', '20b-Sc289', 
+// 	  '20-Ps392e', '20-Ps492e']);
+
+//putRows3(['21a-Sc184e', '21a-Sc184f', '21a-Sc184a', 'Sc184hd', '21a-Sc285', 'Sc000',
+//	  '21a-Sc106b', '21a-Sc387',
+//	  '21-Ps392e', '21-Ps492e', '-',
+//	  '20b-BS101', '20b-Sc185e', '20b-Sc185f', '20b-Sc185a', 'Sc185hd', '20b-Sc289',
+//	  '20a-Ps392e', '20a-Ps492e', '-',
+//	  '20a-Sc184e', '20a-Sc184f', '20a-Sc184a', 'Sc184hd', '20a-Sc285',
+//	  '20a-Sc106b', '20a-Sc387']);
+
+//putRows3(['20b-BS101', '20b-Sc185e', '20b-Sc185f', '20b-Sc185a', 'Sc185hd', '20b-Sc289', 'Sc000', '20-H363', 
+//	  '20-Ps392e', '20-Ps492e', '20-Ps493_2e', '-',
+//	  '20a-Sc184e', '20a-Sc184f', '20a-Sc184a', 'Sc184hd', '20a-Sc285',
+//	  '20a-Sc106b', '20a-Sc387', '-',
+//	  '19b-BS101', '19b-Sc185e', '19b-Sc185f', '19b-Sc185b', 'Sc185hd', '19b-Sc289']);
+
+//putRows3(['20a-Sc184e', '20a-Sc184f', '20a-Sc184a', 'Sc184hd', '20a-Sc285', '20a-Sc588', 'Sc000', 
+//	  '20a-Sc106b', 'Sc1xxhd', '20a-Sc387', '20-H363', '20-H493', '20-Ps392e', '20-Ps492e', '20-Ps493_2e', '-',
+//	  '19b-BS101', '19b-Sc185e', '19b-Sc185f', '19b-Sc185b', 'Sc185hd', '19b-Sc289', '-',
+//	  '19a-Sc184e', '19a-Sc184f', '19a-Sc184a', '19a-Sc285']);
+
+//putRows3(['19b-BS101','19b-Sc185e', '19b-Sc185f', '19b-Sc185b', 'Sc185hd', '19b-Sc289',
+//	  'Sc000', '-',
+//	  '19a-Sc184e', '19a-Sc184f', '19a-Sc184a', 'Sc184hd', '19a-Sc285', '-',
+//	  '18b-BS101', '18b-Sc185e', '18b-Sc185f', '18b-Sc185b', '18b-Sc289']);
+
+//putRows3(['19a-Sc184e', '19a-Sc184f', '19a-Sc184a', 'Sc184hd', '19a-Sc285', '19a-Sc588', 'Sc000', '-',
+//	  '18b-BS101', '18b-Sc185e', '18b-Sc185f', '18b-Sc185b', 'Sc185hd', '18b-Sc289', '-',
+//	  '18a-Sc184e', '18a-Sc184f', '18a-Sc184a', '18a-Sc285']);
+
+//putRows3(['18b-Sc185e', '18b-Sc185f', '18b-Sc185b', 'Sc185hd', '18b-Sc289', 'Sc000',
+//	  '18b-BS101', '18b-H261', '-',
+//	  '18a-Sc184e', '18a-Sc184f', '18a-Sc184a', 'Sc184hd', '18a-Sc285', /*'18a-Sc588',*/ '-',
+//	  '17b-BS101', '17b-Sc185e', '17b-Sc185f', '17b-Sc185a', '16b-Sc289']);
+
+//putRows3(['18a-Sc184e', '18a-Sc184f', '18a-Sc184a', 'Sc184hd', '18a-Sc285', '18a-Sc588', 'Sc000',
+//	  '18a-BS375', '-',
+//	  '17b-BS101', '17b-Sc185e', '17b-Sc185f', '17b-Sc185a', 'Sc185hd', '16b-Sc289', '-',
+//	  '17a-Sc184e', '17a-Sc184f', '17a-Sc184a', '17a-Sc285']);
+
+//putRows3(['17b-Sc185e', '17b-Sc185f', '17b-Sc185a', 'Sc185hd', 'Sc000',
+//	  '17b-BS101', '17b-ID110d3', '17b-ID110d2', '17b-ID110d1', '-',
+//	  '17a-Sc184e', '17a-Sc184f', '17a-Sc184a', 'Sc184hd', '17a-Sc285', '17a-Sc588', '-',
+//	  '16b-BS101', '16b-Sc182e', '16b-Sc182f', '16b-Sc182b']);
+
+//putRows3(['17a-Sc184e', '17a-Sc184f', '17a-Sc184a', 'Sc184hd', '17a-Sc285', '17a-Sc588', 'Sc000', '-',
+//	  '16b-BS101', '16b-Sc182e', '16b-Sc182f', '16b-Sc182b', 'Sc185hd', '16b-Sc289', '-',
+//	  '16a-Sc181e', '16a-Sc181f', '16a-Sc181a', '16a-Sc285']);
+
+document.writeln(
+    '<tr><td colspan="2"><hr><\/td><\/tr>',
+    '<tr><td><a href="https://moodle.kobe-c.ac.jp/moodle/user/files.php" onclick="return m(this);">PrivateFiles<\/a><\/td><\/tr>'
+);
+
+document.writeln('<\/table>');
+</script>
+<div
+><input type="button" value="Usir Root" style="width:50%;"
+    onclick="window.open('http://wwws.kobe-c.ac.jp/~miura/','Usir');"
+><input type="button" value="Usir Docs" style="width:50%;"
+    onclick="window.open('http://wwws.kobe-c.ac.jp/~miura/enshu.html','Usir');"
+><br
+><input type="button" value="St. Portal" style="width:33%;"
+    onclick="window.open('http://portal.kobe-c.ac.jp/student/', 'csl');"
+><input type="button" value="Portal" style="width:34%;"
+    onclick="window.open('http://portal.kobe-c.ac.jp/', 'portal');"
+><input type="button" value="FIND" style="width:33%;"
+    onclick="window.open('http://find.kobe-c.ac.jp/','find');"
+><!--input type="button" value="KC Moodle (old)" style="width:50%;"
+    onclick="window.open('https://moodle3.kobe-c.ac.jp/moodle/my','MoodleOld');"
+--><input type="button" value="NITA Moodle (old)" style="width:50%;"
+    onclick="window.open('https://moodle.kobe-c.ac.jp/moodle/course/view.php?id=176','akashiOld');"
+><input type="button" value="NITA WebClass" style="width:50%;"
+    onclick="window.open('https://webclass.kosen-k.go.jp/webclass/login.php?auth_mode=SAML','akashi');"
+></div>
+</body>
+</html>
