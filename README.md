@@ -1,3 +1,11 @@
+---
+title: Root of aliquisgg-hub
+last_modified: 2026-08-16 15:04:40 +09:00
+export_on_save:
+   html: true
+---
+<base target="_blank">
+
 # Root of aliquisgg-hub
 -   [Bookmark Tree](https://aliquisgg-hub.github.io/pages/BmTree/view3.html)
 -   [MLog](https://aliquisgg-hub.github.io/pages/MLog/Mlog.html)
