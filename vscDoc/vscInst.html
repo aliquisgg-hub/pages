@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>Visual Studio Code のインストール</title>
+   <script src="js/jquery_min.js"></script>
+   <script src="js/km_lightbox.js"></script>
+   <!--
+   上2つの .js ファイルをこの順で読み込んでおくと，
+   1. class="lightbox" と指定した a のリンク先の画像は，手前に重ねて表示される．
+   2. class="lightbox" と指定した div の中にある a のリンク先の画像は，
+      1つのグループとして（手前に重ねて）スライドショーのように表示できる．
+   3. いずれの場合も，a タグの alt 属性の値が，表示画像のキャプションとして
+      表示される．
+   -->
+   <script>
+   $(function () {
+      var lastMod = new Date(document.lastModified);
+      $("#updateDate").text("最終更新日：" + lastMod.toLocaleString());
+   });
+   </script>
+   <link href="css/km.css" rel="stylesheet">
+</head>
+<body id="top"><div id="updateDate"></div>
+
+<h1>Visual Studio Code のインストール</h1>
+
+<div class="contents noprint">
+   <h2>目次：</h2>
+   <ul>
+      <li><a href="#download">A. インストーラーのダウンロード</a></li>
+      <li><a href="#install">B. インストーラーの実行</a></li>
+      <li><a href="#winsys">C.〔補足〕Windows のシステムの種類の調べ方</a></li>
+   </ul>
+   <h3>〔「<a href="vscInit.html">日本語化と初期設定</a>」の目次〕</h3>
+   <ul>
+      <li><a href="vscInit.html#first">A. 最初の起動時</a></li>
+      <li><a href="vscInit.html#L10N">B. 日本語化</a></li>
+      <li><a href="vscInit.html#initial">C. 初期設定</a>
+         <ul>
+            <li><a href="vscInit.html#folder">フォルダーを開く</a></li>
+            <li><a href="vscInit.html#settings">各種設定の設定方法</a>
+            <li><a href="vscInit.html#recommend">おすすめの設定項目</a></li>
+            <li><a href="vscInit.html#misc">その他の設定項目</a></li>
+         </ul>
+      </li>
+      <li><a href="vscInit.html#extension">D.〔参考〕拡張機能</a>
+         <ul>
+            <li><a href="vscInit.html#frecommend">拡張機能の例（おすすめの拡張機能）</a></li>
+         </ul>
+      </li>
+   </ul>
+   <h3>〔「<a href="index.html">使用法</a>」の目次〕</h3>
+   <ul>
+      <li><a href="index.html#editor">文字の入力・削除・編集</a></li>
+      <li><a href="index.html#start">起動方法</a></li>
+      <li><a href="index.html#open">既存のファイルを開く</a></li>
+      <li><a href="index.html#new">ファイルの新規作成</a></li>
+      <li><a href="index.html#filecopy">ファイルのコピーと名前の変更</a></li>
+      <li><a href="index.html#save">ファイルの保存</a></li>
+      <li><a href="index.html#close">ファイルを閉じる</a></li>
+      <li><a href="#print">印刷</a></li>
+      <!-- <li><a href="index.html#search">検索・置換</a></li> -->
+      <!-- <li><a href="index.html#convenient">その他の便利な機能</a></li> -->
+      <li><a href="index.html#w3cWebValidator">W3C Web Validator の使い方</a></li>
+   </ul>
+</div>
+
+<p>この文書は，Visual Studio Code（略称 VS Code）と呼ばれるテキストエディタのインストール方法について記述したもので，
+   自宅等でインストールする際の参考として用いることを想定している．（基本的に Windows でインストールする場合を想定して
+   記述している．他の OS の場合も同じような手順となるが，必要に応じて適宜読み替えていただきたい．）</p>
+<p>CSLドメインのPC（教室のPC）には，この VS Code があらかじめインストールされているため，この文書のような手順を踏む必要はないが，
+   初めて使用する際には，「<a href="vscInit.html">Visual Studio Code の日本語化と初期設定</a>」に従って
+   日本語化と初期設定をしておくこと．
+</p>
+
+<h2 id="download">A. インストーラーのダウンロード</h2>
+<ol>
+<li>ブラウザで「Visual Studio Code」を検索し，microsoft の VS Code のページ
+   （<a href="https://azure.microsoft.com/ja-jp/products/visual-studio-code/" target="_blank"
+     >https://azure.microsoft.com/ja-jp/products/visual-studio-code/</a>）を開く．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInst01.PNG" class="lightbox">
+         <img src="img/vscInst01.PNG" style="width:598px;" alt="Visual Studio Code 検索画面">
+      </a>
+   </div>
+</li>
+<li>Visual Studio Code のページで，「VS Code をダウンロードする」をクリックする．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInst02.PNG" class="lightbox">
+         <img src="img/vscInst02.PNG" style="width:598px;" alt="Visual Studio Code のページ">
+      </a>
+   </div>
+</li>
+<li>OS に合わせて，適切なインストーラーを選択してクリックする．<u>Windows版は User Installer</u> でよいが，
+   x64, ARM のいずれかを選択してダウンロードする．どれを選ぶべきかは，使用している Windows のシステムの種類を調べればよい．
+   （<a href="#winsys">調べ方</a>）
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInst03.PNG" class="lightbox">
+         <img src="img/vscInst03.PNG" style="width:598px;" alt="Visual Studio Code ダウンロードページ">
+      </a>
+   </div>
+</li>
+<!-- <li>適当な場所にダウンロードする．
+   <div><img src="img/vscInst04.PNG" alt="ダウンロード・保存の確認"></div>
+</li> -->
+</ol>
+
+<h2 id="install">B. インストーラーの実行</h2>
+<p>※ 以下，若干変更されている可能性もあるが，基本的な流れは変わらないはず．</p>
+<ol>
+<li>ダウンロードしたインストーラーを実行する．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInst05.PNG" class="lightbox">
+         <img src="img/vscInst05.PNG" style="width:598px;" alt="Visual Studio Code 検索画面">
+      </a>
+   </div>
+   <p><img src="img/vscInst06.PNG" alt="セキュリティ警告"></p>
+</li>
+<li>「使用許諾契約書の同意」に同意して「同意する」を選択して「次へ」をクリックする．
+   <p>
+      <img src="img/vscInst07.PNG" alt="使用許諾契約書の同意">
+   </p>
+</li>
+<li>インストール先を指定する．特に事情がなければ，
+   そのまま変更せずに「次へ」をクリックする．
+   <p>
+      <img src="img/vscInst08.PNG" alt="インストール先の指定">
+   </p>
+</li>
+<li>スタートメニューフォルダーを指定する．これも特に事情がなければ，
+   そのまま変更せずに「次へ」をクリックする．
+   <p>
+      <img src="img/vscInst09.PNG" alt="スタートメニューフォルダーの指定">
+   </p>
+</li>
+<li id="additional">「追加タスクの選択」は好みで選択してよい．よく判らなければ変更しなくてもよい．
+   「次へ」をクリックする．
+   <p>
+      <img src="img/vscInst10.PNG" alt="追加タスクの選択">
+   </p>
+</li>
+<li>インストール内容を確認して「インストール」をクリックする．
+   <p>
+      <img src="img/vscInst11.PNG" alt="インストール準備完了">
+   </p>
+</li>
+<li>引き続き Visual Studio Code の初期設定をする場合は，
+   「Visual Studio Code を実行する」にチェックを入れて，「完了」をクリックする．
+   <p>
+      <img src="img/vscInst12.PNG" alt="セットアップウィザードの完了">
+   </p>
+</li>
+<li>最初の起動時には，「<a href="vscInit.html">Visual Studio Code の日本語化と初期設定</a>」に従って
+   日本語化と初期設定をしておくとよい．</li>
+</ol>
+
+<h2 id="winsys">C.〔補足〕Windows のシステムの種類の調べ方</h2>
+<ul>
+<li>デスクトップ、またはエクスプローラーの「PC」を右クリックして、
+   メニューから「プロパティ」を選ぶと、コンピューターの基本的な情報が表示される。
+   その中から「システムの種類」を見ればよい。
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/systemProp.PNG" class="lightbox">
+         <img src="img/systemProp.PNG" style="width:598px;" alt="PCのプロパティ">
+      </a>
+   </div>
+</li>
+</ul>
+</body>
+</html>

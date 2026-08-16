@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>Visual Studio Code の日本語化と初期設定</title>
+   <script src="js/jquery_min.js"></script>
+   <script src="js/km_lightbox.js"></script>
+   <!--
+   上2つの .js ファイルをこの順で読み込んでおくと，
+   1. class="lightbox" と指定した a のリンク先の画像は，手前に重ねて表示される．
+   2. class="lightbox" と指定した div の中にある a のリンク先の画像は，
+      1つのグループとして（手前に重ねて）スライドショーのように表示できる．
+   3. いずれの場合も，a タグの alt 属性の値が，表示画像のキャプションとして
+      表示される．
+   -->
+   <script>
+   $(function () {
+      var lastMod = new Date(document.lastModified);
+      $("#updateDate").text("最終更新日：" + lastMod.toLocaleString());
+   });
+   </script>
+   <link href="css/km.css" rel="stylesheet">
+   <style>
+      div.kome { padding-left: 1.5em; text-indent: -1.5em; }
+      div.kome:before { content: "※"; }
+   </style>
+</head>
+<body id="top"><div id="updateDate"></div>
+
+<h1>Visual Studio Code の日本語化と初期設定</h1>
+
+<div class="contents noprint">
+   <h2>目次：</h2>
+   <ul>
+      <li><a href="#first">A. 最初の起動時</a></li>
+      <li><a href="#L10N">B. 日本語化</a></li>
+      <li><a href="#initial">C. 初期設定</a>
+         <ul>
+            <li><a href="#folder">フォルダーを開く</a></li>
+            <li><a href="#settings">各種設定の設定方法</a>
+            <li><a href="#recommend">おすすめの設定項目</a></li>
+            <li><a href="#misc">その他の設定項目</a></li>
+         </ul>
+      </li>
+      <li><a href="#extension">D.〔参考〕拡張機能</a>
+         <ul>
+            <li><a href="#frecommend">拡張機能の例（おすすめの拡張機能）</a></li>
+         </ul>
+      </li>
+   </ul>
+   <h3>〔「<a href="index.html">使用法</a>」の目次〕</h3>
+   <ul>
+      <li><a href="index.html#editor">文字の入力・削除・編集</a></li>
+      <li><a href="index.html#start">起動方法</a></li>
+      <li><a href="index.html#open">既存のファイルを開く</a></li>
+      <li><a href="index.html#new">ファイルの新規作成</a></li>
+      <li><a href="index.html#filecopy">ファイルのコピーと名前の変更</a></li>
+      <li><a href="index.html#save">ファイルの保存</a></li>
+      <li><a href="index.html#close">ファイルを閉じる</a></li>
+      <li><a href="index.html#print">印刷</a></li>
+      <!-- <li><a href="index.html#search">検索・置換</a></li> -->
+      <!-- <li><a href="index.html#convenient">その他の便利な機能</a></li> -->
+      <li><a href="index.html#w3cWebValidator">W3C Web Validator の使い方</a></li>
+   </ul>
+   <h3>〔「<a href="vscInst.html">インストール</a>」の目次〕</h3>
+   <ul>
+      <li><a href="vscInst.html#download">A. インストーラーのダウンロード</a></li>
+      <li><a href="vscInst.html#install">B. インストーラーの実行</a></li>
+      <li><a href="vscInst.html#winsys">C.〔補足〕Windows のシステムの種類の調べ方</a></li>
+   </ul>
+</div>
+
+<p>以下，Windows 版の Visual Studio Code で初期設定する際の手順を記述する．
+   他の OS の場合も同じような手順となるが，必要に応じて適宜読み替えていただきたい．</p>
+
+<h2 id="first">A. 最初の起動時</h2>
+<ol>
+<li>最初に起動した際，右下の小さいウィンドウに，ユーザーの利用データを Microsoft に送信する旨のメッセージが出た場合，とりあえず「×」をクリックして消しておく．<br>
+（<u>出なかった場合，この項の内容は飛ばしてよい</u>）
+   （参考：<a href="#telemetry">ユーザーの利用データを Microsoft に送信させないようにするには</a>）
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit01.PNG" class="lightbox">
+         <img src="img/vscInit01.PNG" style="width:594px;" alt="最初の起動">
+      </a>
+   </div>
+</li>
+</ol>
+<h2 id="L10N">B. 日本語化</h2>
+<!-- 
+<p>CSLドメインのPC（教室のPC）にインストールされている Visual Studio Code は，あらかじめ日本語化されているので，
+   この節の手順は必要ない．</p>
+ -->
+<!-- 
+<div class="box">
+   <p>〔2021/9/21 追記〕最近のバージョンでは，最初の起動時に下のようなウィンドウが出るので，
+   ［<b>インストールして再起動</b>］をクリックすれば，自動的に日本語化されるようになっている．</p>
+   <img src="img/vscInit16.PNG" style="width:450px;" alt="最初の起動">
+   <p>このウィンドウが消えてしまったなど，うまくいかなかったときは，下記の手順を実施すればよい．</p>
+</div>
+ -->
+<ol>
+<li>「<b>View</b>」メニューから「<b>Command Palette...</b>」を選ぶ．（Ctrl+Shift+P キーまたは F1 キーでもよい）
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit02.PNG" class="lightbox">
+         <img src="img/vscInit02.PNG" style="width:594px;" alt="Command Palette の表示">
+      </a>
+   </div>
+</li>
+<li>開いたコマンドパレットの最上段の検索欄に「<b>config</b>」と入力し，
+   絞り込まれたコマンドから「<b>Configure Display Language</b>」を選ぶ．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit03.PNG" class="lightbox">
+         <img src="img/vscInit03.PNG" style="width:594px;" alt="Configure Display Language の実行">
+      </a>
+   </div>
+</li>
+<!-- 
+<li>「<b>Install additional languages...</b>」を選ぶ．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit04.PNG" class="lightbox">
+         <img src="img/vscInit04.PNG" style="width:594px;" alt="Install additional languages の実行">
+      </a>
+   </div>
+</li> -->
+
+<!-- <li>左のリストで「<b>Japanese Language Pack for ...</b>」を見つけて，「<b>install</b>」をクリックする． -->
+<li>表示されたリストから「<b>日本語</b>」を選んでクリックする．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit05.PNG" class="lightbox">
+         <img src="img/vscInit05.PNG" style="width:594px;" alt="Japanese Language Pack for ... のインストール">
+      </a>
+   </div>
+</li>
+
+<li>小さいウィンドウが開いたら，「<b>Restart</b>」をクリックする．
+   Visual Studio Code が再起動して，日本語化が完了する．
+   <div class="fig">
+      <img src="img/vscInit06.PNG" style="width:484px;" alt="Visual Studio Code の再起動">
+   </div>
+   <!-- 
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit06.PNG" class="lightbox">
+         <img src="img/vscInit06.PNG" style="width:594px;" alt="Visual Studio Code の再起動">
+      </a>
+   </div>
+ -->
+</li>
+</ol>
+
+<h2 id="initial">C. 初期設定</h2>
+<img src="img/vscInit06.5.PNG" style="float:right; width:360px;" alt="Visual Studio Code の再起動">
+<div class="kome">
+   最初に表示されている「VS Code を開始する」のページで，テーマ（エディタの配色などの見た目）の設定などができるので，お好みで変えてもよい．
+   一度閉じた「VS Code を開始する」のページを再度開きたい場合は，「ようこそ (Visual Studio Code)」のページの右側の「チュートリアル」から開くことができる．
+</div>
+<div class="kome"> 日本語化したにもかかわらず，設定の途中で英語に戻った場合は，Visual Studio Code をいったん終了してから，もう一度起動するとよい．</div>
+<h3 id="folder" style="clear: both;">フォルダーを開く</h3>
+<p>Visual Studio Code には，エクスプローラーの機能が備わっているので，よく使うフォルダーを開いておくと，
+   次回から自動的にそのフォルダーを開いてくれるので便利である．<br>
+   （Sc185(2) IT応用演習を受講するなら，<b>public_html</b> を開いておくとよい）</p>
+<ol>
+<li>左側にエクスプローラーが表示されていない場合は，左上のエクスプローラー・アイコンをクリックして
+   エクスプローラーを表示させる．
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit07.PNG" class="lightbox">
+         <img src="img/vscInit07.PNG" style="width:594px;" alt="エクスプローラーの表示">
+      </a>
+   </div>
+</li>
+<li>エクスプローラーに「<b>フォルダーを開く</b>」ボタンが表示されているなら，それをクリックして
+   適切なフォルダーを選択する．<br>
+   （Sc185(2) IT応用演習を受講するなら，<b>public_html</b> を開いておくとよい）
+   <div class="fig"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+      <a href="img/vscInit08.PNG" class="lightbox">
+         <img src="img/vscInit08.PNG" style="width:594px;" alt="フォルダーを開く">
+      </a>
+   </div>
+</li>
+</ol>
+<div class="kome hind"> すでにフォルダーが選択されていて，他のフォルダーを開きたい場合は，「<b>ファイル</b>」メニューの「<b>フォルダーを開く</b>」を選んで，同様に選択する．</div>
+<div class="kome hind">「このフォルダー内のファイルの作成者を信頼しますか?」というメッセージウィンドウが開いた場合は，
+   フォルダ内に（作成者不詳の）怪しいファイルがないことを確認して，「<b>はい、作成者を信頼します</b>」
+   をクリックする．<br>
+   <img src="img/vscInit19.PNG" alt="このフォルダー内のファイルの作成者を信頼しますか?">
+</div>
+
+<h3 id="settings">各種設定の設定方法</h3>
+<p class="hind">Visual Studio Code の各種の設定は，左下の歯車アイコンのメニューから「<b>設定</b>」を選び
+   （または Ctrl-, キーでもよい），「設定」のページを開いて行う．</p>
+<div class="fig ind"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+   <a href="img/vscInit09.PNG" class="lightbox">
+      <img src="img/vscInit09.PNG" style="width:594px;" alt="設定のページを開く">
+   </a>
+</div>
+<p class="hind">「設定」のページには多数の設定項目があるが，ページ先頭の「<b>設定の検索</b>」にキーワードを
+   入れることで，表示を絞り込むことができる．
+</p>
+<div class="fig ind"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+   <a href="img/vscInit10.PNG" class="lightbox">
+      <img src="img/vscInit10.PNG" style="width:594px;" alt="設定の絞り込み">
+   </a>
+</div>
+<p class="hind">設定項目をリセットする（設定前の元の値に戻す）には，その項目の左の歯車アイコン
+   （マウスカーソルを近づけると表示される）をクリックして現れるメニューから，
+   「<b>設定をリセット</b>」を選ぶ．
+</p>
+<div class="fig ind"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+   <a href="img/vscInit11.PNG" class="lightbox">
+      <img src="img/vscInit11.PNG" style="width:594px;" alt="設定のリセット">
+   </a>
+</div>
+   
+<h3 id="recommend">おすすめの設定項目</h3>
+
+<h4 id="renderWhitespace" class="hind nomb">テキスト エディター > Editor: Render Whitespace</h4>
+<div class="ind">（whitespace で検索するとよい）</div>
+<p class="ind">半角スペースを目に見えるように表示する（薄い中黒「･」で表示する）
+   かどうかを設定できる．既定値の selection は，文字列として選択したときにのみ，
+   そのように表示されるが，<b>all</b> にしておくと，常にそのように表示される．
+</p>
+<p class="ind">all にしておくと，行末の余分なスペースや，全角スペースを見分けることができる<sup>&dagger;</sup>ので，
+   all にするのがおすすめ．<br>
+   （<sup>&dagger;</sup> 全角スペースは「薄い中黒」ではないスペースとして見分けられる．）
+</p>
+
+<h4 id="wordWrap" class="hind nomb">テキスト エディター > Editor: Word Wrap</h4>
+<div class="ind">（wordwrap で検索するとよい）</div>
+<p class="ind">長い行の折り返しの仕方を決める設定項目．既定値の off では折り返しをしないが，
+   この場合，長い行はウィンドウの右に「はみ出し」て見えなくなるので，<b>on</b> にして，
+   ウィンドウの右端で折り返す設定にしておくとよい．
+</p>
+<p class="ind">この設定項目の設定値にかかわらず，「<b>表示</b>」メニューの「<b>右端での折り返し</b>」
+   （Alt-Z でもよい）で，折り返しをするかしないかを切り替えられる．
+</p>
+
+<h4 id="autoGuessEncoding" class="hind nomb">テキスト エディター > ファイル > Files: Auto Guess Encoding</h4>
+<div class="ind">（encoding で検索するとよい）</div>
+<p class="ind">
+   ファイルを読み込む際に，文字コードを自動的に推定して設定してくれる機能．
+   既定値では「無効」になっているが，チェックを付けて「<b>有効</b>」にしておく方が便利かもしれない．
+   推定された文字コードは右下に表示される．
+</p>
+<p class="ind">
+   文字コードの推定に失敗した（間違えた）場合は，右下に表示された文字コードの表示をクリックし，
+   「<b>エンコード付きで再度開く (Reopn with Encoding)</b>」を実行して，文字コードを指定して開くとよい．
+</p>
+<div class="fig ind"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+   <a href="img/vscInit12.PNG" class="lightbox">
+      <img src="img/vscInit12.PNG" style="width:594px;" alt="エンコード付きで再度開く">
+   </a>
+</div>
+
+<!-- <h4 id="encoding" class="hind nomb">テキスト エディター > ファイル > Files: Encoding</h4>
+<div class="ind">（encoding で検索するとよい）</div>
+<p class="ind">
+   ファイルを新規作成したときや，Auto Guess Encoding が無効時のファイル読み込み時に仮定される文字コードを指定する．
+   最近の Web 標準では utf8（これが既定値），Windows の標準では shiftjis．
+   よく使うものに合わせて設定しておくとよい．
+</p> -->
+
+<h4 id="update" class="hind nomb">アプリケーション > 更新 > Update: Mode</h4>
+<div class="ind">（update で検索してもよい）</div>
+<p class="ind">Visual Studio Code の更新プログラムがリリースされたときの取り扱いを設定する．
+   自宅等で使用している場合は，既定値の default のままにしておくのが良いが，
+   CSLドメインのPCでは，一般ユーザは更新ができないので，<b>none</b> にしておくと，更新を促すメッセージ
+   （下図参照）が表示されなくなる．
+</p>
+<div class="fig ind">
+   <img src="img/vscInit13.PNG" style="width:594px;" alt="更新を促すメッセージ">
+</div>
+
+<h4 id="showExpandedAbbreviation" class="hind nomb">拡張機能 > Emmet > Emmet: Show Expanded Abbreviation</h4>
+<div class="ind">（abbreviation で検索してもよい）</div>
+<p class="ind">Visual Studio Code では，HTML を Emmet と呼ばれる略記法で入力し，
+   それを自動的に HTML に変換（展開）する機能が組み込まれている
+   （cf. <a href="https://code.visualstudio.com/docs/languages/html#_emmet-snippets" target="_blank">
+      Emmet snippets</a>）．
+   この機能はうまく使えば便利であるが，慣れていないと，予期せぬ変換が勝手に行われて，
+   かえって混乱を招く場合がある．そのため，初心者はこの機能を無効にしておく方が良い．
+   無効にする場合は，この設定項目を <b>never</b> にする．
+</p>
+
+<h4 id="autoClosingTags" class="hind nomb">拡張機能 > HTML > HTML: Auto Closing Tags</h4>
+<div class="ind">（tags で検索してもよい）</div>
+<p class="ind">Visual Studio Code では，HTML のタグを入力したときに対応する閉じタグを自動的に
+   挿入したり，「&lt;/」と入力すると，その場所より前でまだ閉じられていない最も近い開きタグに対応する閉じタグを自動的に挿入したりするようになっている．この機能も，慣れていないと，予期せぬ挿入が勝手に行われて，
+   かえって混乱を招く場合がある
+   （cf. <a href="https://code.visualstudio.com/docs/languages/html#_close-tags" target="_blank">
+      Close tags</a>）．
+   そのため，初心者はこの機能を<b>無効</b>にしておく方が良いかもしれない．
+   無効にする場合は，この設定項目のチェックを外す．
+</p>
+
+<h3 id="misc">その他の設定項目</h3>
+
+<h4 id="autoDetectColorScheme" class="hind nomb">ウィンドウ > Auto Detect Color Scheme</h4>
+<div class="ind">（scheme で検索してもよい）</div>
+<p class="ind">ウィンドウの配色（ダークカラー（暗色）にするかライトカラー（明色）にするか）を，Windows
+   のシステムカラーに合わせるための設定．デフォルトではダークカラー（暗色）になっているが，チェックを付けて有効にすると，通常はライトカラー（明色）になる．お好みで決めるとよい．
+</p>
+
+<h4 id="telemetry" class="hind nomb">アプリケーション > テレメトリ > Telemetry: Telemetry Level</h4>
+<div class="ind">（telemetry で検索してもよい）</div>
+<p class="ind">ユーザーの利用データを Microsoft に送信するかどうかを設定する．
+   <b>all</b>, <b>error</b>, <b>crash</b>, <b>off</b> のいずれかの値を指定する． 
+   既定値は <b>all</b> で，この Visual Studio Code がクラッシュ（エラーにより停止すること）したときの情報（クラッシュレポート）とそれ以外のエラー情報，および通常の利用状況のデータを送信するが，<b>off</b> にすると，すべての情報が送信されなくなる．
+</p>
+
+<h2 id="extension">D.〔参考〕拡張機能</h2>
+<p class="hind">Visual Studio Code は，「拡張機能」を後から追加することで，機能を拡張することができる．
+   「拡張機能」は，以下の手順で追加できる．</p>
+   
+   <ol class="ind">
+      <li>左の拡張機能アイコン <img src="img/vscInit17.PNG" alt="拡張機能アイコン">
+         をクリックしてサイドバーを表示する．</li>
+      <li>サイドバー上部の検索窓で検索するなどして，目的の拡張機能を見つける．</li>
+      <li>見つけた拡張機能の「インストール」ボタンをクリックする．（「インストールしています」ボタンに変わる）<br>
+         <img src="img/vscInit14.PNG" style="width:512px;" alt="W3C Web Validator"></li>
+      <li>「インストールしています」ボタンが「再起動が必要です」ボタンに変わった場合は，それをクリックして再起動させる．</li>
+      <li>「インストールしています」ボタンまたは「再起動が必要です」ボタンが歯車ボタンに変わればインストール完了．</li>
+   </ol>
+
+<h3 id="frecommend">拡張機能の例（おすすめの拡張機能）</h3>
+<h4 id="validator" class="hind nomb">W3C Web Validator<span class="normal">（Sc185(2) 受講者向け）</span></h4>
+<!-- <div class="dind"><img src="img/vscInit14.PNG" style="width:512px;" alt="W3C Web Validator"></div> -->
+<ol class="ind">
+   <li>「w3c」で検索するとよい．</li>
+   <li>「インストールしています」ボタンが歯車ボタンに変わり，左下に
+      <img src="img/vscInit18.PNG" alt="W3C Web Validator icon">が表示されたら，
+      インストール完了．</li>
+   </ol>
+<p class="ind">この拡張機能 W3C Web Validator の使用法は<a href="index.html#w3cWebValidator">こちら</a>．</p>
+
+<h4 id="print" class="hind nomb">Print</h4>
+<ol class="ind">
+   <li>「print」で検索するとよい．</li>
+   <li>インストールの際，下図のような確認が表示されるので，「発行元を信頼 &インストール」をクリックする．
+      <div class="fig">
+         <img src="img/vscInit14.5.PNG" style="width: 520px;" alt="print インストールの確認">
+      </div>   
+   </li>
+</ol>
+<ul class="ind">
+   <li>編集中のテキストを印刷するための拡張機能．</li>
+   <li>カラーもそのまま印刷できる．</li>
+   <li>Jupyter Notebook のような複雑なファイルは印刷できない．</li>
+   <li>使用法は<a href="index.html#print">こちら</a>．
+<!-- 
+      <ol>
+         <li>右上にあるプリンタアイコン <img src="img/print.png" alt="プリンタアイコン" style="vertical-align:-50%;"> をクリックする．</li>
+         <li>ブラウザが開いて印刷可能な状態になるので，そこから印刷する．</li>
+      </ol>
+ -->
+   </li>
+</ul>
+
+<h4 id="python" class="hind nomb">Python と Jupyter<span class="normal">（Sc188(2), Sc285(1), Sc288(2) 受講者向け）</span></h4>
+<ol class="ind">
+   <li><b>Python</b> は「python」，<b>Jupyter</b> は「Jupyter」で検索するとよい．</li>
+   <li><b>Python</b> をインストールすると，同時に <b>Pylance</b> と <b>Python Debugger</b> が自動的にインストールされる．</li>
+   <li><b>Jupyter</b> をインストールすると，他に4つの拡張機能（<b>Jupyter Cell Tags</b>, <b>Jupyter Keymap</b>, <b>Jupyter Notebook Renderers</b>, <b>Jupyter Slide Show</b>）が自動的にインストールされる．</li>
+   <li>いずれの場合も，検索窓を空欄にして，すべての拡張機能のインストールが完了するのを待つとよい．</li>
+</ol>
+<!-- <p class="ind">これらの拡張機能の使用法は<a href="index.html#w3cWebValidator">こちら</a>．</p> -->
+
+<!-- 
+Live Server
+Auto Rename Tag
+-->
+</body>
+</html>

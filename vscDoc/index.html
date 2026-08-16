@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>Visual Studio Code の使用法</title>
+   <script src="js/jquery_min.js"></script>
+   <script src="js/km_lightbox.js"></script>
+   <!--
+   上2つの .js ファイルをこの順で読み込んでおくと，
+   1. class="lightbox" と指定した a のリンク先の画像は，手前に重ねて表示される．
+   2. class="lightbox" と指定した div の中にある a のリンク先の画像は，
+      1つのグループとして（手前に重ねて）スライドショーのように表示できる．
+   3. いずれの場合も，a タグの alt 属性の値が，表示画像のキャプションとして
+      表示される．
+   -->
+   <script>
+   $(function () {
+      var lastMod = new Date(document.lastModified);
+      $("#updateDate").text("最終更新日：" + lastMod.toLocaleString());
+   });
+   </script>
+   <link href="css/km.css" rel="stylesheet">
+</head>
+<body id="top"><div id="updateDate"></div>
+
+<h1>Visual Studio Code の使用法</h1>
+
+<div class="contents noprint">
+   <h2>目次：</h2>
+   <ul>
+      <li><a href="#editor">文字の入力・削除・編集</a></li>
+      <li><a href="#start">起動方法</a></li>
+      <li><a href="#open">既存のファイルを開く</a></li>
+      <li><a href="#new">ファイルの新規作成</a></li>
+      <li><a href="#filecopy">ファイルのコピーと名前の変更</a></li>
+      <li><a href="#save">ファイルの保存</a></li>
+      <li><a href="#close">ファイルを閉じる</a></li>
+      <li><a href="#print">印刷</a></li>
+      <!-- <li><a href="#search">検索・置換</a></li> -->
+      <!-- <li><a href="#convenient">その他の便利な機能</a></li> -->
+      <li><a href="#w3cWebValidator">W3C Web Validator の使い方</a></li>
+   </ul>
+   <h3>〔「<a href="vscInst.html">インストール</a>」の目次〕</h3>
+   <ul>
+      <li><a href="vscInst.html#download">A. インストーラーのダウンロード</a></li>
+      <li><a href="vscInst.html#install">B. インストーラーの実行</a></li>
+      <li><a href="vscInst.html#winsys">C.〔補足〕Windows のシステムの種類の調べ方</a></li>
+   </ul>
+   <h3>〔「<a href="vscInit.html">日本語化と初期設定</a>」の目次〕</h3>
+   <ul>
+      <li><a href="vscInit.html#first">A. 最初の起動時</a></li>
+      <li><a href="vscInit.html#L10N">B. 日本語化</a></li>
+      <li><a href="vscInit.html#initial">C. 初期設定</a>
+         <ul>
+            <li><a href="vscInit.html#folder">フォルダーを開く</a></li>
+            <li><a href="vscInit.html#settings">VS Code の各種設定</a>
+            <li><a href="vscInit.html#recommend">おすすめの設定項目</a></li>
+            <li><a href="vscInit.html#misc">その他の設定項目</a></li>
+         </ul>
+      </li>
+      <li><a href="vscInit.html#extension">D.〔参考〕拡張機能</a>
+         <ul>
+            <li><a href="vscInit.html#frecommend">拡張機能の例（おすすめの拡張機能）</a></li>
+         </ul>
+      </li>
+   </ul>
+</div>
+
+<p class="hind">この文書では，Windows 版 Visual Studio Code のごく初歩的な使用法について記述する．
+   他の OS の場合は，必要に応じて適宜読み替えていただきたい．
+   インターネット上にも様々な情報があるので，各自研究されたい．</p>
+<p class="hind">なお，インストール方法と日本語化・初期設定については，別に文書を作成したので，そちらを参照されたい</p>
+<ul>
+   <li><a href="vscInst.html">Visual Studio Code のインストール</a></li>
+   <li><a href="vscInit.html">Visual Studio Code の日本語化と初期設定</a></li>
+</ul>
+   
+<h2 id="editor">文字の入力・削除・編集</h2>
+<p class="hind">文字単位での入力・削除・編集は<a href="https://wwws.kobe-c.ac.jp/deguchi/kc/win10/basic/index.html#memo">メモ帳</a>と同様に行える．</p>
+
+<h2 id="start">起動方法</h2>
+<p class="hind">VS Code も，通常のアプリケーションと同様に様々な起動方法があるが，スタートボタンから起動することを推奨する．</p>
+
+<h3 class="hind">方法1</h3>
+<p class="ind">「スタートボタン」→「V」→「Visual Studio Code」→「Visual Studio Code」で起動する．</p>
+<div class="fig ind">
+   <img src="img/vscUse01.PNG" alt="起動方法1">
+</div>
+
+<h3 class="hind">方法2</h3>
+<p class="ind">「スタートボタン」をクリックした後，キーボードから名前を「visu...」と入力していき，
+   適当なところで，表示されている「Visual Studio Code」を選択する．
+   （CSLドメインPCでは，「visu」で選択肢が1つに絞られる）
+</p>
+<div class="fig ind">
+   <img src="img/vscUse02.PNG" alt="起動方法2">
+</div>
+
+<h3 class="hind">その他の起動方法</h3>
+<div class="kome ind"> CSLドメインPC（教室のPC）では，この項に記述する起動方法を利用すると，いくつかの不具合を生じるため，
+   その利用を推奨できないが，自宅等のPCで利用する際の参考として記しておく．
+</div>
+
+<h4 class="ind">編集するファイルの右クリックメニューで起動</h4>
+<p class="ind"><a href="vscInst.html#additional">VS Code のインストール時の「追加タスクの選択」</a>で，
+   「エクスプローラーのファイル コンテキスト メニューに [Code で開く] アクションを追加する」
+   を選択していた場合，Windows のエクスプローラ等でファイルのアイコンを右クリックして表示されるメニューから
+   「Code で開く」を選んで VS Code で開くことができる．<br>
+   （CSLドメインPC（教室のPC）では，この方法を用いると，各種設定が無効になるので，推奨できない）
+</p>
+<div class="fig ind">
+   <img src="img/vscUse04.PNG" alt="コンテキスト メニュー">
+</div>
+
+<h4 class="ind">すぐに起動できるように「ピン留め」をする</h4>
+<ul class="ind">
+   <li>「スタートボタン」→「V」→「Visual Studio Code」→「Visual Studio Code」のアイコンを右クリックして，
+      表示されたメニューから「スタート画面にピン留めする」を選ぶと，右側にアイコンが「ピン留め」される．
+      （下図の①）
+   </li>
+   <li>「スタートボタン」→「V」→「Visual Studio Code」→「Visual Studio Code」のアイコンを右クリックして，
+      表示されたメニューから「その他」→「タスクバーにピン留めする」を選ぶと，タスクバー（画面の下の部分）
+      にアイコンが「ピン留め」される．（下図の②）</li>
+</ul>
+<p class="ind">いずれの場合も，これ以後は「ピン留め」されたアイコンをクリックするだけで起動できる．<br>
+   （CSLドメインPC（教室のPC）では，サインアウト時にピン留めしたアイコンが消えてしまうので，推奨できない）
+</p>
+<div class="fig ind"><span class="noprint">↓クリックすると画像が拡大します<br></span>
+   <a href="img/vscUse03.PNG" class="lightbox">
+      <img src="img/vscUse03.PNG" style="width:598px;" alt="ショートカット等">
+   </a>
+</div>
+
+<h4 class="ind">デスクトップにショートカットを作成する</h4>
+<p class="ind"><a href="vscInst.html#additional">VS Code のインストール時の「追加タスクの選択」</a>で，
+   「デスクトップ上にアイコンを作成する」
+   を選択していた場合，デスクトップ上にアイコン（ショートカット）が作成されている．
+</p>
+<p class="ind">作成されていなかった場合でも，「スタートボタン」→「V」→「Visual Studio Code」→「Visual Studio Code」のアイコンを
+   デスクトップにドラッグすると，そこ（デスクトップ上）にショートカットが作成される．（前項の図の③）
+</p>
+<p class="ind">これ以後は，作成したショートカットのダブルクリックで起動できる．
+   また，開きたいファイルのアイコンをショートカットにドラッグ＆ドロップするとそのファイルを開くことができるが，
+   それ以後，<a href="vscInit.html#folder">初期設定の「フォルダーを開く」</a>で設定したフォルダーが自動的に開かなくなるので，
+   あまり好ましくない．
+   （「ファイル」メニューの「フォルダーを開く」か「最近使用した項目を開く」で元に戻せるが……）
+</p>
+
+<h2 id="open">既存のファイルを開く</h2>
+<ul>
+   <li>VS Code のエクスプローラーを利用する場合
+      <ol>
+         <li>エクスプローラーが表示されていない場合，右上のエクスプローラーのアイコンをクリックする．</li>
+         <li>エクスプローラ内に表示されているファイルをクリックする．</li>
+      </ol>
+      <div class="fig ind">
+            <img src="img/vscUse05.PNG" alt="エクスプローラーの利用">
+      </div>
+   </li>
+   <li>「ファイル」メニューの「ファイルを開く」
+      <p>メモ帳などの通常のアプリケーションと同様に，「ファイル」メニューの「ファイルを開く」
+         （または Ctrl-O）でファイルを開くこともできる．
+      </p>
+   </li>
+
+</ul>
+<h2 id="new">ファイルの新規作成</h2>
+<div class="kome hind"> テンプレートファイルなどの既存のファイルを元にして新しいファイルを作成するときは，
+   次項を参照すること．
+</div>
+<ul>
+   <li>VS Code のエクスプローラーで「新しいファイル」ボタンを用いる．
+      (普段は見えないが，マウスカーソルを近づけると現れる)
+      <div class="fig">
+         <img src="img/vscUse06.PNG" alt="新しいファイル">
+      </div>
+   </li>
+   <li>「ファイル」メニューの「新規ファイル」
+      <p>メモ帳などの通常のアプリケーションと同様に，「ファイル」メニューの「新規ファイル」
+         （または Ctrl-N）でファイルを新規作成することもできる．
+      </p>
+   </li>
+</ul>
+
+<h2 id="filecopy">ファイルのコピーと名前の変更</h2>
+<ul>
+   <li>VS Code のエクスプローラーでは，Windows のエクスプローラーと同様に，ファイルを右クリックして表示されるメニューの
+      「コピー」や「名前の変更」で，ファイルの（クリップボードへの）コピー（Ctrl-C）や名前の変更（F2）が行える．
+   </li>
+   <li>また，（クリップボードの内容がファイルであれば，）余白部分を右クリックして表示されるメニューの「貼り付け」でファイルの貼り付け
+      （Ctrl-V）が行える．
+   </li>
+   <li>既存のファイル（例えばテンプレートファイル等）のコピーを作成して名前を変更する場合は，ショートカットキーを活用すれば，
+      元のファイルをクリックして選択した後，Ctrl-C, Ctrl-V, F2 と続けてキー操作して，新しいファイルの名前を入力すればよい．
+   </li>
+</ul>
+
+<h2 id="save">ファイルの保存</h2>
+<ul>
+   <li>VS Code では，通常のアプリケーションと同じように，「ファイル」メニューの「保存」，「名前を付けて保存」で，
+      （上書き）保存，（任意の場所へ）名前を付けて保存ができる．</li>
+   <li>それ以外に，「ファイル」メニューの「すべて保存」で，変更のあったファイルのすべてを上書き保存することができる
+      （変更のあったファイルは，ファイル名タブのファイル名の後に白丸がマークされる．下図参照）．
+      <div class="fig">
+         <img src="img/vscUse07.PNG" alt="変更後未保存のファイルの表示">
+      </div>
+      「すべて保存」は，エクスプローラーの「開いているエディター」のリストを開いて，「すべて保存」ボタンで行うこともできる．（下図）
+      <div class="fig">
+         <img src="img/vscUse08.PNG" alt="すべて保存">
+      </div>   </li>
+</ul>
+
+<h2 id="close">ファイルを閉じる</h2>
+<p class="hind">ファイル名タブのファイル名の後の × マークをクリックすれば，そのファイルを閉じられる．（下図）</p>
+<div class="fig ind">
+   <img src="img/vscUse09.PNG" alt="閉じる">
+</div>
+
+<h2 id="print">印刷（拡張機能 <a href="vscInit.html#print">Print</a> の利用）</h2>
+<p class="hind">（編集中のテキストを印刷するためには，拡張機能 <a href="vscInit.html#print">Print</a> を追加しておく必要がある．以下では，この <a href="vscInit.html#print">Print</a> が既に追加されていると仮定する．）
+</p>
+<h3 class="hind">プログラム，テキスト等の印刷</h3>
+<ol>
+   <li>右上にあるプリンタアイコン <img src="img/print.png" alt="プリンタアイコン" style="vertical-align:-50%;"> をクリックする．</li>
+   <li>ブラウザが開いて印刷可能な状態になるので，そこから印刷する．</li>
+</ol>
+<div class="kome ind"> テキストを選択した状態で操作した場合，その選択された部分だけが印刷される．
+   ファイル全体を印刷する場合は，テキストを選択していない状態で行うこと．
+</div>
+<h3 class="hind">Jupyterノートブックファイル (.ipynb) の印刷</h3>
+<ul>
+   <li>
+      Jupyterノートブック形式のファイルはプリンタアイコン <img src="img/print.png" alt="プリンタアイコン" style="vertical-align:-50%;"> が表示されないので，
+      いったん<a href="export.html">HTML形式にエクスポート</a>してから
+      Firefox などのブラウザで開き，そのブラウザから印刷するとよい．
+   </li>
+</ul>
+
+<!-- 
+<h2 id="search">検索・置換</h2>
+-->
+<!--
+<h2 id="covenient">その他の便利な機能</h2>
+   行の折り返し
+   補完
+      選択、決定
+   Emmet
+   Compare Active File With…
+-->
+
+<h2 id="w3cWebValidator">W3C Web Validator の使い方</h2>
+<ul>
+   <li>編集中のHTML文書を保存したとき，または左下の
+      <img src="img/vscInit18.5.PNG" alt="W3C Web Validator icon"> をクリックしたとき，
+      そのHTML文書の文法エラーをチェックしてくれる．</li>
+   <li>チェックの結果は右下にメッセージとして表示される．エラーがある場合，<br>
+      <img src="img/vscUse10.PNG" alt="error message"><br>
+      のようなメッセージが表示される．
+      （エラーを修正してもメッセージは残るので，エラーを確認したら，このメッセージは閉じておくとよい）</li>
+   <li>左下のエラー数を表すアイコン <img src="img/vscUse11.PNG" alt="number of errors">
+      をクリックすると，エディタの下部に「問題」エリアが現れ，そこにエラーの内容や場所が表示される．
+      （もう一度クリックすると「問題」エリアの表示は消える）</li>
+</ul>
+</body>
+</html>
