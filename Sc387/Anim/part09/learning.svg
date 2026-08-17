@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="learning.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 90.4875 61.912502"
+   height="234"
+   width="342">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="137"
+     inkscape:window-x="179"
+     inkscape:window-height="904"
+     inkscape:window-width="1662"
+     inkscape:snap-object-midpoints="true"
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g1092"
+     inkscape:document-units="px"
+     inkscape:cy="111.17536"
+     inkscape:cx="175.85195"
+     inkscape:zoom="2.916402"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="false"
+     inkscape:snap-nodes="true"
+     inkscape:snap-midpoints="false"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-others="true">
+    <inkscape:grid
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <g
+       id="g1005-0"
+       transform="translate(16.66875,38.099999)">
+      <g
+         id="g1092"
+         transform="translate(-1.2657583e-7,-50.00625)">
+        <g
+           id="g999"
+           transform="translate(-23.8125,-4.7624984)">
+          <text
+             xml:space="preserve"
+             style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="19.05827"
+             y="27.81019"
+             id="text833"><tspan
+               sodipodi:role="line"
+               id="tspan831"
+               x="19.05827"
+               y="27.81019"
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">刺激</tspan><tspan
+               sodipodi:role="line"
+               x="19.05827"
+               y="32.465199"
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+               id="tspan835">（入力）</tspan></text>
+          <rect
+             ry="7.1437497"
+             rx="7.1437502"
+             y="21.431252"
+             x="11.90625"
+             height="14.287499"
+             width="14.2875"
+             id="rect912-2"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <g
+           id="g1011"
+           transform="translate(-19.05,-4.7624984)">
+          <text
+             id="text833-7"
+             y="27.768848"
+             x="76.208267"
+             style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+               y="27.768848"
+               x="76.208267"
+               id="tspan831-5"
+               sodipodi:role="line">反応</tspan><tspan
+               id="tspan835-0"
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+               y="32.423859"
+               x="76.208267"
+               sodipodi:role="line">（出力）</tspan></text>
+          <rect
+             ry="7.1437497"
+             rx="7.1437502"
+             y="21.431252"
+             x="69.056252"
+             height="14.287499"
+             width="14.2875"
+             id="rect912-0"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <path
+           style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 30.162502,59.531251 3.174999,2.38125 -3.174999,2.38125 v -1.19063 l -11.112502,5e-6 v -2.38125 l 11.112502,-5e-6 z"
+           id="path1363-8"
+           sodipodi:nodetypes="cccccccc"
+           transform="translate(-16.66875,-38.099999)" />
+        <path
+           sodipodi:nodetypes="cccccccc"
+           id="path1363-8-2"
+           d="m 63.500003,59.531251 3.174999,2.38125 -3.174999,2.38125 v -1.19063 l -11.112502,5e-6 v -2.38125 l 11.112502,-5e-6 z"
+           style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="translate(-16.66875,-38.099999)" />
+        <rect
+           y="16.668751"
+           x="16.668751"
+           height="28.575001"
+           width="19.050001"
+           id="rect935"
+           style="opacity:0.999;fill:none;fill-opacity:0.5;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="26.202019"
+           y="23.039518"
+           id="text833-2-8"><tspan
+             sodipodi:role="line"
+             id="tspan831-4-8"
+             x="26.202019"
+             y="23.039518"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">変換</tspan><tspan
+             sodipodi:role="line"
+             x="26.202019"
+             y="27.694527"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan835-5-7">（処理）</tspan></text>
+        <g
+           transform="translate(-30.956252,-1.3229178)"
+           id="g933">
+          <rect
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect912-0-2-6"
+             width="14.2875"
+             height="14.287499"
+             x="50.006252"
+             y="30.956253"
+             rx="7.1437502"
+             ry="7.1437497" />
+          <text
+             xml:space="preserve"
+             style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="57.158272"
+             y="37.310387"
+             id="text833-2-8-6"><tspan
+               sodipodi:role="line"
+               id="tspan831-4-8-4"
+               x="57.158272"
+               y="37.310387"
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">状態</tspan><tspan
+               sodipodi:role="line"
+               x="57.158272"
+               y="41.965397"
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+               id="tspan835-5-7-4">（記憶）</tspan></text>
+        </g>
+        <text
+           id="text833-73-8"
+           y="40.481251"
+           x="64.822922"
+           style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan835-4-5"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="40.481251"
+             x="64.822922"
+             sodipodi:role="line">結果</tspan><tspan
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="45.136261"
+             x="64.822922"
+             sodipodi:role="line"
+             id="tspan950-9">（評価）</tspan></text>
+        <text
+           id="text833-8-8"
+           y="51.606155"
+           x="34.139519"
+           style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="51.606155"
+             x="34.139519"
+             id="tspan831-55-9"
+             sodipodi:role="line">変化</tspan><tspan
+             id="tspan835-1-7"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="56.261166"
+             x="34.139519"
+             sodipodi:role="line">（学習）</tspan></text>
+        <g
+           id="g993-3"
+           transform="translate(-21.43125,11.906252)">
+          <text
+             id="text833-73-3-5"
+             y="53.933659"
+             x="47.625"
+             style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+               y="53.933659"
+               x="47.625"
+               sodipodi:role="line"
+               id="tspan950-4-1">経験</tspan></text>
+          <rect
+             ry="7.1437497"
+             rx="7.1437502"
+             y="45.243752"
+             x="40.481251"
+             height="14.287499"
+             width="14.2875"
+             id="rect912-0-2-3"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <path
+           id="path1363-9-6-6"
+           style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m -3.5718749,30.823961 v 27.516667 c 0,2.630255 2.13224,4.7625 4.7625001,4.7625 H 15.875001 v -1.190625 l 3.175,2.38125 -3.175,2.38125 V 65.484378 H 1.1906252 c -3.9453791,0 -7.1437499,-3.198365 -7.1437499,-7.14375 V 30.823961 Z"
+           sodipodi:nodetypes="csscccccsscc" />
+        <text
+           xml:space="preserve"
+           style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-2.3812497"
+           y="40.481251"
+           id="text833-8-5-9"><tspan
+             sodipodi:role="line"
+             x="-2.3812497"
+             y="40.481251"
+             style="font-size:4.23333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan835-1-9-6">過去の</tspan><tspan
+             id="tspan874"
+             sodipodi:role="line"
+             x="-2.3812497"
+             y="45.136261"
+             style="font-size:4.23333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">入力の</tspan><tspan
+             id="tspan1055-3"
+             sodipodi:role="line"
+             x="-2.3812497"
+             y="49.791267"
+             style="font-size:4.23333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">時系列</tspan></text>
+        <path
+           sodipodi:nodetypes="csscccccsscc"
+           d="m 55.959377,30.823961 v 27.516667 c 0,2.630254 -2.13224,4.7625 -4.7625,4.7625 H 36.512501 v -1.190625 l -3.175,2.38125 3.175,2.38125 v -1.190625 h 14.684376 c 3.945379,0 7.14375,-3.198366 7.14375,-7.14375 V 30.823961 Z"
+           style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path1363-9-6-6-5" />
+        <path
+           style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 23.812501,47.095835 2.38125,-3.174999 2.38125,3.174999 H 27.38437 l 6e-6,10.054169 h -2.38125 l -6e-6,-10.054169 z"
+           id="path1363-1"
+           sodipodi:nodetypes="cccccccc" />
+        <text
+           xml:space="preserve"
+           style="font-size:4.23333px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="43.507423"
+           y="32.556156"
+           id="text833-8-8-8"><tspan
+             sodipodi:role="line"
+             x="43.507423"
+             y="32.556156"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan835-1-7-6">「知識」</tspan><tspan
+             id="tspan1035"
+             sodipodi:role="line"
+             x="43.507423"
+             y="37.211166"
+             style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">も含む</tspan></text>
+        <path
+           sodipodi:nodetypes="cc"
+           id="path1037"
+           d="m 32.488564,33.386543 4.41664,-2.033457"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

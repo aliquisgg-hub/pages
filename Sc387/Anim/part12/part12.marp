@@ -1,0 +1,392 @@
+---
+title: Sc387(1) Part 12
+last_modified: 2024-07-07 20:03:35 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+---
+<link href="mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+# 機械学習(4)
+## 決定木学習
+<!-- 機械学習(4): 決定木学習 -->
+___
+<!-- _class: split -->
+## 決定木
+-  例えば右表のような訓練データ<sup>[[1]](#foornote)</sup>
+   が与えられたときに，「性別」,  
+   「年齢」,「薬物」,「犯罪歴」  
+   (*属性*) のデータ(*独立変数*)から，  
+   「実刑」か否か (*従属変数*) を  
+   推測するモデルを考える
+<div style="font-size:75%;">
+
+| |性別|年齢|薬物|犯罪歴|実刑|
+|:-:|--|---|----|:---:|:--:|
+|<span style="color:green;">A</span>|男性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">B</span>|女性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">C</span>|女性|老人|麻薬|初犯|<span style="color:green;">No</span>|
+|<span style="color:red;">D</span>|男性|成年|覚醒剤|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">E</span>|男性|老人|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">F</span>|男性|老人|麻薬|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">G</span>|女性|成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">H</span>|男性|未成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">I</span>|男性|老人|麻薬|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">J</span>|女性|未成年|麻薬|累犯|<span style="color:red;">Yes</span>|
+</div>
+
+___
+<!-- _class: split -->
+## 決定木の例 (1)
+-  まず A～J を性別で分けると，  
+   (<span style="color:green;">A</span> <span style="color:red;">D E F H I</span>) と
+   (<span style="color:green;">B C</span> <span style="color:red;">G J</span>) に  
+   分けられる (男性,女性)．これを  
+   (性別 (<u><span style="color:green;">A</span> <span style="color:red;">D E F H I</span></u>)
+   (<u><span style="color:green;">B C</span> <span style="color:red;">G J</span></u>))  
+   と表す
+-  この (<span style="color:green;">A</span> <span style="color:red;">D E F H I</span>) と
+   (<span style="color:green;">B C</span> <span style="color:red;">G J</span>) を  
+   個別に年齢で分けると，  
+   (性別 (年齢 (<u><span style="color:green;">A</span> <span style="color:red;">H</span></u>)
+   (<u><span style="color:red;">D</span></u>) (<u><span style="color:red;">E F I</span></u>))  
+   $\hspace{2.2em}$(年齢 (<u><span style="color:green;">B</span> <span style="color:red;">J</span></u>)
+   (<u><span style="color:red;">G</span></u>) (<u><span style="color:green;">C</span></u>)))  
+   となる (未成年, 成年, 老人)
+<div style="font-size:75%;">
+
+| |性別|年齢|薬物|犯罪歴|実刑|
+|:-:|--|---|----|:---:|:--:|
+|<span style="color:green;">A</span>|男性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">B</span>|女性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">C</span>|女性|老人|麻薬|初犯|<span style="color:green;">No</span>|
+|<span style="color:red;">D</span>|男性|成年|覚醒剤|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">E</span>|男性|老人|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">F</span>|男性|老人|麻薬|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">G</span>|女性|成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">H</span>|男性|未成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">I</span>|男性|老人|麻薬|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">J</span>|女性|未成年|麻薬|累犯|<span style="color:red;">Yes</span>|
+</div>
+
+___
+<!-- _class: split -->
+## 決定木の例 (2)
+-  (性別 (年齢 (<span style="color:green;">A</span> <span style="color:red;">H</span>)
+   (<span style="color:red;">D</span>) (<span style="color:red;">E F I</span>))  
+   $\hspace{2.2em}$(年齢 (<span style="color:green;">B</span> <span style="color:red;">J</span>)
+   (<span style="color:red;">G</span>) (<span style="color:green;">C</span>)))  
+   は，A～Jを性別と年齢で6つに  
+   分類したことになるが，このうち  
+   (<span style="color:red;">D</span>) (<span style="color:red;">E F I</span>)
+   (<span style="color:red;">G</span>) は，いずれも実刑が
+   <span style="color:red;">Yes</span>，(<span style="color:green;">C</span>) は実刑が
+   <span style="color:green;">No</span> となるので,  
+   これ以上分類する必要はない
+-  残る (<span style="color:green;">A</span> <span style="color:red;">H</span>)
+   (<span style="color:green;">B</span> <span style="color:red;">J</span>) を薬物で分けると ……  
+<div style="font-size:75%;">
+
+| |性別|年齢|薬物|犯罪歴|実刑|
+|:-:|--|---|----|:---:|:--:|
+|<span style="color:green;">A</span>|男性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">B</span>|女性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">C</span>|女性|老人|麻薬|初犯|<span style="color:green;">No</span>|
+|<span style="color:red;">D</span>|男性|成年|覚醒剤|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">E</span>|男性|老人|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">F</span>|男性|老人|麻薬|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">G</span>|女性|成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">H</span>|男性|未成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">I</span>|男性|老人|麻薬|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">J</span>|女性|未成年|麻薬|累犯|<span style="color:red;">Yes</span>|
+</div>
+
+___
+<!-- _class: split -->
+## 決定木の例 (3)
+-  (性別 (年齢 (<span style="color:green;">A</span> <span style="color:red;">H</span>)
+   (<span style="color:red;">D</span>) (<span style="color:red;">E F I</span>))  
+   $\hspace{2.2em}$(年齢 (<span style="color:green;">B</span> <span style="color:red;">J</span>)
+   (<span style="color:red;">G</span>) (<span style="color:green;">C</span>)))  
+   の，残る (<span style="color:green;">A</span> <span style="color:red;">H</span>)
+   (<span style="color:green;">B</span> <span style="color:red;">J</span>) を薬物で  
+   分けると
+
+   (性別 (年齢 (薬物 (<span style="color:green;">A</span>) ( ) (<span style="color:red;">H</span>))  
+   $\hspace{4.4em}$(<span style="color:red;">D</span>) (<span style="color:red;">E F I</span>))  
+   $\hspace{2.2em}$(年齢 (薬物(<span style="color:green;">B</span>) (<span style="color:red;">J</span>) ( ))  
+   $\hspace{4.4em}$(<span style="color:red;">G</span>) (<span style="color:green;">C</span>)))  
+
+   となる (覚醒剤, 麻薬, シンナー)
+<div style="font-size:75%;">
+
+| |性別|年齢|薬物|犯罪歴|実刑|
+|:-:|--|---|----|:---:|:--:|
+|<span style="color:green;">A</span>|男性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">B</span>|女性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">C</span>|女性|老人|麻薬|初犯|<span style="color:green;">No</span>|
+|<span style="color:red;">D</span>|男性|成年|覚醒剤|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">E</span>|男性|老人|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">F</span>|男性|老人|麻薬|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">G</span>|女性|成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">H</span>|男性|未成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">I</span>|男性|老人|麻薬|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">J</span>|女性|未成年|麻薬|累犯|<span style="color:red;">Yes</span>|
+</div>
+
+___
+<!-- _class: split -->
+## 決定木の例 (4)
+-  以上をまとめると，右のような木を作れる
+-  このような木を**決定木** (decision tree) と呼ぶ
+-  決定木を用いると，例えば新たなテストデータが与えられたとき，  
+   (女性, 成年) なら実刑 Yes，  
+   (男性, 未成年, 覚醒剤) なら実刑 No というように推測できる
+
+![h:600](dtree01.svg)
+
+<!-- 実際には，もっと膨大な訓練データで学習する -->
+___
+
+## 決定木の特徴
+-  分類の学習に用いられる ($n×質的データ→質的データ$)
+   <!-- 工夫すれば量的データに対応可（変数は中央値で分割して質的データ化，
+   出力は「ブロック」の平均値 など） -->
+-  分かりやすく，ルール化しやすい：  
+   $\quad\mathrm{if}\ (性別=女性)∧(年齢=老人)\ \mathrm{then}\ ¬実刑$  
+   など
+-  過適合 (過学習) に陥りやすい (→ 後述)
+-  データを分ける属性を選ぶ順序によって，木の構造が異なる  
+   →　分岐が少ないほど効率が良く，過適合になりにくい  
+   　　　　⇩  
+   　　分岐の少ない木を作るには？ …… **情報量** (など) を用いる
+<!-- 情報量以外に，ジニ係数を用いる方法もある -->
+___
+## 情報量
+-  確率 $p$ で起こる事象 $A$ の発生を知ったときに得られる**情報量** $I(A)$ 
+   は，$\underline{I(A)=-\log p}$ で表される
+   -  $0≦p≦1$ より，$I(A)≧0$
+   -  $p=1$ のとき $I(A)=0$ で，$p$ が小さいほど $I(A)$ は大きい
+   -  $A,B$ を，各々の確率が $p,q$ の独立事象とすると，両方が起こるという事象 $A∧B$
+      の確率は $pq$ となるので，
+      $$I(A∧B)=-\log pq=-\log p-\log q=I(A)+I(B)　となる$$
+___
+## 情報量の単位
+-  情報量 $-\log p$ の (数量的な) 値は，対数の底の値によって変わる．
+-  この対数の底は，通常 $2$ とすることが多いその場合の単位は  
+   $\mathrm{bit}$ (ビット) と呼ばれる
+   -  確率 $\frac12$ で起こる事象が起こった (または起こらなかった)
+      と知ったときに得られる情報量は
+      $-\log_2\frac12=\log_22=1\ (\mathrm{bit})$ となる
+
+※ これ以後，対数の底は，特に断らない限り $2$ として，底の表記は  
+　 省略する $(\log x = \log_2x)$
+___
+## 情報エントロピー (平均情報量)
+-  $n$個の値 $\{x_1,\cdots,x_n\}$ を取る確率変数 $X$
+   について，この $X$ が各々の値をとる確率 $P(X=x_i)$ を $p_i$ で表すとすると，  
+   $p_1+\cdots+p_n=\sum_{i=1}^np_i =1$
+-  $X$ が各々の値を取ったときの情報量 $I(X=x_i)$ は $-\log p_i$ なので，$X$
+   がいずれかの値を取るときに得られる情報量の期待値：
+   $$
+   E=-p_1\log p_1-\cdots-p_n\log p_n = -\sum_{i=1}^np_i\log p_i
+   $$
+   を**情報エントロピー** (平均情報量) という (単にエントロピーとも)<sup>[[2]](#footnote)</sup>
+___
+### 例
+-  確率変数 $X$ を，確率 $\frac12$ で起こる事象が起こった時の値 $x$ と起こらなかったときの値
+   $\bar x$ の2つの値をとる変数と考える．
+-  $X=x$ か $X=\bar x$ かが確定したするときの情報エントロピー (得られる情報量の期待値)
+   $E_X$ は，
+   $$
+   \begin{split}
+   E_X  &= -P(x)\log P(x)-P(\bar x)\log P(\bar x)\\
+         &=-\frac12\log\frac12-\frac12\log\frac12=1\ (\mathrm{bit})
+   \end{split}
+   $$
+
+   となる
+___
+<!-- _class: split -->
+## エントロピーを用いた決定木の構成 (1)
+<!-- 与えられたデータが母集団を反映していると考える -->
+-  もう一度先の例を考えてみる
+   |実刑|  |
+   |:--:|-:|
+   |No  | 3|
+   |Yes | 7|
+   |計  |10|
+-  実刑に関するエントロピーは，  
+   $E=-\frac3{10}\log\frac3{10}-\frac7{10}\log\frac7{10}$  
+   $\hspace{1.1em}≒\underline{0.881}$ となる
+<div style="font-size:75%;">
+
+| |性別|年齢|薬物|犯罪歴|実刑|
+|:-:|--|---|----|:---:|:--:|
+|<span style="color:green;">A</span>|男性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">B</span>|女性|未成年|覚醒剤|初犯|<span style="color:green;">No</span>|
+|<span style="color:green;">C</span>|女性|老人|麻薬|初犯|<span style="color:green;">No</span>|
+|<span style="color:red;">D</span>|男性|成年|覚醒剤|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">E</span>|男性|老人|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">F</span>|男性|老人|麻薬|初犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">G</span>|女性|成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">H</span>|男性|未成年|シンナー|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">I</span>|男性|老人|麻薬|累犯|<span style="color:red;">Yes</span>|
+|<span style="color:red;">J</span>|女性|未成年|麻薬|累犯|<span style="color:red;">Yes</span>|
+</div>
+
+___
+## エントロピーを用いた決定木の構成 (2)
+<div style="float:right; margin-right:1em;">
+
+|実刑|男|女|計|
+|:--:|-:|-:|-:|
+|No  | 1| 2| 3|
+|Yes | 5| 2| 7|
+|計  | 6| 4|10|
+</div>
+
+-  性別が分かったとすると，右表より
+   -  男だったときの (実刑の) エントロピーは  
+   　$-\frac1{6}\log\frac1{6}-\frac5{6}\log\frac5{6}≒\underline{0.650}$
+   -  女だったときの (実刑の) エントロピーは  
+   　$-\frac2{4}\log\frac2{4}-\frac2{4}\log\frac2{4}= \underline{1.000}$
+-  ゆえに，性別が分かったときの (実刑の) エントロピーの期待値は  
+   　$\frac6{10}×0.650+\frac4{10}×1.000 ≒ \underline{0.790}$
+-  性別が分かる前からの (実刑の) エントロピー $(0.881)$ の減少量は  
+   　$0.881-0.790≒\mathbf{\underline{0.091}}$　　― これを**ゲイン**と呼ぶ
+___
+## エントロピーを用いた決定木の構成 (3)
+#### ゲインの意味
+-  エントロピー $\;≒\;$ *(判別までに) 必要な情報量*
+-  属性が分かった (属性についての情報が得られた) とき，
+   -  得られた情報によってエントロピーが減少する  
+      　$→$　(判別までに) 必要な情報量が (得られた情報分) 減少する
+-  ゆえに，  
+
+   &emsp;　ゲイン $\;≒\;$ *属性が分かったことで得られる情報量*  
+
+   と考えられる
+
+<!-- エントロピーが減少する＝「乱雑さ」が小さくなる(乱雑な方が情報量が多い) -->
+___
+## エントロピーを用いた決定木の構成 (4)
+<div style="float:right;">
+
+|実刑|覚|麻|シ|計|
+|:--:|-:|-:|-:|-:|
+|No  | 2| 1| 0| 3|
+|Yes | 1| 3| 3| 7|
+|計  | 3| 4| 3|10|
+</div>
+
+-  薬物でも同様に計算すると，エントロピーは  
+   &ensp;覚醒剤：　
+   $-\frac2{3}\log\frac2{3}-\frac1{3}\log\frac1{3}≒\underline{0.918}$  
+   &ensp;麻薬：　　
+   $-\frac1{4}\log\frac1{4}-\frac3{4}\log\frac3{4}≒ \underline{0.811}$  
+   &ensp;シンナー：
+   $-\frac0{3}\log\frac0{3}-\frac3{3}\log\frac3{3}=\underline{0.000}$  
+   となり
+-  ゲインは
+   $$\quad 0.881-(\frac3{10}×0.918+\frac4{10}×0.811+\frac3{10}×0.000) ≒ \mathbf{\underline{0.281}}$$
+   となる
+___
+## エントロピーを用いた決定木の構成 (5)
+<div style="float:right">
+
+|属性|ゲイン|
+|:--:|-:|
+|性別  |0.091|
+|年齢  |0.157|
+|薬物  |0.281|
+|**犯罪歴**|**0.396**|
+</div>
+
+-  他の性別以外の属性でも同様にゲインを計算すると右表のようになる
+-  決定木の分岐には，ゲイン最大の属性を用いる
+   <div style="float:right">
+
+   ![h:250](dtree02.svg)
+   </div>
+
+-  例では，ゲイン最大の属性「犯罪歴」で分岐させると右図のようになる
+-  以下，2段目以降についても，同様の手順を繰り返す
+
+<!-- 累犯 は 実刑が確定しているので，これ以上分割する必要はない -->
+___
+<!-- _class: split -->
+## エントロピーを用いた決定木の構成 (6)
+-  最終的に右のような決定木ができる
+   (最初の決定木と比べてみよ)
+-  見やすく書き直したものを下に示す  
+   　　![h:360](dtree03-2.svg)
+
+![h:500](dtree03.svg)
+___
+## 決定木では決められない場合
+-  訓練データにばらつきがある場合，決定木の末端においても完全に分類できないことがある
+   (例えば，訓練データに，同じ属性の組み合わせで Yes, No の両方の事例が存在する場合など)
+   -  その場合は，通常「多数決」で定める (事例の多い方にする)
+-  決定木に該当する分岐がないようなテストデータにも対応できない
+   (訓練データにない属性の組み合わせだった場合など)
+   -  その場合は，決定木をたどれるだけたどって，最後の (分岐が無くなる)
+      ノードで，該当する訓練データの「多数決」で定める
+<!-- あるいは，多数決ではなく，その比を回答するなども？ -->
+___
+## 過適合 (過学習) の防止 (1)
+-  末端において Yes, No のどちらかだけの事例になっても，それは偶然で，最後の分岐は有意ではないかもしれない
+   -  これは，過剰な一致を求める過適合 (過学習) の状況かもしれない
+-  このような過適合 (過学習) を防ぐためには，何らかの基準を設けて，あるノードから先は分岐させないようにする方法などがある (「枝刈り」をすることになる)
+   -  例えば $(ゲイン)×(ノードに対応する事例数の比率)$
+      が，ある  
+      しきい値より小さい場合は，それ以上の分岐を打ち切るなど  
+
+<!--  ゲインが小さい ≒ あまり情報が得られない
+      事例数が少ない ≒ 細かく分割しすぎている
+      しきい値の求め方には触れない -->
+___
+<!-- _class: split -->
+## 過適合 (過学習) の防止 (2)
+<div>
+
+-  過適合 (過学習) を防止して  
+   精度を上げるために，  
+   複数の決定木を作って  
+   多数決を取る方法もある  
+   (**ランダムフォレスト**, 右図)
+
+※ 複数のAIを構成して，  
+　 多数決をとる方法を  
+　 **アンサンブル学習**という  
+<!--  多数決は分類タスクの場合
+      回帰タスクでは平均を用いる   -->
+※ ランダムフォレストは，  
+　 アンサンブル学習の一種
+</div>
+
+![h:550](rand_forest.svg) 
+___
+#### 参考：
+-  北海道大学オープンコースウェア「知能情報処理」  
+   (https://ocw.hokudai.ac.jp/lecture/intelligentinformationprocessing-2005)
+   -  11 学習(1) 決定木の学習 講義ノート
+   (https://ocw.hokudai.ac.jp/wp-content/uploads/2016/01/IntelligentInformationProcessing-2005-Note-11.pdf)
+-  [入門]初心者の初心者による初心者のための決定木分析
+   (https://qiita.com/3000manJPY/items/ef7495960f472ec14377)
+<!-- 
+- https://di-acc2.com/programming/python/13875/
+- https://datawokagaku.com/decision_tree/
+ -->
+___
+<div id="footnote"></div>
+
+#### 脚注
+
+[1] 新田克己著，知識と推論，サイエンス社(2002) 5.1節  
+[2] $p=0$ のときは，$\displaystyle\lim_{p→0}\ -p\log p = 0$ より $-p\log p=0$ とする  

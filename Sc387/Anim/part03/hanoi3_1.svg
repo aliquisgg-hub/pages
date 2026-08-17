@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="650.24994"
+   height="376.61453"
+   viewBox="0 0 172.0453 99.645933"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="hanoi3_1.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     fit-margin-bottom="8"
+     fit-margin-right="8"
+     fit-margin-left="8"
+     fit-margin-top="8"
+     lock-margins="true"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-text-baseline="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.52"
+     inkscape:cx="291.60588"
+     inkscape:cy="201.98314"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     width="1152px">
+    <inkscape:grid
+       originy="-12.281081"
+       originx="0.26457064"
+       type="xygrid"
+       id="grid10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0.26457064,-12.281081)"
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       id="text10"
+       y="19.050001"
+       x="123.60454"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"
+         y="19.050001"
+         x="123.60454"
+         id="tspan8"
+         sodipodi:role="line"><tspan
+   id="tspan1240"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">AAA</tspan>/<tspan
+   id="tspan1256"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">CCC<tspan
+   id="tspan1372"
+   style="font-size:65%;baseline-shift:super;fill:#00002a;fill-opacity:1">***</tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="95.250008"
+       y="57.150002"
+       id="text10-2"><tspan
+         sodipodi:role="line"
+         id="tspan8-0"
+         x="95.250008"
+         y="57.150002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px">BBA/BBC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.597931"
+       y="57.150002"
+       id="text10-0"><tspan
+         sodipodi:role="line"
+         id="tspan8-4"
+         x="42.597931"
+         y="57.150002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"><tspan
+   id="tspan1258"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">AA</tspan>A/<tspan
+   id="tspan1264"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">BB</tspan>A<tspan
+   id="tspan1368"
+   style="font-size:65%;baseline-shift:super">**</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="128.45522"
+       y="57.150002"
+       id="text10-5"><tspan
+         sodipodi:role="line"
+         id="tspan8-09"
+         x="128.45522"
+         y="57.150002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"><tspan
+   id="tspan1306"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">BB</tspan>C/<tspan
+   id="tspan1312"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">CC</tspan>C<tspan
+   id="tspan1370"
+   style="font-size:65%;baseline-shift:super">**</tspan></tspan></text>
+    <path
+       id="path62"
+       d="m 133.35,52.387502 -38.09999,-19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path64"
+       d="m 57.150009,52.387502 38.100001,-19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path66"
+       d="m 95.25001,52.387502 v -19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="M 105.51465,38.513296 A 14.2875,14.2875 0 0 1 95.340892,42.862212 14.2875,14.2875 0 0 1 85.112627,38.643078"
+       sodipodi:arc-type="arc"
+       sodipodi:open="true"
+       sodipodi:end="2.3596244"
+       sodipodi:start="0.76924593"
+       sodipodi:ry="14.2875"
+       sodipodi:rx="14.2875"
+       sodipodi:cy="28.575001"
+       sodipodi:cx="95.250008"
+       sodipodi:type="arc"
+       id="path70"
+       style="opacity:0.999;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path899"
+       d="M 95.25001,33.337502 133.35,19.050001"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       transform="translate(4.7625045)"
+       id="g1358">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         d="M 147.6375,26.193752 128.5875,19.05"
+         id="path901" />
+      <path
+         id="path901-4"
+         d="m 157.1625,29.765627 -9.525,-3.571878"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <path
+       id="path918"
+       d="m 95.250007,57.150002 v 4.762501"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text922"
+       y="66.675003"
+       x="95.250008"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="66.675003"
+         x="95.250008"
+         id="tspan920"
+         sodipodi:role="line">大をAからCへ</tspan><tspan
+         id="tspan924"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="71.330009"
+         x="95.250008"
+         sodipodi:role="line">（自明な問題）</tspan></text>
+    <text
+       id="text928"
+       y="95.25"
+       x="42.862503"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="95.25"
+         x="42.862503"
+         id="tspan926"
+         sodipodi:role="line">CAA/CBA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="4.4979234"
+       y="95.25"
+       id="text928-2"><tspan
+         sodipodi:role="line"
+         id="tspan926-4"
+         x="4.4979234"
+         y="95.25"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"><tspan
+   id="tspan1272"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">A</tspan>AA/<tspan
+   id="tspan1278"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">C</tspan>AA<tspan
+   id="tspan1360"
+   style="font-size:65%;baseline-shift:super">*</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="61.714069"
+       y="95.25"
+       id="text928-4"><tspan
+         sodipodi:role="line"
+         id="tspan926-6"
+         x="61.714069"
+         y="95.25"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"><tspan
+   id="tspan1294"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">C</tspan>BA/<tspan
+   id="tspan1300"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">B</tspan>BA<tspan
+   id="tspan1362"
+   style="font-size:65%;baseline-shift:super">*</tspan></tspan></text>
+    <path
+       id="path956"
+       d="m 14.2875,90.487502 28.575001,-19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path958"
+       d="m 42.862501,90.487502 v -19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path960"
+       d="m 71.437502,90.487502 -28.575001,-19.05"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path962"
+       d="m 42.862502,71.437502 9.525008,-14.2875"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264582px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       style="stroke-width:0.57735"
+       transform="matrix(2.9999991,0,0,0.99999998,-90.487464,1.7605076e-6)"
+       id="g1350">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.152757px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 50.800004,66.675002 -3.175,-9.525001"
+         id="path964" />
+      <path
+         id="path964-6"
+         d="m 52.387504,71.437502 -1.5875,-4.762501"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.152757;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.611027, 0.611027;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <path
+       style="opacity:0.999;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path70-5"
+       sodipodi:type="arc"
+       sodipodi:cx="42.862499"
+       sodipodi:cy="66.675003"
+       sodipodi:rx="14.2875"
+       sodipodi:ry="14.2875"
+       sodipodi:start="0.86646996"
+       sodipodi:end="2.2676441"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 52.113951,77.562763 a 14.2875,14.2875 0 0 1 -18.42122,0.06888" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 42.862501,95.250002 V 100.0125"
+       id="path918-4" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.862503"
+       y="104.775"
+       id="text922-7"><tspan
+         sodipodi:role="line"
+         id="tspan920-9"
+         x="42.862503"
+         y="104.775"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px">中をAからBへ</tspan><tspan
+         sodipodi:role="line"
+         x="42.862503"
+         y="109.43001"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         id="tspan924-6">（自明な問題）</tspan></text>
+    <path
+       id="path918-4-9"
+       d="M 14.2875,95.250002 V 100.0125"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text922-7-6"
+       y="104.775"
+       x="14.287502"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="104.775"
+         x="14.287502"
+         id="tspan920-9-0"
+         sodipodi:role="line">小をAからCへ</tspan><tspan
+         id="tspan924-6-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="109.43001"
+         x="14.287502"
+         sodipodi:role="line">（自明な問題）</tspan></text>
+    <path
+       id="path918-4-2"
+       d="M 71.437502,95.250002 V 100.0125"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text922-7-63"
+       y="104.775"
+       x="71.437508"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="104.775"
+         x="71.437508"
+         id="tspan920-9-07"
+         sodipodi:role="line">小をCからBへ</tspan><tspan
+         id="tspan924-6-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="109.43001"
+         x="71.437508"
+         sodipodi:role="line">（自明な問題）</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="128.58751"
+       y="95.25"
+       id="text928-6"><tspan
+         sodipodi:role="line"
+         id="tspan926-5"
+         x="128.58751"
+         y="95.25"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px">ABC/ACC</tspan></text>
+    <text
+       id="text928-2-1"
+       y="95.25"
+       x="90.355209"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"
+         y="95.25"
+         x="90.355209"
+         id="tspan926-4-8"
+         sodipodi:role="line"><tspan
+   id="tspan1318"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">B</tspan>BC/<tspan
+   id="tspan1324"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">A</tspan>BC<tspan
+   id="tspan1364"
+   style="font-size:65%;baseline-shift:super">*</tspan></tspan></text>
+    <text
+       id="text928-4-7"
+       y="95.25"
+       x="147.41702"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:start;text-anchor:start;stroke-width:0.264583px"
+         y="95.25"
+         x="147.41702"
+         id="tspan926-6-6"
+         sodipodi:role="line"><tspan
+   id="tspan1330"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">A</tspan>CC/<tspan
+   id="tspan1336"
+   style="text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1">C</tspan>CC<tspan
+   id="tspan1366"
+   style="font-size:65%;baseline-shift:super">*</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.0125,90.487508 28.575,-19.050002"
+       id="path956-4" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 128.5875,90.487508 V 71.437506"
+       id="path958-9" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 157.16251,90.487508 128.5875,71.437506"
+       id="path960-5" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264584px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 128.58751,71.437502 9.525,-14.287496"
+       id="path962-7" />
+    <g
+       style="stroke-width:0.57735"
+       transform="matrix(3.0000025,0,0,0.9999997,-261.93784,1.7825177e-5)"
+       id="g1354">
+      <path
+         id="path964-9"
+         d="M 136.525,66.675006 133.35,57.150005"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.152757px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.152757;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.611027, 0.611027;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 138.1125,71.437506 136.525,66.675005"
+         id="path964-6-8" />
+    </g>
+    <path
+       d="m 137.83896,77.562763 a 14.2875,14.2875 0 0 1 -18.42122,0.06888"
+       sodipodi:arc-type="arc"
+       sodipodi:open="true"
+       sodipodi:end="2.2676441"
+       sodipodi:start="0.86646996"
+       sodipodi:ry="14.2875"
+       sodipodi:rx="14.2875"
+       sodipodi:cy="66.675003"
+       sodipodi:cx="128.58751"
+       sodipodi:type="arc"
+       id="path70-5-9"
+       style="opacity:0.999;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path918-4-6"
+       d="m 128.5875,95.250005 v 4.762505"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text922-7-8"
+       y="104.775"
+       x="128.58751"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="104.775"
+         x="128.58751"
+         id="tspan920-9-04"
+         sodipodi:role="line">中をBからCへ</tspan><tspan
+         id="tspan924-6-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         y="109.43001"
+         x="128.58751"
+         sodipodi:role="line">（自明な問題）</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 100.0125,95.250005 v 4.762505"
+       id="path918-4-9-4" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="100.0125"
+       y="104.775"
+       id="text922-7-6-8"><tspan
+         sodipodi:role="line"
+         id="tspan920-9-0-3"
+         x="100.0125"
+         y="104.775"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px">小をBからAへ</tspan><tspan
+         sodipodi:role="line"
+         x="100.0125"
+         y="109.43001"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         id="tspan924-6-7-7">（自明な問題）</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.529167, 1.5875;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 157.16251,95.250005 v 4.762505"
+       id="path918-4-2-1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="157.16251"
+       y="104.775"
+       id="text922-7-63-9"><tspan
+         sodipodi:role="line"
+         id="tspan920-9-07-6"
+         x="157.16251"
+         y="104.775"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px">小をAからCへ</tspan><tspan
+         sodipodi:role="line"
+         x="157.16251"
+         y="109.43001"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';stroke-width:0.264583px"
+         id="tspan924-6-1-9">（自明な問題）</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.625004"
+       y="23.8125"
+       id="text10-03"><tspan
+         sodipodi:role="line"
+         id="tspan8-8"
+         x="47.625004"
+         y="23.8125"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke-width:0.264583px"><tspan
+   id="tspan1437"
+   style="font-size:65%;text-align:end;baseline-shift:super;text-anchor:end">***</tspan> (n=3)問題</tspan><tspan
+         id="tspan1450"
+         sodipodi:role="line"
+         x="47.625004"
+         y="31.578014"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke-width:0.264583px"><tspan
+   id="tspan1456"
+   style="font-size:65%;baseline-shift:super">**</tspan> (n=2)問題</tspan><tspan
+         id="tspan1452"
+         sodipodi:role="line"
+         x="47.625004"
+         y="39.343529"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'MS Gothic';-inkscape-font-specification:'MS Gothic';text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke-width:0.264583px"><tspan
+   id="tspan1454"
+   style="font-size:65%;baseline-shift:super">*</tspan> (n=1)問題</tspan></text>
+  </g>
+</svg>

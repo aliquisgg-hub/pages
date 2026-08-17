@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="900"
+   height="450"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="lifting_lemma2.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-8-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4572-3-2"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-8-1-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4572-3-2-8"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-8-1-92"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4572-3-2-6"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1100741"
+     inkscape:cx="526.18109"
+     inkscape:cy="191.87909"
+     inkscape:document-units="px"
+     inkscape:current-layer="g6889"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-8"
+     inkscape:window-y="35"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="レイヤー"
+     style="display:inline"
+     transform="translate(0,-294.09448)">
+    <g
+       id="g6889"
+       transform="translate(-62.697678,182.78206)">
+      <text
+         id="text2997-9"
+         y="148.65579"
+         x="130.95422"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="148.65579"
+           x="130.95422"
+           id="tspan2999-3"
+           sodipodi:role="line">{<tspan
+   id="tspan3011-1"
+   style="font-style:italic">P</tspan>(<tspan
+   id="tspan3013-9"
+   style="font-style:italic">x</tspan>), <tspan
+   id="tspan3015-8"
+   style="font-style:italic">Q</tspan>(<tspan
+   id="tspan3017-6"
+   style="font-style:italic">x</tspan>)}</tspan></text>
+      <text
+         id="text2997-9-5"
+         y="148.64212"
+         x="405.34494"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="148.64212"
+           x="405.34494"
+           id="tspan2999-3-0"
+           sodipodi:role="line">{¬<tspan
+   id="tspan3015-8-6"
+   style="font-style:italic">Q</tspan>(<tspan
+   id="tspan3017-6-0"
+   style="font-style:italic">f<tspan
+   id="tspan3085"
+   style="font-style:normal;-inkscape-font-specification:'Century Schoolbook'">(</tspan>y</tspan>)), <tspan
+   id="tspan3089"
+   style="font-style:italic">R</tspan>(<tspan
+   id="tspan3087"
+   style="font-style:italic">y</tspan>)}</tspan></text>
+      <text
+         id="text2997"
+         y="246.29854"
+         x="102.89954"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="246.29854"
+           x="102.89954"
+           id="tspan2999"
+           sodipodi:role="line">{<tspan
+   id="tspan3011"
+   style="font-style:italic">P</tspan>(<tspan
+   id="tspan3013"
+   style="font-style:italic">f<tspan
+   id="tspan3091"
+   style="font-style:normal">(</tspan>y</tspan>)), <tspan
+   id="tspan3015"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">Q</tspan><tspan
+   id="tspan3863"
+   style="fill:#ff0000;fill-opacity:1">(</tspan><tspan
+   id="tspan3017"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">f<tspan
+   id="tspan3093"
+   style="font-style:normal;fill:#ff0000;fill-opacity:1">(</tspan>y</tspan><tspan
+   id="tspan3865"
+   style="fill:#ff0000;fill-opacity:1">))</tspan>}</tspan></text>
+      <text
+         id="text2997-9-5-8"
+         y="246.29854"
+         x="405.34494"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="246.29854"
+           x="405.34494"
+           id="tspan2999-3-0-6"
+           sodipodi:role="line">{<tspan
+   id="tspan3915"
+   style="fill:#ff0000;fill-opacity:1">¬</tspan><tspan
+   id="tspan3015-8-6-5"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">Q</tspan><tspan
+   id="tspan3917"
+   style="fill:#ff0000;fill-opacity:1">(</tspan><tspan
+   id="tspan3017-6-0-0"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">f<tspan
+   id="tspan3085-9"
+   style="font-style:normal;-inkscape-font-specification:'Century Schoolbook';fill:#ff0000;fill-opacity:1">(</tspan>y</tspan><tspan
+   id="tspan3919"
+   style="fill:#ff0000;fill-opacity:1">))</tspan>, <tspan
+   id="tspan3089-0"
+   style="font-style:italic">R</tspan>(<tspan
+   id="tspan3087-0"
+   style="font-style:italic">y</tspan>)}</tspan></text>
+      <text
+         id="text2997-6"
+         y="441.61142"
+         x="100.82141"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="441.61142"
+           x="100.82141"
+           id="tspan2999-1"
+           sodipodi:role="line">{<tspan
+   id="tspan3011-3"
+   style="font-style:italic">P</tspan>(<tspan
+   id="tspan3013-8"
+   style="font-style:italic">f<tspan
+   id="tspan3091-9"
+   style="font-style:normal">(</tspan>a</tspan>)), <tspan
+   id="tspan3015-3"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">Q</tspan><tspan
+   id="tspan3863-4"
+   style="fill:#ff0000;fill-opacity:1">(</tspan><tspan
+   id="tspan3017-4"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">f<tspan
+   id="tspan3093-6"
+   style="font-style:normal;fill:#ff0000;fill-opacity:1">(</tspan>a</tspan><tspan
+   id="tspan3865-0"
+   style="fill:#ff0000;fill-opacity:1">))</tspan>}</tspan></text>
+      <text
+         id="text2997-9-5-8-6"
+         y="441.61142"
+         x="403.26682"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="441.61142"
+           x="403.26682"
+           id="tspan2999-3-0-6-6"
+           sodipodi:role="line">{<tspan
+   id="tspan3915-1"
+   style="fill:#ff0000;fill-opacity:1">¬</tspan><tspan
+   id="tspan3015-8-6-5-8"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">Q</tspan><tspan
+   id="tspan3917-4"
+   style="fill:#ff0000;fill-opacity:1">(</tspan><tspan
+   id="tspan3017-6-0-0-9"
+   style="font-style:italic;fill:#ff0000;fill-opacity:1">f<tspan
+   id="tspan3085-9-6"
+   style="font-style:normal;-inkscape-font-specification:'Century Schoolbook';fill:#ff0000;fill-opacity:1">(</tspan>a</tspan><tspan
+   id="tspan3919-3"
+   style="fill:#ff0000;fill-opacity:1">))</tspan>, <tspan
+   id="tspan3089-0-7"
+   style="font-style:italic">R</tspan>(<tspan
+   id="tspan3087-0-8"
+   style="font-style:italic">a</tspan>)}</tspan></text>
+      <text
+         id="text2997-8"
+         y="343.94131"
+         x="268.47189"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="343.94131"
+           x="268.47189"
+           id="tspan2999-2"
+           sodipodi:role="line">{<tspan
+   id="tspan3011-9"
+   style="font-style:italic">P</tspan>(<tspan
+   id="tspan3013-1"
+   style="font-style:italic">f<tspan
+   id="tspan3091-3"
+   style="font-style:normal">(</tspan>y</tspan>)), <tspan
+   id="tspan4049"
+   style="font-style:italic">R</tspan>(<tspan
+   id="tspan4047"
+   style="font-style:italic">y</tspan>)}</tspan></text>
+      <text
+         id="text2997-8-6"
+         y="539.25421"
+         x="266.39377"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="539.25421"
+           x="266.39377"
+           id="tspan2999-2-3"
+           sodipodi:role="line">{<tspan
+   id="tspan3011-9-6"
+   style="font-style:italic">P</tspan>(<tspan
+   id="tspan3013-1-1"
+   style="font-style:italic">f<tspan
+   id="tspan3091-3-5"
+   style="font-style:normal">(</tspan>a</tspan>)), <tspan
+   id="tspan4049-4"
+   style="font-style:italic">R</tspan>(<tspan
+   id="tspan4047-2"
+   style="font-style:italic">a</tspan>)}</tspan></text>
+      <text
+         id="text2997-0"
+         y="197.4566"
+         x="673.89307"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="197.4566"
+           x="673.89307"
+           id="tspan2999-9"
+           sodipodi:role="line"><tspan
+   id="tspan4134"
+   style="font-style:italic">σ</tspan> = {<tspan
+   id="tspan3013-3"
+   style="font-style:italic">f<tspan
+   id="tspan3091-7"
+   style="font-style:normal">(</tspan>y</tspan>)<tspan
+   id="tspan4332"
+   style="font-style:italic">/x</tspan>} : mgu</tspan></text>
+      <text
+         id="text2997-0-5"
+         y="196.23297"
+         x="501.50916"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="196.23297"
+           x="501.50916"
+           id="tspan2999-9-7"
+           sodipodi:role="line"><tspan
+             id="tspan4134-5"
+             style="font-style:italic">σ</tspan></tspan></text>
+      <text
+         id="text2997-0-5-0"
+         y="196.23297"
+         x="203.73027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="196.23297"
+           x="203.73027"
+           id="tspan2999-9-7-0"
+           sodipodi:role="line"><tspan
+             id="tspan4134-5-1"
+             style="font-style:italic">σ</tspan></tspan></text>
+      <text
+         id="text2997-0-5-4"
+         y="291.33282"
+         x="502.89246"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="291.33282"
+           x="502.89246"
+           id="tspan2999-9-7-6"
+           sodipodi:role="line">ρ</tspan></text>
+      <text
+         id="text2997-0-5-4-7"
+         y="291.33282"
+         x="204.83084"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="291.33282"
+           x="204.83084"
+           id="tspan2999-9-7-6-1"
+           sodipodi:role="line">ρ</tspan></text>
+      <text
+         id="text2997-0-5-4-73"
+         y="295.07208"
+         x="676.05322"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="295.07208"
+           x="676.05322"
+           id="tspan2999-9-7-6-3"
+           sodipodi:role="line">ρ<tspan
+   id="tspan4274"
+   style="font-style:normal"> = {</tspan>a/y<tspan
+   id="tspan4268"
+   style="font-style:normal">}</tspan></tspan></text>
+      <text
+         id="text2997-0-5-4-77"
+         y="388.98926"
+         x="354.78793"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="388.98926"
+           x="354.78793"
+           id="tspan2999-9-7-6-7"
+           sodipodi:role="line">ρ</tspan></text>
+      <text
+         id="text2997-0-59"
+         y="392.70392"
+         x="673.89307"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="392.70392"
+           x="673.89307"
+           id="tspan2999-9-9"
+           sodipodi:role="line"><tspan
+   id="tspan4134-8"
+   style="font-style:italic">σ'</tspan> = {<tspan
+   id="tspan3013-3-1"
+   style="font-style:italic">f<tspan
+   id="tspan3091-7-8"
+   style="font-style:normal">(</tspan>a</tspan>)<tspan
+   id="tspan4329"
+   style="font-style:italic">/x<tspan
+   id="tspan4327"
+   style="font-style:normal">, </tspan>a/y</tspan>} = <tspan
+   id="tspan4336"
+   style="font-style:italic">σ<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math'"
+   id="tspan3114">∘</tspan>ρ </tspan></tspan></text>
+      <text
+         id="text2997-0-5-6"
+         y="394.6084"
+         x="604.91821"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="394.6084"
+           x="604.91821"
+           id="tspan2999-9-7-60"
+           sodipodi:role="line"><tspan
+             id="tspan4134-5-3"
+             style="font-style:italic">σ'</tspan></tspan></text>
+      <text
+         inkscape:transform-center-x="-11.19043"
+         id="text2997-0-5-0-8"
+         y="394.6084"
+         x="91.221039"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:1.25;font-family:'Century Schoolbook';-inkscape-font-specification:'Century Schoolbook'"
+           y="394.6084"
+           x="91.221039"
+           id="tspan2999-9-7-0-0"
+           sodipodi:role="line"><tspan
+             id="tspan4134-5-1-1"
+             style="font-style:italic">σ'</tspan></tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path5848"
+         d="m 201.01981,155.27397 v 67.77358"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1)" />
+      <use
+         height="744.09448"
+         width="1052.3622"
+         transform="translate(297.93369)"
+         id="use6040"
+         xlink:href="#path5848"
+         y="0"
+         x="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6042"
+         d="M 201.01981,251.43629 V 420.12546"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1)" />
+      <use
+         height="744.09448"
+         width="1052.3622"
+         transform="translate(297.93369)"
+         id="use6234"
+         xlink:href="#path6042"
+         y="0"
+         x="0" />
+      <use
+         height="744.09448"
+         width="1052.3622"
+         transform="translate(-146.88086,98.191645)"
+         id="use6236"
+         xlink:href="#use6234"
+         y="0"
+         x="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6240-4"
+         d="m 590.70457,153.21569 c 53.38962,45.35044 63.02431,102.38273 0,261.24902"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6658"
+         d="m 201.1377,448.08852 148.18727,70.51267"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1-9)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6660"
+         d="M 498.9606,447.87777 354.59105,518.60119"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1-9)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6658-3"
+         d="M 201.0081,251.51133 349.19537,322.024"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1-9)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6660-9"
+         d="M 498.831,251.30058 354.46145,322.024"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1-9)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6240-4-2"
+         d="m 133.20799,153.21569 c -53.38963,45.35044 -63.02432,102.38273 0,261.24902"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-1-92)" />
+    </g>
+  </g>
+</svg>

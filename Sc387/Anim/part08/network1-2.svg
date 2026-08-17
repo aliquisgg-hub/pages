@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="network1-2.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 66.675 42.862503"
+   height="162"
+   width="252">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2208-8" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-2-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2208-8-2"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="130"
+     inkscape:window-x="130"
+     inkscape:window-height="904"
+     inkscape:window-width="1662"
+     width="1152px"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="104.10124"
+     inkscape:cx="233.76978"
+     inkscape:zoom="2.0535212"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     lock-margins="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-center="true"
+     inkscape:snap-grids="true"
+     inkscape:object-paths="false">
+    <inkscape:grid
+       id="grid10"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <g
+       id="g2587"
+       transform="translate(-23.812501,-9.5249998)">
+      <g
+         transform="translate(38.100004)"
+         id="g2138" />
+    </g>
+    <g
+       transform="translate(9.3749996e-7,4.7625006)"
+       id="g1220">
+      <g
+         transform="translate(-61.912501,-9.5248205)"
+         id="g2148-7">
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-10"
+           cx="114.3"
+           cy="19.050001"
+           rx="9.5250006"
+           ry="4.7625003" />
+        <text
+           id="text2091-2-1"
+           y="20.84421"
+           x="114.3193"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.84421"
+             x="114.3193"
+             id="tspan2089-3-2"
+             sodipodi:role="line">人体</tspan></text>
+      </g>
+      <g
+         transform="translate(-61.912501,-9.5248205)"
+         id="g2143-0">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="76.209648"
+           y="20.87315"
+           id="text2091-2"><tspan
+             sodipodi:role="line"
+             id="tspan2089-3"
+             x="76.209648"
+             y="20.87315"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">腕</tspan></text>
+        <ellipse
+           ry="4.7625003"
+           rx="9.5250006"
+           cy="19.049999"
+           cx="76.199997"
+           id="path2097-1-7"
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <text
+         id="text2152-6"
+         y="15.704311"
+         x="33.303078"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-18"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="15.704311"
+           x="33.303078"
+           sodipodi:role="line">PART-OF</tspan></text>
+      <path
+         id="path2179-5"
+         d="M 23.8125,9.525 H 42.18656"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-2)" />
+    </g>
+    <g
+       transform="translate(1.6517857e-6,11.90625)"
+       id="g1251">
+      <g
+         id="g2148-7-0"
+         transform="translate(-100.0125,4.7625005)">
+        <ellipse
+           ry="4.7625003"
+           rx="9.5250006"
+           cy="19.050001"
+           cx="114.3"
+           id="path2097-10-2"
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="114.3193"
+           y="20.84421"
+           id="text2091-2-1-5"><tspan
+             sodipodi:role="line"
+             id="tspan2089-3-2-4"
+             x="114.3193"
+             y="20.84421"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">人体</tspan></text>
+      </g>
+      <g
+         id="g2143-0-9"
+         transform="translate(-23.812487,4.7625022)">
+        <text
+           id="text2091-2-9"
+           y="20.87315"
+           x="76.209648"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.87315"
+             x="76.209648"
+             id="tspan2089-3-4"
+             sodipodi:role="line">腕</tspan></text>
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-1-7-2"
+           cx="76.199997"
+           cy="19.049999"
+           rx="9.5250006"
+           ry="4.7625003" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="33.303078"
+         y="29.991814"
+         id="text2152-6-8"><tspan
+           sodipodi:role="line"
+           x="33.303078"
+           y="29.991814"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-18-2">HAS-A</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-2-9)"
+         d="M 23.8125,23.812501 H 42.18656"
+         id="path2179-5-9" />
+    </g>
+  </g>
+</svg>

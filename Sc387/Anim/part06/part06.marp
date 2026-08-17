@@ -1,0 +1,498 @@
+---
+title: Sc387(1) Part 6
+last_modified: 2025-05-22 19:48:04 +09:00
+
+marp: true
+theme: gaia
+math: katex
+paginate: true
+backgroundColor: #fff
+---
+<link href="mymarp.css" rel="stylesheet">
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+# 知識表現(3)
+## 融合原理による証明系
+<!-- 知識表現(3): 融合原理による証明系 -->
+___
+## 論理とは (再)
+###### ![h:500](logic_world3.svg)
+___
+## 証明系
+- 証明系は**公理**の集合 $\mathcal A$ と**推論規則**の集合
+  $\mathcal R$ からなる
+  - **公理**： 無条件で真とみなす論理式 (通常は恒真式)
+  - **推論規則**： 単一もしくは複数の (恒真な) 論理式から，新しい  
+    　　　　　 (恒真な) 論理式を導く記号操作
+- 公理に繰り返し推論規則を適用して得られる論理式を**定理**という
+  - *健全*な証明系では，定理は恒真となる  
+    (*健全性*については後ほど定義する)
+___
+## 推論規則の例 (命題論理の推論規則)
+(述語論理は命題論理を包含するため，述語論理の推論規則でもある) 
+※ 以下では，$α,β,γ$ を任意の論理式とし，横線の上の論理式から，  
+　 横線の下の論理式を導くものとして示す
+
+- *肯定式* (modus ponens; 分離則)
+  　 $α→β，α　\ \ ⊢　β$
+  <!-- 　 $\begin{array}{c}α→β， α\\\hline β\end{array}$ -->
+  
+- *否定式* (modus tollens)
+  　 　 　 　 $α→β，¬β　⊢　¬α$
+  <!-- 　 　 　 　 $\begin{array}{c}α→β， ¬β\\\hline¬α\end{array}$ -->
+  
+- *三段論法* (syllogism) 
+  　 　 　  $\ \ α→β，β→γ　⊢　α→γ$
+  <!-- 　 　 　 $\begin{array}{c}α→β， β→γ\\\hline α→γ\end{array}$ -->
+
+- *連言導入* ($∧$-introduction) 
+  　 　 　 　 　　$α，β　⊢　α∧β$
+  <!-- 　$\begin{array}{c}α， β\\\hline α∧ β\end{array}$ -->
+___
+※ この授業では，*融合原理 (導出原理) による証明系*を紹介する．  
+
+※ この証明系の推論規則は1つしかなく，*融合原理* (*導出原理*; 後述) と  
+　 呼ばれる．
+<!-- 
+___
+## 証明
+- 論理式 $\alpha$ について，以下の条件を満たす論理式の列
+  $\alpha_1,\cdots,\alpha_n$ を，$\alpha$ の**証明**という
+  - 各 $\alpha_i$ は，以下のいずれかである
+    - $\alpha_i\in\mathcal A$
+    - $\alpha_i$ は推論規則 $(\in\mathcal R)$ を用いて
+      $\alpha_1,\cdots,\alpha_{i-1}$ から導かれる
+  - $\alpha_n=\alpha$ である
+- $\alpha$ の証明が存在するとき，$\alpha$
+  は**証明可能**であるといい，$\vdash\alpha$
+  と表現する．また，証明可能な論理式は**定理**と呼ばれる
+___
+## 演繹
+- *前提* (論理式) の集合 $\Gamma$ と論理式 $\alpha$
+  について，以下の条件を満たす論理式の列 $\alpha_1,\cdots,\alpha_n$ 
+  を，$\alpha$ の $\Gamma$ からの**演繹**という
+  - 各 $\alpha_i$ は，以下のいずれかである
+    - $\alpha_i\in\mathcal A$
+    - $\underline{\alpha_i\in\Gamma}$　(「証明」と違うところ)
+    - $\alpha_i$ は推論規則 $(\in\mathcal R)$ を用いて
+      $\alpha_1,\cdots,\alpha_{i-1}$ から導かれる
+  - $\alpha_n=\alpha$ である
+___
+## 演繹 (つづき)
+- $\alpha$ の $\Gamma$ からの演繹が存在するとき，$\alpha$ は $\Gamma$ から**演繹可能**であるといい，$\underline{\Gamma\vdash\alpha}$ と表現する．また，$\alpha$ を 前提集合 $\Gamma$ から導かれた**結論**と呼ぶ．
+___
+## 証明木・演繹木
+- 論理式の列としての証明・演繹は，各論理式がどこから導かれたかが分かりにくい
+- 論理式間の「導く」「導かれる」関係を明示するために，  
+  以下のような*証明木*・*演繹木*を用いることがある
+  - 各ノードが論理式であるような木構造
+  - 根ノードは定理または演繹の結論 (上向きに分岐していく)
+  - 各分岐は推論規則に対応：  
+    　　分岐の上の論理式から下の論理式が導かれることを示す
+  - 枝分かれの末端 (葉) は公理か前提である
+___
+## 演繹の例
+　$\Gamma=\{P,P\to Q,Q\to R\}$ から $P\land R$ を演繹する．
+
+- 演繹
+  $$
+  \begin{array}{rcll}
+  	1&:&P&\quad(\in\Gamma)\\
+  	2&:&P\to Q&\quad(\in\Gamma)\\
+  	3&:&Q\to R&\quad(\in\Gamma)\\
+  	4&:&P\to R&\quad(\text{from }2,3;\ \text{syllogism})\\
+  	5&:&P&\quad(\in\Gamma)\\
+  	6&:&R&\quad(\text{from }4,5;\ \text{modus ponens})\\
+  	7&:&P\land R&\quad(\text{from }1,6;\ \land\text{-introduction})
+  \end{array}
+  $$
+___
+## 先の例の演繹木
+###### ![w:1000](dtree.svg)
+※ 書き方が違うだけで，左右とも同じ演繹木  
+※ 全スライドの演繹との対応が分かりやすいように番号を付けている -->
+
+※ 以下では，準備として，変数の置き換えを定める*代入* (置換) と，  
+　 *節集合* と呼ばれる論理式を定義し，その後．融合原理 (導出原理)  
+　 による証明系を説明する．
+___
+## 代入 (置換) 
+
+**代入** (置換) を，*自由変数を項で置き換えるもの*として定義する．
+
+- $t_1,\cdots,t_n$ を項，$x_1,\cdots,x_n$ を互いに異なる変数とするとき，  
+  *代入* $\sigma$ は以下のように定義される．
+
+  $$
+  \sigma=\{t_1/x_1,\cdots,t_n/x_n\}
+  $$
+
+- $\alpha$ を任意の論理式または項とするとき，$\alpha$ に代入 $\sigma=\{t_1/x_1,\cdots,t_n/x_n\}$ を適用したもの $\alpha\sigma$ は，$\alpha$ 中の自由な $x_1,\cdots,x_n$ の各々を，同時に $t_1,\cdots,t_n$ で置き換えたものになる．  
+&nbsp;
+___
+### 例
+$\sigma=\{f(y)/x,\ a/y\}$ とするとき
+$$
+\begin{array}{l}
+P(\underline y,g(\underline x,\underline y))\ σ
+　=　P(\underline a,g(\underline{f(y)},\underline a))\\
+(P(\underline x,\underline  y) ∧∀x(Q(x)→ R(\underline  y)))\ σ
+　=　P(\underline{f(y)},\underline a) ∧∀x(Q(x)→ R(\underline a))\\
+(P(\underline x,\underline  y) ∧∀z(Q(z)→ R(\underline  y)))\ σ
+　=　P(\underline{f(y)},\underline a) ∧∀z(Q(z)→ R(\underline a))\\
+\end{array}
+$$
+となる．なお，2つ目と3つ目の例の左辺の $σ$ を適用する前の論理式は  
+同値 (変数の名前替えによる) であり，$σ$ 適用後も同値である
+___
+## 代入の合成
+- $\sigma=\{t_1/x_1,\cdots,t_n/x_n\},\ \rho=\{u_1/y_1,\cdots,u_m/y_m\}$ とするとき，$\sigma$ と $\rho$ の*合成* $\sigma\circ\rho$ は，以下のように定義される．
+  $$
+  \sigma\circ\rho=\{t_1\rho/x_1,\cdots,t_n\rho/x_n\}
+  \cup\{u_{k_1}/y_{k_1},\cdots,u_{k_{m^\prime}}/y_{k_{m^\prime}}\}
+  $$
+  ただし，$y_{k_1},\cdots,y_{k_{m^\prime}}$ は，$y_1,\cdots,y_m$ から $\{x_1,\cdots,x_n\}$ に含まれるものを取り除いたものである．
+- $\alpha$ を任意の論理式または項とするとき，  
+  $\alpha(\sigma\circ\rho)=(\alpha\sigma)\rho$ が成り立つ
+___
+### 例
+$\sigma=\{f(y)/x,\ a/y\},\ \ \rho=\{a/x,\ b/y,\ c/z\}$ とすると，  
+$\sigma\circ\rho=\{f(y)\rho/x,\ a\rho/y,\ c/z\}=\{f(b)/x,\ a/y,\ c/z\}$ より，  
+$$
+\begin{array}{lcl}
+P(y,g(x,z))\ \underline\sigma&=&P(a,g(f(y),z)\\
+P(y,g(x,z))\underline{(\sigma\circ\rho)}&=&P(a,g(f(b),c))\\
+(P(y,g(x,z))\ \underline\sigma)\ \underline\rho&=&P(a,g(f(y),z))\ \underline\rho=P(a,g(f(b),c))\\
+\end{array}
+$$
+したがって，
+$$
+P(y,g(x,z))\underline{(\sigma\circ\rho)}　=　(P(y,g(x,z))\ \underline\sigma)\ \underline\rho
+$$
+___
+## 第1階述語論理の節形式 (節集合) 
+論理式の定義を拡張して，*リテラル*・*節*・*節集合*を定義する．
+### リテラル
+
+- *正リテラル*： 原子式そのもの
+- *負リテラル*： 原子式に否定記号 $\lnot$ を一つ付けたもの
+
+※ 同じ原子式からなる正，負のリテラルは，互いに*相補*であるという
+
+**例：** 正リテラル $P(x,f(y))$ と負リテラル $\lnot P(x,f(y))$ は相補
+___
+### 節
+- リテラルの集合を*節*と呼び，論理式の一種と考える
+- $L_1,\cdots,L_n$ をリテラルとするとき，その集合 $\mathcal C=\{L_1,\cdots,L_n\}$ を節と呼び，その解釈 $I$ における意味 (真理値)
+は以下の通り
+  $$
+  V_I[\mathcal C]=max(V_I[L_1],\cdots,V_I[L_n])
+  =\underset{i=1}{\overset{n}{max}}\{V_I[L_i]\}
+  $$
+  すなわち，$L_1,\cdots,L_n$ のうち一つでも真のものがあれば真，すべて偽ならば偽となる  
+  (各リテラルの選言(or)と考えられる．$L_1\lor\cdots\lor L_n$ と同値)
+- なお，$\mathcal C$ 中の自由変数は，全称限量されているものとみなす
+___
+### 節集合
+
+  節の集合を節集合と呼び，論理式の一種と考える
+
+  $\mathcal C_1,\cdots,\mathcal C_n$ を節とするとき，その集合 $\mathcal S=\{\mathcal C_1,\cdots,\mathcal C_n\}$ は*節集合*であり，その解釈 $I$ における意味 (真理値) は以下の通り
+  $$
+  V_I[\mathcal S]=min(V_I[\mathcal C_1],\cdots,V_I[\mathcal C_n])
+  =\underset{i=1}{\overset{n}{min}}\{V_I[\mathcal C_i]\}
+  $$
+  すなわち，$\mathcal C_1,\cdots,\mathcal C_n$ のうち一つでも偽のものがあれば偽，すべて真ならば真となる  
+   (各節の連言(and)と考えられる．$\mathcal C_1\land\cdots\land \mathcal C_n$ と同値) 
+___
+### 標準形としての節集合 (節形式)
+- 一般に，任意の論理式は，それと「同等」な節集合に変換できる  
+  (詳細な手順は割愛する)
+- 元の論理式とそれを変換した (「同等」な) 節集合は，厳密には同値でないが，*元の論理式が充足不能であるならば，それを変換した節集合は充足不能となる．またその逆も成り立つ*ことが分かっている
+- 論理式を節集合で表す形式を*節形式*と呼ぶ
+___
+#### 節形式に変換する例
+$$
+\begin{array}{rl}
+&∀x∃y\,R(y,x)∧∀z (P(z)→Q(z))　　　　　　　\\
+\longrightarrow&∀x∃y\,R(y,x)∧∀z (¬P(z)∨Q(z))\\
+\longrightarrow&∀x(R(η(x),x)∧∀z (¬P(z)∨Q(z))\\
+\longrightarrow&\{\{R(η(x),x)\},\ \{¬P(z),\ Q(z)\}\}\\
+\end{array}
+$$
+&emsp;　($η$ は新たに導入された関数記号)
+___
+## 推論規則としての代入
+
+- 上に見たように節集合においては，自由変数は節単位で全称限量されているものと解釈される
+  - したがって，論理式 $\alpha$ が真ならば，任意の代入 $\sigma$ に対して，$\alpha\sigma$ も真となる ($\alpha\sigma$ は $\alpha$ の論理的帰結，$\alpha\models\alpha\sigma$) 
+  - これは，いわゆる<u>直接推論</u>に相当する
+___
+### 例
+$$
+\left\{\begin{array}{rcl}
+    s&:&ソクラテス\\
+    f(x)&:&(x の)\,父親\\
+    P(x)&:&(x は)\,哲学者である\\
+  \end{array}\right.
+$$
+とする． (以下，人について考えているものと仮定する) 
+- 代入 $\sigma=\{s/x\}$ とすると，
+  $$
+  \begin{array}{ll}
+  \{P(x)\}&:「全ての人は哲学者である」(節)\\
+  \{P(x)\}\sigma=\{P(s)\}&:「ソクラテスは哲学者である」
+  \end{array}
+  $$
+  となる
+___
+### 例 (つづき)
+- 2つの代入 $\sigma=\{f(y)/x\}$，$\rho=\{s/y\}$ について，  
+  $\sigma\circ\rho=\{f(s)/x,\ s/y\}$ となるので，
+  $$
+  \begin{array}{rcl}
+  \{P(x)\}\sigma&=&\{P(f(y))\}　:「すべての父は哲学者である」\\
+  \{P(x)\}(\sigma\circ\rho)&=&\{P(f(s))\}　:「ソクラテスの父は哲学者である」
+  \end{array}
+  $$
+  
+  となる
+  
+※ このとき $\{P(x)\},\ \{P(f(y))\},\ \{P(f(s))\}$ について，前者の方  
+　 が後者に比べ，対象が*より一般的 (more general)* になっており，  
+　 後者ほど範囲が限定されている  
+　 $(すべての者 ⊃ すべての父 ∋ ソクラテスの父)$ 
+___
+### より一般的 (more general)
+- 一般に，任意の論理式 $\alpha$ と任意の代入 $\sigma$ 
+  について，$\alpha$ の方が $\alpha\sigma$ より一般的である
+- 同様に，任意の論理式 $\alpha$ と任意の代入 $\sigma,\rho$
+  について，$\alpha\sigma$ の方が
+  $(\alpha\sigma)\rho=\alpha(\sigma\circ\rho)$ より一般的である
+- このことより，代入についても，$\sigma$ の方が $\sigma\circ\rho$ <u>より一般的(more general)</u>であるという
+___
+## 融合原理 (導出原理) による証明系
+- 融合原理 (導出原理) による証明系は，論理式として節形式を用い，*融合原理 (導出原理)* という単一の推論規則を持つ証明システムである
+- この融合原理 (導出原理) による証明系は，第1階述語論理の証明系として完全性 (後述) を持ち，コンピューターを用いて推論するのに適しているため，論理を用いたAIシステムでは広く使われている
+___
+### 融合原理 (導出原理)  ― 単一化 (後述) を用いない場合
+融合原理 (導出原理) は，以下のような推論規則である
+- $A$ を原子式，$L_{11},\cdots,L_{1n},L_{21},\cdots,L_{2m}$ をリテラル とし，互いに相補なリテラル $A, \lnot A$ の各々を含む2つの節 $\mathcal C_1, \mathcal C_2$ を以下のように定める
+  $$
+  \mathcal C_1=\{L_{11},\cdots,L_{1n},\lnot A\},\quad
+  \mathcal C_2=\{A,L_{21},\cdots,L_{2m}\}
+  $$
+  この $\mathcal C_1, \mathcal C_2$ から，相補リテラル $¬A,A$ を取り除いて融合した節
+  $$
+  \mathcal C =\{L_{11},\cdots,L_{1n},L_{21},\cdots,L_{2m}\}
+  $$
+  
+  を導く推論規則を<u>融合原理</u> (<u>導出原理</u>) という
+___
+#### 例
+- $\mathcal C_1=\{Q,\underline{\lnot P}\},\ \mathcal C_2=\{\underline{P}\}\quad\vdash\quad\mathcal C=\{Q\}$
+
+  $\mathcal C_1$ は $P\to Q$ と同値なので，前件肯定 (modus ponens) と同等
+- $\mathcal C_1=\{\underline{\lnot Q}\},\ \mathcal C_2=\{\underline{Q},\lnot P\}\quad\vdash\quad\mathcal C=\{\lnot P\}$
+
+  $\mathcal C_2$ は $P\to Q$ と同値なので，後件否定 (modus tollens) と同等
+- $\mathcal C_1=\{R,\underline{\lnot Q}\},\ \mathcal C_2=\{\underline{Q},\lnot P\}\quad\vdash\quad\mathcal C=\{R, \lnot P\}$
+
+  $\mathcal C_2,\mathcal C_1,\mathcal C$ は各々 $P\to Q,Q\to R,P\to R$ と同値なので，  
+  三段論法 (syllogism) と同等
+___
+### 単一化，単一化代入
+- 相補ではない正，負リテラルも，代入 (置換) によって相補なリテラルにできる (原子式部分を一致させられる) ことがある．このように2つの式 (原子式) を代入によって一致させることを<u>単一化</u>という．
+- 2つの式 $\alpha_1,\alpha_2\ (\alpha_1\not=\alpha_2)$ について，$\alpha_1\sigma=\alpha_2\sigma$ となるような代入 $σ$ が存在するとき，$\alpha_1$ と $\alpha_2$ は<u>単一化可能</u>であるといい，その代入を<u>単一化代入</u> (<u>単一化作用素</u>，<u>ユニファイア (unifier)</u>) という
+- $\sigma$ が $\alpha_1,\alpha_2$ の単一化代入であるとき，任意の代入 $\rho$ に対して，$\sigma\circ\rho$ もまた単一化代入となる
+<!-- 
+  $(\because \alpha_1\sigma=\alpha_2\sigma$ より  $\alpha_1(\sigma\circ\rho)=(\alpha_1\sigma)\rho=(\alpha_2\sigma)\rho=\alpha_2(\sigma\circ\rho))$ -->
+___
+### 最汎単一化代入 (mgu)
+- $\sigma$ が $\alpha_1,\alpha_2$ の単一化代入であり，ある代入 $\rho$ によって $\sigma=\sigma^\prime\circ\rho$ となるような ($=\sigma$ より一般的な) 単一化代入 $\sigma^\prime$ が存在*しない*とき，$\sigma$ は<u>最汎単一化代入</u> (<u>最汎単一化作用素</u>，<u>mgu</u> (<u>most general unifier</u>)) という
+
+- 2つの式の単一化アルゴリズム (与えられた2つの式が単一化可能かどうかを判定し，可能な場合はその mgu を求めるアルゴリズム) が知られているが，授業では割愛する．
+___
+### 最汎単一化代入 (mgu) (つづき)
+- *第1階述語論理の論理式の場合*，いかなる2つの式に対しても，  
+  *mgu は存在するならば唯一*であり，mgu 以外のすべての単一化代入よりも一般的 (more general) である．
+
+   ($\sigma$ が $\alpha_1,\alpha_2$ の mgu である場合， $\alpha_1,\alpha_2$ の任意の単一化代入は，ある代入 $\rho$ を用いて $\sigma\circ\rho$ の形に表せる) 
+
+- 3つ以上の式の単一化も，2つずつ単一化することにより，容易に拡張できる．
+___
+### 融合原理 (導出原理)  ― 一般的な場合
+<div style="font-size:90%;">
+
+- 2つの節 $\mathcal C_1,\mathcal C_2$ が以下のように表せたとする
+  $$
+  \mathcal C_1=\widehat{\mathcal C}_1\cup\{¬A_{11},\cdots,¬A_{1n}\},\quad
+  \mathcal C_2=\widehat{\mathcal C}_2\cup\{A_{21},\cdots,A_{2m}\}
+  $$
+
+  ただし，$\widehat{\mathcal C}_1,\widehat{\mathcal C}_2$ は節，$A_{11},\cdots,A_{1n},A_{21},\cdots,A_{2m}$ は $\sigma$ を mgu とする単一化可能な原子式であるとする．このとき，
+  $$
+  A_{11}σ=\cdots=A_{1n}σ=A_{21}σ=\cdots=A_{2m}σ
+  $$
+  となるので，これらを $A$ と置くと，
+  $$
+  \mathcal C_1σ=\widehat{\mathcal C}_1 σ\cup\{¬A\},\quad
+  \mathcal C_2σ=\widehat{\mathcal C}_2 σ\cup\{A\}
+  $$
+  となる (つづく)
+</div>
+
+___
+### 融合原理 (導出原理)  ― 一般的な場合 (つづき)
+- 先のスライドの $\mathcal C_1σ=\widehat{\mathcal C}_1 σ\cup\{¬A\},\ 
+  \mathcal C_2σ=\widehat{\mathcal C}_2 σ\cup\{A\}$ は，  
+  (単一化を用いない場合の) 融合原理 (導出原理) が適用でき，  
+  以下のような融合節 (導出節) $\mathcal C$ が得られる
+  $$
+  \mathcal C=\widehat{\mathcal C}_1 σ\cup\widehat{\mathcal C}_2 σ
+  =(\widehat{\mathcal C}_1\cup\widehat{\mathcal C}_2)σ
+  $$
+
+- 原理的には，mgu でない単一化代入<!--  $σ^\prime$  -->を用いても，同様に融合節 <!-- (導出節) $\mathcal C^\prime$  -->が得られるが，mgu を用いた場合の方がより一般的 (more general) な融合節が得られるので，常に mgu を使うべきである  
+(次スライドの参考図を参照すること)
+___
+
+###### ![h:560](lifting_lemma2.svg)
+___
+## 融合演繹 (導出演繹) 
+
+ (前提となる) 節形式 (節集合) $\mathcal S$，と節 $\mathcal C$ について，以下の条件を満たす節の列 $\mathcal C_1,\cdots,\mathcal C_n$ を $\mathcal C$ の $\mathcal S$ からの<u>融合演繹</u> (<u>導出演繹</u>) という．
+- 各 $\mathcal C_i$ は以下のいずれかである．
+  - $\mathcal C_i\in\mathcal S$
+  - $\mathcal C_i$ は $\mathcal C_1,\cdots,\mathcal C_{i-1}$ のうちの2つの節から融合原理 (導出原理) によって導かれる融合節 (導出節) である．
+- $\mathcal C_n=\mathcal C$ である．
+
+<!-- 融合演繹も演繹の一種なので，$\mathcal C$ の $\mathcal S$ からの融合演繹が存在するなら， -->
+このとき，$\mathcal C$ は $\mathcal S$ から<u> (融合) 演繹可能</u>であるといい，$\mathcal S\vdash\mathcal C$ と書く
+___
+### 例
+前提 (節集合)  $\mathcal S$ を以下のように与える
+$$
+\begin{array}{rcll}
+\mathcal S=&\{&
+  \{Lier(x),¬Loose(x),¬Man(x)\},\quad&(a)\text{「ルーズな男は嘘つきである」}\\
+&&\{Loose(y),¬Roman(y)\},            &(b)\text{「ローマ人はルーズである」}\\
+&&\{Roman(Seneca)\},                 &(c)\text{「セネカはローマ人である」}\\
+&&\{Man(Seneca)\}                    &(d)\text{「セネカは男である」}\\
+&\}
+\end{array}
+$$
+___
+### 例 (つづき)
+融合演繹：
+$$
+\begin{array}{rcll}
+1&:&\{Lier(x),¬Loose(x),\underline{¬Man(x)}\}       &(a)\\
+2&:&\{\underline{Man(Seneca)}\}                     &(d)\\
+3&:&\{Lier(Seneca),\underline{¬Loose(Seneca)}\}\quad&1,2; σ_1=\{Seneca/x\}\\
+4&:&\{\underline{Loose(y)},¬Roman(y)\}              &(b)\\
+5&:&\{Lier(Seneca),\underline{¬Roman(Seneca)}\}      &3,4; σ_2=\{Seneca/y\}\\
+6&:&\{\underline{Roman(Seneca)}\}                   &(d)\\
+7&:&\{Lier(Seneca)\}                    &5,6; σ_3=\phi
+\end{array}\\
+　\\
+※\ 結論\ \mathcal C=\{Lier(Seneca)\}「セネカは嘘つきである」が得られた．
+$$
+___
+## 空節
+- (リテラルの) 空集合を節とみなして<u>空節</u>と呼ぶ
+- 空節は真になるリテラルを含まないので，恒偽式 (矛盾) に対応する
+  - 実際，融合原理による推論で融合節が空節になるのは，相補リテラルのみを含む節同士で融合を行った場合，すなわち，$\{¬A\}$ と $\{A\}$ で融合を行った場合であり，これは $¬A$ と $A$ が同時に成り立つことを意味し，明らかに矛盾である．
+- 空節は，慣習的に $□$ で表す．
+___
+## 反駁
+- 前提 (節集合)  $\mathcal S$ からの融合演繹の結論が空節であるとき，その演繹は<u>反駁</u>と呼ばれる
+- このとき，$\mathcal S$ は<u>反駁可能</u>であるといい，$\mathcal S\vdash□$ と表現する
+- 健全な証明系 (後述) においては，$\mathcal S$ が反駁可能であるなら，  
+  $\mathcal S$ は充足不能 (恒偽) である  
+  (そして，融合原理による証明系は健全な証明系である)
+___
+## 背理法
+- 証明したい命題 $α$ の否定命題 $¬α$ が充足不能であるなら，元の命題 $α$ は恒真となるから，$¬α$ を反駁することにより，$α$ を証明することができる．これを<u>背理法</u>という
+- また，第1階述語論理において $Γ\modelsα$ と $\modelsΓ\toα$ は同値であり，その右辺の否定 $¬(Γ→α)$$=¬(¬Γ∨α)$$=Γ∧¬α$ が充足不能であることも同値である
+- したがって，$Γ∧¬α$ を節形式  $\mathcal S$ に変換して反駁することは，  
+  モデル論において $Γ\modelsα$ を示すことに等しい  
+  (上の背理法の説明は，この $Γ$ が空だった場合に相当する) 
+___
+## 背理法 (補足)
+※ $Γ∧¬α$ を節形式に変換する場合，$Γ$ と $¬α$ は連言 (and) なので，  
+　 $Γ$ と $¬α$ を別々に節形式に変換し (各々 $\mathcal S_Γ,\mathcal S_{¬α}$ とする)  
+　 それらの合併集合を $\mathcal S$
+   としてもよい．$(\mathcal S=\mathcal S_Γ∪\mathcal S_{¬α})$
+
+※ 別紙 (「融合原理による反駁の例」) に例を示す．
+___
+## 証明系の健全性・完全性
+一般的には，証明系の健全性・完全性は，モデル論における恒真性 $\models\alpha$ と，証明論における証明可能性 $\vdash\alpha$ の関係によって定まる
+- *健全性*： $∀\alpha$ について，$\vdash\alpha$ ならば $\models\alpha$ であるということ
+  - 恒真であっても証明できるとは限らないが，  
+    *証明されたならば恒真である*ということ
+- *完全性*： 健全 $(∀\alpha\ について，\vdash\alpha\ ならば\ \models\alpha)$ であり，かつ  
+  　　　　 $∀\alpha\ について，\models\alpha\ ならば\ \vdash\alpha$ であるということ
+  - 健全性に加えて，*恒真であれば必ず証明できる*ということ．
+___
+## 証明系の健全性・完全性 (つづき)
+第1階述語論理の融合原理 (導出原理) を用いた証明系は反駁による  
+証明系なので，以下のように考える
+
+- *健全性*： $∀\alpha$ について，$\neg\alpha$ の節形式 $\mathcal S_{\neg\alpha}$
+  が反駁可能 $(\mathcal S_{ \neg\alpha}\vdash\square)$  
+  　　　　 ならば $\models\alpha$ であるということ
+- *完全性*： $∀\alpha$ について，$\neg\alpha$ の節形式 $\mathcal S_{\neg\alpha}$
+             が反駁可能 ($\mathcal S_{ \neg\alpha}\vdash\square$)  
+  　　　　   ならば $\models\alpha$ であり，かつ，$\models\alpha$ ならば
+             $\mathcal S_{\neg\alpha}$ は反駁可能  
+  　　　　   ($\mathcal S_{\neg\alpha}\vdash\square$) であるということ
+
+(第1階述語論理の融合原理(導出原理)を用いた証明系は健全かつ完全)
+___
+## 証明系の健全性・完全性 (まとめ)
+$$
+　　\begin{array}{l}
+  \begin{array}{rll}
+  & Γ\models α & (αがΓの論理的帰結)　　　　　　　　　　\\
+  ⇄& \models Γ→α & (Γ→αが恒真)\\
+  ⇄& ¬(Γ→α)\ が充足不可能 &\\
+  ⇄& Γ∧¬α\ が充足不可能 &\\
+  ⇄& \mathcal S_Γ∪\mathcal S_{¬α}\ が充足不可能 &\\
+  ⇄& \mathcal S_Γ∪\mathcal S_{¬α}\vdash\square & (\mathcal S_Γ∪\mathcal S_{¬α}\ が反駁可能)\\
+  \end{array}\\\\
+  Γが空の時：\\
+  \begin{array}{rll}
+  & \models α & (αが恒真)\\
+  ⇄& ¬α\ が充足不可能 &\\
+  ⇄& \mathcal S_{¬α}\ が充足不可能 &\\
+  ⇄& \mathcal S_{¬α}\vdash\square & (\mathcal S_{¬α}\ が反駁可能)\\
+  \end{array}
+\end{array}
+$$
+___
+## (付録) ホーン節と線形導出
+
+- 正リテラルを高々1つしか含まない節を<u>ホーン節</u>と呼ぶ
+
+  - 負リテラルのみを (1つ以上) 含む節を特に<u>負節</u>と呼ぶ
+  - 正リテラルを (ちょうど1つ) 含む節を特に<u>確定節</u>と呼ぶ
+    - 負リテラルを持たない確定節を特に<u>正単位節</u>と呼ぶ
+- 負節と確定節から導かれる融合節は，必ず負節か空節である
+
+  - 正単位節は負節の負リテラルの1つを消去する働きがある
+  - それ以外の確定節は，負節の負リテラルの1つを，1つ以上の別の負リテラルで置き換える働きがある
+___
+## (付録) ホーン節と線形導出 (つづき)
+- プログラミング言語 Prolog に代表される論理型プログラミング・パラダイムは，原理的には，確定節の集合を前提 (プログラムに相当する) とし，「解が存在しない」 (「解が存在する」の否定) を表す負節 (プログラムの呼び出しに相当し，<u>ゴール</u>と呼ばれる) を反駁することにより，反例として解を得るものである
+
+- 形式的には，ゴールからスタートして、次々と (前提 (＝プログラム) に含まれる) 確定節との間で融合原理による融合を繰り返し，最終的にすべての負リテラルを消去して空節に至るというプロセスをたどる。
+___
+## (付録) ホーン節と線形導出 (つづき)
+- Prolog において用いられるこのような融合演繹は<u>線形融合</u> (<u>線形導出</u>) ，厳密には<u>SLD融合</u> (<u>SLD導出</u>) と呼ばれる  
+  (SLD = Selective Linear Resolution for Definite Clause) 
+
+※ 別紙 (「融合原理による反駁の例」) の例は，この線形融合  
+　 (線形導出) になっている

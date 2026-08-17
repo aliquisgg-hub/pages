@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="648"
+   height="360"
+   viewBox="0 0 171.45 95.250005"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="network1.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3957"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3955" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3885"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3883"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3724"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3722"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2208" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2208-1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2208-8"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow2Mend-2-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2208-8-2" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2208-6"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3724-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3722-9" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:object-paths="false"
+     inkscape:snap-grids="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="false"
+     fit-margin-bottom="2"
+     fit-margin-right="2"
+     fit-margin-left="2"
+     fit-margin-top="2"
+     lock-margins="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0267606"
+     inkscape:cx="371.02664"
+     inkscape:cy="217.0704"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2138"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     width="1152px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="translate(-23.812501,-9.5249998)"
+       id="g2587">
+      <g
+         id="g2148"
+         transform="translate(-76.200002)">
+        <text
+           transform="scale(0.89847326,1.1129992)"
+           id="text2095"
+           y="18.83197"
+           x="126.86046"
+           style="font-size:4.43747px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="18.83197"
+             x="126.86046"
+             id="tspan2093"
+             sodipodi:role="line">ピングー</tspan></text>
+        <ellipse
+           ry="4.7625003"
+           rx="9.5250006"
+           cy="19.050001"
+           cx="114.3"
+           id="path2097"
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         id="g2138"
+         transform="translate(38.100004)">
+        <text
+           transform="scale(0.89852916,1.1129299)"
+           id="text2087"
+           y="18.833139"
+           x="42.376625"
+           style="font-size:4.43775px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="18.833139"
+             x="42.376625"
+             id="tspan2085"
+             sodipodi:role="line">ペンギン</tspan></text>
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-5"
+           cx="38.099998"
+           cy="19.049999"
+           rx="9.5250006"
+           ry="4.7625003" />
+      </g>
+      <g
+         id="g2143"
+         transform="translate(38.100006)">
+        <text
+           id="text2091"
+           y="20.87315"
+           x="76.209648"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.87315"
+             x="76.209648"
+             id="tspan2089"
+             sodipodi:role="line">鳥</tspan></text>
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-1"
+           cx="76.199997"
+           cy="19.049999"
+           rx="9.5250006"
+           ry="4.7625003" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="56.101315"
+         y="25.229132"
+         id="text2152"><tspan
+           sodipodi:role="line"
+           id="tspan2150"
+           x="56.101315"
+           y="25.229132"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">IS-A</tspan><tspan
+           sodipodi:role="line"
+           x="56.101315"
+           y="30.659992"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154">（個体-概念）</tspan></text>
+      <text
+         id="text2152-9"
+         y="25.229132"
+         x="94.201317"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="25.229132"
+           x="94.201317"
+           id="tspan2150-5"
+           sodipodi:role="line">IS-A</tspan><tspan
+           id="tspan2154-7"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="30.659992"
+           x="94.201317"
+           sodipodi:role="line">（概念の　</tspan><tspan
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="36.090855"
+           x="94.201317"
+           sodipodi:role="line"
+           id="tspan2177">　下位-上位）</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+         d="M 47.625001,19.04982 H 65.999054"
+         id="path2179" />
+      <path
+         id="path2179-7"
+         d="M 85.725002,19.05 H 104.09906"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-3)" />
+      <text
+         id="text2152-3"
+         y="44.637417"
+         x="76.209648"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-1"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="44.637417"
+           x="76.209648"
+           sodipodi:role="line">〔IS-A関係の例〕</tspan></text>
+    </g>
+    <g
+       transform="translate(-4.7624969)"
+       id="g3126">
+      <g
+         id="g2148-7"
+         transform="translate(47.624999,-9.5248205)">
+        <ellipse
+           ry="4.7625003"
+           rx="9.5250006"
+           cy="19.050001"
+           cx="114.3"
+           id="path2097-10"
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="114.3193"
+           y="20.84421"
+           id="text2091-2-1"><tspan
+             sodipodi:role="line"
+             id="tspan2089-3-2"
+             x="114.3193"
+             y="20.84421"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">人体</tspan></text>
+      </g>
+      <g
+         id="g2143-0"
+         transform="translate(47.624999,-9.5248205)">
+        <text
+           id="text2091-2"
+           y="20.87315"
+           x="76.209648"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.87315"
+             x="76.209648"
+             id="tspan2089-3"
+             sodipodi:role="line">腕</tspan></text>
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-1-7"
+           cx="76.199997"
+           cy="19.049999"
+           rx="9.5250006"
+           ry="4.7625003" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="142.84058"
+         y="15.704311"
+         id="text2152-6"><tspan
+           sodipodi:role="line"
+           x="142.84058"
+           y="15.704311"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-18">PART-OF</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-2)"
+         d="m 133.35,9.525 h 18.37406"
+         id="path2179-5" />
+      <g
+         transform="translate(9.524999,4.7625005)"
+         id="g2148-7-0">
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-10-2"
+           cx="114.3"
+           cy="19.050001"
+           rx="9.5250006"
+           ry="4.7625003" />
+        <text
+           id="text2091-2-1-5"
+           y="20.84421"
+           x="114.3193"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.84421"
+             x="114.3193"
+             id="tspan2089-3-2-4"
+             sodipodi:role="line">人体</tspan></text>
+      </g>
+      <g
+         transform="translate(85.725013,4.7625022)"
+         id="g2143-0-9">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="76.209648"
+           y="20.87315"
+           id="text2091-2-9"><tspan
+             sodipodi:role="line"
+             id="tspan2089-3-4"
+             x="76.209648"
+             y="20.87315"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">腕</tspan></text>
+        <ellipse
+           ry="4.7625003"
+           rx="9.5250006"
+           cy="19.049999"
+           cx="76.199997"
+           id="path2097-1-7-2"
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <text
+         id="text2152-6-8"
+         y="29.991814"
+         x="142.84058"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-18-2"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="29.991814"
+           x="142.84058"
+           sodipodi:role="line">HAS-A</tspan></text>
+      <path
+         id="path2179-5-9"
+         d="m 133.35,23.812501 h 18.37406"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-2-9)" />
+      <text
+         id="text2152-3-2"
+         y="39.87492"
+         x="142.88464"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-1-3"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="39.87492"
+           x="142.88464"
+           sodipodi:role="line">〔部分-全体関係の例〕</tspan></text>
+    </g>
+    <g
+       transform="translate(110.21345,4.7626798)"
+       id="g3330">
+      <g
+         id="g2143-3"
+         transform="translate(-67.350949,47.624821)">
+        <text
+           id="text2091-0"
+           y="20.87315"
+           x="76.209648"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="20.87315"
+             x="76.209648"
+             id="tspan2089-7"
+             sodipodi:role="line">鳥</tspan></text>
+        <ellipse
+           style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path2097-1-9"
+           cx="76.199997"
+           cy="19.049999"
+           rx="9.5250006"
+           ry="4.7625003" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="26.850372"
+         y="72.853951"
+         id="text2152-33"><tspan
+           sodipodi:role="line"
+           x="26.850372"
+           y="72.853951"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-73">生殖</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-8)"
+         d="M 18.374058,66.674641 H 36.748112"
+         id="path2179-6" />
+      <g
+         transform="translate(-0.6759423,-4.7626812)"
+         id="g3376">
+        <g
+           transform="translate(-66.675007,52.387502)"
+           id="g2148-0">
+          <ellipse
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="path2097-4"
+             cx="114.3"
+             cy="19.050001"
+             rx="9.5250006"
+             ry="4.7625003" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="47.663586"
+           y="73.173653"
+           id="text3358"><tspan
+             sodipodi:role="line"
+             id="tspan3356"
+             x="47.663586"
+             y="73.173653"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">卵生</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="28.584646"
+         y="85.118607"
+         id="text2152-3-8"><tspan
+           sodipodi:role="line"
+           x="28.584646"
+           y="85.118607"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-1-1">〔属性関係の例〕</tspan></text>
+    </g>
+    <g
+       transform="translate(-71.437889)"
+       id="g4136">
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="118.0331"
+         y="67.362648"
+         id="text2152-3-0"><tspan
+           sodipodi:role="line"
+           x="118.0331"
+           y="67.362648"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-1-2">動作</tspan></text>
+      <text
+         id="text2152-3-0-8"
+         y="55.240044"
+         x="109.46033"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-1-2-1"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="55.240044"
+           x="109.46033"
+           sodipodi:role="line">主格</tspan></text>
+      <text
+         id="text2152-3-0-2"
+         y="55.240044"
+         x="138.05463"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-1-2-0"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="55.240044"
+           x="138.05463"
+           sodipodi:role="line">対格</tspan></text>
+      <text
+         id="text2152-3-0-7"
+         y="73.231712"
+         x="140.18091"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan2154-1-2-4"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           y="73.231712"
+           x="140.18091"
+           sodipodi:role="line">与格</tspan></text>
+      <g
+         id="g3682"
+         transform="translate(-19.049996,14.287321)">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="143.11617"
+           y="63.697063"
+           id="text2152-3-0-4"><tspan
+             sodipodi:role="line"
+             x="143.11617"
+             y="63.697063"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan2154-1-2-6">贈る</tspan></text>
+        <g
+           id="g2148-0-1"
+           transform="translate(28.574996,42.86268)">
+          <ellipse
+             ry="4.7625003"
+             rx="9.5250006"
+             cy="19.050001"
+             cx="114.3"
+             id="path2097-4-1"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g3688"
+         transform="translate(-52.387497,-19.05018)">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="142.88464"
+           y="77.984566"
+           id="text2152-3-0-1"><tspan
+             sodipodi:role="line"
+             x="142.88464"
+             y="77.984566"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan2154-1-2-9">鉄幹</tspan></text>
+        <g
+           id="g2148-0-4"
+           transform="translate(28.574996,57.15018)">
+          <ellipse
+             ry="4.7625003"
+             rx="9.5250006"
+             cy="19.050001"
+             cx="114.3"
+             id="path2097-4-97"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g3694"
+         transform="translate(14.287505,-33.337681)">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="142.86536"
+           y="92.281715"
+           id="text2152-3-0-3"><tspan
+             sodipodi:role="line"
+             x="142.86536"
+             y="92.281715"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan2154-1-2-17">花束</tspan></text>
+        <g
+           id="g2148-0-32"
+           transform="translate(28.574996,71.437681)">
+          <ellipse
+             ry="4.7625003"
+             rx="9.5250006"
+             cy="19.050001"
+             cx="114.3"
+             id="path2097-4-57"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g3700"
+         transform="translate(14.287505,-23.81268)">
+        <text
+           xml:space="preserve"
+           style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="142.76889"
+           y="101.74883"
+           id="text2152-3-0-23"><tspan
+             sodipodi:role="line"
+             x="142.76889"
+             y="101.74883"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             id="tspan2154-1-2-5">晶子</tspan></text>
+        <g
+           id="g2148-0-92"
+           transform="translate(28.574996,80.962681)">
+          <ellipse
+             ry="4.7625003"
+             rx="9.5250006"
+             cy="19.050001"
+             cx="114.3"
+             id="path2097-4-0"
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g3676"
+         transform="translate(9.5250047,-52.387681)">
+        <g
+           transform="translate(-5.112627e-6,90.487681)"
+           id="g2148-0-1-9">
+          <ellipse
+             style="opacity:0.999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="path2097-4-1-9"
+             cx="114.3"
+             cy="19.050001"
+             rx="9.5250006"
+             ry="4.7625003" />
+        </g>
+        <text
+           id="text2152-3-0-7-0"
+           y="111.31242"
+           x="114.30965"
+           style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan2154-1-2-4-4"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+             y="111.31242"
+             x="114.30965"
+             sodipodi:role="line">命題1</tspan></text>
+      </g>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3724)"
+         d="m 133.35,57.149731 h 13.52991"
+         id="path3720" />
+      <path
+         id="path3720-6"
+         d="M 114.3,57.150001 H 100.77009"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3724-1)" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3885)"
+         d="m 123.82539,61.912502 v 8.786974"
+         id="path3881" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.529164;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3957)"
+         d="m 130.23705,60.7996 19.90271,11.361085"
+         id="path3953" />
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:100%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="123.83504"
+         y="89.890785"
+         id="text2152-3-0-8-0"><tspan
+           sodipodi:role="line"
+           x="123.83504"
+           y="89.890785"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           id="tspan2154-1-2-1-8">〔格関係の例〕</tspan></text>
+    </g>
+  </g>
+</svg>
