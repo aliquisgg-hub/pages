@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>tdfs</title>
+    <link rel="stylesheet" href="slide.css">
+    <style>
+        /* 遷移時のアニメーション */
+        ul.slide li { transition: opacity 0.5s; }
+        .right  { float: right; text-align: right;}
+
+        map[name="toolbar"] area { cursor: pointer; }
+    </style>
+    <script src="slide.js"></script>
+</head>
+<body>
+    <ul class="slide" id="slide1">
+        <li><img src="tdfs_01.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_02.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_03.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_04.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_05.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_06.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_07.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_08.png" usemap="#toolbar"></li>
+        <li><img src="tdfs_09.png" usemap="#toolbar"></li>
+    </ul>
+<!-- 
+    <button type="button" onclick="slide1.first();">◀◀</button>
+    <button type="button" onclick="slide1.prev();">◀</button>
+    <button type="button" onclick="slide1.next();">▶</button>
+    <button type="button" onclick="slide1.last();">▶▶</button>
+ -->
+    <map name="toolbar">
+        <area onclick="slide1.first();" shape="rect" coords="764,779,829,822">
+        <area onclick="slide1.prev();" shape="rect" coords="830,779,895,822">
+        <area onclick="slide1.next();" shape="rect" coords="896,779,962,822">
+        <area onclick="slide1.last();" shape="rect" coords="963,779,1028,822">
+    </map>
+</body>
+</html>
