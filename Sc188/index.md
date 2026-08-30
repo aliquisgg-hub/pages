@@ -1,6 +1,6 @@
 ---
-title: Sc188(2) データサイエンス入門 資料
-last_modified: 2026-01-07 18:11:46 +09:00
+title: Sc188(2) データサイエンス入門 資料（旧版）
+last_modified: 2026-08-30 17:14:49 +09:00
 
 html:
    embed_local_images: false
@@ -16,7 +16,7 @@ export_on_save:
 ---
 <base target="_blank">
 
-# Sc188(2) データサイエンス入門 資料
+# Sc188(2) データサイエンス入門 資料（旧版）
 <div style="float:right; background-color:pink; font-size:90%">
 
 #### 目次：

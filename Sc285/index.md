@@ -1,6 +1,6 @@
 ---
-title: Sc285(1) プログラミング演習 資料
-last_modified: 2025-10-01 16:28:26 +09:00
+title: Sc285(1) プログラミング演習 資料（旧版）
+last_modified: 2026-08-30 17:15:33 +09:00
 
 html:
   embed_local_images: false
@@ -16,7 +16,7 @@ export_on_save:
 ---
 <base target="_blank">
 
-# Sc285(1) プログラミング演習 資料
+# Sc285(1) プログラミング演習 資料（旧版）
 
 ## 諸注意
 - [一般的な注意事項](../Misc/attention.html)
