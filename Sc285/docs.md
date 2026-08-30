@@ -1,6 +1,6 @@
 ---
 title: Sc285(1) プログラミング演習 資料
-last_modified: 2026-08-30 19:14:02 +09:00
+last_modified: 2026-08-30 19:24:19 +09:00
 
 html:
   embed_local_images: false
@@ -70,6 +70,9 @@ export_on_save:
 -   [ゼロからのPython入門講座](https://www.python.jp/train/) (Python Japan)
 -   [Python 3.13 ドキュメント](https://docs.python.org/ja/3.13/) (Python Software Foundation)
     -   2026/8/30 時点では，ドキュメントのバージョンは 3.13.15 で，Google Colaboratory のバージョンと一致しているが，将来バージョンが多少前後してもあまり支障はないはず．
+
+-   [プログラミング言語 Python 総合情報サイト](https://www.python.jp/) (Python Japan)
+-   [Pythonプログラミング入門](https://utokyo-ipp.github.io/)（東京大学 数理・情報教育研究センター）
 
 <script>
 let lm = new Date(document.lastModified).toLocaleString();
