@@ -1,6 +1,6 @@
 ---
 title: Sc285(1) プログラミング演習 資料
-last_modified: 2026-08-30 18:53:10 +09:00
+last_modified: 2026-08-30 19:14:02 +09:00
 
 html:
   embed_local_images: false
@@ -63,3 +63,19 @@ export_on_save:
 -   第14回
     -   [さまざまな小技など (tips.ipynb)](https://colab.research.google.com/drive/1BEla2mUvcJBx-ojbWk0oeUPSYOotvvVA)
 
+## 外部サイトへのリンク
+-   [2026年度パソコン教室について](https://com.kobe-c.ac.jp/itpc2026.html) (情報処理センター)
+-   [Google Colaboratory トップページ](https://colab.research.google.com/)
+    -   前期とは少し形式が変わっているようです．
+-   [ゼロからのPython入門講座](https://www.python.jp/train/) (Python Japan)
+-   [Python 3.13 ドキュメント](https://docs.python.org/ja/3.13/) (Python Software Foundation)
+    -   2026/8/30 時点では，ドキュメントのバージョンは 3.13.15 で，Google Colaboratory のバージョンと一致しているが，将来バージョンが多少前後してもあまり支障はないはず．
+
+<script>
+let lm = new Date(document.lastModified).toLocaleString();
+let pe = document.body.firstElementChild;
+let elm = document.createElement("div");
+elm.style.textAlign = "right";
+elm.innerHTML = `Last Modified: ${lm}`;
+pe.insertBefore(elm, pe.firstChild);
+</script>
