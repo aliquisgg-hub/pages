@@ -1,12 +1,13 @@
 ---
 title: Root of aliquisgg-hub
-last_modified: 2026-08-16 17:27:07 +09:00
+last_modified: 2026-08-30 14:09:38 +09:00
 export_on_save:
    html: true
 ---
 <base target="_blank">
 
 # Root of aliquisgg-hub
+-   [KC-NET Index Table](https://aliquisgg-hub.github.io/pages/kcnet.html)
 -   [Bookmark Tree](https://aliquisgg-hub.github.io/pages/BmTree/view3.html)
 -   [MLog](https://aliquisgg-hub.github.io/pages/MLog/Mlog.html)
 -   [Ape - doc](https://aliquisgg-hub.github.io/pages/ape/apedoc.html)
