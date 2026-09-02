@@ -1,6 +1,6 @@
 ---
 title: Root of aliquisgg-hub
-last_modified: 2026-09-01 11:47:32 +00:00
+last_modified: 2026-09-02 14:16:40 +09:00
 export_on_save:
    html: true
 ---
@@ -15,6 +15,7 @@ export_on_save:
 -   [Sc106](https://aliquisgg-hub.github.io/pages/Sc106/)
 -   [Sc285](https://aliquisgg-hub.github.io/pages/Sc285/)
 -   [Sc288](https://aliquisgg-hub.github.io/pages/Sc288/)
+    -   [授業準備](https://aliquisgg-hub.github.io/pages/Sc288/preparation.html)
 -   [Sc387](https://aliquisgg-hub.github.io/pages/Sc387/)
 -   [Sc188](https://aliquisgg-hub.github.io/pages/Sc188/)
 -   [VSCode](https://aliquisgg-hub.github.io/pages/vscDoc/)

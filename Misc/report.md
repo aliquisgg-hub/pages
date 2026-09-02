@@ -1,6 +1,6 @@
 ---
-title: 課題提出について
-last_modified: 2026-08-30 18:51:02 +09:00
+title: 課題提出方法
+last_modified: 2026-09-02 14:14:58 +09:00
 
 html:
   embed_local_images: false
@@ -32,7 +32,7 @@ span.blue { background-color: rgb(15, 111, 197); color: #fff; }
 span.gray { background-color: rgb(206, 212, 218); }
 </style>
 
-# 課題提出について
+# 課題提出方法
 
 -  この授業では，課題は原則として Moodle上で[ファイルを提出する](#ファイルの提出方法)か，または[オンラインテキスト](#オンラインテキストを入力する方法)として提出する（両方が求められることもある．また，例外は別途指示する）．
 
