@@ -1,6 +1,6 @@
 ---
 title: Sc285(1) プログラミング演習 資料
-last_modified: 2026-08-30 19:24:19 +09:00
+last_modified: 2026-09-02 15:45:14 +09:00
 
 html:
   embed_local_images: false
@@ -65,11 +65,11 @@ export_on_save:
 
 ## 外部サイトへのリンク
 -   [2026年度パソコン教室について](https://com.kobe-c.ac.jp/itpc2026.html) (情報処理センター)
--   [Google Colaboratory トップページ](https://colab.research.google.com/)
+-   [Google Colab トップページ](https://colab.research.google.com/)
     -   前期とは少し形式が変わっているようです．
 -   [ゼロからのPython入門講座](https://www.python.jp/train/) (Python Japan)
 -   [Python 3.13 ドキュメント](https://docs.python.org/ja/3.13/) (Python Software Foundation)
-    -   2026/8/30 時点では，ドキュメントのバージョンは 3.13.15 で，Google Colaboratory のバージョンと一致しているが，将来バージョンが多少前後してもあまり支障はないはず．
+    -   2026/8/30 時点では，ドキュメントのバージョンは 3.13.15 で，Google Colab のバージョンと一致しているが，将来バージョンが多少前後してもあまり支障はないはず．
 
 -   [プログラミング言語 Python 総合情報サイト](https://www.python.jp/) (Python Japan)
 -   [Pythonプログラミング入門](https://utokyo-ipp.github.io/)（東京大学 数理・情報教育研究センター）
