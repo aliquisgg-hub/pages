@@ -1,6 +1,6 @@
 ---
 title: Sc188(2) データサイエンス入門 資料（旧版）
-last_modified: 2026-08-30 17:14:49 +09:00
+last_modified: 2026-09-08 12:05:54 +09:00
 
 html:
    embed_local_images: false
@@ -134,6 +134,4 @@ document.querySelectorAll("#sample a").forEach(a => {
    console.log(a.href.split("/").pop())
    a.download = a.href.split("/").pop();
 });
-
-
 </script>
