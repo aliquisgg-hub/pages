@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 1
-last_modified: 2025-04-18 14:55:50 +09:00
+last_modified: 2026-09-15 13:51:31 +09:00
 
 marp: true
 theme: gaia
@@ -10,7 +10,8 @@ backgroundColor: #fff
 #backgroundImage: url('hero-background.jpg')
 
 ---
-<link href="mymarp.css" rel="stylesheet">
+<base target="_blank">
+<link href="../mymarp.css" rel="stylesheet">
 <!-- 参考資料 -->
 <!-- 木・グラフの探索 dfs_bfs.pdf -->
 <!-- [[four queen 問題（木探索バージョン） 4Qt.pdf]] -->
@@ -24,7 +25,7 @@ backgroundColor: #fff
 
 # 問題解決と探索(1)
 ## 状態空間法／縦型探索／横型探索
-（参考資料「木・グラフの探索」も参照してください）
+（参考資料「[木・グラフの探索](../dfs_bfs.pdf)」も参照してください）
 
 ---
 <!-- （参考資料「木・グラフの探索」も手許に準備しておいてください） -->
@@ -61,16 +62,16 @@ backgroundColor: #fff
 </div>
 
 ---
-### *状態空間*（状態集合 + 状態遷移関係）（§2.2）
+### <u>状態空間</u>（状態集合 + 状態遷移関係）（§2.2）
 $P=\langle V, Op, δ, s, Γ\rangle$  
 
 $$
 \begin{array}{lll}
-  V &:&\underline{状態}の集合  \\
-  Op&:&\underline{オペレータ}（操作）の集合  \\
-  δ &:&\underline{状態遷移}関数（δ:V×Op → V∪\{⊥\}; 後述）  \\
-  s &:&\underline{初期状態}（s∈V）  \\
-  Γ &:&\underline{目標状態}\bold{集合}（Γ⊂V）
+  V &:&\textcolor{forestgreen}{\underline{状態}}の集合  \\
+  Op&:&\textcolor{forestgreen}{\underline{オペレータ}}（操作）の集合  \\
+  δ &:&\textcolor{forestgreen}{\underline{状態遷移}}関数（δ:V×Op → V∪\{⊥\}; 後述）  \\
+  s &:&\textcolor{forestgreen}{\underline{初期状態}}（s∈V）  \\
+  Γ &:&\textcolor{forestgreen}{\underline{目標状態}}\bold{\color{firebrick}集合}（Γ⊂V）
 \end{array}
 $$
 
@@ -224,7 +225,7 @@ ___
 ___
 ### 状態空間の探索手続き (1) ― しらみつぶしの探索
 
-（以下，参考資料「木・グラフの探索」も参照すること）
+（以下，参考資料「[木・グラフの探索](../dfs_bfs.pdf)」も参照すること）
 
 #### 木探索の場合
 
@@ -236,7 +237,7 @@ ___
 
 ---
 #### 木探索のアルゴリズム（縦型/横型）
-（cf. 参考資料「木・グラフの探索」）
+（cf. 参考資料「[木・グラフの探索](../dfs_bfs.pdf)」）
 
 - 変数：
   - OL： 次に探索するノード（状態）の候補リスト  
@@ -256,8 +257,8 @@ ___
 　右の数字が横型探索の探索順）
 
 〔参考資料  
-　「木構造の縦型探索例（animation）」  
-　「木構造の横型探索例（animation）」〕
+　「[木構造の縦型探索例（animation）](../Anim/tdfs/index.html)」  
+　「[木構造の横型探索例（animation）](../Anim/tbfs/index.html)」〕
 </div>
 
 ![h:360](tdfs.svg)　
@@ -305,8 +306,8 @@ ___
 2. 探索したノード (X) からリンクされたノードのリスト (Tx) を OL に追加するとき，各ノードを X からリンクさせる形で探索木に書き加える．
 3. OL で重複したために除去されるノードは，$×$をつけて消す．
 
-〔参考資料：「有向グラフの縦型探索例（animation）」  
-　　　　　　「有向グラフの横型探索例（animation）」〕
+〔参考資料：「[有向グラフの縦型探索例（animation）](../Anim/gdfs/index.html)」  
+　　　　　　「[有向グラフの横型探索例（animation）](../Anim/gbfs/index.html)」〕
 
 ---
 ### 縦型探索 vs 横型探索
