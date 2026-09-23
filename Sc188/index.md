@@ -1,6 +1,6 @@
 ---
 title: Sc188(2) データサイエンス入門 資料（旧版）
-last_modified: 2026-09-23 09:57:14 +09:00
+last_modified: 2026-09-23 10:03:50 +09:00
 
 html:
    embed_local_images: false
@@ -46,7 +46,7 @@ export_on_save:
 1. [データの収集と加工](part08/index.html) (<a href="part08/part08.pdf" download>pdf</a>)
 1. [データ分析の実際1 ～ 時系列データ分析 ～](part09/index.html) (<a href="part09/part09.pdf" download>pdf</a>)
 1. [データ分析の実際2 ～ 文章データ分析 ～](part10/index.html) (<a href="part10/part10.pdf" download>pdf</a>)
-1. [データ分析の実際3 ～ 教師あり学習 ～](part11/index.html) (<a href="part11/part11.pdf" download>pdf</a>)
+1. [データ分析の実際3 ～ 教師あり学習 (分類, 回帰) ～](part11/index.html) (<a href="part11/part11.pdf" download>pdf</a>)
 1. [データ分析の実際4 ～ 教師なし学習 ～](part12/index.html) (<a href="part12/part12.pdf" download>pdf</a>)
 1. [データを扱うときの注意点](part13/index.html) (<a href="part13/part13.pdf" download>pdf</a>)
 1. [データセキュリティ](part14/index.html) (<a href="part14/part14.pdf" download>pdf</a>)
@@ -75,11 +75,11 @@ export_on_save:
    -  [sangetsuki.txt](Data/Janome/sangetsuki.txt)
    -  [mojika.txt](Data/Janome/mojika.txt)
    -  [meijinden.txt](Data/Janome/meijinden.txt)
--  第11回 データ分析の実際3 ～ クラス分類 (教師あり学習) ～
-   -  [data11_1.ipynb](Data/data11_1.ipynb)
-   -  [data11_2.ipynb](Data/data11_2.ipynb)
+-  第11回 データ分析の実際3 ～ 教師あり学習 (分類, 回帰) ～
+   -  [data11_1.ipynb](Data/data11_1.ipynb) (分類)
+   -  [data11_2.ipynb](Data/data11_2.ipynb) (回帰)
    -  [housing.csv](Data/housing.csv)
--  第12回 データ分析の実際4 ～ 教師あり学習(回帰)・教師なし学習 ～
+-  第12回 データ分析の実際4 ～ 教師なし学習 ～
    -  [data12.ipynb](Data/data12.ipynb)
    -  [basket_data.csv](Data/basket_data.csv)
 </div>
