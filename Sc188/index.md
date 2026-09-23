@@ -1,6 +1,6 @@
 ---
 title: Sc188(2) データサイエンス入門 資料（旧版）
-last_modified: 2026-09-08 12:05:54 +09:00
+last_modified: 2026-09-23 09:57:14 +09:00
 
 html:
    embed_local_images: false
@@ -26,7 +26,7 @@ export_on_save:
 
 - [授業内のスライド](#授業内のスライド)
 - [授業内で使用したサンプルファイル](#授業内で使用したサンプルファイル)
-- [Excel 関係](#excel-関係)
+- [Excel 関係 (要KC-NETアカウント)](#excel-関係-span-stylefont-size12pt要kc-netアカウントspan)
 - [Python 関係](#python-関係)
 - [Visual Studio Code 関係](#visual-studio-code-関係)
 - [その他](#その他)
@@ -55,36 +55,36 @@ export_on_save:
 
 ## 授業内で使用したサンプルファイル
 -  第6回 データ分析の基本
-   -  [data06.xlsx](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data06.xlsx)
+   -  [data06.xlsx](Data/data06.xlsx)
 -  第7回 数え上げと確率・統計
-   -  [data07.xlsx](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data07.xlsx)
-   -  [data07local.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data07local.ipynb)
-      (旧：[data07.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data07.ipynb))
+   -  [data07.xlsx](Data/data07.xlsx)
+   -  [data07local.ipynb](Data/data07local.ipynb)
+      (旧：[data07.ipynb](Data/data07.ipynb))
 -  第8回 データの収集と加工
-   -  [data08.xlsx](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data08.xlsx)
-   -  [data08.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data08.ipynb)
-   -  [task08.xlsx](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/task08.xlsx)
-   -  [task08.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/task08.ipynb)
+   -  [data08.xlsx](Data/data08.xlsx)
+   -  [data08.ipynb](Data/data08.ipynb)
+   -  [task08.xlsx](Data/task08.xlsx)
+   -  [task08.ipynb](Data/task08.ipynb)
 -  第9回 データ分析の実際1 ～ 時系列データ分析 ～
-   -  [data09.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data09.ipynb)
-   -  [data09.xlsx](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data09.xlsx)
+   -  [data09.ipynb](Data/data09.ipynb)
+   -  [data09.xlsx](Data/data09.xlsx)
 -  第10回 データ分析の実際2 ～ 文章データ分析 ～
-   -  [data10.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data10.ipynb)
-   -  [email.csv](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/email.csv)
-   -  [Janome.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/Janome/Janome.ipynb)
-   -  [sangetsuki.txt](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/Janome/sangetsuki.txt)
-   -  [mojika.txt](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/Janome/mojika.txt)
-   -  [meijinden.txt](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/Janome/meijinden.txt)
+   -  [data10.ipynb](Data/data10.ipynb)
+   -  [email.csv](Data/email.csv)
+   -  [Janome.ipynb](Data/Janome/Janome.ipynb)
+   -  [sangetsuki.txt](Data/Janome/sangetsuki.txt)
+   -  [mojika.txt](Data/Janome/mojika.txt)
+   -  [meijinden.txt](Data/Janome/meijinden.txt)
 -  第11回 データ分析の実際3 ～ クラス分類 (教師あり学習) ～
-   -  [data11_1.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data11_1.ipynb)
-   -  [data11_2.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data11_2.ipynb)
-   -  [housing.csv](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/housing.csv)
+   -  [data11_1.ipynb](Data/data11_1.ipynb)
+   -  [data11_2.ipynb](Data/data11_2.ipynb)
+   -  [housing.csv](Data/housing.csv)
 -  第12回 データ分析の実際4 ～ 教師あり学習(回帰)・教師なし学習 ～
-   -  [data12.ipynb](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/data12.ipynb)
-   -  [basket_data.csv](https://wwws.kobe-c.ac.jp/~miura/Sc188/Data/basket_data.csv)
+   -  [data12.ipynb](Data/data12.ipynb)
+   -  [basket_data.csv](Data/basket_data.csv)
 </div>
 
-## Excel 関係
+## Excel 関係 <span style="font-size:12pt;">(要KC-NETアカウント)</span>
 -  [MS Excel 2021 入門](https://wwws.kobe-c.ac.jp/deguchi/kc/office21/ex/index.html)
 -  [MS Excel 2016～2021 応用編](https://wwws.kobe-c.ac.jp/deguchi/kc/office21/ex/excel2.html)
    -  [散布図（相関図）と近似曲線](https://wwws.kobe-c.ac.jp/deguchi/kc/office21/ex/excel2.html#scat)
