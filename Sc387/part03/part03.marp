@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 3
-last_modified: 2026-10-07 16:20:09 +09:00
+last_modified: 2026-10-07 16:53:48 +09:00
 
 marp: true
 theme: gaia
@@ -197,7 +197,7 @@ ___
   　 各ノードの値を (下から上へ) 定めていく手続き  
    (この手続きの詳細は省略する）
 ___
-## 例 ― [ハノイの塔(n=3)](https://wwws.kobe-c.ac.jp/~miura/stock/AI_Akashi/hanoi/hanoi_3.html)
+## 例 ― [ハノイの塔(n=3)](https://aliquisgg-hub.github.io/pages/hanoi/hanoi_3.html)
 
 （ルール）
 - 台の上に3本の棒が立っており，穴のあいた3枚の円盤  
@@ -208,44 +208,44 @@ ___
   <!-- 初期状態：下→上 に 大→小 -->
 - 全ての円盤を別の棒に移すには，どのように動かせばよいか？
 ___
-## 例 ― [ハノイの塔(n=3)](https://wwws.kobe-c.ac.jp/~miura/stock/AI_Akashi/hanoi/hanoi_3.html) (つづき)
+## 例 ― [ハノイの塔(n=3)](https://aliquisgg-hub.github.io/pages/hanoi/hanoi_3.html) (つづき)
 
 （状態の表現）
-- 3本の棒を A, B, C と名付ける
-- 状態： *小*, *中*, *大* の円盤の位置を，この順に A, B, C で表す  
+- 3本の棒を **A**, **B**, **C** と名付ける
+- 状態： *小*, *中*, *大* の円盤の位置を，この順に **A**, **B**, **C** で表す  
   <!-- Webの「ハノイの塔(n=3)」では，左上に状態を表示 -->
-  - 例えば，3枚とも左なら AAA，*中*と*大*が左で*小*だけ中なら BAA
+  - 例えば，3枚とも左なら **AAA**，*中*と*大*が左で*小*だけ中なら **BAA**
 
 （問題の表現）
-- 初期状態と目標状態を / で区切って並べて表す
-- 解くべき問題は AAA/CCC
+- 初期状態と目標状態を **/** で区切って並べて表す
+- 解くべき問題は **AAA/CCC**
 ___
-## 例 ― [ハノイの塔(n=3)](https://wwws.kobe-c.ac.jp/~miura/stock/AI_Akashi/hanoi/hanoi_3.html) (つづき)
+## 例 ― [ハノイの塔(n=3)](https://aliquisgg-hub.github.io/pages/hanoi/hanoi_3.html) (つづき)
 
 （問題分割）
-- AAA/CCC について考える：
+- **AAA/CCC** について考える：
   - *大*はある時点でAからCに動かす必要がある
   - その時，それ以外の円盤は B になければならない
     <!-- 大の上に円盤なく，行先にも円盤がない -->
-  - ゆえに，その時のオペレータは自明な問題 BBA/BBC と等価
+  - ゆえに，その時のオペレータは*自明な問題* **BBA/BBC** と等価
 
-  → ゆえに，AAA/CCC は，AAA/BBA と BBA/BBC と BBC/CCC  
+  → ゆえに，**AAA/CCC** は，**AAA/BBA** と **BBA/BBC** と **BBC/CCC**  
   　の3つの問題に分割できる（次スライドの図を   参照）
 ___
-## 例 ― [ハノイの塔(n=3)](https://wwws.kobe-c.ac.jp/~miura/stock/AI_Akashi/hanoi/hanoi_3.html) (つづき)
+## 例 ― [ハノイの塔(n=3)](https://aliquisgg-hub.github.io/pages/hanoi/hanoi_3.html) (つづき)
 
 ###### ![h:500](hanoi3_1.svg)
 ___
-## 例 ― [ハノイの塔(n=3)](https://wwws.kobe-c.ac.jp/~miura/stock/AI_Akashi/hanoi/hanoi_3.html) (つづき)
+## 例 ― [ハノイの塔(n=3)](https://aliquisgg-hub.github.io/pages/hanoi/hanoi_3.html) (つづき)
 
 （問題分割）（つづき，前スライドの図も参照）
-- AAA/CCC を分割した AAA/BBA，BBA/BBC，BBC/CCC のうち，  
-  - 真ん中の BBA/BBC は自明な問題（*大*を A から C へ）
-  - その前後の AAA/BBA，BBC/CCC は，いずれも(n=2)の問題  
+- **AAA/CCC** を分割した **AAA/BBA**，**BBA/BBC**，**BBC/CCC** のうち，  
+  - 真ん中の **BBA/BBC** は*自明な問題*（*大*を A から C へ）
+  - その前後の **AAA/BBA**，**BBC/CCC** は，いずれも(n=2)の問題  
     (2枚の円盤を別の棒に移動する問題)
-- 各(n=2)の問題もまた，*中*を移動する自明な問題と，  
+- 各(n=2)の問題もまた，*中*を移動する*自明な問題*と，  
   その前後の2つの (n=1)の問題 に分割できる
-- (n=1)の問題は，自明な問題である
+- (n=1)の問題は，*自明な問題*である
 ___
 ## ゲームの木 (グラフ)
 
