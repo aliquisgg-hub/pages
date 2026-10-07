@@ -22,6 +22,13 @@ div.boxed {
   border: gray solid 1px;
 }
 
+div.baloon { 
+  padding: 0.5ex 0.5em;
+  border: gray solid 1px;
+  border-radius: 1ex;
+  background-color: #ffc
+}
+
 .cjk_fallback {
   font-family: sans-serif;
   font-size: 82.6%;

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Tower of Hanoi</title>
+
+<style>
+table.hanoi { border-collapse: collapse; }
+  table.hanoi td { padding: 0; text-align: center; width: 200px; height: 20px;}
+    table.hanoi td img { vertical-align: bottom; }
+    table.hanoi td#stat { text-align:left; }
+  table.hanoi tr.bg td   { background-image: url(bg.png);   }
+  table.hanoi tr.pole td { background-image: url(pole.png); }
+  table.hanoi tr.base td { background-image: url(base.png); }
+
+td#stat { font-family: monospace; font-size: 1.5rem; }
+</style>
+
+<script>
+var stat = ["A", "A", "A"], // pole: A, B, C
+    onAir = -1;
+function topDisk(pole) { return stat.lastIndexOf(pole); }
+function numDisk(pole) {
+  return stat.filter(function (x) { return x==pole; }).length;
+}
+
+function operation(e) {
+  var p = e.target.value,
+      t = topDisk(p),
+      show;
+  if (onAir<0) {
+    if (t>=0) {
+      document.getElementById(p+"0").src = "p"+t+".gif";
+      document.getElementById(p+numDisk(p)).src = "trans.gif";
+      onAir = t;
+    }
+  } else if (stat[onAir]==p) {
+    if (t==onAir) {
+      document.getElementById(p+numDisk(p)).src = "p"+onAir+".gif";
+      document.getElementById("A0").src =
+      document.getElementById("B0").src =
+      document.getElementById("C0").src = "trans.gif";
+      onAir = -1;
+    }
+  } else {
+    document.getElementById(p+"0").src = "p"+onAir+".gif";
+    document.getElementById(stat[onAir]+"0").src = "trans.gif";
+    stat[onAir] = p;
+  }
+  show = stat.slice(0);
+  if (onAir>=0) show[onAir] = "-";
+  show.reverse();
+  document.getElementById("stat").innerHTML
+    = show.join("");
+}
+
+addEventListener("load", function (e) {
+  document.getElementById("btnA").addEventListener("click", operation, false);
+  document.getElementById("btnB").addEventListener("click", operation, false);
+  document.getElementById("btnC").addEventListener("click", operation, false);
+}, false);
+</script>
+
+</head>
+
+<body>
+<h1>ハノイの塔(n=3)</h1>
+<form name="hanoi">
+<table class="hanoi">
+<tr class="bg">
+    <td id="stat">AAA</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr class="bg">
+    <td><img id="A0" src="trans.gif" width="200" height="20"></td>
+    <td><img id="B0" src="trans.gif" width="200" height="20"></td>
+    <td><img id="C0" src="trans.gif" width="200" height="20"></td>
+</tr>
+<tr class="bg"><td></td><td></td><td></td></tr>
+<tr class="pole"><td></td><td></td><td></td></tr>
+<tr class="pole">
+    <td><img id="A3" src="p2.gif" width="200" height="20"></td>
+    <td><img id="B3" src="trans.gif" width="200" height="20"></td>
+    <td><img id="C3" src="trans.gif" width="200" height="20"></td>
+</tr>
+<tr class="pole">
+    <td><img id="A2" src="p1.gif" width="200" height="20"></td>
+    <td><img id="B2" src="trans.gif" width="200" height="20"></td>
+    <td><img id="C2" src="trans.gif" width="200" height="20"></td>
+</tr>
+<tr class="pole">
+    <td><img id="A1" src="p0.gif" width="200" height="20"></td>
+    <td><img id="B1" src="trans.gif" width="200" height="20"></td>
+    <td><img id="C1" src="trans.gif" width="200" height="20"></td>
+</tr>
+<tr class="base"><td></td><td></td><td></td></tr>
+<tr><td><input type="button" id="btnA" value="A"></td>
+    <td><input type="button" id="btnB" value="B"></td>
+    <td><input type="button" id="btnC" value="C"></td></tr>
+</table>
+</form>
+<ul>
+  <li>台の上に3本の棒が十分に離れて垂直に立っている．</li>
+  <li>全て異なる大きさの，穴のあいた3枚の円盤が，その棒に貫かれる形で置かれている．</li>
+  <li>最初の状態では，3枚の円盤は同じ1本の棒に，
+    大きい円盤は下方に，小さい円盤は上方になるようにして，大きさの順に置かれている．</li>
+  <li>これらの円盤を，以下の条件を満たすように，棒から棒へ動かして，全ての円盤を別の棒に移したい．<br>
+    条件は以下の通り：<ul>
+    <li>円盤は，1枚ずつ棒から棒へ移動させる．</li>
+    <li>円盤は，自分自身より小さい円盤の上に置いてはいけない．</li>
+    </ul>
+    <li>どのように円盤を動かせばよいか?</li>
+  </li>
+</ul>
+</body>
+</html>
