@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 2
-last_modified: 2026-09-25 16:09:03 +09:00
+last_modified: 2026-10-16 10:39:48 +09:00
 
 marp: true
 theme: gaia
@@ -21,7 +21,7 @@ backgroundColor: #fff
 <!-- 4クイーン問題（ヒューリスティック探索バージョン） ../4Qh/4Qh.html -->
 
 <!-- _class: lead -->
-
+<!-- _paginate: false -->
 # 問題解決と探索(2): 
 ### 分枝限定探索／ヒューリスティック探索
 

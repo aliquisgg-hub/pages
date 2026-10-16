@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 3
-last_modified: 2026-10-07 16:53:48 +09:00
+last_modified: 2026-10-16 10:39:48 +09:00
 
 marp: true
 theme: gaia
@@ -13,6 +13,7 @@ backgroundColor: #fff
 <link href="../mymarp.css" rel="stylesheet">
 
 <!-- _class: lead -->
+<!-- _paginate: false -->
 # 問題解決と探索(3)
 ### AND/OR木の探索
 
