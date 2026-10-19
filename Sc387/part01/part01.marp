@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 1
-last_modified: 2026-09-25 16:15:47 +09:00
+last_modified: 2026-10-16 10:39:48 +09:00
 
 marp: true
 theme: gaia
@@ -22,7 +22,7 @@ backgroundColor: #fff
 <!-- 4クイーン問題 (状態空間グラフバージョン) ../4Qg/4Qg.html -->
 
 <!-- _class: lead -->
-
+<!-- _paginate: false -->
 # 問題解決と探索(1)
 ## 状態空間法／縦型探索／横型探索
  (参考資料[「木・グラフの探索」](../dfs_bfs.pdf)も参照してください) 
