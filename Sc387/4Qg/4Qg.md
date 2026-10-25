@@ -1,6 +1,6 @@
 ---
 title: 4クイーン問題（状態空間グラフバージョン）
-last_modified: 2026-10-18 13:20:26 +09:00
+last_modified: 2026-10-25 10:27:08 +09:00
 
 html:
    embed_local_images: false
@@ -63,3 +63,4 @@ export_on_save:
 ### 状態空間グラフ
 ※ リンクはすべて両方向に状態遷移可能
 ###### ![state space](4Qg.svg)
+※ 目標状態はあえて伏せています
