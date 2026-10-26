@@ -2,7 +2,7 @@
 title: Sc387(1) Part 4
 last_modified: 2026-10-18 12:36:11 +09:00
 
-marp: true
+# marp: true
 theme: gaia
 math: katex
 paginate: true
@@ -196,7 +196,7 @@ ___
   $\Rightarrow\ \forall x(P(x)\rightarrow \lnot Q(x))$  
   　(すべての人について，彼が哲学者ならば彼は無口ではない)
 - 「(すべての)哲学者の父も哲学者である」  
-  　$\Rightarrow\ \forall x(P(x)\rightarrow P(f(x))$  
+  　$\Rightarrow\ \forall x(P(x)\rightarrow P(f(x)))$  
   　(すべての人について，彼が哲学者なら彼の父も哲学者である) 
 - 「誰にでも師匠はいる」 $\Rightarrow\ \forall x\exists y\ M(y,x)$  
   　(すべての人について，彼の師匠であるような人が存在する) 
