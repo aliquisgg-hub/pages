@@ -1,8 +1,8 @@
 ---
 title: Sc387(1) Part 4
-last_modified: 2026-10-18 12:36:11 +09:00
+last_modified: 2026-10-28 11:17:28 +09:00
 
-# marp: true
+marp: true
 theme: gaia
 math: katex
 paginate: true
