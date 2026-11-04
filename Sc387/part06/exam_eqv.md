@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) 小テスト：論理式の同値変換 解説
-last_modified: 2023-05-24 21:52:59 +09:00
+last_modified: 2026-11-04 17:27:26 +09:00
 
 html:
   embed_local_images: false
@@ -16,13 +16,18 @@ export_on_save:
 ---
 ### 小テスト：論理式の同値変換 の過程と解答
 $$
-\begin{array}{cl}
-	 &\lnot\exists x(\underline{\exists y\ P(y,x)\to Q(x)})\\
-	=&\underline{\lnot\exists x}(\lnot\exists y\ P(y,x)\lor Q(x))\\
-	=&\forall x\underline{\lnot(\lnot\exists y\ P(y,x)\lor Q(x))}\\
-	=&\forall x(\underline{\lnot\lnot}\exists y\ P(y,x)\land \lnot Q(x))\\
-	=&\forall x(\underline{\exists y}\ P(y,x)\land \lnot Q(x))\\
-	=&\forall x\exists y(P(y,x)\land\lnot Q(x))
+\begin{array}{cll}
+  &\lnot\exists x(\underline{\exists y\ P(y,x)\to Q(x)})\\
+= &\underline{\lnot\exists x}(\lnot\exists y\ P(y,x)\lor Q(x))
+    &(含意 (→) の除去)\\
+= &\forall x\underline{\lnot(\lnot\exists y\ P(y,x)\lor Q(x))}
+    &(否定記号 (\lnot) と限量子 (\exists) の入れ替え)\\
+= &\forall x(\underline{\lnot\lnot}\exists y\ P(y,x)\land \lnot Q(x))
+    &(ド・モルガン則)\\
+= &\forall x(\underline{\exists y}\ P(y,x)\land \lnot Q(x))
+    &(二重否定則)\\
+= &\forall x\exists y(P(y,x)\land\lnot Q(x))
+    &(\,(\exists x\ P[x])\land R=\exists x(P[x]\land R)\,)
 \end{array}
 $$
 

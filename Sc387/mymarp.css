@@ -55,7 +55,8 @@ section.split {
 }
 section.split h2,
 section.split h3,
-section.split h4 {
+section.split h4,
+section.split .heading {
     grid-area: slideheading;
 }
 section.split .footer {

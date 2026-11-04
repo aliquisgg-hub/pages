@@ -1,6 +1,6 @@
 ---
 title: Example of a Refutation with Resolution Principle #2.
-last_modified: 2023-05-28 14:41:14 +09:00
+last_modified: 2026-11-04 17:29:07 +09:00
 
 html:
   embed_local_images: false
