@@ -1,6 +1,6 @@
 ---
 title: Example of a Refutation with Resolution Principle #2.
-last_modified: 2026-11-04 17:29:07 +09:00
+last_modified: 2026-11-06 13:53:26 +09:00
 
 html:
   embed_local_images: false
@@ -14,7 +14,9 @@ puppeteer:
 export_on_save:
   html: true
 ---
-## 融合原理による反駁の例 (2)
+## 融合原理による反駁の例 3
+
+### 例1
 
 $
 \begin{array}{rl}
