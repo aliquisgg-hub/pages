@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 6
-last_modified: 2026-11-05 17:35:53 +09:00
+last_modified: 2026-11-06 13:40:08 +09:00
 
 marp: true
 theme: gaia
@@ -258,12 +258,12 @@ ___
 #### 節形式に変換する例
 $$
 \begin{array}{rl}
-  &¬∃x∀y\,R(x,\,y)\ ∨\ ¬∃z(P(z)→Q(z))\\
-⟶&¬∃x∀y\,R(x,\,y)\ ∨\ ¬∃z(¬P(z)∨Q(z))\\
-⟶&∀x∃y\,¬R(x,\,y)\ ∨\ ∀z\,¬(¬P(z)∨Q(z))\\
-⟶&∀x∃y\,¬R(x,\,y)\ ∨\ ∀z\,(P(z)∧¬Q(z))\\
-⟶&∀x∃y∀z(¬R(x,\,y)\,∨\,(P(z)∧¬Q(z)))\\
-⟶&∀x∃y∀z((¬R(x,\,y)∨P(z))\,∧\,(¬R(x,\,y)∨¬Q(z)))\\
+  &¬∃x∀y\,R(x,\,y)\ ∨\ ¬∃z(\underline{P(z)→Q(z)})\\
+⟶&\underline{¬∃x∀y}\,R(x,\,y)\ ∨\ \underline{¬∃z}(¬P(z)∨Q(z))\\
+⟶&∀x∃y\,¬R(x,\,y)\ ∨\ ∀z\,\underline{¬(¬P(z)∨Q(z))}\\
+⟶&\underline{∀x∃y}\,¬R(x,\,y)\ ∨\ \underline{∀z}\,(P(z)∧¬Q(z))\\
+⟶&∀x∃y∀z(\underline{¬R(x,\,y)\,∨\,(P(z)∧¬Q(z))})\\
+⟶&∀x\underline{∃y}∀z((¬R(x,\,\underline{y})∨P(z))\,∧\,(¬R(x,\,\underline{y})∨¬Q(z)))\\
 ⟶&∀x∀z((¬R(x,\,η(x))∨P(z))\,∧\,(¬R(x,\,η(x))∨¬Q(z)))\\
 ⟶&\{\{¬R(x,\,η(x)),\,P(z)\},\,\{¬R(x,\,η(x)),\,¬Q(z)\}\}\\
 \end{array}
