@@ -8,7 +8,9 @@ em {
 }
 /* em { font-style: inherit; text-decoration: underline; } */
 strong { text-decoration:inherit ; color: firebrick; }
+.normc { color: var(--color-foreground); }
 .red { color: red; }
+.darkred { color: darkred; }
 .normal_weight { font-weight:normal; }
 .normal { font-weight:normal; font-size:26pt; }
 table { margin: 0.5em auto; }
