@@ -376,7 +376,7 @@ ___
   **ユニファイア** (unifier；*単一化代入*，*単一化作用素*) という
 - $σ$ が $α_1,α_2$ の単一化代入であるとき，任意の代入 $ρ$ に対して，$σ∘ρ$ 
   もまた単一化代入となる．($σ$ は $σ∘ρ$ *より一般的 (more general)*
-  なユニファイア)
+  なユニファイアである)
 <!-- 
   $(∵ α_1σ=α_2σ$ より  $α_1(σ∘ρ)=(α_1σ)ρ=(α_2σ)ρ=α_2(σ∘ρ))$
 -->
@@ -471,7 +471,7 @@ $$
 3&:&\{Lier(Seneca),\underline{¬Loose(Seneca)}\}\quad&1,2; σ_1=\{Seneca/x\}\\
 4&:&\{\underline{Loose(y)},¬Roman(y)\}              &(b)\\
 5&:&\{Lier(Seneca),\underline{¬Roman(Seneca)}\}      &3,4; σ_2=\{Seneca/y\}\\
-6&:&\{\underline{Roman(Seneca)}\}                   &(d)\\
+6&:&\{\underline{Roman(Seneca)}\}                   &(c)\\
 7&:&\{Lier(Seneca)\}                    &5,6; σ_3=\phi
 \end{array}\\
 　\\
