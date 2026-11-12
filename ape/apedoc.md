@@ -1,6 +1,6 @@
 ---
 title: "Ape: A Production System"
-last_modified: 2026-08-12 13:48:01 +09:00
+last_modified: 2026-11-12 10:46:11 +09:00
 
 html:
   embed_local_images: false
