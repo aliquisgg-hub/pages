@@ -1,6 +1,6 @@
 ---
 title: "Ape: A Production System"
-last_modified: 2026-11-12 11:04:07 +09:00
+last_modified: 2026-11-12 12:39:23 +09:00
 
 html:
   embed_local_images: false
@@ -97,7 +97,7 @@ pre.code {
 
     　…
 
-    以下同様にして優先順位を定める．（*LRU*)
+    以下同様にして優先順位を定める．（*LRU*　⋯　*L*east *R*ecently *U*sed)
 
 - WM の初期状態
   ```lisp
