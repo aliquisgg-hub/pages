@@ -6,8 +6,9 @@ em {
   text-underline-offset: 5px;
   color:forestgreen; 
 }
-/* em { font-style: inherit; text-decoration: underline; } */
-strong { text-decoration:inherit ; color: firebrick; }
+u { text-decoration-thickness: 0.8px; text-underline-offset: 5px; }
+strong { text-decoration: inherit ; color: firebrick; }
+.mono90 { font-family: monospace; font-size: 90%; }
 .normc { color: var(--color-foreground); }
 .red { color: red; }
 .darkred { color: darkred; }
