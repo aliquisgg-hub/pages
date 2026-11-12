@@ -61,6 +61,13 @@
 .markdown-preview.markdown-preview td {
   border-color: black;
 }
+.markdown-preview.markdown-preview pre[class*=language-] {
+  padding: 0.8em;
+  overflow: auto;
+  border-radius: 3px;
+  border: #e7eaed solid 1px;
+  background: #f5f5f5;
+}
 .markdown-preview.markdown-preview .token.blockquote {
   color: #969896;
 }
@@ -218,7 +225,7 @@ pre.code {
 <h3 id="プロダクションルールの一般化の例">プロダクション・ルールの一般化の例 </h3>
 <ul>
 <li>
-<p>例えば，<em>バナナを食う[h]</em> というルールは，バナナを変数に置き換えることにより，<em>果物を食う[h, x]</em> というルールを構成できる．</p>
+<p>例えば，<code>バナナを食う[h]</code> というルールは，バナナを変数に置き換えることにより，<code>果物を食う[h, x]</code> というルールを構成できる．</p>
 <pre data-role="codeBlock" data-info="lisp" class="language-lisp lisp"><code><span class="token comment">; h に持っている剥いた果物 x を食べる</span>
 果物を食う<span class="token punctuation">[</span>h, x<span class="token punctuation">]</span>: <span class="token punctuation">(</span>持つ h <span class="token punctuation">(</span>剥いた x<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>空腹<span class="token punctuation">)</span> → <span class="token punctuation">(</span>持つ h <span class="token punctuation">(</span>皮 x<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>満腹<span class="token punctuation">)</span>.
 </code></pre>
@@ -227,7 +234,7 @@ pre.code {
 <h3 id="プロダクションルールの統合の例">プロダクション・ルールの統合の例 </h3>
 <ul>
 <li>
-<p>例えば，上の動作例の <strong>7.</strong> ～ <strong>10.</strong> で用いられた，<em>拾う[h, x]</em>，<em>バナナを剥く[h1, h2]</em>，<em>バナナを食う[h]</em> の3つのルールを統合して，<em>バナナを拾って剥いて食う[h1, h2]</em> というルールを構成できる．</p>
+<p>例えば，上の動作例の <strong>7.</strong> ～ <strong>10.</strong> で用いられた，<code>拾う[h, x]</code>，<code>バナナを剥く[h1, h2]</code>，<code>バナナを食う[h]</code> の3つのルールを統合して，<code>バナナを拾って剥いて食う[h1, h2]</code> というルールを構成できる．</p>
 <pre class="code"><strong>(空腹) (床上 バナナ) (持つ h1 nil) (持つ h2 nil)</strong>  
    ↓ 拾う[h1, バナナ]: (床上 バナナ) (持つ h1 nil) → (持つ h1 バナナ).  
 <strong>(空腹) (持つ h2 nil) (持つ h1 バナナ)</strong>
@@ -260,9 +267,9 @@ pre.code {
 </li>
 <li>以下を試してみよう．
 <ol>
-<li>プロダクションメモリの <em>バナナを食う[h]</em> ルールを，上の <em>果物を食う[h, x]</em> ルールに置き換えて実行してみる．</li>
-<li>プロダクションメモリの最初に，上の <em>バナナを拾って剥いて食う[h1, h2]</em> ルールを追加して実行してみる．（注：最初に置いたルールは最優先のルールになる）</li>
-<li>プロダクションメモリのルールの順序を変えてみる（例えば，<em>手放す[h, x]</em> と <em>拾う[h, x]</em> の順序を入れ替えてみるなど）</li>
+<li>プロダクションメモリの <code>バナナを食う[h]</code> ルールを，上の <code>果物を食う[h, x]</code> ルールに置き換えて実行してみる．</li>
+<li>プロダクションメモリの最初に，上の <code>バナナを拾って剥いて食う[h1, h2]</code> ルールを追加して実行してみる．（注：最初に置いたルールは最優先のルールになる）</li>
+<li>プロダクションメモリのルールの順序を変えてみる（例えば，<code>手放す[h, x]</code> と <code>拾う[h, x]</code> の順序を入れ替えてみるなど）</li>
 <li>ワーキングメモリのWM要素の順序を変えてみる（例えば (床上 石) と (床上 棒) を入れ替えてみるなど）</li>
 </ol>
 </li>
