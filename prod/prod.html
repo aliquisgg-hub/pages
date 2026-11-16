@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<title>プロダクションシステム</title>
+
+<!-- 項の集合(リスト; 配列)を操作する関数群 -->
+<script type="text/javascript" src="term_set.js"></script>
+<!-- 前向き推論エンジン -->
+<script type="text/javascript" src="forward_reasoning.js"></script>
+<!-- 後向き推論エンジン -->
+<script type="text/javascript" src="backward_reasoning.js"></script>
+
+<body>
+<pre>プロダクションシステム
+
+  ワーキングメモリ(WM):     項の配列(集合)
+  ルールベース(RB):         ルールの連想配列(一般オブジェクト)
+
+    但し
+      項:           [ 述語, 対象, … ] （配列）
+        述語・対象: 文字列
+      ルール:       { condition: 条件, action: 動作 }
+        条件:       [ 項, … ] （項の配列(集合)）
+        動作:       [ 項, … ] （項の配列(集合)）
+</pre>
+<hr>
+<pre>
+例1: 積木の世界 (前向き推論の例)
+
+  WM要素
+    ["on-table", X] : 積木Xがテーブルの上に(接して)のっている
+    ["on", X, Y]    : 積木Xが積木Yの上に積まれている
+    ["clear", X]    : 積木Xの上には何も積まれていない
+
+  初期状態
+
+      C
+      A B
+    -------
+    [["on-table", "a"], ["on", "c", "a"], ["clear", "c"],
+     ["on-table", "b"], ["clear", "b"]]
+
+  目標状態
+
+      A
+      B
+      C
+    -----
+    [["on-table", "c"], ["on", "b", "c"], ["on", "a", "b"], ["clear", "a"]]
+
+  ルールベース
+    sXY --- X を Y に積む
+      sab: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "b"]],
+             action:    [["clear", "a"], ["on", "a", "b"]]},
+      sac: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "c"]],
+             action:    [["clear", "a"], ["on", "a", "c"]]},
+      sbc: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "c"]],
+             action:    [["clear", "b"], ["on", "b", "c"]]},
+      sba: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "a"]],
+             action:    [["clear", "b"], ["on", "b", "a"]]},
+      sca: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "a"]],
+             action:    [["clear", "c"], ["on", "c", "a"]]},
+      scb: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "b"]],
+             action:    [["clear", "c"], ["on", "c", "b"]]},
+
+    dXY --- X を Y から下ろす
+      dab: { condition: [["clear", "a"], ["on", "a", "b"]],
+             action:    [["on-table", "a"], ["clear", "a"], ["clear", "b"]]},
+      dac: { condition: [["clear", "a"], ["on", "a", "c"]],
+             action:    [["on-table", "a"], ["clear", "a"], ["clear", "c"]]},
+      dbc: { condition: [["clear", "b"], ["on", "b", "c"]],
+             action:    [["on-table", "b"], ["clear", "b"], ["clear", "c"]]},
+      dba: { condition: [["clear", "b"], ["on", "b", "a"]],
+             action:    [["on-table", "b"], ["clear", "b"], ["clear", "a"]]},
+      dca: { condition: [["clear", "c"], ["on", "c", "a"]],
+             action:    [["on-table", "c"], ["clear", "c"], ["clear", "a"]]},
+      dcb: { condition: [["clear", "c"], ["on", "c", "b"]],
+             action:    [["on-table", "c"], ["clear", "c"], ["clear", "b"]]}
+</pre>
+<script type="text/javascript"><!--
+// 初期状態と目標状態
+var BlockInit = [["on-table", "a"], ["on", "c", "a"], ["clear", "c"], ["on-table", "b"], ["clear", "b"]],
+    BlockGoal = [["on-table", "c"], ["on", "b", "c"], ["on", "a", "b"], ["clear", "a"]];
+
+// ルールベース
+var BlockRuleBase = {
+  // sXY - X を Y に積む
+  sab: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "b"]],
+         action:    [["clear", "a"], ["on", "a", "b"]]},
+  sac: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "c"]],
+         action:    [["clear", "a"], ["on", "a", "c"]]},
+  sbc: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "c"]],
+         action:    [["clear", "b"], ["on", "b", "c"]]},
+  sba: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "a"]],
+         action:    [["clear", "b"], ["on", "b", "a"]]},
+  sca: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "a"]],
+         action:    [["clear", "c"], ["on", "c", "a"]]},
+  scb: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "b"]],
+         action:    [["clear", "c"], ["on", "c", "b"]]},
+
+  // dXY - X を Y から下ろす
+  dab: { condition: [["clear", "a"], ["on", "a", "b"]],
+         action:    [["on-table", "a"], ["clear", "a"], ["clear", "b"]]},
+  dac: { condition: [["clear", "a"], ["on", "a", "c"]],
+         action:    [["on-table", "a"], ["clear", "a"], ["clear", "c"]]},
+  dbc: { condition: [["clear", "b"], ["on", "b", "c"]],
+         action:    [["on-table", "b"], ["clear", "b"], ["clear", "c"]]},
+  dba: { condition: [["clear", "b"], ["on", "b", "a"]],
+         action:    [["on-table", "b"], ["clear", "b"], ["clear", "a"]]},
+  dca: { condition: [["clear", "c"], ["on", "c", "a"]],
+         action:    [["on-table", "c"], ["clear", "c"], ["clear", "a"]]},
+  dcb: { condition: [["clear", "c"], ["on", "c", "b"]],
+         action:    [["on-table", "c"], ["clear", "c"], ["clear", "b"]]}
+};
+
+//--></script>
+<form action="#">
+  <input type="button" value="Go"
+         onclick="alert('終了: '+forwardReasoning(BlockInit, BlockGoal, BlockRuleBase));">
+</form>
+<hr>
+<pre>
+例2: 旅行案内 (後向き推論の例)
+
+  概要
+    後向き推論の木を深さ優先探索する (バックトラックあり)
+      節点:   ワーキングメモリのプロパティ backtrace に適用ルール(の名前)のリスト
+              (配列)を与えたもの
+      根節点: 目標状態の WM に，プロパティ backtrace として [] を与えたもの
+      子節点: 親節点のワーキングメモリにルールを逆向きに適用して得られる WM
+              プロパティ backtrace のリスト(配列)には，使用されたルール(の名前)が
+              (前から)追加される
+
+  ルールベース
+    旅行先決定ルール
+    r1:  { condition: [["usa"], ["english"]],       action: [["honolulu"]]  },
+    r2:  { condition: [["europe"], ["france"]],     action: [["paris"]]     },
+    r3:  { condition: [["usa"], ["continent"]],     action: [["losange"]]   },
+    r4:  { condition: [["island"], ["equator"]],    action: [["honolulu"]]  },
+    r5:  { condition: [["asia"], ["equator"]],      action: [["singapore"]] },
+    r6:  { condition: [["island"], ["micronesia"]], action: [["guam"]]      },
+    r7:  { condition: [["swimming"]],               action: [["equator"]]   },
+
+    旅行先決定時ルール
+    rg1: { condition: [["honolulu"]],  action: [["honolulu"], ["ok"]]  },
+    rg2: { condition: [["paris"]],     action: [["paris"], ["ok"]]     },
+    rg3: { condition: [["losange"]],   action: [["losange"], ["ok"]]   },
+    rg4: { condition: [["singapore"]], action: [["singapore"], ["ok"]] },
+    rg5: { condition: [["guam"]],      action: [["guam"], ["ok"]]      }
+
+  目標状態
+    [["ok"]]
+</pre>
+<script type="text/javascript"><!--
+// ルールベース
+var TravelRuleBase = {
+  // 旅行先決定ルール
+  r1:  { condition: [["usa"], ["english"]],       action: [["honolulu"]]  },
+  r2:  { condition: [["europe"], ["france"]],     action: [["paris"]]     },
+  r3:  { condition: [["usa"], ["continent"]],     action: [["losange"]]   },
+  r4:  { condition: [["island"], ["equator"]],    action: [["honolulu"]]  },
+  r5:  { condition: [["asia"], ["equator"]],      action: [["singapore"]] },
+  r6:  { condition: [["island"], ["micronesia"]], action: [["guam"]]      },
+  r7:  { condition: [["swimming"]],               action: [["equator"]]   },
+  // 旅行先決定時ルール
+  rg1: { condition: [["honolulu"]],  action: [["honolulu"], ["ok"]]  },
+  rg2: { condition: [["paris"]],     action: [["paris"], ["ok"]]     },
+  rg3: { condition: [["losange"]],   action: [["losange"], ["ok"]]   },
+  rg4: { condition: [["singapore"]], action: [["singapore"], ["ok"]] },
+  rg5: { condition: [["guam"]],      action: [["guam"], ["ok"]]      }
+};
+
+// 目標状態
+var TravelGoal = [["ok"]];
+//--></script>
+<form action="#">
+  <input type="button" value="Go"
+         onclick="backwardReasoning(TravelGoal, TravelRuleBase);">
+</form>
+</body>
+</html>

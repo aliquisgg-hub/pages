@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<title>プロダクションシステム - 積み木の世界</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<!-- 項の集合(リスト; 配列)を操作する関数群 -->
+<script type="text/javascript" src="term_set.js"></script>
+<!-- 前向き推論エンジン -->
+<script type="text/javascript" src="forward_reasoning.js"></script>
+
+<script type="text/javascript"><!--
+// 各フォーム部品のオブジェクトを代入しておく変数
+var InitWmElem, GoalWmElem, WmElem, RuleBaseElem, RulesElem;
+// (WMの)初期状態，(WMの)目標状態，(WMの)現状態，ルールベース
+var InitWm, GoalWm, Wm, RuleBase;
+
+// ページ読み込み時の初期化:
+//   各フォーム部品のオブジェクトを取得して大域変数に代入
+function initialize() {
+  InitWmElem = document.getElementById("initWm");
+  GoalWmElem = document.getElementById("goalWm");
+  WmElem = document.getElementById("wm");
+  RuleBaseElem = document.getElementById("ruleBase");
+  RulesElem = document.getElementById("rules");
+}
+
+// WM の内容をテキストエリアに表示する．
+function showWm(wm) {
+  WmElem.value = wm.map(function (tm) { return tm.toSource(); }).join("\n");
+}
+
+// (適用可能な)ルール(の名前)をリストボックス(セレクト部品)に表示する
+function showRules(rules) {
+  with (RulesElem) {    // RulesElem: セレクト部品
+    // 項目(オプション部品)をすべて削除
+    while (length>0) removeChild(lastChild);
+    rules.forEach(function (ruleName) {
+      // 項目(オプション部品)を生成
+      var opt = document.createElement("option");
+      opt.text = ruleName;      // 表示文字列を設定
+      appendChild(opt);         // セレクト部品に追加
+    });
+  }
+}
+
+// スタートボタンで開始時の処理
+function start() {
+  // 各テキストエリアを readOnly にする
+  InitWmElem.readOnly = GoalWmElem.readOnly = RuleBaseElem.readOnly = true;
+  // (WM の)初期状態，目標状態をテキストエリアから読み取って InitWm, GoalWm に代入
+  InitWm = InitWmElem.value.split("\n").map(eval); InitWm.backtrace = [];
+  GoalWm = GoalWmElem.value.split("\n").map(eval);
+  // ルールベースをテキストエリアから読み取って RuleBase に代入
+  RuleBase = eval("("+RuleBaseElem.value+")");
+  // Wm を初期状態にして，テキストエリアに表示
+  showWm(Wm = InitWm);
+  // Wm に適用可能なルールのリストをリストボックス(セレクト部品)に表示
+  showRules(getRuleSet(Wm, RuleBase));
+}
+
+// 適用ボタンで実行する処理
+function doRule() {
+  // リストボックスで選択されているルールを Wm に適用して結果を表示
+  showWm(Wm = applyRule(RulesElem.value, Wm, RuleBase));
+  // Wm に適用可能なルールのリストをリストボックス(セレクト部品)に表示
+  showRules(getRuleSet(Wm, RuleBase));
+  // 目標に到達していれば，メッセージを表示
+  if (isSubsetOf(GoalWm, Wm)) alert("成功! "+Wm.backtrace);
+}
+
+// リセット時に実行される処理
+function resetElem() {
+  // readOnly にしていたテキストエリアを変更可能にする
+  InitWmElem.readOnly = GoalWmElem.readOnly = RuleBaseElem.readOnly = false;
+  // リストボックス(セレクト部品)の項目(オプション部品)を削除する
+  with (RulesElem) {
+    while (length>0) removeChild(lastChild);
+    var opt = document.createElement("option");
+    opt.text = "ここでルールを選びます";
+    appendChild(opt);
+  }
+}
+//--></script>
+
+<body onload="initialize();">
+<h1>プロダクションシステム</h1>
+<h2>前向き推論の例 － 積み木の世界</h2>
+<form action="#" onreset="resetElem();">
+<h3>ワーキングメモリ</h3>
+<table><tr>
+<td>初期状態：</td>
+<td>目標状態：</td>
+</tr><tr>
+<td><textarea id="initWm" rows="6" cols="37">["clear", "c"]
+["on", "c", "a"]
+["on-table", "a"]
+["clear", "b"]
+["on-table", "b"]</textarea></td>
+<td><textarea id="goalWm" rows="6" cols="37">["clear", "a"]
+["on", "a", "b"]
+["on", "b", "c"]
+["on-table", "c"]</textarea></td>
+</tr><tr>
+<td>現状態：</td>
+</tr><tr>
+<td><textarea id="wm" rows="6" cols="37" readonly></textarea></td>
+<td>
+<input type="button" value="スタート" onclick="start();"><br>
+<select id="rules" size="6"><option>ここでルールを選びます</option></select>
+<input type="button" value="適用" onclick="doRule();"><br>
+<input type="reset">
+</td>
+</tr></table>
+
+<h3>ルールベース</h3>
+<textarea id="ruleBase" rows="27" cols="80">
+{   // sXY --- X を Y に積む
+    sab: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "b"]],
+           action:    [["clear", "a"], ["on", "a", "b"]]},
+    sac: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "c"]],
+           action:    [["clear", "a"], ["on", "a", "c"]]},
+    sbc: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "c"]],
+           action:    [["clear", "b"], ["on", "b", "c"]]},
+    sba: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "a"]],
+           action:    [["clear", "b"], ["on", "b", "a"]]},
+    sca: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "a"]],
+           action:    [["clear", "c"], ["on", "c", "a"]]},
+    scb: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "b"]],
+           action:    [["clear", "c"], ["on", "c", "b"]]},
+
+    // dXY --- X を Y から下ろす
+    dab: { condition: [["clear", "a"], ["on", "a", "b"]],
+           action:    [["on-table", "a"], ["clear", "a"], ["clear", "b"]]},
+    dac: { condition: [["clear", "a"], ["on", "a", "c"]],
+           action:    [["on-table", "a"], ["clear", "a"], ["clear", "c"]]},
+    dbc: { condition: [["clear", "b"], ["on", "b", "c"]],
+           action:    [["on-table", "b"], ["clear", "b"], ["clear", "c"]]},
+    dba: { condition: [["clear", "b"], ["on", "b", "a"]],
+           action:    [["on-table", "b"], ["clear", "b"], ["clear", "a"]]},
+    dca: { condition: [["clear", "c"], ["on", "c", "a"]],
+           action:    [["on-table", "c"], ["clear", "c"], ["clear", "a"]]},
+    dcb: { condition: [["clear", "c"], ["on", "c", "b"]],
+           action:    [["on-table", "c"], ["clear", "c"], ["clear", "b"]]}
+}</textarea>
+
+</form>
+</body>
+</html>

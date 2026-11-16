@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>プロダクションシステム - 後向き推論</title>
+<meta charset="utf-8">
+
+<style>
+.input	{color:blue;font-weight:bold;}
+.prompt	{font-weight:bold;color:white;background-color:blue;text-decoration:blink;}
+</style>
+
+<!-- 項の集合(リスト; 配列)を操作する関数群 -->
+<script src="term_set.js"></script>
+<!-- 前向き推論エンジン -->
+<script src="forward_reasoning.js"></script>
+<!-- 後向き推論エンジン -->
+<script src="backward_reasoning.js"></script>
+
+</head>
+<body>
+<h1>プロダクションシステム</h1>
+<h2>後向き推論の例 － 旅行案内</h2>
+<form action="#" onreset="resetElem();">
+
+<input type="button" value="Start" onclick="start();">
+<pre id="printPane" style="border: solid blue 1px;"><strong>出力:</strong></pre>
+<input type="button" value="Yes" onclick="reply(true);">
+<input type="button" value="No"  onclick="reply(false);"><br>
+<input type="reset">
+
+<h3>ルールベース</h3>
+<textarea id="ruleBase" rows="16" cols="80">
+{   // 旅行先決定ルール
+    r1:  { condition: [["usa"], ["english"]],       action: [["honolulu"]]  },
+    r2:  { condition: [["europe"], ["france"]],     action: [["paris"]]     },
+    r3:  { condition: [["usa"], ["continent"]],     action: [["losange"]]   },
+    r4:  { condition: [["island"], ["equator"]],    action: [["honolulu"]]  },
+    r5:  { condition: [["asia"], ["equator"]],      action: [["singapore"]] },
+    r6:  { condition: [["island"], ["micronesia"]], action: [["guam"]]      },
+    r7:  { condition: [["swimming"]],               action: [["equator"]]   },
+
+    // 旅行先決定時ルール
+    rg1: { condition: [["honolulu"]],  action: [["honolulu"], ["ok"]]  },
+    rg2: { condition: [["paris"]],     action: [["paris"], ["ok"]]     },
+    rg3: { condition: [["losange"]],   action: [["losange"], ["ok"]]   },
+    rg4: { condition: [["singapore"]], action: [["singapore"], ["ok"]] },
+    rg5: { condition: [["guam"]],      action: [["guam"], ["ok"]]      }
+}</textarea>
+
+<h3>目標状態</h3>
+<input id="goalPane" type="text" size="80" value="[[&quot;ok&quot;]]">
+</form>
+
+<script>
+  var ItBR;   // backwardReasoning() のイテレータ
+  var Input;  // 入力データ
+  
+  // 関数名を変える? confirm のところで yield を使用．大域変数を介して入力を取得
+  function* backwardReasoning(goal, ruleBase) {
+
+    var S   = [ goal ],   // 深さ優先探索用の(節点の)スタック
+        yes = [],         // ユーザが肯定した項のリスト
+        no  = [];         // ユーザが否定した項のリスト
+    goal.backtrace = [];
+    while (S.length>0) {  // 未探索節点がなくなれば終了
+      var wm       = S.shift(),           // 注目節点 - S から取り出したWM
+          unsolved = diffSet(wm, yes),    // WM中で未解決の項(肯定されない項)
+          ruleSet  = getReverseRuleSet(unsolved, ruleBase); // 未解決項をルールベースと照合
+      if (ruleSet.length>0) {     // 逆方向に適用可能なルールがある時，その結果を子節点とする
+        S = ruleSet.map(function (rule) { return revertRule(rule, wm, ruleBase); }).concat(S);
+      } else {                    // 逆方向に適用可能なルールがない時，未解決項を問い合わせる
+        for (var i=0; i<unsolved.length; i++) {
+          if (isIn(unsolved[i], no)) break;
+          yield "\n"+unsolved[i][0]+' <span class="prompt">?<\/span>';
+          if (Input) yes.push(unsolved[i]);
+          else { no.push(unsolved[i]); break; }
+        }
+        if (i>=unsolved.length) {
+          yield "\n"+makeResult(wm, ruleBase)+'\nOK <span class="prompt">?<\/span>'; // 結果の表示
+          if (Input) break;
+        }
+      }
+    }
+    yield "\n== "+(S.length>0 ? "SUCCEEDED" : "FAILED")+" ==";
+    for (;;) yield "";
+
+  }
+  
+  function start() {
+    ruleBase.readOnly = goalPane.readOnly = true;
+    ItBR = backwardReasoning(eval(goalPane.value),
+                             eval("("+ruleBase.value+")"));
+    printPane.innerHTML += ItBR.next().value;
+  }
+  
+  function reply(dat) {
+    with (printPane) {
+      if (lastChild.className=="prompt") {
+        removeChild(lastChild);
+        Input = dat;
+        innerHTML += '<span class="input">'+(dat ? "Y" : "N")+'<\/span>';
+        innerHTML += ItBR.next().value;
+      }
+    }
+  }
+  
+  function resetElem() {
+    ruleBase.readOnly = goalPane.readOnly = false;
+    printPane.innerHTML = '<strong>出力:</\strong>';
+  }
+  </script>
+  
+</body>
+</html>

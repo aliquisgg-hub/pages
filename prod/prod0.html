@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<title>プロダクションシステム</title>
+<body>
+<pre>プロダクションシステム
+
+  ワーキングメモリ(WM):     項の配列(集合)
+  ルールベース(RB):         ルールの連想配列(一般オブジェクト)
+
+    但し
+      項:           [ 述語, 対象, … ] （配列）
+        述語・対象: 文字列
+      ルール:       { condition: 条件, action: 動作 }
+        名前:       文字列
+        条件:       [ 項, … ] （項の配列(集合)）
+        動作:       [ 項, … ] （項の配列(集合)）
+</pre>
+<script type="text/javascript"><!--
+// 項s と 項t が等しいかどうか
+function eqTerm(s, t) {
+  if (s.length!=t.length) return false;
+  for (var i=0; i<s.length; i++) if (s[i]!=t[i]) return false;
+  return true;
+}
+
+// t が S に含まれるかどうか (t∈S)
+function isIn(t, S) { return S.some(function (s) { return eqTerm(s, t); }); }
+
+// S が T の部分集合かどうか (S⊂T)
+function isSubsetOf(S, T) { return S.every(function (s) { return isIn(s, T); }); }
+
+// S と T の和集合 (S∪T)
+function union(S, T) { return S.concat(T.filter(function (t) { return !isIn(t, S); })); }
+
+// S と T の(共通集合)積集合 (S∩T)
+function intersect(S, T) { return S.filter(function (s) { return isIn(s, T); }); }
+
+// S と T の差集合 (S＼T)
+function diffSet(S, T) { return S.filter(function (s) { return !isIn(s, T); }); }
+
+////////////////////////
+// 前向き推論エンジン //
+////////////////////////
+
+//   初期状態 init から，目標状態 goal に至るまで前向き推論を行なう
+function forwardReasoning(init, goal, ruleBase) {
+  var wm = init,        // WM (ワーキングメモリ)
+      ruleSet,          // WM に適用可能な(競合する)ルール(の名前)の集合(配列)
+      rule,             // 選択されたルール(の名前)
+      msg = "初期状態: ";
+  for (;;) {
+    alert(msg+wm.toSource());                   // WM の表示
+    if (isSubsetOf(goal, wm)) return true;      // WM が目標状態を含む(成功)
+    ruleSet = getRuleSet(wm, ruleBase);         // ルールベースと照合
+    if (ruleSet.length==0) return false;        // 適用できるルールがない(失敗)
+    rule = choiceRule(ruleSet, ruleBase, wm, goal); // 競合の解消
+    wm = applyRule(rule, wm, ruleBase);         // ルールの適用，動作
+    msg = rule + " 適用後: ";
+  }
+}
+
+// ルールベースとの照合
+//   WM に適用可能なルールのリストを得る
+function getRuleSet(wm, ruleBase) {
+  var rs = [];
+  for (var r in ruleBase) {
+    // 条件部がWMに含まれるルール(の名前)を rs に追加
+    if (isSubsetOf(ruleBase[r].condition, wm)) rs.push(r);
+  }
+  return rs;
+}
+
+// 競合の解消
+//   ルールの集合(リスト)から1つのルールを選択する
+//   ここではユーザが選択するようにしているが，本来は自動的に選ぶ
+function choiceRule(ruleSet, ruleBase, wm, goal) {
+  var msg = "番号を入力してください．";
+  for (var i=0; i<ruleSet.length; i++) {
+    msg += "\n"+i+": " + ruleSet[i] + ":";
+    msg += "\n    condition: " + ruleBase[ruleSet[i]].condition.toSource();
+    msg += "\n    action: " + ruleBase[ruleSet[i]].action.toSource();
+  }
+  return ruleSet[prompt(msg)];
+}
+
+// ルールの適用(動作)
+//   WM にルールを適用した結果の新しい WM の状態を得る
+//   条件部の項を取り除き，動作部の項を追加する．
+function applyRule(rule, wm, ruleBase) {
+  with (ruleBase[rule]) {
+    return union(diffSet(wm, condition), action);
+  }
+}
+
+// 前向き推論の連鎖
+//   ルールの(名前の)リストを与え，WMに順に適用した結果のWMを得る
+function forwardChain(wm, rules, ruleBase) {
+  for (var i=0; i<rules.length; i++) wm = applyRule(rules[i], wm, ruleBase);
+  return wm;
+}
+
+////////////////////////
+// 後向き推論エンジン //
+////////////////////////
+
+// 後向き推論の木を深さ優先探索する (バックトラックあり)
+//   節点:   ワーキングメモリのプロパティ applied に適用ルール(の名前)のリスト(配列)を与えたもの
+//   根節点: 目標状態に，プロパティ applied として [] を与えたもの
+//   子節点: 親節点のワーキングメモリにルールを逆向きに適用したもの
+//           プロパティ applied のルール(の名前)のリスト(配列)には，
+//           使用されたルールが(前から)追加される
+function backwardReasoning(goal, ruleBase) {
+  var S   = [ goal ],   // 深さ優先探索用の(節点の)スタック
+      yes = [],         // ユーザが肯定した項のリスト
+      no  = [];         // ユーザが否定した項のリスト
+  goal.applied = [];
+  while (S.length>0) {  // 未探索節点がなくなれば終了
+    var wm       = S.shift(),           // 注目節点 - S から取り出したWM
+        unsolved = diffSet(wm, yes),    // WM中で未解決の項(肯定されない項)
+        ruleSet  = getReverseRuleSet(unsolved, ruleBase); // 未解決項をルールベースと照合
+    if (ruleSet.length>0) {     // 逆方向に適用可能なルールがある時，その結果を子節点とする
+      S = ruleSet.map(function (rule) { return revertRule(rule, wm, ruleBase); }).concat(S);
+    } else {                    // 逆方向に適用可能なルールがない時，未解決項を問い合わせる
+      if (unsolved.every(function (tm) {
+                           if (isIn(tm, no)) return false;
+                           var yn = confirm(tm+" ?");
+                           if (yn) yes.push(tm); else no.push(tm);
+                           return yn;
+                         })
+          && confirm(makeResult(wm, yes, ruleBase))) return;    // 結果の表示
+      // 否定された項があるか，結果がキャンセルされれば探索続行
+    }
+  }
+  alert("failed.\nyes: "+yes.toSource()+"\nno: "+no.toSource());
+}
+
+// ルールベースとの照合(後向き)
+//   WM に(逆方向に)適用可能なルールのリストを得る
+//   ルールの動作部分にWM中の未解決の項を含み，
+//   逆向きに適用することによってその項を消去できるものを選び出す
+function getReverseRuleSet(unsolved, ruleBase) {
+  var rs = [];
+  for (var r in ruleBase) {
+    with (ruleBase[r]) {
+      if (intersect(diffSet(action, condition), unsolved).length>0) rs.push(r);
+    }
+  }
+  return rs;
+}
+
+// ルールの適用(動作)
+//   ルールを逆向きに適用し，結果となる子節点を返す．すなわち，
+//   ルールの動作部に含まれる項を取り除いて条件部に含まれる項を追加する．
+//   節点のプロパティ applied のリスト(配列)には，適用したルールの名前を(左に)追加する
+function revertRule(rule, wm, ruleBase) {
+  with (ruleBase[rule]) {
+    var wm2 = union(condition, diffSet(wm, action));
+  }
+  wm2.applied = [rule].concat(wm.applied);
+  return wm2;
+}
+
+// 成功時の結果の表示
+//   成功時に結果として得られた初期状態に，同じく結果として得られた
+//   ルール列を，再度前向きに順に適用して得られる状態を表示する
+function makeResult(wm, yes, ruleBase) {
+  var msg = "Result: " + forwardChain(yes, wm.applied, ruleBase).toSource();
+  msg += "\nBecause: " + wm.applied.toSource();
+  msg += "\nFrom: " + yes.toSource();
+  return msg;
+}
+//--></script>
+<hr>
+<pre>
+例1: 積木の世界 (前向き推論の例)
+
+  WM要素
+    ["on-table", X] : 積木Xがテーブルの上に(接して)のっている
+    ["on", X, Y]    : 積木Xが積木Yの上に積まれている
+    ["clear", X]    : 積木Xの上には何も積まれていない
+
+  初期状態
+
+      C
+      A B
+    -------
+    [["on-table", "a"], ["on", "c", "a"], ["clear", "c"], ["on-table", "b"], ["clear", "b"]]
+
+  目標状態
+
+      A
+      B
+      C
+    -----
+    [["on-table", "c"], ["on", "b", "c"], ["on", "a", "b"], ["clear", "a"]]
+
+  ルールベース
+    sXY --- X を Y に積む
+      sab: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "b"]],
+             action:    [["clear", "a"], ["on", "a", "b"]]},
+      sac: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "c"]],
+             action:    [["clear", "a"], ["on", "a", "c"]]},
+      sbc: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "c"]],
+             action:    [["clear", "b"], ["on", "b", "c"]]},
+      sba: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "a"]],
+             action:    [["clear", "b"], ["on", "b", "a"]]},
+      sca: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "a"]],
+             action:    [["clear", "c"], ["on", "c", "a"]]},
+      scb: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "b"]],
+             action:    [["clear", "c"], ["on", "c", "b"]]},
+
+    dXY --- X を Y から下ろす
+      dab: { condition: [["clear", "a"], ["on", "a", "b"]],
+             action:    [["on-table", "a"], ["clear", "a"], ["clear", "b"]]},
+      dac: { condition: [["clear", "a"], ["on", "a", "c"]],
+             action:    [["on-table", "a"], ["clear", "a"], ["clear", "c"]]},
+      dbc: { condition: [["clear", "b"], ["on", "b", "c"]],
+             action:    [["on-table", "b"], ["clear", "b"], ["clear", "c"]]},
+      dba: { condition: [["clear", "b"], ["on", "b", "a"]],
+             action:    [["on-table", "b"], ["clear", "b"], ["clear", "a"]]},
+      dca: { condition: [["clear", "c"], ["on", "c", "a"]],
+             action:    [["on-table", "c"], ["clear", "c"], ["clear", "a"]]},
+      dcb: { condition: [["clear", "c"], ["on", "c", "b"]],
+             action:    [["on-table", "c"], ["clear", "c"], ["clear", "b"]]}
+</pre>
+<script type="text/javascript"><!--
+// 初期状態と目標状態
+var BlockInit = [["on-table", "a"], ["on", "c", "a"], ["clear", "c"], ["on-table", "b"], ["clear", "b"]],
+    BlockGoal = [["on-table", "c"], ["on", "b", "c"], ["on", "a", "b"], ["clear", "a"]];
+
+// ルールベース
+var BlockRuleBase = {
+  // sXY - X を Y に積む
+  sab: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "b"]],
+         action:    [["clear", "a"], ["on", "a", "b"]]},
+  sac: { condition: [["on-table", "a"], ["clear", "a"], ["clear", "c"]],
+         action:    [["clear", "a"], ["on", "a", "c"]]},
+  sbc: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "c"]],
+         action:    [["clear", "b"], ["on", "b", "c"]]},
+  sba: { condition: [["on-table", "b"], ["clear", "b"], ["clear", "a"]],
+         action:    [["clear", "b"], ["on", "b", "a"]]},
+  sca: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "a"]],
+         action:    [["clear", "c"], ["on", "c", "a"]]},
+  scb: { condition: [["on-table", "c"], ["clear", "c"], ["clear", "b"]],
+         action:    [["clear", "c"], ["on", "c", "b"]]},
+
+  // dXY - X を Y から下ろす
+  dab: { condition: [["clear", "a"], ["on", "a", "b"]],
+         action:    [["on-table", "a"], ["clear", "a"], ["clear", "b"]]},
+  dac: { condition: [["clear", "a"], ["on", "a", "c"]],
+         action:    [["on-table", "a"], ["clear", "a"], ["clear", "c"]]},
+  dbc: { condition: [["clear", "b"], ["on", "b", "c"]],
+         action:    [["on-table", "b"], ["clear", "b"], ["clear", "c"]]},
+  dba: { condition: [["clear", "b"], ["on", "b", "a"]],
+         action:    [["on-table", "b"], ["clear", "b"], ["clear", "a"]]},
+  dca: { condition: [["clear", "c"], ["on", "c", "a"]],
+         action:    [["on-table", "c"], ["clear", "c"], ["clear", "a"]]},
+  dcb: { condition: [["clear", "c"], ["on", "c", "b"]],
+         action:    [["on-table", "c"], ["clear", "c"], ["clear", "b"]]}
+};
+
+//--></script>
+<form action="#">
+  <input type="button" value="Go"
+         onclick="forwardReasoning(BlockInit, BlockGoal, BlockRuleBase);">
+</form>
+<hr>
+<pre>
+例2: 旅行案内 (後向き推論の例)
+
+  概要
+    後向き推論の木を深さ優先探索する (バックトラックあり)
+      節点:   ワーキングメモリのプロパティ applied に適用ルール(の名前)のリスト(配列)を与えたもの
+      根節点: 目標状態のプロパティ applied に [] を与えたもの
+      子節点: 親節点のワーキングメモリにルールを逆向きに適用したもの
+              ルール(の名前)のリスト(配列)には，使用されたルールが(前から)追加される
+
+  ルールベース
+    旅行先決定ルール
+    r1:  { condition: [["usa"], ["english"]],       action: [["honolulu"]]  },
+    r2:  { condition: [["europe"], ["france"]],     action: [["paris"]]     },
+    r3:  { condition: [["usa"], ["continent"]],     action: [["losange"]]   },
+    r4:  { condition: [["island"], ["equator"]],    action: [["honolulu"]]  },
+    r5:  { condition: [["asia"], ["equator"]],      action: [["singapore"]] },
+    r6:  { condition: [["island"], ["micronesia"]], action: [["guam"]]      },
+    r7:  { condition: [["swimming"]],               action: [["equator"]]   },
+
+    旅行先決定時ルール
+    rg1: { condition: [["honolulu"]],  action: [["honolulu"], ["ok"]]  },
+    rg2: { condition: [["paris"]],     action: [["paris"], ["ok"]]     },
+    rg3: { condition: [["losange"]],   action: [["losange"], ["ok"]]   },
+    rg4: { condition: [["singapore"]], action: [["singapore"], ["ok"]] },
+    rg5: { condition: [["guam"]],      action: [["guam"], ["ok"]]      }
+
+  目標状態
+    [["ok"]]
+</pre>
+<script type="text/javascript"><!--
+// ルールベース
+var TravelRuleBase = {
+  // 旅行先決定ルール
+  r1:  { condition: [["usa"], ["english"]],       action: [["honolulu"]]  },
+  r2:  { condition: [["europe"], ["france"]],     action: [["paris"]]     },
+  r3:  { condition: [["usa"], ["continent"]],     action: [["losange"]]   },
+  r4:  { condition: [["island"], ["equator"]],    action: [["honolulu"]]  },
+  r5:  { condition: [["asia"], ["equator"]],      action: [["singapore"]] },
+  r6:  { condition: [["island"], ["micronesia"]], action: [["guam"]]      },
+  r7:  { condition: [["swimming"]],               action: [["equator"]]   },
+  // 旅行先決定時ルール
+  rg1: { condition: [["honolulu"]],  action: [["honolulu"], ["ok"]]  },
+  rg2: { condition: [["paris"]],     action: [["paris"], ["ok"]]     },
+  rg3: { condition: [["losange"]],   action: [["losange"], ["ok"]]   },
+  rg4: { condition: [["singapore"]], action: [["singapore"], ["ok"]] },
+  rg5: { condition: [["guam"]],      action: [["guam"], ["ok"]]      }
+};
+
+// 目標状態
+var TravelGoal = [["ok"]];
+//--></script>
+<form action="#">
+  <input type="button" value="Go"
+         onclick="backwardReasoning(TravelGoal, TravelRuleBase);">
+</form>
+</body>
+</html>
