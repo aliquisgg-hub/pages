@@ -1,6 +1,6 @@
 ---
 title: Sc387(1) Part 10
-last_modified: 2023-07-02 13:16:51 +09:00
+last_modified: 2026-11-20 15:14:52 +09:00
 
 html:
   embed_local_images: false
@@ -105,7 +105,7 @@ toc:
 - 過適合（オーバーフィッティング，過学習）問題
   - 訓練パターンに過度に最適化されて一般性を損なう．
 
-###### ![overfitting](overfitting.svg)
+###### ![overfitting](overfitting1.5.svg)
 
 #### …その解決
 
