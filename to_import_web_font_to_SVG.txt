@@ -1,0 +1,11 @@
+<defs …> … </defs> に以下を書き加える:
+
+    <style
+       type="text/css"
+       id="style1">
+      @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900');
+      @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700');
+    </style>
