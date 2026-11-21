@@ -1,6 +1,6 @@
 ---
 title: Root of aliquisgg-hub
-last_modified: 2026-09-02 14:16:40 +09:00
+last_modified: 2026-11-21 20:33:42 +09:00
 export_on_save:
    html: true
 ---
@@ -19,3 +19,5 @@ export_on_save:
 -   [Sc387](https://aliquisgg-hub.github.io/pages/Sc387/)
 -   [Sc188](https://aliquisgg-hub.github.io/pages/Sc188/)
 -   [VSCode](https://aliquisgg-hub.github.io/pages/vscDoc/)
+
+-   [SVG に Web font を埋め込む方法](to_import_web_font_to_SVG.txt)
