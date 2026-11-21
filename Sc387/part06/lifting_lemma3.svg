@@ -16,6 +16,9 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
+    <style type="text/css">
+       @import url('https://googleapis.com/');
+    </style>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
