@@ -9,3 +9,13 @@
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900');
       @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700');
     </style>
+
+html に埋め込むには，object タグを使う必要がある？
+
+<object type="image/svg+xml" data="path/to/your-image.svg" width="600"></object>
+
+svg を書き換える必要があるかも：
+
+<svg xmlns="http://w3.org" width="300" height="150">
+　　↓
+<svg xmlns="http://w3.org" viewBox="0 0 300 150">
