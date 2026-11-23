@@ -433,14 +433,14 @@ ___
 (次スライドの参考図を参照すること)
 ___
 
-###### ![h:560](lifting_lemma3.svg)
-<!-- 
+<!-- ###### ![h:560](lifting_lemma2.svg) -->
+
 <h6>
 <object type="image/svg+xml"
  data="lifting_lemma3.svg"
- style="height: 1000px;"></object>
+ style="height: 560px;"></object>
 </h6>
- -->
+
 ___
 ## 融合演繹 (導出演繹) 
 <div style="font-size: 95%;">
