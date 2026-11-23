@@ -101,15 +101,15 @@ ___
 ### 例 (積み木の世界) 
 - プロダクションルールの例1：
 
-  <span class="darkred mono90">a: **IF** (on-table A), (clear A), (clear B) **THEN**  
+  <span class="darkred">a: **IF** (on-table A), (clear A), (clear B) **THEN**  
   　　**remove:** (on-table A), **remove:** (clear B), **add:** (on A B).</span>
 
-  <span class="darkred 0">b: **IF** (on-table B), (clear A), (clear B) **THEN**  
+  <span class="darkred">b: **IF** (on-table B), (clear A), (clear B) **THEN**  
   　　**remove:** (on-table B), **remove:** (clear A), **add:** (on B A).</span>  
 
-  ※ <span class="darkred 0">**IF** ...</span> が条件部，<span class="darkred 0">**THEN** ...</span> が実行部とみなせる．  
+  ※ <span class="darkred">**IF** ...</span> が条件部，<span class="darkred">**THEN** ...</span> が実行部とみなせる．  
 
-  ※ <span class="darkred 0">**remove:** ...</span> 
+  ※ <span class="darkred">**remove:** ...</span> 
      で*削除される WM 要素*は WM に含まれているはず  
   　 なので，通常，*条件部にも含まれている*はずである．
 
